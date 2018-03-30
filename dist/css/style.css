@@ -543,6 +543,20 @@ p {
 /*********************************************************
     Hero
 *********************************************************/
+#canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #38b4fc;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #38b4fc 0%, #5475fb 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#11e8bb', endColorstr='#8200c9',GradientType=0 );
+  /* IE6-9 */ }
+
 .hero {
   position: relative;
   height: 550px; }
@@ -586,13 +600,14 @@ p {
     font-family: "Yellowtail", cursive;
     font-weight: 300;
     font-size: 30px;
-    color: #ffffff;
+    color: #222;
     margin-bottom: 10px; }
     @media (min-width: 800px) {
       .hero__title {
         font-size: 3.625rem; } }
   .hero__subtitle {
     font-weight: 100;
+    color: #222;
     margin: 0; }
   .hero__btn-container {
     margin-top: 20px; }
