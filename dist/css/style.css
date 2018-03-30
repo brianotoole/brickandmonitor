@@ -345,7 +345,7 @@ p {
   position: absolute;
   width: 100%;
   padding: 15px 0;
-  background-color: #38b4fc;
+  background-color: #222;
   z-index: 2;
   transition: background-color 0.4s ease-out;
   /**
