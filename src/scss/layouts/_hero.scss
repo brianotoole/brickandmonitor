@@ -3,7 +3,7 @@
 *********************************************************/
 .hero {
   position: relative;
-  height: 475px;
+  height: 450px;
   //background: url('../img/bg-brick.png') 0 0 repeat;
 
   &--has-overlay {
@@ -43,8 +43,8 @@
 
   &__content {
     position: relative;
-    top: 55%;
-    transform: translateY(-55%);
+    top: 45%;
+    transform: translateY(-45%);
     left: 0;
     text-align: center;
     color: $color-white;

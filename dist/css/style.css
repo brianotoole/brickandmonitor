@@ -181,7 +181,11 @@ body {
   font-family: "Ubuntu Mono";
   font-size: 1rem;
   font-weight: 300;
-  line-height: 1.5; }
+  line-height: 1.5;
+  overflow-x: hidden; }
+  @media (min-width: 800px) {
+    body {
+      border: 28px solid #071E22; } }
 
 img {
   width: 100%;
@@ -367,7 +371,7 @@ body.menu-is-open {
   position: fixed; }
 
 .header {
-  position: absolute;
+  position: relative;
   width: 100%;
   padding: 15px 0;
   background-color: #071E22;
@@ -608,7 +612,7 @@ body.menu-is-open {
 *********************************************************/
 .hero {
   position: relative;
-  height: 475px; }
+  height: 450px; }
   .hero--has-overlay:after {
     content: '';
     position: absolute;
@@ -634,9 +638,9 @@ body.menu-is-open {
     background-size: 100%; }
   .hero__content {
     position: relative;
-    top: 55%;
-    -webkit-transform: translateY(-55%);
-            transform: translateY(-55%);
+    top: 45%;
+    -webkit-transform: translateY(-45%);
+            transform: translateY(-45%);
     left: 0;
     text-align: center;
     color: #ffffff;
