@@ -198,6 +198,30 @@ body {
     font-size: 18px;
     padding: 12px 8px;
     width: 100%;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    position: relative;
+    overflow: hidden;
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 100%;
+    right: 0;
+    bottom: 7px;
+    background: $color-secondary;;
+    height: 3px;
+    transition-property: left;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+    border-radius: 50px;
+  }
+  &:hover {
+    color: $color-body-dark;
+    &:before {
+      left: 0;
+    }
+  }
     @include bp_md {
       padding: 12px 0;
       color: $color-body;

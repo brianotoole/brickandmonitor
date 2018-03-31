@@ -552,7 +552,29 @@ body.menu-is-open {
   font-weight: 400;
   font-size: 18px;
   padding: 12px 8px;
-  width: 100%; }
+  width: 100%;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+          transform: perspective(1px) translateZ(0);
+  position: relative;
+  overflow: hidden; }
+  .nav-primary a:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 100%;
+    right: 0;
+    bottom: 7px;
+    background: #1D7874;
+    height: 3px;
+    transition-property: left;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+    border-radius: 50px; }
+  .nav-primary a:hover {
+    color: black; }
+    .nav-primary a:hover:before {
+      left: 0; }
   @media (min-width: 800px) {
     .nav-primary a {
       padding: 12px 0;
