@@ -272,13 +272,16 @@ p {
 *********************************************************/
 .btn {
   display: inline-block;
-  padding: 0.5rem 0.625rem;
+  padding: 8px 25px;
   font-size: 1rem;
   color: #ffffff;
   background-color: #38b4fc;
-  border-radius: 0.125rem;
+  border-radius: 50px;
   text-decoration: none;
   cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   transition: all 0.2s linear; }
   .btn:hover, .btn:focus {
     text-decoration: none;
@@ -377,7 +380,7 @@ p {
   position: absolute;
   width: 100%;
   padding: 15px 0;
-  background-color: transparent;
+  background-color: #38b4fc;
   z-index: 2;
   transition: background-color 0.4s ease-out;
   /**
@@ -393,7 +396,8 @@ p {
   */ }
   @media (min-width: 800px) {
     .header {
-      padding: 10px 0; } }
+      padding: 10px 0;
+      background-color: transparent; } }
   @media (min-width: 800px) {
     .header--is-fixed {
       position: fixed;

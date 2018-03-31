@@ -5,12 +5,13 @@
   position: absolute;
   width: 100%;
   padding: 15px 0;
-  background-color: transparent;
+  background-color: $color-primary;
   z-index: 2;
   transition: background-color 0.4s ease-out;
 
   @include bp_md {
     padding: 10px 0;
+    background-color: transparent;
   }
 
   &--is-fixed {
