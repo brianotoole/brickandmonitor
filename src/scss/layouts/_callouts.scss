@@ -1,0 +1,15 @@
+/*********************************************************
+    Callouts
+*********************************************************/
+
+.call-out {
+	position: relative;
+
+	&--is-link {
+		transition: background 0.3s ease-out;
+		cursor: pointer;
+		&:hover {
+			background-color: $color-secondary;
+		}
+	}
+}

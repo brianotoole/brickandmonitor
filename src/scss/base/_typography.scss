@@ -34,3 +34,8 @@ p {
   margin: 0 0 rem(20) 0;
 }
 
+.heading {
+  @extend h3;
+  margin-bottom: 30px;
+}
+
