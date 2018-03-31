@@ -82,11 +82,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 // extract text from webpack to bundled output file
 __webpack_require__(1);
+__webpack_require__(6);
 
 var mobileMenu = new _MobileMenu2.default();
-
-//import Modal from './Modal';
-//var modal = new Modal();
 
 /***/ }),
 /* 1 */
@@ -10518,6 +10516,39 @@ if ( !noGlobal ) {
 return jQuery;
 } );
 
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _jquery = __webpack_require__(5);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var terms1 = ["products", "websites", "brands"]; //nouns
+/**
+  * Rotating Words
+  */
+
+var terms2 = ["sell", "standout", "apdat"]; //adjectives
+
+function rotateTerm1() {
+  var ct = (0, _jquery2.default)("#js-text-rotate-1").data("term") || 0;
+  (0, _jquery2.default)("#js-text-rotate-1").data("term", ct == terms1.length - 1 ? 0 : ct + 1).text(terms1[ct]).fadeIn().delay(3000).fadeOut(200, rotateTerm1);
+}
+
+function rotateTerm2() {
+  var ct = (0, _jquery2.default)("#js-text-rotate-2").data("term") || 0;
+  (0, _jquery2.default)("#js-text-rotate-2").data("term", ct == terms2.length - 1 ? 0 : ct + 1).text(terms2[ct]).fadeIn().delay(3000).fadeOut(200, rotateTerm2);
+}
+
+(0, _jquery2.default)(rotateTerm1);
+(0, _jquery2.default)(rotateTerm2);
 
 /***/ })
 /******/ ]);

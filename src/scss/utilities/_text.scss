@@ -3,6 +3,14 @@
 *********************************************************/
 .u {
   &__text {
+
+    &--upper {
+      text-transform: uppercase;
+    }
+
+    &--lower {
+      text-transform: lowercase;
+    }
     
     &--left {
       text-align: left;
