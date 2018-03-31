@@ -5,7 +5,7 @@
   position: absolute;
   width: 100%;
   padding: 15px 0;
-  background-color: $color-body;
+  background-color: transparent;
   z-index: 2;
   transition: background-color 0.4s ease-out;
 
@@ -47,7 +47,9 @@
   }
 
   &__logo-text {
-    color: $color-white;
+    color: $color-body;
+    font-family: $font-logo;
+    font-size: font-scale(2);
   }
 
   /**
@@ -181,9 +183,9 @@
 
   a {
     display: inline-block;
-    color: white;
+    color: $color-primary;
     text-decoration: none;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 18px;
     padding: 10px 8px;
     width: 100%;

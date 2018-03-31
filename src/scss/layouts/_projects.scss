@@ -1,0 +1,56 @@
+/*********************************************************
+    Projects
+*********************************************************/
+
+.project {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background: $color-gray;
+
+  @include bp_md {
+    display: table;
+  }
+
+}
+
+.project__item {
+  display: block;
+  vertical-align: middle;
+  width: 100%;
+
+  @include bp_md {
+    display: table-cell;
+    width: 50%;
+  }
+  
+  &--has-image {
+    background: $color-body;
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+
+}
+
+.project__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+.project__content {
+  padding: 45px 30px;
+  @include bp_md {
+    padding: 50px 75px;
+  }
+}
+
+.project__text {
+  font-size: 1rem;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}

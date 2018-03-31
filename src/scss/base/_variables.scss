@@ -9,6 +9,7 @@ $color-primary: #38b4fc;
 $color-secondary: #5475fb;
 $color-white: #ffffff;
 $color-body: #222;
+$color-gray: #f1f1f1;
 
 $color-primary-dark: darken($color-primary, 15%);
 $color-secondary-dark: darken($color-secondary, 15%);
@@ -25,7 +26,8 @@ $font-base-font-size: 1rem;
 $font-ratio: 1.2;
 $font-base-line-height: 1.5;
 
-$font-heading: 'Yellowtail', cursive;
+$font-logo: 'Yellowtail', cursive;
+$font-heading: 'PT Sans', sans-serif;
 $font-body: 'Open Sans', sans-serif;
 
 /*********************************************************
