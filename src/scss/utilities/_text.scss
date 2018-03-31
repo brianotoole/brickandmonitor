@@ -1,0 +1,33 @@
+/*********************************************************
+    Text utility
+*********************************************************/
+.u {
+  &__text {
+    
+    &--left {
+      text-align: left;
+    }
+
+    &--right {
+      text-align: right;
+    }
+    
+    &--center {
+      text-align: center;
+    }
+
+    &--highlight {
+      padding: .25rem;
+      color: $color-body;
+      background-color: $color-primary;
+    }
+
+    &--dark {
+      color: $color-body;
+    }
+
+    &--light {
+      color: $color-white;
+    }
+  }
+}
