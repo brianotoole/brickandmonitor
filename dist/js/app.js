@@ -83,6 +83,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 // extract text from webpack to bundled output file
 __webpack_require__(1);
 __webpack_require__(6);
+__webpack_require__(7);
 
 var mobileMenu = new _MobileMenu2.default();
 
@@ -10551,6 +10552,46 @@ function rotateTerm2() {
 
 (0, _jquery2.default)(rotateTerm1);
 (0, _jquery2.default)(rotateTerm2);
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _jquery = __webpack_require__(5);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var tl = new TimelineMax({}); //TimelineMax & ScrollMagic
+//import ScrollMagic from 'scrollmagic/scrollmagic/uncompressed/ScrollMagic';   
+//import TweenMax from 'gsap';
+// TweenMax
+//tl.method(element, duration, vars), delay
+
+var navItems = (0, _jquery2.default)('.header');
+var heroContent = (0, _jquery2.default)('.hero__title');
+tl;
+// nav items
+navItems.each(function () {
+  tl.add(TweenMax.from((0, _jquery2.default)(this), 0.3, {
+    autoAlpha: 0,
+    x: -30,
+    ease: Power1.easeOut
+  }));
+});
+
+// hero items
+heroContent.each(function () {
+  tl.add(TweenMax.from((0, _jquery2.default)(this), 1, {
+    autoAlpha: 0,
+    y: 15,
+    ease: Power1.easeOut
+  }));
+});
 
 /***/ })
 /******/ ]);
