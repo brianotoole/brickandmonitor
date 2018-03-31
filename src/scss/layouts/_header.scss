@@ -48,9 +48,12 @@
   }
 
   &__logo-text {
-    color: $color-body;
+    color: $color-white;
     font-family: $font-heading;
     font-size: font-scale(2);
+    @include bp_md {
+      color: $color-body;
+    }
   }
 
   /**
@@ -184,14 +187,15 @@
 
   a {
     display: inline-block;
-    color: $color-primary;
+    color: $color-white;
     text-decoration: none;
     font-weight: 400;
     font-size: 18px;
-    padding: 10px 8px;
+    padding: 12px 8px;
     width: 100%;
     @include bp_md {
       padding: 12px 0;
+      color: $color-body;
     }
   }
 
