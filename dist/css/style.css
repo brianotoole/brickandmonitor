@@ -390,7 +390,7 @@ p {
   @media (min-width: 800px) {
     .header__btn-container {
       float: right;
-      margin-top: 4px; }
+      margin-top: 6px; }
       .header__btn-container:before, .header__btn-container:after {
         content: " ";
         display: table; }
@@ -643,7 +643,7 @@ p {
     .project__item {
       width: 50%; } }
   .project__item--has-image {
-    background: #222;
+    background: #e0e3e8;
     position: relative;
     overflow: hidden;
     background-repeat: no-repeat;
