@@ -34,11 +34,11 @@ a {
 }
 
 .wrapper {
-  max-width: 1230px;
+  max-width: 1260px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
   overflow: hidden;
 
   &--narrow {
@@ -50,6 +50,11 @@ a {
 .page-section {
   padding-top: 30px;
   padding-bottom: 30px;
+
+  &--lg {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
   
   &--primary {
     color: white;
