@@ -636,21 +636,26 @@ p {
     Projects
 *********************************************************/
 .project {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
   width: 100%;
   height: 100%;
   margin: 0 auto;
   background: #f1f1f1; }
+  .project:nth-child(even) {
+    flex-direction: column; }
   @media (min-width: 800px) {
     .project {
-      display: table; } }
+      flex-direction: row; }
+      .project:nth-child(even) {
+        flex-direction: row; } }
 
 .project__item {
-  display: block;
-  vertical-align: middle;
   width: 100%; }
   @media (min-width: 800px) {
     .project__item {
-      display: table-cell;
       width: 50%; } }
   .project__item--has-image {
     background: #222;
@@ -667,10 +672,12 @@ p {
   vertical-align: bottom; }
 
 .project__content {
-  padding: 45px 30px; }
+  padding: 45px 30px;
+  text-align: center; }
   @media (min-width: 800px) {
     .project__content {
-      padding: 50px 75px; } }
+      padding: 50px 75px;
+      text-align: left; } }
 
 .project__text {
   font-size: 1rem;
