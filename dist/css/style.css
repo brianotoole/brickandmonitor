@@ -185,7 +185,8 @@ body {
   overflow-x: hidden; }
   @media (min-width: 800px) {
     body {
-      border: 28px solid #071E22; } }
+      border: 28px solid #071E22;
+      border-bottom: none; } }
 
 img {
   width: 100%;
@@ -255,9 +256,6 @@ h6 {
 p {
   margin: 0 0 1.25rem 0; }
 
-.heading {
-  margin-bottom: 30px; }
-
 /*********************************************************
     Buttons
 *********************************************************/
@@ -308,7 +306,7 @@ p {
   margin-right: -0.5rem; }
   .row-flex > div {
     position: relative;
-    padding: 0 1rem;
+    padding: 1rem;
     width: 100%; }
   .row-flex--no-gutters {
     margin: 0; }
