@@ -38,6 +38,9 @@ body {
       @include clearFix();
       margin-top: 6px;
     }
+    a {
+      font-size: rem(15);
+    }
   }
 
 
@@ -48,13 +51,14 @@ body {
     @include bp_md {
       float: left;
       @include clearFix();
-      padding: 12px 0;
+      padding: 8px 0;
     }
   }
 
   &__logo-text {
     color: $color-white;
     font-family: $font-heading;
+    font-weight: 700;
     font-size: font-scale(2);
     @include bp_md {
       color: $color-body;
@@ -194,8 +198,9 @@ body {
     display: inline-block;
     color: $color-white;
     text-decoration: none;
-    font-weight: 400;
-    font-size: 18px;
+    font-weight: 700;
+    font-size: rem(15);
+    text-transform: uppercase;
     padding: 12px 8px;
     width: 100%;
     vertical-align: middle;
@@ -223,7 +228,7 @@ body {
     }
   }
     @include bp_md {
-      padding: 12px 0;
+      padding: 15px 0;
       color: $color-body;
     }
   }
