@@ -19,7 +19,7 @@ body {
   line-height: $font-base-line-height;
   overflow-x: hidden;
   @include bp_md {
-    border: 28px solid #D7D9D8;
+    border: 28px solid $color-black;
     border-bottom: none;
   }
 }

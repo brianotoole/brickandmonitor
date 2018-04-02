@@ -193,7 +193,7 @@ body {
   overflow-x: hidden; }
   @media (min-width: 800px) {
     body {
-      border: 28px solid #D7D9D8;
+      border: 28px solid #111;
       border-bottom: none; } }
 
 img {
