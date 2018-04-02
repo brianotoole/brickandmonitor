@@ -752,22 +752,28 @@ body.menu-is-open {
   justify-content: center;
   align-items: center;
   padding-top: 45px;
-  padding-bottom: 45px; }
+  padding-bottom: 45px;
+  flex-direction: column; }
+  @media (min-width: 800px) {
+    .call-out--is-numbers {
+      flex-direction: row; } }
 
 .call-out + .call-out {
   border-top: 1px solid rgba(255, 255, 255, 0.1); }
 
 .call-out__left {
-  width: 25%; }
-
-.call-out__right {
-  width: 75%; }
-
-.call-out__left {
+  width: 100%;
   position: relative; }
+  @media (min-width: 800px) {
+    .call-out__left {
+      width: 25%; } }
 
 .call-out__right {
-  padding-left: 50px; }
+  width: 100%; }
+  @media (min-width: 800px) {
+    .call-out__right {
+      width: 75%;
+      padding-left: 50px; } }
 
 .call-out__number {
   position: absolute;
