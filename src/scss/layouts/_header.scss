@@ -58,7 +58,7 @@ body {
   &__logo-text {
     color: $color-white;
     font-family: $font-heading;
-    font-weight: 700;
+    font-weight: 400;
     font-size: font-scale(2);
     @include bp_md {
       color: $color-body;
