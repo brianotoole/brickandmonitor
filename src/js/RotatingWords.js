@@ -5,7 +5,7 @@
 import $ from 'jquery';
 
 let terms1 = ["products", "websites", "brands"]; //nouns
-let terms2 = ["sell", "standout", "adapt"]; //adjectives
+let terms2 = ["sell more", "standout", "adapt"]; //adjectives
 
 function rotateTerm1() {
   var ct = $("#js-text-rotate-1").data("term") || 0;

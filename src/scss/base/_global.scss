@@ -19,7 +19,7 @@ body {
   line-height: $font-base-line-height;
   overflow-x: hidden;
   @include bp_md {
-    border: 28px solid #fbf9f9;
+    border: 28px solid #D7D9D8;
     border-bottom: none;
   }
 }
@@ -48,6 +48,9 @@ a {
 
   &--narrow {
     max-width: 976px;
+  }
+  &--narrow-lg {
+    max-width: 800px;
   }
 
 }

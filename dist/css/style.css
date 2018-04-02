@@ -193,7 +193,7 @@ body {
   overflow-x: hidden; }
   @media (min-width: 800px) {
     body {
-      border: 28px solid #fbf9f9;
+      border: 28px solid #D7D9D8;
       border-bottom: none; } }
 
 img {
@@ -202,10 +202,10 @@ img {
 
 a {
   text-decoration: none;
-  color: #2d2d2d;
+  color: #011526;
   transition: 0.2s color ease-out; }
   a:hover {
-    color: #070707; }
+    color: black; }
 
 .wrapper {
   max-width: 1260px;
@@ -216,6 +216,8 @@ a {
   overflow: hidden; }
   .wrapper--narrow {
     max-width: 976px; }
+  .wrapper--narrow-lg {
+    max-width: 800px; }
 
 .page-section {
   padding-top: 30px;
@@ -225,10 +227,10 @@ a {
     padding-bottom: 60px; }
   .page-section--primary {
     color: #ffffff;
-    background-color: #2d2d2d; }
+    background-color: #011526; }
   .page-section--secondary {
     color: #ffffff;
-    background-color: #B14437; }
+    background-color: #BF2441; }
   .page-section--white {
     color: #111;
     background-color: #ffffff; }
@@ -273,7 +275,7 @@ p {
   padding: 8px 25px;
   font-size: 1rem;
   color: #ffffff;
-  background-color: #2d2d2d;
+  background-color: #011526;
   border-radius: 50px;
   text-decoration: none;
   cursor: pointer;
@@ -284,18 +286,18 @@ p {
   .btn:hover, .btn:focus {
     text-decoration: none;
     color: #ffffff;
-    background-color: #070707; }
+    background-color: black; }
   .btn--secondary {
-    background-color: #B14437; }
+    background-color: #BF2441; }
     .btn--secondary:hover, .btn--secondary:focus {
-      background-color: #772e25; }
+      background-color: #7f182b; }
   .btn--transparent {
     color: #ffffff;
     background-color: transparent;
-    border: 2px solid #2d2d2d; }
+    border: 2px solid #011526; }
     .btn--transparent:hover, .btn--transparent:focus {
-      background-color: #2d2d2d;
-      border-color: #070707; }
+      background-color: #011526;
+      border-color: black; }
   .btn--large {
     padding: 0.9375rem 1.5625rem;
     font-size: 1.125rem; }
@@ -381,7 +383,7 @@ body.menu-is-open {
   position: relative;
   width: 100%;
   padding: 15px 0;
-  background-color: #2d2d2d;
+  background-color: #011526;
   z-index: 2;
   transition: background-color 0.4s ease-out;
   /**
@@ -402,10 +404,10 @@ body.menu-is-open {
   @media (min-width: 800px) {
     .header--is-fixed {
       position: fixed;
-      background-color: #070707; } }
+      background-color: black; } }
   .header--is-open {
     height: 100vh;
-    background-color: #070707;
+    background-color: black;
     z-index: 20; }
   @media (min-width: 800px) {
     .header__btn-container {
@@ -582,7 +584,7 @@ body.menu-is-open {
     left: 100%;
     right: 0;
     bottom: 7px;
-    background: #B14437;
+    background: #BF2441;
     height: 3px;
     transition-property: left;
     transition-duration: 0.3s;
@@ -630,13 +632,13 @@ body.menu-is-open {
     bottom: 0;
     left: 0;
     width: 100%;
-    background: rgba(177, 68, 55, 0.6);
+    background: rgba(191, 36, 65, 0.6);
     z-index: 1; }
   .hero--full-height {
     height: 100vh; }
   .hero--bg-gradient {
-    background-color: #B14437;
-    background-image: linear-gradient(120deg, #B14437, #772e25); }
+    background-color: #BF2441;
+    background-image: linear-gradient(120deg, #BF2441, #7f182b); }
   .hero__background-image {
     height: 100%; }
   .hero__logo {
@@ -678,7 +680,7 @@ body.menu-is-open {
         width: 100%;
         height: 4px;
         border-radius: 50px;
-        background: #B14437; }
+        background: #BF2441; }
   .hero__btn-container {
     margin-top: 20px; }
 
@@ -743,7 +745,7 @@ body.menu-is-open {
     transition: background 0.3s ease-out;
     cursor: pointer; }
     .call-out--is-link:hover {
-      background-color: #B14437; }
+      background-color: #BF2441; }
   .call-out--has-border {
     border-top: 1px solid rgba(255, 255, 255, 0.1); }
 
@@ -839,7 +841,7 @@ textarea {
   input[type='url']:active,
   textarea:focus,
   textarea:active {
-    border-color: #2d2d2d; }
+    border-color: #011526; }
 
 textarea {
   max-width: 100%; }
@@ -860,7 +862,7 @@ textarea {
 .modal {
   position: fixed;
   z-index: 50;
-  background-color: rgba(45, 45, 45, 0.97);
+  background-color: rgba(1, 21, 38, 0.97);
   top: 0;
   bottom: 0;
   left: 0;
@@ -920,7 +922,7 @@ textarea {
 .u__text--highlight {
   padding: .25rem;
   color: #222;
-  background-color: #2d2d2d; }
+  background-color: #011526; }
 
 .u__text--dark {
   color: #222; }

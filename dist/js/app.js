@@ -10538,7 +10538,7 @@ var terms1 = ["products", "websites", "brands"]; //nouns
   * Rotating Words
   */
 
-var terms2 = ["sell", "standout", "adapt"]; //adjectives
+var terms2 = ["sell more", "standout", "adapt"]; //adjectives
 
 function rotateTerm1() {
   var ct = (0, _jquery2.default)("#js-text-rotate-1").data("term") || 0;
