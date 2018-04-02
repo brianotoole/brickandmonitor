@@ -43,6 +43,7 @@
 }
 .call-out__right {
   width: 100%;
+  padding-top: 15px;
   @include bp_md {
     width: 75%;
     padding-left: 50px;

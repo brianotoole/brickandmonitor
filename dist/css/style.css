@@ -771,7 +771,8 @@ body.menu-is-open {
       width: 25%; } }
 
 .call-out__right {
-  width: 100%; }
+  width: 100%;
+  padding-top: 15px; }
   @media (min-width: 800px) {
     .call-out__right {
       width: 75%;
