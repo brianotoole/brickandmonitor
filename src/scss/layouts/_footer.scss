@@ -6,11 +6,11 @@
   width: 100%;
   margin: 0 auto; 
   
-  &--primary {
-    background-color: $color-primary;
+  &--black {
+    background-color: $color-black;
   }
   &--has-border {
-    border-top: 1px solid rgba(white, 0.1);
+    border-top: 1px solid $color-border-light;
   }
 
   &__copyright {

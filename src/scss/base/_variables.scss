@@ -10,6 +10,7 @@ $color-secondary: #B14437;
 $color-tertiary: #F2F3D9;
 $color-white: #ffffff;
 $color-body: #222;
+$color-black: #111;
 $color-gray: #f1f1f1;
 
 $color-primary-dark: darken($color-primary, 15%);
@@ -19,6 +20,7 @@ $color-white-dark: darken($color-white, 15%);
 $color-gray-dark: #e0e3e8;
 
 $color-border-base: rgba($color-body, 0.2);
+$color-border-light: rgba($color-white, 0.1);
 $color-success: green;
 $color-error: red;
 

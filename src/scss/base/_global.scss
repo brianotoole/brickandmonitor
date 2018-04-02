@@ -19,7 +19,7 @@ body {
   line-height: $font-base-line-height;
   overflow-x: hidden;
   @include bp_md {
-    border: 28px solid $color-primary;
+    border: 28px solid #fbf9f9;
     border-bottom: none;
   }
 }
@@ -62,23 +62,23 @@ a {
   }
   
   &--primary {
-    color: white;
+    color: $color-white;
     background-color: $color-primary;
   }
 
   &--secondary {
-    color: white;
+    color: $color-white;
     background-color: $color-secondary;
   }
 
   &--white {
-    color: black;
+    color: $color-black;
     background-color: $color-white;
   }
 
   &--black {
-    color: white;
-    background-color: black;
+    color: $color-white;
+    background-color: $color-black;
   }
 
 }

@@ -193,7 +193,7 @@ body {
   overflow-x: hidden; }
   @media (min-width: 800px) {
     body {
-      border: 28px solid #2d2d2d;
+      border: 28px solid #fbf9f9;
       border-bottom: none; } }
 
 img {
@@ -224,17 +224,17 @@ a {
     padding-top: 60px;
     padding-bottom: 60px; }
   .page-section--primary {
-    color: white;
+    color: #ffffff;
     background-color: #2d2d2d; }
   .page-section--secondary {
-    color: white;
+    color: #ffffff;
     background-color: #B14437; }
   .page-section--white {
-    color: black;
+    color: #111;
     background-color: #ffffff; }
   .page-section--black {
-    color: white;
-    background-color: black; }
+    color: #ffffff;
+    background-color: #111; }
 
 /*********************************************************
     Typography
@@ -603,8 +603,8 @@ body.menu-is-open {
 .footer {
   width: 100%;
   margin: 0 auto; }
-  .footer--primary {
-    background-color: #2d2d2d; }
+  .footer--black {
+    background-color: #111; }
   .footer--has-border {
     border-top: 1px solid rgba(255, 255, 255, 0.1); }
   .footer__copyright {
@@ -744,6 +744,47 @@ body.menu-is-open {
     cursor: pointer; }
     .call-out--is-link:hover {
       background-color: #B14437; }
+  .call-out--has-border {
+    border-top: 1px solid rgba(255, 255, 255, 0.1); }
+
+.call-out--is-numbers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 45px;
+  padding-bottom: 45px; }
+
+.call-out + .call-out {
+  border-top: 1px solid rgba(255, 255, 255, 0.1); }
+
+.call-out__left {
+  width: 25%; }
+
+.call-out__right {
+  width: 75%; }
+
+.call-out__left {
+  position: relative; }
+
+.call-out__right {
+  padding-left: 50px; }
+
+.call-out__number {
+  position: absolute;
+  font-size: 7.5rem;
+  top: -52px;
+  left: 0;
+  color: rgba(241, 241, 241, 0.2); }
+
+.call-out__title {
+  position: relative;
+  z-index: 1; }
+
+.call-out__description {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  margin: 0; }
 
 /*********************************************************
     Form
