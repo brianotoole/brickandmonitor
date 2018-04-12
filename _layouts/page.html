@@ -6,8 +6,15 @@ bodyclass: page-interior
 
 <section class="section-hero {{ page.bgcolorclass }}">
   <div class="container hero-content">
+    {% if page.bodyclass == 'page-home' %}
+      <h1 class="hero__title words">
+        We make <span id="js-text-rotate-1" class="hero__title--underline">products</span> that<br /> 
+        help you <span id="js-text-rotate-2" class="hero__title--underline">sell more</span> online.
+      </h1>
+    {% else %}
     <h1 class="hero-title">{{ page.hero }}</h1>
     <h5 class="hero-subtitle">{{ page.subtitle }}</h5>
+    {% endif %}
     <div class="hero-scroll">
       <a href="#more"><span></span></a>
     </div><!--/.hero-scroll-->

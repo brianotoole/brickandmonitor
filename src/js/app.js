@@ -2,5 +2,7 @@
 import 'styles/app.scss'; 
 
 // Scripts
-import './main.js';
+import './nav.js';
+import './rotating-words.js';
+import './form.js';
 import './tweens.js';
