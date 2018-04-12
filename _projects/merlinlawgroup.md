@@ -20,7 +20,7 @@ Merlin Law Group is a leading insurance claim litigation law firm committed to e
 * Stand out amongst a crowded insurance claim litigation market locally
 
 #### Work Involved
-I helped with strategy for user experience, technology selection, and web development for. The site was built mobile-first and uses WordPress with Webpack for an optimal development workflow.
+We helped with strategy for user experience, technology selection, and web development for. The site was built mobile-first and uses WordPress with Webpack for an optimal development workflow.
 
 ![merlin our firm image](/assets/images/project-mlg-firm.jpg)
 

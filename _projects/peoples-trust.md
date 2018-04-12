@@ -20,7 +20,7 @@ People's Trust Insurance leadership wanted to generate more sales leads and buil
 * Build reputation in Florida
 
 #### Work Involved
-I helped with strategy for user experience, technology selection, and web development for the redesign of the PTI website. The site is fully-responsive and uses a content management system. 
+We helped with strategy for user experience, technology selection, and web development for the redesign of the PTI website. The site is fully-responsive and uses a content management system. 
 
 With a goal to make the website stand out amongst a crowded insurance market, we uniquely designed the homepage to showcase actual employees as part of the website's imagery. In the hero section of the homepage, we created an animated, "video-like" fade-show. As you scrolled down the website's homepage, an eye-catching filling effect grabbed user attention to help showcase PTI's core values and features. 
 

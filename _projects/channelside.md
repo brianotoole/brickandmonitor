@@ -18,7 +18,10 @@ description: Provided strategy for user experience, technology selection, and we
 * Collect contact information from potential developers and retailers
 
 #### Work Involved
-I was involved with the user experience design and website build using WordPress and a custom theme with Webpack as the build tool for workflow optimizations. 
+We were involved with the user experience design and website build using WordPress and a custom theme with Webpack as the build tool for workflow optimizations. 
+
+While the website will continue to be devevloped overtime, the foundation in place is able to adapt and grow with the company's ongoing evolution.
+
 
 
 

@@ -21,7 +21,7 @@ The American Chemistry Council engaged us to create a safe space for moms to dis
 * Generate an increase in traffic and awareness of cleaning and disinfection products
 
 #### Work Involved
-I helped with strategy for user experience, technology selection, and web development for the redesign of the Mom's Against Cooties website. The site was built mobile-first and uses a content management system. 
+We helped with strategy for user experience, technology selection, and web development for the redesign of the Mom's Against Cooties website. The site was built mobile-first and uses a content management system. 
 
 #### Takeaway
 *Mommy-bloggers* are very engaging! There are more than 15,000+ visits per month and most of the traffic is via social media, due to the high amount of shares / conversation.
