@@ -19,6 +19,8 @@ $color-alt4: darken($color-primary, 8%);
 $color-link: darken($color-primary, 5%);
 $color-link-hover: darken($color-primary, 15%);
 $color-border: #D1D3D4;
+$color-border-base: rgba($color-body, 0.2);
+$color-border-light: rgba($color-white, 0.1);
 
 // Font Stacks
 $font-heading: "freight-text-pro", serif;
