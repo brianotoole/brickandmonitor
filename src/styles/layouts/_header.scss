@@ -34,8 +34,12 @@
   position: fixed;
   left: 30px;
   span {
+    display: block;
+    margin-top: -7px;
     color: $color-white;
-    font-weight: 700;
+    font-family: $font-body;
+    font-weight: bold;
+    font-size: rem(27);
   }
   img {
     margin: 0;

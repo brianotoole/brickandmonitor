@@ -102,7 +102,7 @@ sup {
   top: -.5em; }
 
 a {
-  color: #00070d;
+  color: #000203;
   text-decoration: underline;
   background-color: transparent;
   -webkit-text-decoration-skip: objects; }
@@ -1558,8 +1558,12 @@ code {
   position: fixed;
   left: 30px; }
   .logo-container span {
+    display: block;
+    margin-top: -7px;
     color: #fff;
-    font-weight: 700; }
+    font-family: "proxima-nova", sans-serif;
+    font-weight: bold;
+    font-size: 1.6875rem; }
   .logo-container img {
     margin: 0;
     margin-top: -1px;
@@ -1863,9 +1867,21 @@ body.nav-open {
       padding-top: 45px;
       padding-bottom: 45px; } }
 
+.hero__title--underline {
+  position: relative; }
+  .hero__title--underline:after {
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #BF2441;
+    z-index: -1; }
+
 .section-hero {
   min-height: 480px;
-  background: #000508; }
+  background: black; }
   .section-hero .hero-content {
     visibility: hidden;
     position: relative;
@@ -2164,7 +2180,7 @@ body.nav-open {
   font-family: "proxima-nova", sans-serif;
   font-size: 0.875rem;
   color: #fff;
-  background-color: #011526;
+  background-color: #01101c;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -2173,7 +2189,7 @@ body.nav-open {
   vertical-align: middle;
   white-space: nowrap; }
   .btn.primary {
-    background-color: #011526;
+    background-color: #01101c;
     transition: all 0.2s linear; }
     .btn.primary:hover {
       color: #fff;
@@ -2187,7 +2203,7 @@ body.nav-open {
   .btn.white {
     background-color: #fff;
     transition: all 0.2s linear;
-    color: #011526; }
+    color: #01101c; }
     .btn.white:hover {
       color: #fff;
       background-color: #d9d9d9; }
@@ -2406,7 +2422,7 @@ svg:not(:root) {
   color: #fff; }
 
 .text-primary {
-  color: #011526; }
+  color: #01101c; }
 
 .text-secondary {
   color: #BF2441; }
@@ -2419,7 +2435,7 @@ svg:not(:root) {
   color: #111; }
 
 .bg-primary {
-  background: #011526;
+  background: #01101c;
   color: #fff; }
 
 .bg-secondary {
@@ -2439,13 +2455,13 @@ svg:not(:root) {
   color: #111; }
 
 .bg-alt1 {
-  background: #01101c; }
+  background: #010a12; }
 
 .bg-alt2 {
-  background: #000a12; }
+  background: #000508; }
 
 .bg-alt3 {
-  background: #000508; }
+  background: black; }
 
 .bg-alt4 {
   background: black; }
