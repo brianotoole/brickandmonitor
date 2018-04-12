@@ -1,0 +1,67 @@
+// Buttons
+@mixin button-bg($bg) {
+  background-color: $bg;
+  transition: all 0.2s linear;
+  &:hover {
+    color: $color-white;
+    background-color: darken($bg, 15%);
+  }
+}
+
+.btn {
+  margin: 0;
+  margin-top: 10px;
+  min-width: 180px;
+  padding: 12px;
+  font-family: $font-body;
+  font-size: rem(14);
+  color: $color-white;
+  background-color: $color-primary;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 0;
+  cursor: pointer;
+  vertical-align: middle;
+  white-space: nowrap;
+  &.primary {
+    @include button-bg($color-primary);
+  }
+  &.secondary {
+    @include button-bg($color-secondary);
+  }
+  &.white {
+    @include button-bg($color-white);
+    color: $color-primary;
+  }
+  &.transparent {
+    @include button-bg(transparent);
+    border: 1px solid $color-black;
+    color: $color-black;
+  }
+  &.rounded {
+    border-radius: 100px;
+  }
+  &.arrow {
+    padding-left: 0;
+    border: none;
+    background-color: transparent;
+    color: $color-body;
+    transition: color 0.2s ease-in-out;
+    &:after {
+      content: "\e87a";
+      font-family: Linearicons-Free;
+      display: inline-block;
+      vertical-align: middle;
+      font-size: rem(18);
+      margin-left: 10px;
+      transition: margin-left 0.2s ease-in-out;
+    }
+    &:hover {
+      color: $color-secondary;
+      &:after {
+        margin-left: 14px;
+      }
+    }
+  }
+}

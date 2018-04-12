@@ -1,178 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
+--- 
+layout: page 
+title: Brian Z. O'Toole - Create. Innovate. Inspire.
+description: Brian O'Toole is a creative web strategist and web developer living in Tampa, Florida.
+bodyclass: page-home
+bgcolorclass: bg-alt4
+hero: Helping brands connect with audiences through intelligent design &amp; technology
+---
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="description" content="">
-  <meta property="og:image" content="">
-  <meta property="og:title" content="">
-  <meta property="og:url" content="">
-  <meta property="og:type" content="website">
-  <title>Brick &amp; Monitor</title>
-  <link rel="icon" href="./dist/img/favicon.png" type="image/x-icon"/>
-  <link rel="stylesheet" href="./dist/css/style.css">
-</head>
+<div class="page-home">
 
-<body>
+<section class="section-wrap section-work bg-white" id="more">
+  <div class="container">
+      <h5 class="section-title">Recent Work</h5>
+      {% assign project_items = site.projects | where: "featured-home", "true" | sort: 'date' | reverse %}
+      {% for project in project_items limit:2 %}
 
-  <header class="header">
-    <div class="wrapper">
-      <div class="header__logo">
-        <span class="header__logo-text">Brick & Monitor</span>
-        <!--<img src="assets/images/logo.svg" rel="logo">-->
-      </div>
+        <a href="{{ project.url }}">
+        <div class="project-block">
+          <div class="half left">
+            <h4 class="">{{ project.title }}</h4>
+            <p>{{ project.description }}</p>
+            <a class="btn arrow" href="{{ project.url }}">Explore Project</a>
+          </div><!--/.half-->
+          <div class="half right">
+            <img src="{{site.baseurl}}/assets/images/{{project.img}}" alt="{{ project.title }}">
+          </div><!--/.half -->
+        </div><!--<!--/.project-block-->
+        </a>
 
-      <div class="header__menu-icon">
-        <div class="header__menu-icon__line"></div>
-      </div>
-      <div class="header__menu-content">
-        <div class="header__btn-container">
-          <a href="mailto:brian@brickandmonitor.com" class="btn btn--secondary u__text--upper js-modal-trigger">Contact Us</a>
-        </div>
-        <nav class="nav-primary nav-primary--pull-right">
-          <!--<ul>
-            <li>
-              <a href="#">About</a>
-            </li>
-            <li>
-              <a href="#">Work</a>
-            </li>
-            <li>
-              <a href="#">Pricing</a>
-            </li>
-          </ul>-->
-        </nav>
-      </div>
-    </div>
-  </header>
-
-  <section class="hero">
-    <div class="hero__content wrapper">
-      <!--<div class="hero__logo"></div>-->
-      <h1 class="hero__title words">
-        We make <span id="js-text-rotate-1" class="hero__title--underline">products</span> that<br /> 
-        help you <span id="js-text-rotate-2" class="hero__title--underline">sell more</span> online.
-      </h1>
-      <div class="hero__btn-container">
-        <!--<a href="#" class="btn js-modal-trigger">Modal Button</a>-->
-      </div>
-    </div>
-  </section>
-
-  <section class="project">
-    <div class="project__item">
-      <div class="project__content wrapper">
-        <h3 class="project__heading">Water Street Tampa</h3>
-        <p class="project__text">Helping reshape Tampa's vibrant vision for Water Street Tampa online.</p>
-        <a href="http://waterstreettampa.com" target="_blank" class="btn primary">Go to Project</a>
-      </div>
-    </div>
-    <div class="project__item project__item--has-image">
-      <img class="project__image" src="./dist/img/project-wst.jpg">
-    </div>
-  </section>
-
-  <section class="project">
-    <div class="project__item project__item--has-image">
-      <img class="project__image" src="./dist/img/project-merlin.jpg">
-    </div>
-    <div class="project__item">
-      <div class="project__content wrapper">
-        <h3 class="project__heading">Merlin Law Group</h3>
-        <p class="project__text">Allowing a nationwide leading insurance claim law firm to breakthrough a crowded market online.</p>
-        <a href="http://merlinlawgroup.com" target="_blank" class="btn primary">Go to Project</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="page-section page-section--lg">
-    <div class="wrapper wrapper--narrow-lg">
-      <div class="row-flex u__text--center">
-        <div class="row-flex__md-12">
-          <h3 class="heading u__text--center">Agency Quality... Without the Price Tag.</h3>
-        </div>
-        <div class="row-flex__md-12">
-          <p>Our specialty is custom design, development &amp; creative branding. When you hire us, you get the personal, devoted attention of an agency... without the overhead. We'll work hand in hand to create a connected website to help you stand-out online.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="page-section page-section--black">
-    <div class="wrapper wrapper--narrow">
+      {% endfor %}
+      <div class="project-more-wrapper row end-xs">
+        <a class="btn arrow right" href="{{ project.url }}/work">View More Projects</a>
+      </div><!--<!--/.project-more-wrapper-->
       
-      <div class="call-out call-out--is-numbers">
-        <div class="call-out__left">
-          <h3 class="call-out__number">01</h3>
-          <h2 class="call-out__title">Custom Design &amp; Development</h2>
-        </div>
-        <div class="call-out__right">
-          <p>We build long-lasting solutions that will adapt to whatever the future holds. We build solid solutions that work across platforms, screen sizes, and browsers. We have a passion for doing work that engages visitors, and converts them to sales. We work for the success stories of our clients.</p>
-            <li>E-Commerce integration</li>
-            <li>Point-of-sale integration</li>
-            <li>Web/mobile development</li>
-            <li>User experience design</li>
-        </div>
-      </div>
-
-      <div class="call-out call-out--is-numbers">
-          <div class="call-out__left">
-            <h3 class="call-out__number">02</h3>
-            <h2 class="call-out__title">Brand Activation</h2>
-          </div>
-          <div class="call-out__right">
-            <p>We create connected experiences for your brand that demands stability, performance and execution.</p>
-            <li>Strategic landing page development</li>
-            <li>Connected &amp; interactive brand experiences</li>
-            <li>Marketing collateral &amp; creative</li>
-          </div>
-        </div>
-
-        <div class="call-out call-out--is-numbers">
-            <div class="call-out__left">
-              <h3 class="call-out__number">03</h3>
-              <h2 class="call-out__title">Managing Growth</h2>
-            </div>
-            <div class="call-out__right">
-              <p>Growing rapidly and need the extra support of a dedicated team on both sides of the fence? Our on-going maintence services ensure your business can grow without any technical limitations.</p>
-              <li>On-going technical support</li>
-              <li>Website maintenance</li>
-              <li>Design maintenance</li>
-              <li>Website optimization</li>
-            </div>
-          </div>
-
-    </div>
-  </section>
+  </div><!--/.container-->
+</section>
 
 
-  <a href="mailto:brian@brickandmonitor.com">
-    <section class="page-section page-section--lg page-section--black call-out call-out--is-link call-out--has-border">
-      <div class="wrapper">
-        <div class="row-flex">
-          <div class="row-flex__md-12">
-            <h3 class="u__text--center">Let's Work Together.</h3>
-          </div>
-        </div>
-      </div>
-    </section>
-  </a>
-
-  <footer class="page-section footer footer--black footer--has-border">
-    <div class="wrapper">
-      <div class="footer__copyright">
-        <p class="u__text--center">&copy; Copyright 2018 |
-          <a href="//brickandmonitor.com">Brick &amp; Monitor</a>
-        </p>
-      </div>
-    </div>
-  </footer>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
-  <script src="./dist/js/app.js"></script>
-
-</body>
-
-</html>
+</div><!--/.page-home-->

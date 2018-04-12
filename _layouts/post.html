@@ -1,0 +1,29 @@
+---
+layout: default
+bodyclass: post
+---
+<div class="page-interior">
+<div class="post">
+    
+    <section class="section-hero {{ page.bgcolorclass }}">
+      <div class="container hero-content">
+        <h1 class="hero-title">{{ page.title }}</h1>
+        <h5 class="hero-subtitle">{{ page.subtitle }}</h5>
+        <div class="hero-scroll">
+          <a href="#more"><span></span></a>
+        </div><!--/.hero-scroll-->
+      </div><!--/.container-->
+    </section>
+    
+    <section class="interior-content section-wrap" id="more">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-8 col-sm-offset-2 entry-content">
+            {{ content }}
+          </div>
+        </div>
+      </div>
+    </section>
+    
+</div><!--/.post-->
+</div><!--/.page-itnerior-->

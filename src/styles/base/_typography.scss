@@ -1,0 +1,81 @@
+// TYPOGRAPY
+body {
+	font-family: $font-body;
+	line-height: 1.45;
+	font-weight: 100;
+	font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
+}
+h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6 {
+  font-family: $font-heading;
+	font-weight: 500;
+	line-height: 1.1;
+	word-wrap: break-word;
+	letter-spacing: 0.25px;
+}
+
+h1,
+.h1 {
+	font-size: rem(58);
+	letter-spacing: 0.5px;
+	@media (max-width: $bp-md) {
+		font-size: rem(34);
+	}
+}
+
+h2,
+.h2 {
+	font-size: rem(46);
+	@media (max-width: $bp-md) {
+	  font-size: rem(30);
+	}
+}
+
+h3,
+.h3 {
+	font-size: rem(38);
+	@media (max-width: $bp-md) {
+	  font-size: rem(26);
+	}
+}
+
+h4,
+.h4 {
+	font-size: rem(30);
+	@media (max-width: $bp-md) {
+	  font-size: rem(22);
+	}
+}
+
+h5,
+.h5 {
+	font-size: rem(22);
+	@media (max-width: $bp-md) {
+	  font-size: rem(18);
+	}
+}
+
+h6,
+.h6 {
+	font-size: rem(18);
+   @media (max-width: $bp-md) {
+     font-size: rem(16);
+	}
+}
+
+p {
+  font-size: rem(16);
+}
+ul, ol, dl {
+	font-size: rem(16);
+}
+pre {
+	padding: 20px;
+	background: $color-body;
+}
+code {
+	background: $color-body;
+	color: $color-code;
+	font-size: rem(14);
+	padding: 2px;
+}
