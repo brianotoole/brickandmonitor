@@ -13,7 +13,6 @@ function validateForm() {
 	email = $('#email').val();
 	atpos = email.indexOf('@');
 	dotpos = email.lastIndexOf('.');
-	message = $('#message').val();
 
 	if (name == null || name == '') {
 	$('#js-form-message').addClass('text-error text-large').text('* Please enter your name.');
@@ -28,11 +27,6 @@ function validateForm() {
 	if(atpos < 1 || dotpos < atpos+2 || dotpos+2 >= email.length) {
 	$('#js-form-message').addClass('text-error text-large').text('* Please enter a valid email address.');
 	$('#email').focus();
-	return false;
-	}
-	if (message == null || message == '') {
-	$('#js-form-message').addClass('text-error text-large').text('* Please enter your message.');
-	$('#message').focus();
 	return false;
 	}
 	else {
