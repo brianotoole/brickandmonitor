@@ -18,6 +18,7 @@ github_username:
 linkedin_username: 
 # Build settings
 markdown: kramdown
+permalink: pretty
 
 # Build settings
 gems:
