@@ -1872,10 +1872,11 @@ body.nav-open {
   .hero__title--underline:after {
     content: '';
     position: absolute;
-    bottom: 10px;
+    bottom: 6px;
     left: 0;
     width: 100%;
-    height: 2px;
+    height: 4px;
+    border-radius: 50px;
     background: #BF2441;
     z-index: -1; }
 
