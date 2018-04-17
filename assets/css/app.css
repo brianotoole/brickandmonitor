@@ -1540,11 +1540,11 @@ code {
   height: 100px;
   margin: 0;
   padding: 38px 35px 38px 0;
-  background-color: #111;
+  background-color: #000508;
   z-index: 300; }
   .header-main-layout:before {
     content: '';
-    background-color: #111;
+    background-color: #000508;
     left: 0;
     position: fixed;
     top: 0;
@@ -1567,8 +1567,7 @@ code {
   .logo-container img {
     margin: 0;
     margin-top: -1px;
-    width: 100%;
-    max-width: 140px; }
+    width: 200px; }
 
 .header-contact-btn {
   position: fixed;
@@ -1875,14 +1874,13 @@ body.nav-open {
     bottom: 6px;
     left: 0;
     width: 100%;
-    height: 4px;
-    border-radius: 50px;
-    background: #BF2441;
+    height: 3px;
+    background: #fff;
     z-index: -1; }
 
 .section-hero {
   min-height: 480px;
-  background: black; }
+  background: #00080d; }
   .section-hero .hero-content {
     visibility: hidden;
     position: relative;
@@ -2456,16 +2454,16 @@ svg:not(:root) {
   color: #111; }
 
 .bg-alt1 {
-  background: #010a12; }
+  background: #010d17; }
 
 .bg-alt2 {
-  background: #000508; }
+  background: #010a12; }
 
 .bg-alt3 {
-  background: black; }
+  background: #00080d; }
 
 .bg-alt4 {
-  background: black; }
+  background: #000508; }
 
 .font-heading {
   font-family: "freight-text-pro", serif; }

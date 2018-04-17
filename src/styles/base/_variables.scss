@@ -11,10 +11,10 @@ $color-body: #111;
 $color-white: #fff; 
 $color-gray: #f5f5f5;
 $color-black: #000;
-$color-alt1: darken($color-primary, 2%);
-$color-alt2: darken($color-primary, 4%);
-$color-alt3: darken($color-primary, 6%);
-$color-alt4: darken($color-primary, 8%);
+$color-alt1: darken($color-primary, 1%);
+$color-alt2: darken($color-primary, 2%);
+$color-alt3: darken($color-primary, 3%);
+$color-alt4: darken($color-primary, 4%);
 
 // Colors: components
 $color-link: darken($color-primary, 5%);
