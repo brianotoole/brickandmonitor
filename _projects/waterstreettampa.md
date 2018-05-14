@@ -1,6 +1,6 @@
 ---
 layout: project
-featured-home: true
+featured-home: false
 bodyclass: project
 date: 2017-12-01
 order: 1
