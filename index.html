@@ -3,8 +3,8 @@ layout: page
 title: Brick & Monitor - A Website Management & Creative Development Agency
 description: Brick & Monitor is a website management and creative development agency located in in Tampa, Florida. We help businesses create a faster, more stable, and reliable website. And we help brands tell their story using modern technology and progressive design. Our specialty is website development & management support plans.
 bodyclass: page-home
-bgcolorclass: bg-primary
-bgimg: 
+bgcolorclass: bg-white
+bgimg: https://avenirthinking.com/wp-content/uploads/2018/02/card-bg-01.jpg
 hero: Website support & growth management
 subtitle: Let our team take over the frustrating, and sometimes terrifying job of managing your website.
 ---
@@ -13,13 +13,8 @@ subtitle: Let our team take over the frustrating, and sometimes terrifying job o
 
 <section class="section section--white section-wrap">
     <div class="container">
-      <h4 class="title">What would it feel like to never worry about your website again?</h2>
-      <p>With our support plans you'll get:</p>
-      <ul>
-        <li>A faster, more stable, and more reliable website.</li>
-        <li>Peace of mind knowing your site is safe from hackers and spammers.</li>
-        <li>Go-to help you can trust -- No more crowdsourcing tech questions.</li>
-      </ul>
+      <h4 class="title">What we do</h2>
+      <h4 class="title title--alt">We offer website support plans and services to move our business forward with peace-of-mind.</h4>
     </div>
   <div class="wrapper wrapper--narrow">
     <div class="call-out call-out--is-numbers">
@@ -67,9 +62,19 @@ subtitle: Let our team take over the frustrating, and sometimes terrifying job o
   </div>
 </section>
 
+<section class="news-layout section-wrap bg-primary">
+  <div class="container">
+    <h5 class="section-title">Support &amp; Growth Plans</h5>
+    {% include plans-list-all.html %}
+  </div>
+</section>
+
+
+
 <section class="section-wrap section-work bg-white" id="more">
   <div class="container">
-      <h5 class="section-title">Recent Work</h5>
+      <h5 class="section-title">Interested in Custom Development?</h5>
+      <h5 class="section-subtitle">Recent Work</h5>
       {% assign project_items = site.projects | where: "featured-home", "true" | sort: 'date' %}
       {% for project in project_items limit:1 %}
 

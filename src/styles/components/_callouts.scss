@@ -3,7 +3,7 @@
 *********************************************************/
 
 .call-out {
-	position: relative;
+  position: relative;
 
 	&--is-link {
 		transition: background 0.3s ease-out;
@@ -56,6 +56,9 @@
   top: -52px;    
   left: 0;
   color: rgba(#f1f1f1, 0.15);
+  &--secondary {
+    color: rgba($color-secondary, 0.15);
+  }
 }
 .call-out__title {
   position: relative;
