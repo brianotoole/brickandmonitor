@@ -1,8 +1,8 @@
 // VARIABLES
 
 // Colors: branding
-$color-primary: #01101c; //dark blue
-$color-secondary: #BF2441; //red/pink
+$color-primary: #30402E; //dark blue
+$color-secondary: #735B46; //red/pink
 $color-tertiary: #8B8C80; //gray
 $color-code: #1bff00;
 
@@ -24,8 +24,8 @@ $color-border-base: rgba($color-body, 0.2);
 $color-border-light: rgba($color-white, 0.1);
 
 // Font Stacks
-$font-heading: "freight-text-pro", serif;
-$font-body: "proxima-nova", sans-serif;
+$font-heading: 'Roboto Slab', serif;
+$font-body: "Montserrat", sans-serif;
 $font-monospace: Menlo, Monaco, monospace;
 
 // Breakpoints, using rems
