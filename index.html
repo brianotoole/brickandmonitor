@@ -1,19 +1,77 @@
 --- 
-layout: home 
-title: Brick & Monitor - Helping Brands Adapt for What's Next
-description: Brick & Monitor is a creative development agency located in in Tampa, Florida. We help brands tell their story using modern technology and progressive design. Our specialty is custom design, development & creative branding. 
+layout: page 
+title: Brick & Monitor - A Website Management & Creative Development Agency
+description: Brick & Monitor is a website management and creative development agency located in in Tampa, Florida. We help businesses create a faster, more stable, and reliable website. And we help brands tell their story using modern technology and progressive design. Our specialty is website development & management support plans.
 bodyclass: page-home
 bgcolorclass: bg-primary
-hero: 
+bgimg: 
+hero: Website support & growth management
+subtitle: Let our team take over the frustrating, and sometimes terrifying job of managing your website.
 ---
 
 <div class="page-home">
+
+<section class="section section--white section-wrap">
+    <div class="container">
+      <h4 class="title">What would it feel like to never worry about your website again?</h2>
+      <p>With our support plans you'll get:</p>
+      <ul>
+        <li>A faster, more stable, and more reliable website.</li>
+        <li>Peace of mind knowing your site is safe from hackers and spammers.</li>
+        <li>Go-to help you can trust -- No more crowdsourcing tech questions.</li>
+      </ul>
+    </div>
+  <div class="wrapper wrapper--narrow">
+    <div class="call-out call-out--is-numbers">
+      <div class="call-out__left">
+        <h3 class="call-out__number call-out__number--secondary">01</h3>
+        <h3 class="call-out__title">Custom Design &amp; Development</h3>
+      </div>
+      <div class="call-out__right">
+        <p>We build long-lasting solutions that will adapt to whatever the future holds. We build solid solutions that work
+          across platforms, screen sizes, and browsers. We have a passion for doing work that engages visitors, and converts
+          them to sales. We work for the success stories of our clients.</p>
+        <li>Responsive web development</li>
+        <li>E-Commerce integration</li>
+        <li>Point-of-sale integration</li>
+        <li>User experience design</li>
+      </div>
+    </div>
+    <div class="call-out call-out--is-numbers">
+      <div class="call-out__left">
+        <h3 class="call-out__number call-out__number--secondary">02</h3>
+        <h3 class="call-out__title">Brand Activation</h3>
+      </div>
+      <div class="call-out__right">
+        <p>We create connected experiences for your brand that demands stability, performance and execution.</p>
+        <li>Strategic landing page development</li>
+        <li>Connected &amp; interactive brand experiences</li>
+        <li>Marketing collateral</li>
+        <li>Brand styleguides</li>
+      </div>
+    </div>
+    <div class="call-out call-out--is-numbers">
+      <div class="call-out__left">
+        <h3 class="call-out__number call-out__number--secondary">03</h3>
+        <h3 class="call-out__title">Managing Growth</h3>
+      </div>
+      <div class="call-out__right">
+        <p>Growing rapidly and need the extra support of a dedicated team on both sides of the fence? Our on-going maintence
+          services ensure your business can grow without any technical limitations.</p>
+        <li>Website maintenance</li>
+        <li>Website optimization</li>
+        <li>Design maintenance</li>
+        <li>Ongoing technical partners</li>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="section-wrap section-work bg-white" id="more">
   <div class="container">
       <h5 class="section-title">Recent Work</h5>
       {% assign project_items = site.projects | where: "featured-home", "true" | sort: 'date' %}
-      {% for project in project_items limit:2 %}
+      {% for project in project_items limit:1 %}
 
         <a href="{{ project.url }}">
         <div class="project-block">
