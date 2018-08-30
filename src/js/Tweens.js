@@ -51,7 +51,7 @@ function fadeInNavItems() {
 }
 */
 
-/*
+
 function fadeInHero() {
 	//loop through each el and build scene
 	$('.hero-content').each(function() {
@@ -73,7 +73,7 @@ function fadeInHero() {
 		.from('.hero-scroll', 0.8, {autoAlpha:0,ease: Linear.easeNone})
 	});
 }
-*/
+
 
 // Stagger News Items
 // when scrolled to triggerElement return a tween to timeline
@@ -110,7 +110,7 @@ function drawSvg() {
 // On ready
 $(function () {
 	//fadeInNavItems();
-	fadeInHero();
+	//fadeInHero();
 	drawSvg();
   // If News page
 	if ($(".page-news").length > 0) {

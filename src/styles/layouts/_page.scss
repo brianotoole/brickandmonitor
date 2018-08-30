@@ -170,6 +170,17 @@
   }
 }
 
+.interior-content--img-spacer {
+  @media (min-width: $bp-md) {
+    margin-top: -275px;
+  }
+}
+.page-home .section {
+  @media (min-width: $bp-md) {
+    padding-top: 375px;
+  }
+}
+
 .section-title {
   width: 100%;
   &--alt {
