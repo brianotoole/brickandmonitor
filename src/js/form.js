@@ -11,6 +11,7 @@ function validateForm() {
 
 	name = $('#name').val();
 	email = $('#email').val();
+	plan = $('#plan').val();
 	atpos = email.indexOf('@');
 	dotpos = email.lastIndexOf('.');
 
@@ -30,10 +31,10 @@ function validateForm() {
 	return false;
 	}
 	else {
-	  var datastring = $("#js-form").serialize();
+	  var datastring = $("#js-form").serialize() + '&Plan=' + plan;
 	  $.ajax({
 	    //send the form using formspree
-	    url: "//formspree.io/brian@brickandmonitor.com", 
+	    url: "https://formcarry.com/s/gR62L1N7cgF", 
 	    method: "POST",
 	    data: datastring,
 	    dataType: "json"
