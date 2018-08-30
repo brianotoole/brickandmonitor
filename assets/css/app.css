@@ -2130,7 +2130,10 @@ body.nav-open {
     text-transform: uppercase; }
 
 .posts-wrapper--plan .post-item {
+  -ms-flex: 1 0 calc(25% - 10px);
+      flex: 1 0 calc(25% - 10px);
   height: auto;
+  margin: 5px;
   padding: 0; }
 
 .contact-wrapper {
@@ -2479,6 +2482,9 @@ svg:not(:root) {
   .pricing-table .plan ul.details {
     list-style-type: none;
     padding: 0; }
+    @media (min-width: 50rem) {
+      .pricing-table .plan ul.details {
+        height: 275px; } }
     .pricing-table .plan ul.details li {
       border-bottom: 1px solid #B3B9C4;
       padding: 15px; }

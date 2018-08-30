@@ -409,7 +409,9 @@
 // Plans
 .posts-wrapper--plan {
   .post-item {
+    flex: 1 0 calc(25% - 10px);
     height: auto;
+    margin: 5px;
     padding: 0;
   }
 }

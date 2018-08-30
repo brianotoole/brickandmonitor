@@ -28,7 +28,10 @@
 
 		ul.details{
       list-style-type: none;
-      padding: 0;
+			padding: 0;
+			@media (min-width: $bp-md) {
+				height: 275px;
+			}
 
 			li{
 				border-bottom: 1px solid #B3B9C4;
