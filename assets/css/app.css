@@ -2455,12 +2455,14 @@ svg:not(:root) {
     background-color: white;
     color: #000; }
   .pricing-table .plan h3.name {
+    font-family: "proxima-nova", sans-serif;
     background-color: #000;
     margin: 0;
     padding: 30px;
     color: #735B46;
     border-bottom: 1px solid #B3B9C4; }
   .pricing-table .plan h4.price {
+    font-family: "proxima-nova", sans-serif;
     color: #fff;
     margin: 0;
     padding: 15px; }
@@ -2482,6 +2484,8 @@ svg:not(:root) {
       position: relative;
       background: #735B46;
       color: #fff; }
+      .pricing-table .plan h5.order .btn:hover {
+        color: #fff; }
   .pricing-table .plan:last-child h4.price {
     background-color: #444242; }
   .pricing-table .plan:nth-child(2n) {
