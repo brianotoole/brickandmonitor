@@ -196,6 +196,17 @@
   .interior-title {}
 }
 
+
+// Page-home
+.page-home {
+  .section-hero {
+    min-height: 380px;
+  }
+  .hero-content {
+    padding-bottom: 0;
+  }
+}
+
 // Page-about
 .page-about {}
 // About intro

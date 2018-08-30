@@ -16,7 +16,7 @@ bodyclass: page-interior
 
 <div class="interior-content" id="more">
   <div class="container">
-      {% if page.bgimg %}<img src="{{ page.bgimg }}"/>{% endif %}
+      {% if page.bgimg %}<img src="{{site.url}}/assets/images/{{ page.bgimg }}"/>{% endif %}
   </div>
   {{ content }}
 </div>

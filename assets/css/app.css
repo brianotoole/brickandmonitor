@@ -2040,6 +2040,12 @@ body.nav-open {
   position: relative;
   background: #fff; }
 
+.page-home .section-hero {
+  min-height: 380px; }
+
+.page-home .hero-content {
+  padding-bottom: 0; }
+
 .about-wrapper {
   display: -ms-flexbox;
   display: flex;
