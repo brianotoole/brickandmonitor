@@ -2474,7 +2474,8 @@ svg:not(:root) {
     margin: 0;
     padding: 15px; }
     .pricing-table .plan h4.price span {
-      font-size: 16px; }
+      font-size: 0.9rem;
+      color: #636363; }
   .pricing-table .plan ul.details {
     list-style-type: none;
     padding: 0; }
