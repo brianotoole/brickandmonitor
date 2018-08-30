@@ -14,11 +14,11 @@
   height: 100px;
   margin: 0;
   padding: 38px 35px 38px 0;
-  background-color: $color-alt4;
+  background-color: $color-black;
   z-index: 300;
   &:before {
     content: '';
-    background-color: $color-alt4;
+    background-color: $color-black;
     left: 0;
     position: fixed;
     top: 0;
@@ -141,7 +141,7 @@
   text-transform: uppercase;
   overflow: hidden;
   transform: translateY(-100%) translateZ(0);
-  transition: transform 1s cubic-bezier(.75,0,.25,1), visibility 0s 1s;
+  transition: transform 0.5s cubic-bezier(.75,0,.25,1), visibility 0s 0.1s;
   &.nav-open {
     visibility: visible;
     transition-delay: 0s, 0s;

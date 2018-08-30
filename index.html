@@ -13,68 +13,23 @@ subtitle: Let our team take over the frustrating, and sometimes terrifying job o
 
 <section class="section section--white section-wrap">
     <div class="container">
-      <h4 class="title">What we do</h2>
-      <h4 class="title title--alt">We offer website support plans and services to move our business forward with peace-of-mind.</h4>
+      <h4 class="section-title">What we do</h2>
+      <h4 class="section-title section-title--alt">We offer website support plans &amp; services, so you can stop worrying about managing your website and focus on your business.</h4>
     </div>
-  <div class="wrapper wrapper--narrow">
-    <div class="call-out call-out--is-numbers">
-      <div class="call-out__left">
-        <h3 class="call-out__number call-out__number--secondary">01</h3>
-        <h3 class="call-out__title">Custom Design &amp; Development</h3>
-      </div>
-      <div class="call-out__right">
-        <p>We build long-lasting solutions that will adapt to whatever the future holds. We build solid solutions that work
-          across platforms, screen sizes, and browsers. We have a passion for doing work that engages visitors, and converts
-          them to sales. We work for the success stories of our clients.</p>
-        <li>Responsive web development</li>
-        <li>E-Commerce integration</li>
-        <li>Point-of-sale integration</li>
-        <li>User experience design</li>
-      </div>
-    </div>
-    <div class="call-out call-out--is-numbers">
-      <div class="call-out__left">
-        <h3 class="call-out__number call-out__number--secondary">02</h3>
-        <h3 class="call-out__title">Brand Activation</h3>
-      </div>
-      <div class="call-out__right">
-        <p>We create connected experiences for your brand that demands stability, performance and execution.</p>
-        <li>Strategic landing page development</li>
-        <li>Connected &amp; interactive brand experiences</li>
-        <li>Marketing collateral</li>
-        <li>Brand styleguides</li>
-      </div>
-    </div>
-    <div class="call-out call-out--is-numbers">
-      <div class="call-out__left">
-        <h3 class="call-out__number call-out__number--secondary">03</h3>
-        <h3 class="call-out__title">Managing Growth</h3>
-      </div>
-      <div class="call-out__right">
-        <p>Growing rapidly and need the extra support of a dedicated team on both sides of the fence? Our on-going maintence
-          services ensure your business can grow without any technical limitations.</p>
-        <li>Website maintenance</li>
-        <li>Website optimization</li>
-        <li>Design maintenance</li>
-        <li>Ongoing technical partners</li>
-      </div>
-    </div>
-  </div>
+    {% include what-we-do.html %}
 </section>
 
 <section class="news-layout section-wrap bg-primary">
   <div class="container">
-    <h5 class="section-title">Support &amp; Growth Plans</h5>
+    <h5 class="section-title section-title--underline">Support &amp; Growth Plans</h5>
     {% include plans-list-all.html %}
   </div>
 </section>
 
-
-
 <section class="section-wrap section-work bg-white" id="more">
   <div class="container">
-      <h5 class="section-title">Interested in Custom Development?</h5>
-      <h5 class="section-subtitle">Recent Work</h5>
+      <h4 class="section-title">Interested in Custom Development?</h4>
+      <h4 class="section-title section-title--alt">Recent Work</h4>
       {% assign project_items = site.projects | where: "featured-home", "true" | sort: 'date' %}
       {% for project in project_items limit:1 %}
 
@@ -83,7 +38,7 @@ subtitle: Let our team take over the frustrating, and sometimes terrifying job o
           <div class="half left">
             <h4 class="">{{ project.title }}</h4>
             <p>{{ project.description }}</p>
-            <a class="btn arrow" href="{{ project.url }}">Explore Project</a>
+            <a class="btn arrow" href="{{ project.url }}">See More</a>
           </div><!--/.half-->
           <div class="half right">
             <img src="{{site.baseurl}}/assets/images/{{project.img}}" alt="{{ project.title }}">
@@ -93,7 +48,7 @@ subtitle: Let our team take over the frustrating, and sometimes terrifying job o
 
       {% endfor %}
       <div class="project-more-wrapper row end-xs">
-        <a class="btn arrow right" href="{{ project.url }}/work">View More Projects</a>
+        <a class="btn arrow right" href="{{ project.url }}/work">View More Work</a>
       </div><!--<!--/.project-more-wrapper-->
       
   </div><!--/.container-->

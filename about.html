@@ -2,7 +2,7 @@
 layout: page-about
 title: About 
 bgcolorclass: bg-alt4
-hero: Helping brands adapt to what's next online
+hero: Helping manage and grow your website, so your business can grow in tandem
 subtitle:
 bodyclass: page-about 
 ---
@@ -11,7 +11,7 @@ bodyclass: page-about
   <div class="container">
     <div class="about-wrapper">
       <div class="half left">
-        <h6 class="section-title">Background</h6>
+        <h4 class="section-title section-title--underline">Background</h4>
         <div class="about-content">
           <p>Our specialty is custom design, development &amp; creative branding. When you hire us, you get the personal, devoted attention of an agency -- without the overhead.
           </p>
@@ -19,14 +19,14 @@ bodyclass: page-about
         </div><!--/.about-content-->
       </div><!--/.half.left-->
       <div class="half right">
-        <h6 class="section-title">Services</h6>
+        <h4 class="section-title section-title--underline">Services</h4>
         <div class="about-content">
           <p>We specialize in building full-stack web experiences using the latest in modern web development. We are passionate about crafting a custom workflow and architecture that emphasizes speed and performance.</p>
           <ul class="about-service-list">
-            <li class="half service-item">Creative strategy</li>
+            <li class="half service-item">Website support &amp; growth</li>
             <li class="half service-item">Web/mobile development</li>
-            <li class="half service-item">Digital production management</li>
-            <li class="half service-item">Brand advertising</li>
+            <li class="half service-item">Website production management</li>
+            <li class="half service-item">Brand activation</li>
           </ul>
         </div><!--/.about-content-->
       </div><!--/.half.left-->
@@ -35,79 +35,12 @@ bodyclass: page-about
 </section>
 
 <section class="section section--black section-wrap">
-  <div class="wrapper wrapper--narrow">
-    <div class="call-out call-out--is-numbers">
-      <div class="call-out__left">
-        <h3 class="call-out__number">01</h3>
-        <h3 class="call-out__title">Custom Design &amp; Development</h3>
-      </div>
-      <div class="call-out__right">
-        <p>We build long-lasting solutions that will adapt to whatever the future holds. We build solid solutions that work across platforms, screen sizes, and browsers. We have a passion for doing work that engages visitors, and converts them to sales. We work for the success stories of our clients.</p>
-        <li>Responsive web development</li>
-        <li>E-Commerce integration</li>
-        <li>Point-of-sale integration</li>
-        <li>User experience design</li>
-      </div>
-    </div>
-    <div class="call-out call-out--is-numbers">
-      <div class="call-out__left">
-        <h3 class="call-out__number">02</h3>
-        <h3 class="call-out__title">Brand Activation</h3>
-      </div>
-      <div class="call-out__right">
-        <p>We create connected experiences for your brand that demands stability, performance and execution.</p>
-        <li>Strategic landing page development</li>
-        <li>Connected &amp; interactive brand experiences</li>
-        <li>Marketing collateral</li>
-        <li>Brand styleguides</li>
-      </div>
-    </div>
-    <div class="call-out call-out--is-numbers">
-      <div class="call-out__left">
-        <h3 class="call-out__number">03</h3>
-        <h3 class="call-out__title">Managing Growth</h3>
-      </div>
-      <div class="call-out__right">
-        <p>Growing rapidly and need the extra support of a dedicated team on both sides of the fence? Our on-going maintence services ensure your business can grow without any technical limitations.</p>
-        <li>Website maintenance</li>
-        <li>Website optimization</li>
-        <li>Design maintenance</li>
-        <li>Ongoing technical partners</li>
-      </div>
-    </div>
-  </div>
+    {% include what-we-do.html %}
 </section>
 
-<section class="work-process section--white section-wrap group">
-  <div class="container">
-    <h6 class="section-title has-underline">Our Creative Development Process</h6>
-    <div class="work-process-wrapper">
-      <div class="half left work-process-content" data-title="Part 1">
-        <h5 class="text-no-transform">Research</h5>
-        <p>Understanding competitive landscapes, markets, industries, behaviors and needs to inform an effective project strategy.</p>
-      </div><!--/.half.left-->
-      <div class="half right work-process-content" data-title="Part 2">
-        <h5 class="text-no-transform">Discovery</h5>
-        <p>Discussing project timeline and key milestones. Learning and understanding the problems to be solved.</p>
-      </div><!--/.half.right-->
-      <div class="half left work-process-content" data-title="Part 3">
-        <h5 class="text-no-transform">Planning &amp; Content</h5>
-        <p>Refining the functional requirements for the Design and Development stages and planning the content architecture.</p>
-      </div><!--/.half.left-->
-      <div class="half right work-process-content" data-title="Part 4">
-        <h5 class="text-no-transform">Design &amp; Workflow</h5>
-        <p>Applying the learnings from planning session into a visual represenation of end product. Then, creating the development roadmap. </p>
-      </div><!--/.half.right-->
-      <div class="half left work-process-content" data-title="Part 5">
-        <h5 class="text-no-transform">Development</h5>
-        <p>Implementing the functionality decided upon in the Discovery, Research, Planning and Design stages. Internal quality testing and verification of feature completion.</p>
-      </div><!--/.half.left-->
-      <div class="half right work-process-content" data-title="Part 6">
-        <h5 class="text-no-transform">Refine &amp; Launch</h5>
-        <p>Reviewing the functionality of the product with the customer against the established acceptance criteria in a testing environment and launching once approved.</p>
-      </div><!--/.half.right-->
-      
-      </div>
-    </div><!--/.work-process-wrapper-->
-  </div><!--/.container-->
-</section>
+<section class="news-layout section-wrap bg-primary">
+    <div class="container">
+      <h4 class="section-title section-title--underline">Support &amp; Growth Plans</h4>
+      {% include plans-list-all.html %}
+    </div>
+  </section>

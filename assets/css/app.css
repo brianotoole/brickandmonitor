@@ -102,12 +102,12 @@ sup {
   top: -.5em; }
 
 a {
-  color: #253123;
+  color: #444242;
   text-decoration: underline;
   background-color: transparent;
   -webkit-text-decoration-skip: objects; }
   a:hover, a:focus {
-    color: #0f130e; }
+    color: #1d1c1c; }
 
 a:not([href]):not([tabindex]) {
   text-decoration: none; }
@@ -1636,11 +1636,11 @@ code {
   height: 100px;
   margin: 0;
   padding: 38px 35px 38px 0;
-  background-color: #273425;
+  background-color: #000;
   z-index: 300; }
   .header-main-layout:before {
     content: '';
-    background-color: #273425;
+    background-color: #000;
     left: 0;
     position: fixed;
     top: 0;
@@ -1770,7 +1770,7 @@ code {
   text-transform: uppercase;
   overflow: hidden;
   transform: translateY(-100%) translateZ(0);
-  transition: transform 1s cubic-bezier(0.75, 0, 0.25, 1), visibility 0s 1s; }
+  transition: transform 0.5s cubic-bezier(0.75, 0, 0.25, 1), visibility 0s 0.1s; }
   .nav-mobile.nav-open {
     visibility: visible;
     transition-delay: 0s, 0s;
@@ -1981,7 +1981,7 @@ body.nav-open {
     padding-top: 160px;
     padding-bottom: 110px;
     max-width: 90%;
-    color: #111; }
+    color: #fff; }
     @media (max-width: 50rem) {
       .section-hero .hero-content {
         max-width: 100%; } }
@@ -2011,6 +2011,9 @@ body.nav-open {
       transform: rotate(-45deg);
       animation: scrollDown 1.5s infinite; }
 
+.page-home .hero-content {
+  color: #111; }
+
 .section-hero--has-img {
   position: relative;
   background-size: cover !important;
@@ -2025,11 +2028,13 @@ body.nav-open {
     background: rgba(48, 64, 46, 0.05); }
 
 .section-title, .section-heading {
-  width: 100%;
-  font-size: 1rem;
-  margin-bottom: 50px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #D1D3D4; }
+  width: 100%; }
+  .section-title--alt {
+    color: #444242; }
+  .section-title--underline {
+    border-bottom: 1px solid #D1D3D4;
+    margin-bottom: 50px;
+    padding-bottom: 20px; }
 
 .page-interior .interior-content {
   position: relative;
@@ -2565,11 +2570,10 @@ svg:not(:root) {
     font-size: 17px; }
     .pricing-table .plan h5.order .btn {
       display: block;
-      position: relative; }
-  .pricing-table .plan:first-child h4.price {
-    background-color: #30402E; }
+      position: relative;
+      color: #735B46; }
   .pricing-table .plan:last-child h4.price {
-    background-color: #735B46; }
+    background-color: #444242; }
   .pricing-table .plan:nth-child(2n) {
     box-shadow: 0px 0px 10px #424242;
     z-index: 100; }

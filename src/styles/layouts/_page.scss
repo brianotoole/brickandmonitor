@@ -110,7 +110,7 @@
     padding-top: 160px;
     padding-bottom: 110px;
     max-width: 90%;
-    color: $color-body;
+    color: #fff;
     @media (max-width: $bp-md) {
       max-width: 100%;
     }
@@ -151,6 +151,10 @@
 
 }
 
+.page-home .hero-content {
+  color: $color-body;
+}
+
 .section-hero--has-img {
   position: relative;
   background-size: cover !important;
@@ -168,11 +172,16 @@
 
 .section-title {
   width: 100%;
-  font-size: rem(16);
-  margin-bottom: 50px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid $color-border;
+  &--alt {
+    color: $color-tertiary;
+  }
+  &--underline {
+    border-bottom: 1px solid $color-border;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+  }
 }
+
 .section-heading {
   @extend .section-title;
 }

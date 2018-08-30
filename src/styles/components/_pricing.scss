@@ -38,16 +38,11 @@
       .btn {
         display: block;
         position: relative;
+        color: $color-secondary;
       }
 		}
-
-
-		&:first-child{
-			h4.price{background-color: $color-primary;}
-		}
-
 		&:last-child{
-			h4.price{background-color: $color-secondary;}
+			h4.price{background-color: $color-tertiary;}
 		}
 
 		&:nth-child(2n){box-shadow: 0px 0px 10px #424242; z-index:100;}

@@ -2,8 +2,8 @@
   * Rotating Words
   */
 
- let terms1 = ["products", "websites", "brands"]; //nouns
- let terms2 = ["sell more", "standout", "adapt"]; //adjectives
+ let terms1 = ["manage websites", "build products", "create systems"]; //nouns
+ let terms2 = ["scale your business", "sell more", "adapt"]; //adjectives
  
  function rotateTerm1() {
    var ct = $("#js-text-rotate-1").data("term") || 0;
