@@ -1976,7 +1976,6 @@ body.nav-open {
   min-height: 480px;
   background: #293728; }
   .section-hero .hero-content {
-    visibility: hidden;
     position: relative;
     padding-top: 160px;
     padding-bottom: 110px;

@@ -15,7 +15,7 @@ var controller = new ScrollMagic.Controller();
 $(document).ready(function () {
 	tl
 	  .set('.pre-loader', {className:"+=is-loading"})
-		.fromTo('.is-loading', 0.25, {width:"0%"}, {width: "100%", ease: Power0.easeNone })
+		.fromTo('.is-loading', 0.5, {width:"0%"}, {width: "100%", ease: Power0.easeNone })
 		//.fromTo('.is-loading', 0.25, {width: "100%"}, {backgroundColor: "white",width: "0%", ease: Power0.easeNone})
 		.set('.pre-loader', {className:"-=is-loading"})
 });
@@ -51,6 +51,7 @@ function fadeInNavItems() {
 }
 */
 
+/*
 function fadeInHero() {
 	//loop through each el and build scene
 	$('.hero-content').each(function() {
@@ -72,6 +73,7 @@ function fadeInHero() {
 		.from('.hero-scroll', 0.8, {autoAlpha:0,ease: Linear.easeNone})
 	});
 }
+*/
 
 // Stagger News Items
 // when scrolled to triggerElement return a tween to timeline
