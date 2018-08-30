@@ -158,7 +158,7 @@ table {
 caption {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-  color: #735b46;
+  color: #30402E;
   text-align: left;
   caption-side: bottom; }
 
@@ -1646,14 +1646,14 @@ code {
       left: 50%;
       right: 50%;
       bottom: 0;
-      background: #735b46;
+      background: #30402E;
       height: 2px;
       transition-property: left, right;
       transition-duration: 0.3s;
       transition-timing-function: ease-out; }
     .nav-primary a:hover {
       text-decoration: none;
-      color: #735b46; }
+      color: #30402E; }
     .nav-primary a:hover:before {
       left: 0;
       right: 0; }
@@ -1746,7 +1746,7 @@ body.nav-open {
     text-decoration: none;
     transition: color 0.2s ease-in-out; }
     .nav-mobile-wrap a:hover, .nav-mobile-wrap a:focus {
-      color: #735b46; }
+      color: #30402E; }
 
 .nav-toggle {
   width: 35px;
@@ -1772,7 +1772,7 @@ body.nav-open {
     .nav-toggle .line.line-3 {
       top: 100%; }
   .nav-toggle:hover .line-1, .nav-toggle:hover .line-2, .nav-toggle:hover .line-3, .nav-toggle:focus .line-1, .nav-toggle:focus .line-2, .nav-toggle:focus .line-3 {
-    background: #735b46;
+    background: #30402E;
     transition: 0.2s all ease-in-out; }
   .nav-toggle:hover .line-1, .nav-toggle:focus .line-1 {
     transform: translateY(-1.5px);
@@ -1990,7 +1990,7 @@ body.nav-open {
     padding-left: 60px;
     position: relative; }
     .work-process-wrapper .work-process-content:before {
-      color: #735b46;
+      color: #30402E;
       content: attr(data-title);
       font-size: 0.875rem;
       left: 0;
@@ -2108,7 +2108,7 @@ body.nav-open {
       .posts-wrapper .post-item:hover *, .posts-wrapper .post-item:focus * {
         color: #111; }
       .posts-wrapper .post-item:hover .btn.arrow, .posts-wrapper .post-item:focus .btn.arrow {
-        color: #735b46;
+        color: #30402E;
         background: black; }
         .posts-wrapper .post-item:hover .btn.arrow:after, .posts-wrapper .post-item:focus .btn.arrow:after {
           margin-left: 14px; }
@@ -2175,7 +2175,7 @@ body.nav-open {
   padding: 80px 0;
   transition: background 0.25s ease-in-out; }
   .footer-link-wrap:hover, .footer-link-wrap:focus {
-    background: #735b46;
+    background: #30402E;
     color: #ffffff; }
 
 .footer-copy {
@@ -2197,7 +2197,7 @@ body.nav-open {
   .pre-loader.is-loading {
     position: absolute;
     overflow: hidden;
-    background: #735b46;
+    background: #30402E;
     z-index: 1; }
 
 .btn {
@@ -2223,11 +2223,11 @@ body.nav-open {
       color: #ffffff;
       background-color: #0f130e; }
   .btn.secondary {
-    background-color: #735b46;
+    background-color: #30402E;
     transition: all 0.2s linear; }
     .btn.secondary:hover {
       color: #ffffff;
-      background-color: #433529; }
+      background-color: #0f130e; }
   .btn.white {
     background-color: #ffffff;
     transition: all 0.2s linear;
@@ -2261,7 +2261,7 @@ body.nav-open {
       margin-left: 10px;
       transition: margin-left 0.2s ease-in-out; }
     .btn.arrow:hover {
-      color: #735b46; }
+      color: #30402E; }
       .btn.arrow:hover:after {
         margin-left: 14px; }
 
@@ -2290,7 +2290,7 @@ select {
   textarea:focus,
   select:active,
   select:focus {
-    border-color: #735b46; }
+    border-color: #30402E; }
 
 @media (min-width: 50rem) {
   textarea {
@@ -2390,7 +2390,7 @@ svg:not(:root) {
     transition: background 0.3s ease-out;
     cursor: pointer; }
     .call-out--is-link:hover {
-      background-color: #735b46; }
+      background-color: #30402E; }
   .call-out--has-border {
     border-top: 1px solid rgba(255, 255, 255, 0.1); }
 
@@ -2435,7 +2435,7 @@ svg:not(:root) {
   left: 0;
   color: rgba(241, 241, 241, 0.15); }
   .call-out__number--secondary {
-    color: rgba(115, 91, 70, 0.5); }
+    color: rgba(48, 64, 46, 0.5); }
 
 .call-out__title {
   position: relative;
@@ -2488,7 +2488,7 @@ svg:not(:root) {
     .pricing-table .plan h5.order .btn {
       display: block;
       position: relative;
-      background: #735b46;
+      background: #30402E;
       color: #ffffff; }
       .pricing-table .plan h5.order .btn:hover {
         color: #ffffff; }
@@ -2500,7 +2500,7 @@ svg:not(:root) {
   color: #30402E; }
 
 .text-secondary {
-  color: #735b46; }
+  color: #30402E; }
 
 .text-body {
   color: #111; }
@@ -2514,7 +2514,7 @@ svg:not(:root) {
   color: #ffffff; }
 
 .bg-secondary {
-  background: #735b46;
+  background: #30402E;
   color: #111; }
 
 .bg-black {
@@ -2654,7 +2654,7 @@ svg:not(:root) {
   left: 0;
   right: 100%;
   top: 0;
-  background: #735b46;
+  background: #30402E;
   height: 2px;
   transition-property: right;
   transition-duration: 0.3s;
