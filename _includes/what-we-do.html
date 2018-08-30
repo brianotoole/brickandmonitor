@@ -12,7 +12,7 @@
           <li>Website maintenance</li>
           <li>Website enhancements</li>
           <li>Ongoing technical partners</li>
-          <a href="#" class="link">See Plans</a>
+          <a href="{{ project.url }}/#website-support-plans" class="link">See Plans</a>
         </div>
       </div>
 
@@ -29,7 +29,7 @@
             <li>E-Commerce integration</li>
             <li>Point-of-sale integration</li>
             <li>User experience design</li>
-            <a href="#" class="link">See Work</a>
+            <a href="{{ project.url }}/work" class="link">See Work</a>
           </div>
         </div>
 
@@ -44,7 +44,37 @@
         <li>Connected &amp; interactive brand experiences</li>
         <li>Marketing collateral</li>
         <li>Brand styleguides</li>
-        <a href="#" class="link">Contact Us</a>
+        <a href="{{ project.url }}/contact/#contact" class="link">Contact Us</a>
+        <script src="https://checkout.stripe.com/checkout.js"></script>
+
+<button id="customButton">Purchase</button>
+
+<script>
+var handler = StripeCheckout.configure({
+  key: 'pk_test_DjcMhbhrGbwa8h7tSEDRfVBE',
+  image: 'https://stripe.com/img/documentation/checkout/marketplace.png',
+  locale: 'auto',
+  token: function(token) {
+    // You can access the token ID with `token.id`.
+    // Get the token ID to your server-side code for use.
+  }
+});
+
+document.getElementById('customButton').addEventListener('click', function(e) {
+  // Open Checkout with further options:
+  handler.open({
+    name: 'Brick and Monitor',
+    description: '2 widgets',
+    amount: 2000
+  });
+  e.preventDefault();
+});
+
+// Close Checkout on page navigation:
+window.addEventListener('popstate', function() {
+  handler.close();
+});
+</script>
       </div>
     </div>
 
