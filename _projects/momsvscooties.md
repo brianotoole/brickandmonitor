@@ -6,7 +6,7 @@ date: 2016-12-01
 order: 3
 img: project-mac.jpg
 link: https://momsagainstcooties.com
-bgcolor: 33b5ab
+bgcolor: 111111
 textcolor: ffffff
 title: Mom's Against Cooties
 subtitle: Provided strategy for user experience and web development for a comprehensive website redesign

@@ -6,7 +6,7 @@ date: 2018-04-02
 order: 2
 img: project-marriott.jpg
 link: https://jwmarriott.waterstreettampa.com
-bgcolor: 282f31
+bgcolor: 111111
 textcolor: ffffff
 title: The JW Marriott Tampa
 subtitle: Providing enriching experiences and innovative spaces in a world-class waterfront neighborhood.

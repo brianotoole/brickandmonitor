@@ -5,7 +5,7 @@ bodyclass: project
 date: 2017-11-01
 img: project-channelside.jpg
 link: http://channelsidetampa.com
-bgcolor: 555555
+bgcolor: 111111
 textcolor: ffffff
 title: Channelside Tampa
 subtitle: 

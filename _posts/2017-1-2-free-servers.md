@@ -3,7 +3,8 @@ layout: post
 title: Free Cloud Servers
 category: development
 description: 
-bgcolorclass: bg-alt2
+bgcolorclass: bg-body
+textcolor: ffffff
 ---
 
 > When opting for cloud hosting, clients are renting virtual server space rather than renting or purchasing physical servers. These typically can cost a ton of money.... here's how to set one up for free.

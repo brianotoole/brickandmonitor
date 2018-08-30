@@ -5,7 +5,7 @@ bodyclass: project
 date: 2016-11-01
 img: project-jags.jpg
 link: http://didjagswin.com
-bgcolor: 00434e
+bgcolor: 111111
 textcolor: ffffff
 title: Did the Jags Win?
 subtitle:

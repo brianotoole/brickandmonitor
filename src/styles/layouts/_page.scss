@@ -96,21 +96,21 @@
       left: 0;
       width: 100%;
       height: 3px;
-      background: $color-white;
+      background: $color-body;
       z-index: -1;
     }
   }
 }
 .section-hero {
   min-height: 480px;
-  background: $color-alt3;
+  background: $color-white;
   .hero-content {
     //visibility: hidden; //vibible added with tween
     position: relative;
     padding-top: 160px;
     padding-bottom: 110px;
     max-width: 90%;
-    color: #fff;
+    color: $color-body;
     @media (max-width: $bp-md) {
       max-width: 100%;
     }
@@ -129,7 +129,7 @@
     margin-left: 15px;
     z-index: 1;
     a { //if text is used
-      color: $color-white;
+      color: $color-body;
       font-size: rem(14);
       font-style: italic;
       text-decoration: none;
@@ -142,8 +142,8 @@
       width: 1em;
       height: 1em;
       margin-left: -9px;
-      border-left: 1px solid rgba($color-white, 0.8);
-      border-bottom: 1px solid rgba($color-white, 0.8);
+      border-left: 1px solid rgba($color-black, 0.8);
+      border-bottom: 1px solid rgba($color-black, 0.8);
       transform: rotate(-45deg);
       animation: scrollDown 1.5s infinite;
     }
@@ -151,9 +151,6 @@
 
 }
 
-.page-home .hero-content {
-  color: $color-body;
-}
 
 .section-hero--has-img {
   position: relative;
@@ -365,8 +362,8 @@
     min-height: 400px;
     margin: 20px;
     padding: 50px;
-    color: $color-white;
-    //background: $color-alt1;
+    color: $color-body;
+    background: $color-white;
     transition: background 0.2s ease-in-out, color 0.25s ease-in-out;
     @media (max-width: $bp-md) {
       flex-basis: calc(100% - 40px);
@@ -387,7 +384,7 @@
       }
     }
     a {
-      color: $color-white;
+      color: $color-body;
       text-decoration: none;
     }
     .btn.arrow {

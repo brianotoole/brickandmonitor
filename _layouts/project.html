@@ -5,12 +5,12 @@ bodyclass: project
 
 <div class="page-interior">
 
-  <section class="section-hero" style="background-color:#{{ page.bgcolor }}!important;color:#{{ page.textcolor }};">
+  <section class="section-hero" style="background-color:#{{ page.bgcolor }}!important;color:#{{ page.textcolor }}!important;">
     <div class="container">
       <div class="row hero-content">
         <div class="col-xs-12 col-sm-10">
-          <h1 class="hero-title">{{ page.title }}</h1>
-          <h5 class="hero-subtitle">{{ page.subtitle }}</h5>
+          <h1 class="hero-title" style="color:#{{ page.textcolor }}!important;">{{ page.title }}</h1>
+          <h5 class="hero-subtitle" style="color:#{{ page.textcolor }}!important;">{{ page.subtitle }}</h5>
           <div class="hero-scroll">
             <a href="#more"><span></span></a>
           </div><!--/.hero-scroll-->

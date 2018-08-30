@@ -3,7 +3,8 @@ layout: post
 title: Element Queries in Sass
 category: development
 description: Nesting media queries within the selector is much more easier to control for scalable css architecture.
-bgcolorclass: bg-alt1
+bgcolorclass: bg-body
+textcolor: ffffff
 
 ---
 

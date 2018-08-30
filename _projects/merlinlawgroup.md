@@ -6,7 +6,7 @@ date: 2017-11-01
 order: 2
 img: project-merlin.jpg
 link: http://merlinlawgroup.com
-bgcolor: 293a42
+bgcolor: 111111
 textcolor: ffffff
 title: Merlin Law Group
 subtitle: Helping a nationwide insurance claim litigation law firm breakthrough the competition with a smarter online presence

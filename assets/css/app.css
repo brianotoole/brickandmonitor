@@ -1739,15 +1739,14 @@ body.nav-open {
     display: block;
     padding: 15px 0;
     font-family: "proxima-nova", sans-serif;
-    color: #30402E;
+    color: #111;
     font-size: 1.75rem;
     font-weight: 700;
     text-align: center;
     text-decoration: none;
-    transition: background 0.2s ease-in-out, color 0.2s ease-in-out; }
+    transition: color 0.2s ease-in-out; }
     .nav-mobile-wrap a:hover, .nav-mobile-wrap a:focus {
-      background: #735b46;
-      color: #fafafa; }
+      color: #735b46; }
 
 .nav-toggle {
   width: 35px;
@@ -1783,13 +1782,13 @@ body.nav-open {
   .nav-toggle:hover .line-3, .nav-toggle:focus .line-3 {
     transform: translateY(1.5px);
     transition-delay: 100ms; }
-  .nav-toggle.active .line-1, .nav-toggle.active .line-2, .nav-toggle.active .line-3 {
-    background: #735b46; }
-  .nav-toggle.active .line-1 {
+  .nav-toggle.active .line-1, .nav-toggle.active .line-2, .nav-toggle.active .line-3, .nav-toggle:focus .line-1, .nav-toggle:focus .line-2, .nav-toggle:focus .line-3 {
+    background: #ffffff; }
+  .nav-toggle.active .line-1, .nav-toggle:focus .line-1 {
     transform: translateY(10px) translateX(0) rotate(45deg); }
-  .nav-toggle.active .line-2 {
+  .nav-toggle.active .line-2, .nav-toggle:focus .line-2 {
     opacity: 0; }
-  .nav-toggle.active .line-3 {
+  .nav-toggle.active .line-3, .nav-toggle:focus .line-3 {
     transform: translateY(-10px) translateX(0) rotate(-45deg); }
 
 .container {
@@ -1872,18 +1871,18 @@ body.nav-open {
     left: 0;
     width: 100%;
     height: 3px;
-    background: #ffffff;
+    background: #111;
     z-index: -1; }
 
 .section-hero {
   min-height: 480px;
-  background: #293728; }
+  background: #ffffff; }
   .section-hero .hero-content {
     position: relative;
     padding-top: 160px;
     padding-bottom: 110px;
     max-width: 90%;
-    color: #fff; }
+    color: #111; }
     @media (max-width: 50rem) {
       .section-hero .hero-content {
         max-width: 100%; } }
@@ -1896,7 +1895,7 @@ body.nav-open {
     margin-left: 15px;
     z-index: 1; }
     .section-hero .hero-scroll a {
-      color: #ffffff;
+      color: #111;
       font-size: 0.875rem;
       font-style: italic;
       text-decoration: none;
@@ -1908,13 +1907,10 @@ body.nav-open {
       width: 1em;
       height: 1em;
       margin-left: -9px;
-      border-left: 1px solid rgba(255, 255, 255, 0.8);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+      border-left: 1px solid rgba(0, 0, 0, 0.8);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.8);
       transform: rotate(-45deg);
       animation: scrollDown 1.5s infinite; }
-
-.page-home .hero-content {
-  color: #111; }
 
 .section-hero--has-img {
   position: relative;
@@ -2098,7 +2094,8 @@ body.nav-open {
     min-height: 400px;
     margin: 20px;
     padding: 50px;
-    color: #ffffff;
+    color: #111;
+    background: #ffffff;
     transition: background 0.2s ease-in-out, color 0.25s ease-in-out; }
     @media (max-width: 50rem) {
       .posts-wrapper .post-item {
@@ -2116,7 +2113,7 @@ body.nav-open {
         .posts-wrapper .post-item:hover .btn.arrow:after, .posts-wrapper .post-item:focus .btn.arrow:after {
           margin-left: 14px; }
     .posts-wrapper .post-item a {
-      color: #ffffff;
+      color: #111;
       text-decoration: none; }
     .posts-wrapper .post-item .btn.arrow {
       position: absolute;
@@ -2334,7 +2331,7 @@ svg:not(:root) {
   margin: 0 auto 15px;
   fill: currentColor;
   color: transparent;
-  stroke: #111;
+  stroke: #ffffff;
   stroke-width: 4px;
   stroke-dasharray: 2000; }
   @media (min-width: 50rem) {
@@ -2363,16 +2360,6 @@ svg:not(:root) {
     animation: drawLine 2s infinite linear forwards, fadeIn 2s infinite linear reverse; }
   .svg-lock .line-sm {
     animation: drawLine 2s 1s infinite linear forwards, fadeIn 2s 1s infinite linear reverse; }
-
-.svg-rocket {
-  stroke: #111;
-  stroke-width: -1px;
-  fill: transparent;
-  stroke-dasharray: 2000; }
-  .svg-rocket .svg-rocket-top {
-    stroke-width: -1px; }
-  .svg-rocket .svg-rocket-bottom {
-    stroke-width: -1px; }
 
 @keyframes drawLine {
   100% {

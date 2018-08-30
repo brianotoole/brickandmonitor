@@ -180,15 +180,14 @@ body.nav-open {
     display: block;
     padding: 15px 0;
     font-family: $font-body;
-    color: $color-primary;
+    color: $color-body;
     font-size: rem(28);
     font-weight: 700;
     text-align: center;
     text-decoration: none;
-    transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out;
     &:hover,&:focus {
-      background: $color-secondary;
-      color: darken($color-white, 2%);
+      color: $color-secondary;
     }
   }
 }
@@ -250,9 +249,10 @@ $translateX: 0;
         transition-delay: 100ms;
      }
   }
-  &.active {
+  &.active,
+  &:focus {
     .line-1, .line-2, .line-3 {
-      background: $color-secondary;
+      background: $color-white;
     }
     .line-1 {
       transform: translateY($translateY) translateX($translateX) rotate($rotation);

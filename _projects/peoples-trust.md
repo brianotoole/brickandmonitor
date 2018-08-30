@@ -5,7 +5,7 @@ bodyclass: project
 date: 2016-12-01
 img: project-pti.jpg
 link: https://peoplestrustinsurance.com
-bgcolor: 0d5eb7
+bgcolor: 111111
 textcolor: ffffff
 title: People's Trust Insurance
 subtitle: 

@@ -6,7 +6,7 @@ date: 2018-04-01
 order: 1
 img: project-edition.jpg
 link: https://edition.waterstreettampa.com
-bgcolor: 282f31
+bgcolor: 111111
 textcolor: ffffff
 title: The Tampa EDITION
 subtitle: Tampa's $3 Billion Waterfront Plan Aims to Reshape Downtown
