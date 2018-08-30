@@ -1,12 +1,67 @@
-<div class="posts-wrapper">
-  {% for plan in site.plans %}
-  <a href="{{ post.url }}">
-    <article class="post-item hvr-underline-from-left">
-      <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
-      <!-- <p class="post-cat">- {{ post.category }} -</p> -->
-      <a class="btn arrow" href="{{ post.url }}">View Plan</a>
-    </article>
-  </a>
-  {% endfor %}
+<div class="pricing-table">
+  <div class="posts-wrapper posts-wrapper--plan">
+
+    <div class="post-item post-item--plan">
+      <div class="plan">
+        <h3 class="name">Startup</h3>
+        <h4 class="price">$299<span>/month</span></h4>
+
+        <ul class="details">
+          <li>Security Audit &amp; Hardening</li>
+          <li>Daily Security Scanning</li>
+          <li>Nightly Backups to Cloud</li>
+          <li>Speed Boost</li>
+          <li>2 Support Requests/month</li>
+        </ul>
+
+        <h5 class="order"><a class="btn arrow" href="{{ plan.url }}">Sign up (monthly)</a></h5>
+        <p>30-day Satisfaction Guaranteed. Cancel at anytime.</p>
+      </div>
+      <!--.plan-->
+    </div>
+    <!--.post-item--plan-->
+
+    <div class="post-item post-item--plan">
+        <div class="plan">
+          <h3 class="name">Growth</h3>
+          <h4 class="price">$499<span>/month</span></h4>
+  
+          <ul class="details">
+            <li>Everything in 'Startup Plan', PLUS:</li>
+            <li>WordPress Plugin Updates</li>
+            <li>WordPress Core Updates</li>
+            <li>If anything breaks, we'll fix it</li>
+            <li>5 Support Requests/month</li>
+          </ul>
+  
+          <h5 class="order"><a class="btn arrow" href="{{ plan.url }}">Sign up (monthly)</a></h5>
+          <p>30-day Satisfaction Guaranteed. Cancel at anytime.</p>
+        </div>
+        <!--.plan-->
+      </div>
+      <!--.post-item--plan-->
+
+      <div class="post-item post-item--plan">
+          <div class="plan">
+            <h3 class="name">Scale</h3>
+            <h4 class="price">$699<span>/month</span></h4>
+    
+            <ul class="details">
+                <li>Everything in 'Growth Plan', PLUS:</li>
+                <li>Priority Support</li>
+                <li>Quarterly Growth Reporting / Audit</li>
+                <li>If anything breaks, we'll fix it</li>
+                <li>Unlimited Support Requests/month</li>
+            </ul>
+    
+            <h5 class="order"><a class="btn arrow" href="{{ plan.url }}">Sign up (monthly)</a></h5>
+            <p>30-day Satisfaction Guaranteed. Cancel at anytime.</p>
+          </div>
+          <!--.plan-->
+        </div>
+        <!--.post-item--plan-->
+
+  </div>
 </div>
+<!--.pricing-table-->
 <!--/.posts-wrapper-->

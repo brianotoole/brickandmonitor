@@ -1,0 +1,55 @@
+
+.pricing-table{
+	.plan {
+    height: 100%;
+		background-color: $color-alt4; 
+		text-align: center;
+		position: relative;
+    z-index: 10;
+    &:hover {
+      background-color: white;
+      color: $color-body;
+    }
+
+		h3.name{
+			background-color: #fff;
+			margin: 0; padding: 30px; color: $color-primary; border-bottom: 1px solid #B3B9C4;
+		}
+
+		h4.price{
+	    color: #fff; margin: 0; padding: 15px;
+			background-color: #01A4F5;
+			span{font-size: 16px; font-style: italic;}
+
+		}
+
+		ul.details{
+      list-style-type: none;
+      padding: 0;
+
+			li{
+				border-bottom: 1px solid #B3B9C4;
+				padding: 15px;
+			}
+		}
+
+		h5.order{
+			margin: 0; padding: 30px; font-size: 17px; 
+      .btn {
+        display: block;
+        position: relative;
+      }
+		}
+
+
+		&:first-child{
+			h4.price{background-color: $color-primary;}
+		}
+
+		&:last-child{
+			h4.price{background-color: $color-secondary;}
+		}
+
+		&:nth-child(2n){box-shadow: 0px 0px 10px #424242; z-index:100;}
+	}
+}

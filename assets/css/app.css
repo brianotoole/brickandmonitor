@@ -2211,6 +2211,10 @@ body.nav-open {
     font-size: 0.75rem;
     text-transform: uppercase; }
 
+.posts-wrapper--plan .post-item {
+  height: auto;
+  padding: 0; }
+
 .contact-wrapper {
   display: -ms-flexbox;
   display: flex;
@@ -2525,6 +2529,50 @@ svg:not(:root) {
   -ms-flex-align: center;
       align-items: center;
   margin: 0; }
+
+.pricing-table .plan {
+  height: 100%;
+  background-color: #273425;
+  text-align: center;
+  position: relative;
+  z-index: 10; }
+  .pricing-table .plan:hover {
+    background-color: white;
+    color: #111; }
+  .pricing-table .plan h3.name {
+    background-color: #fff;
+    margin: 0;
+    padding: 30px;
+    color: #30402E;
+    border-bottom: 1px solid #B3B9C4; }
+  .pricing-table .plan h4.price {
+    color: #fff;
+    margin: 0;
+    padding: 15px;
+    background-color: #01A4F5; }
+    .pricing-table .plan h4.price span {
+      font-size: 16px;
+      font-style: italic; }
+  .pricing-table .plan ul.details {
+    list-style-type: none;
+    padding: 0; }
+    .pricing-table .plan ul.details li {
+      border-bottom: 1px solid #B3B9C4;
+      padding: 15px; }
+  .pricing-table .plan h5.order {
+    margin: 0;
+    padding: 30px;
+    font-size: 17px; }
+    .pricing-table .plan h5.order .btn {
+      display: block;
+      position: relative; }
+  .pricing-table .plan:first-child h4.price {
+    background-color: #30402E; }
+  .pricing-table .plan:last-child h4.price {
+    background-color: #735B46; }
+  .pricing-table .plan:nth-child(2n) {
+    box-shadow: 0px 0px 10px #424242;
+    z-index: 100; }
 
 .text-white {
   color: #fff; }
