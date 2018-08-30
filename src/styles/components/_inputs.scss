@@ -13,12 +13,12 @@ select {
   margin-bottom: 15px;
   font-size: rem(16);
   font-family: $font-heading;
-  background: $color-white;
+  background: $color-border;
   color: $color-black;
   border: 1px solid $color-border;
   border-radius: 0;
   appearance: none;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-out;
   &:active,
   &:focus {
     border-color: $color-secondary;

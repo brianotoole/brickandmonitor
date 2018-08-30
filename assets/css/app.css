@@ -83,7 +83,7 @@ dfn {
 
 b,
 strong {
-  font-weight: bolder; }
+  font-weight: bold; }
 
 small {
   font-size: 90%; }
@@ -2369,14 +2369,14 @@ select {
   margin-bottom: 15px;
   font-size: 1rem;
   font-family: "Roboto Slab", serif;
-  background: #fff;
+  background: #D1D3D4;
   color: #000;
   border: 1px solid #D1D3D4;
   border-radius: 0;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  transition: all 0.2s ease-in-out; }
+  transition: all 0.2s ease-out; }
   input:active, input:focus,
   textarea:active,
   textarea:focus,
@@ -2543,24 +2543,24 @@ svg:not(:root) {
 
 .pricing-table .plan {
   height: 100%;
-  background-color: #273425;
+  background-color: #fff;
+  color: #000;
   text-align: center;
   position: relative;
   z-index: 10; }
   .pricing-table .plan:hover {
     background-color: white;
-    color: #111; }
+    color: #000; }
   .pricing-table .plan h3.name {
-    background-color: #fff;
+    background-color: #000;
     margin: 0;
     padding: 30px;
-    color: #30402E;
+    color: #735B46;
     border-bottom: 1px solid #B3B9C4; }
   .pricing-table .plan h4.price {
     color: #fff;
     margin: 0;
-    padding: 15px;
-    background-color: #01A4F5; }
+    padding: 15px; }
     .pricing-table .plan h4.price span {
       font-size: 16px;
       font-style: italic; }
@@ -2577,7 +2577,8 @@ svg:not(:root) {
     .pricing-table .plan h5.order .btn {
       display: block;
       position: relative;
-      color: #735B46; }
+      background: #735B46;
+      color: #fff; }
   .pricing-table .plan:last-child h4.price {
     background-color: #444242; }
   .pricing-table .plan:nth-child(2n) {

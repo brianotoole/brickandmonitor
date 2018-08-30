@@ -2,25 +2,24 @@
 .pricing-table{
 	.plan {
     height: 100%;
-		background-color: $color-alt4; 
+		background-color: #fff; 
+		color: $color-black;
 		text-align: center;
 		position: relative;
     z-index: 10;
     &:hover {
       background-color: white;
-      color: $color-body;
+      color: $color-black;
     }
 
 		h3.name{
-			background-color: #fff;
-			margin: 0; padding: 30px; color: $color-primary; border-bottom: 1px solid #B3B9C4;
+			background-color: $color-black;
+			margin: 0; padding: 30px; color: $color-secondary; border-bottom: 1px solid #B3B9C4;
 		}
 
 		h4.price{
 	    color: #fff; margin: 0; padding: 15px;
-			background-color: #01A4F5;
 			span{font-size: 16px; font-style: italic;}
-
 		}
 
 		ul.details{
@@ -37,8 +36,9 @@
 			margin: 0; padding: 30px; font-size: 17px; 
       .btn {
         display: block;
-        position: relative;
-        color: $color-secondary;
+				position: relative;
+				background: $color-secondary;
+        color: $color-white;
       }
 		}
 		&:last-child{
