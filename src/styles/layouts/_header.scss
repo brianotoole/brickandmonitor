@@ -84,7 +84,6 @@
     margin: 0;
     padding-bottom: 5px;
     color: $color-primary;
-    font-family: $font-body;
     font-size: rem(14);
     vertical-align: middle;
     transform: perspective(1px) translateZ(0);
@@ -180,7 +179,7 @@ body.nav-open {
   a {
     display: block;
     padding: 15px 0;
-    font-family: $font-heading;
+    font-family: $font-body;
     color: $color-primary;
     font-size: rem(28);
     font-weight: 700;

@@ -1631,7 +1631,6 @@ code {
     margin: 0;
     padding-bottom: 5px;
     color: #30402E;
-    font-family: "proxima-nova", sans-serif;
     font-size: 0.875rem;
     vertical-align: middle;
     transform: perspective(1px) translateZ(0);
@@ -1739,7 +1738,7 @@ body.nav-open {
   .nav-mobile-wrap a {
     display: block;
     padding: 15px 0;
-    font-family: "freight-text-pro", serif;
+    font-family: "proxima-nova", sans-serif;
     color: #30402E;
     font-size: 1.75rem;
     font-weight: 700;
@@ -2208,7 +2207,7 @@ body.nav-open {
   margin: 0;
   margin-top: 10px;
   min-width: 180px;
-  padding: 12px;
+  padding: 10px;
   font-family: "proxima-nova", sans-serif;
   font-size: 0.875rem;
   color: #ffffff;
@@ -2260,7 +2259,8 @@ body.nav-open {
       font-family: Linearicons-Free;
       display: inline-block;
       vertical-align: middle;
-      font-size: 1.125rem;
+      font-size: 1rem;
+      margin-top: -2px;
       margin-left: 10px;
       transition: margin-left 0.2s ease-in-out; }
     .btn.arrow:hover {
@@ -2448,7 +2448,7 @@ svg:not(:root) {
   left: 0;
   color: rgba(241, 241, 241, 0.15); }
   .call-out__number--secondary {
-    color: rgba(115, 91, 70, 0.15); }
+    color: rgba(115, 91, 70, 0.5); }
 
 .call-out__title {
   position: relative;
@@ -2553,6 +2553,10 @@ svg:not(:root) {
 
 .bg-alt4 {
   background: #273425; }
+
+.bg-pattern {
+  position: relative;
+  background-image: url("/assets/images/home-bg-dust.png"); }
 
 .font-heading {
   font-family: "freight-text-pro", serif; }
