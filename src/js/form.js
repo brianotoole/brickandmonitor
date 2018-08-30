@@ -33,7 +33,7 @@ function validateForm() {
 	  var datastring = $("#js-form").serialize();
 	  $.ajax({
 	    //send the form using formspree
-	    url: "https://formspree.io/brian@brickandmonitor.com", 
+	    url: "https://formspree.io/botoole518@gmail.com", 
 	    method: "POST",
 	    data: datastring,
 	    dataType: "json"
