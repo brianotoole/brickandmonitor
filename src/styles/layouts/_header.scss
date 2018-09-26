@@ -14,11 +14,11 @@
   height: 100px;
   margin: 0;
   padding: 38px 35px 38px 0;
-  background-color: $color-secondary;
+  background-color: $color-tertiary;
   z-index: 300;
   &:before {
     content: "";
-    background-color: $color-secondary-dark;
+    background-color: $color-tertiary-dark;
     left: 0;
     position: fixed;
     top: 0;
