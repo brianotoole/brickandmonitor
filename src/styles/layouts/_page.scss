@@ -150,11 +150,10 @@
 }
 
 .hero-image-container {
-  position: relative;
   img {
     position: absolute;
-    top: -84px;
-    width: 600px;
+    top: 66px;
+    width: 500px;
     z-index: 3;
   }
 }
