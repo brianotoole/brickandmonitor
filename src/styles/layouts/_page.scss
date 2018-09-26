@@ -96,7 +96,9 @@
 }
 .section-hero {
   min-height: auto;
-  background: $color-white;
+  color: $color-white;
+  background-image: url(https://sqy7rm.media.zestyio.com/branches.svg),
+    linear-gradient(65deg, $color-primary, $color-primary-dark);
   @media (min-width: $bp-md) {
     min-height: 480px;
   }

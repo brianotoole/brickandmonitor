@@ -19,8 +19,8 @@ We helped plant the digital foundation for a new brand with global impact.
 
 #### Objectives
 
-- Create excitement for the project
-- Generate an increase in traffic and awareness for the project
+- Create excitement for Tampa and surrounding areas
+- Generate an increase in traffic and awareness for the downtown revival project
 
 #### Work Involved
 
@@ -30,4 +30,4 @@ We helped with strategy for user experience, technology selection, and web devel
 
 The site received hundreds of views per day (most visits on mobile) and is showcased prominently throughout downtown Tampa.
 
-![waterstreet homepage image](/assets/images/project-wst-home.jpg)
+![waterstreet tampa website](/assets/images/project-wst-home.png)

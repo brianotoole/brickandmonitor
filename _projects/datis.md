@@ -8,18 +8,17 @@ link: https://datis.com
 bgcolor: 111111
 textcolor: ffffff
 title: Datis HR Cloud
-subtitle: dsf
-description: jfkslda
+subtitle: We worked with Datis HR Cloud to build a mobile-first approach for the software company's new website.
+description: We worked with Datis HR Cloud to build a mobile-first approach for the software company's new website.
 ---
 
-fjdsfjdk
+We worked with Datis HR Cloud to build a mobile-first approach for the company's new website.
 
 #### Objectives
 
-- Find & use NFL API to check scores weekly
-- Create one-page site that pull in data from feed and shows if team won or lost
-- This is just for fun
+- Fully customizable CMS-solution for many types of content... some of which needs to be gated
+- Mobile-first design and deveopment approach
 
 #### Work Involved
 
-![didjagswin homepage image](/assets/images/project-didjagswin-home.png)
+![datis resources](/assets/images/project-datis-resources.png)
