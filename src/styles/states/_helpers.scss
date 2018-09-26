@@ -1,105 +1,182 @@
 // Helpers
 
 // Colors: text
-.text-white {color: $color-white;}
-.text-primary {color: $color-primary;}
-.text-secondary {color: $color-secondary;}
-.text-body {color: $color-body;}
+.text-white {
+  color: $color-white;
+}
+.text-primary {
+  color: $color-primary;
+}
+.text-secondary {
+  color: $color-secondary;
+}
+.text-body {
+  color: $color-body;
+}
 
 // Colors: background
-.bg-white {background: $color-white; color: $color-body;}
-.bg-primary {background: $color-primary; color: $color-white;}
-.bg-secondary {background: $color-secondary; color: $color-body;}
-.bg-black {background: $color-black; color: $color-white;}
-.bg-body {background: $color-body; color: $color-white !important;}
-.bg-gray {background: $color-gray; color: $color-body;}
-.bg-alt1 {background: $color-alt1;}
-.bg-alt2 {background: $color-alt2;}
-.bg-alt3 {background: $color-alt3;}
-.bg-alt4 {background: $color-alt4;}
+.bg-white {
+  background: $color-white;
+  color: $color-body;
+}
+.bg-primary {
+  background: $color-primary;
+  color: $color-white;
+}
+.bg-secondary {
+  background: $color-secondary;
+  color: $color-body;
+}
+.bg-black {
+  background: $color-black;
+  color: $color-white;
+}
+.bg-body {
+  background: $color-body;
+  color: $color-white !important;
+}
+.bg-gray {
+  background: $color-gray;
+  color: $color-body;
+}
+.bg-alt1 {
+  background: $color-alt1;
+}
+.bg-alt2 {
+  background: $color-alt2;
+}
+.bg-alt3 {
+  background: $color-alt3;
+}
+.bg-alt4 {
+  background: $color-alt4;
+}
 
-.bg-pattern {position: relative; background-image: url('/assets/images/home-bg-dust.png');}
+.bg-pattern {
+  position: relative;
+  color: $color-white;
+  background-image: url("https://sqy7rm.media.zestyio.com/branches.svg"),
+    linear-gradient(65deg, $color-primary, $color-primary-dark);
+}
+
+.bg-pattern-grey {
+  position: relative;
+  color: $color-body;
+  background-image: url("/assets/images/home-bg-dust.png");
+  .section-title {
+    color: $color-body;
+  }
+}
 
 // Fonts
-.font-heading {font-family: $font-heading;}
-.font-body {font-family: $font-body; }
-
+.font-heading {
+  font-family: $font-heading;
+}
+.font-body {
+  font-family: $font-body;
+}
 
 // Layouts & Alignments
 .full-height {
-   height: 100vh;
- }
- .vertical-center {
-   display: flex;
-   flex-flow: column wrap;
-   justify-content: center;
- }
- .padded { padding: 15px; }
- .pad-top { padding-top: 30px; }
- .pad-top-phone {
-   @media (max-width: $bp-md) {
-     padding-top: 30px;
-   }
- }
- .pad-btm { padding-bottom: 30px; }
- .pad-btm-phone {
-   @media (max-width: $bp-md) {
-     padding-bottom: 30px;
-   }
- }
- .no-pad { padding: 0; }
- .no-pad-phone {
-   @media (max-width: $bp-md) {
-     padding: 0;
-   }
- }
- .no-pad-l { padding-left: 0; }
- .no-pad-r { padding-right: 0; }
- .no-pad-t { padding-top: 0; }
- .no-pad-b { padding-bottom: 0; }
+  height: 100vh;
+}
+.vertical-center {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+.padded {
+  padding: 15px;
+}
+.pad-top {
+  padding-top: 30px;
+}
+.pad-top-phone {
+  @media (max-width: $bp-md) {
+    padding-top: 30px;
+  }
+}
+.pad-btm {
+  padding-bottom: 30px;
+}
+.pad-btm-phone {
+  @media (max-width: $bp-md) {
+    padding-bottom: 30px;
+  }
+}
+.no-pad {
+  padding: 0;
+}
+.no-pad-phone {
+  @media (max-width: $bp-md) {
+    padding: 0;
+  }
+}
+.no-pad-l {
+  padding-left: 0;
+}
+.no-pad-r {
+  padding-right: 0;
+}
+.no-pad-t {
+  padding-top: 0;
+}
+.no-pad-b {
+  padding-bottom: 0;
+}
 
- .text-left {text-align: left;}
- .text-center {text-align: center;}
- .text-right {text-align: right;}
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
 
- .text-no-transform {text-transform: none;}
+.text-no-transform {
+  text-transform: none;
+}
 
- .text-no-underline {text-decoration: none;}
+.text-no-underline {
+  text-decoration: none;
+}
 
- // Visibility
+// Visibility
 .hidden-phone {
-   @media (max-width: $bp-md) {
-     display: none!important;
-   }
- }
- .visible-phone {
-   display: none;
-   @media (max-width: $bp-md) {
-     display: block!important;
-   }
+  @media (max-width: $bp-md) {
+    display: none !important;
+  }
+}
+.visible-phone {
+  display: none;
+  @media (max-width: $bp-md) {
+    display: block !important;
+  }
 }
 // Images & Overlays
 .bg-img-cover {
-   position: relative;
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: center center;
-   &.pos-left {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  &.pos-left {
     background-position: left center;
-   }
- }
- .has-overlay {
-   &:before {
-     position: absolute;
-     content: '';
-     width: 100%;
-     height: 100%;
-     top: 0;
-     left: 0;
-     background-color: rgba($color-black, 0.5);
-     z-index: -1;
-   }
- }
+  }
+}
+.has-overlay {
+  &:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba($color-black, 0.5);
+    z-index: -1;
+  }
+}
 
 // Underline From Left
 .hvr-underline-from-left {
@@ -125,6 +202,8 @@
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-.hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+.hvr-underline-from-left:hover:before,
+.hvr-underline-from-left:focus:before,
+.hvr-underline-from-left:active:before {
   right: 0;
 }

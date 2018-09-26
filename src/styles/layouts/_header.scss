@@ -4,7 +4,7 @@
   min-height: 50px; //half height of .header-main-layout
   overflow: hidden;
   position: relative;
-  background-image: url('/assets/images/home-bg-dust.png');
+  background-image: url("/assets/images/home-bg-dust.png");
 }
 .header-main-layout {
   position: fixed;
@@ -14,19 +14,23 @@
   height: 100px;
   margin: 0;
   padding: 38px 35px 38px 0;
-  background-color: $color-black;
+  background-color: $color-secondary;
   z-index: 300;
   &:before {
-    content: '';
-    background-color: $color-black;
+    content: "";
+    background-color: $color-secondary-dark;
     left: 0;
     position: fixed;
     top: 0;
-    width: 28%;
+    width: 410px;
     height: 100px;
+    @media (max-width: $bp-md) {
+      width: 100%;
+    }
   }
   @media (max-width: $bp-md) {
-    width: 100%;
+    width: 93%;
+    background-color: $color-secondary-dark;
   }
 }
 // Logo
@@ -109,7 +113,7 @@
       text-decoration: none;
       color: $color-secondary;
     }
-    &:hover:before{
+    &:hover:before {
       left: 0;
       right: 0;
     }
@@ -128,7 +132,7 @@
 .nav-mobile {
   visibility: hidden;
   position: fixed;
-  background-image: url('/assets/images/home-bg-dust.png');
+  background-image: url("/assets/images/home-bg-dust.png");
   height: 100vh;
   width: 100%;
   top: 0;
@@ -140,7 +144,7 @@
   text-transform: uppercase;
   overflow: hidden;
   transform: translateY(-100%) translateZ(0);
-  transition: transform 0.5s cubic-bezier(.75,0,.25,1), visibility 0s 0.1s;
+  transition: transform 0.5s cubic-bezier(0.75, 0, 0.25, 1), visibility 0s 0.1s;
   &.nav-open {
     visibility: visible;
     transition-delay: 0s, 0s;
@@ -163,7 +167,7 @@ body.nav-open {
       animation-duration: 200ms;
       animation-fill-mode: forwards;
     }
-  } 
+  }
   .nav-mobile-wrap {
     opacity: 1;
   }
@@ -175,7 +179,8 @@ body.nav-open {
   padding: 0 15px;
   padding-top: 100px;
   list-style-type: none;
-  li {}
+  li {
+  }
   a {
     display: block;
     padding: 15px 0;
@@ -186,7 +191,8 @@ body.nav-open {
     text-align: center;
     text-decoration: none;
     transition: color 0.2s ease-in-out;
-    &:hover,&:focus {
+    &:hover,
+    &:focus {
       color: $color-secondary;
     }
   }
@@ -232,36 +238,43 @@ $translateX: 0;
       top: 100%;
     }
   }
-  &:hover, &:focus {
-     .line-1, .line-2, .line-3 {
-        background: $color-secondary;
-        transition: 0.2s all ease-in-out;
-     }
-     .line-1 {
-        transform: translateY($height-line / 2 * -1);
-        transition-delay: 0ms;
-     }
-     .line-2 {
-        transition-delay: 50ms;
-     }
-     .line-3 {
-        transform: translateY($height-line / 2);
-        transition-delay: 100ms;
-     }
+  &:hover,
+  &:focus {
+    .line-1,
+    .line-2,
+    .line-3 {
+      background: $color-white;
+      transition: 0.2s all ease-in-out;
+    }
+    .line-1 {
+      transform: translateY($height-line / 2 * -1);
+      transition-delay: 0ms;
+    }
+    .line-2 {
+      transition-delay: 50ms;
+    }
+    .line-3 {
+      transform: translateY($height-line / 2);
+      transition-delay: 100ms;
+    }
   }
   &.active,
   &:focus {
-    .line-1, .line-2, .line-3 {
+    .line-1,
+    .line-2,
+    .line-3 {
       background: $color-white;
     }
     .line-1 {
-      transform: translateY($translateY) translateX($translateX) rotate($rotation);
+      transform: translateY($translateY) translateX($translateX)
+        rotate($rotation);
     }
     .line-2 {
-      opacity:0;
+      opacity: 0;
     }
     .line-3 {
-      transform: translateY($translateY * -1) translateX($translateX) rotate($rotation * -1);
+      transform: translateY($translateY * -1) translateX($translateX)
+        rotate($rotation * -1);
     }
   }
 }

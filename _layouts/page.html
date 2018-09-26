@@ -4,13 +4,22 @@ bodyclass: page-interior
 ---
 <div class="page-interior">
 
-<section class="section-hero {{ page.bgcolorclass }}">
+<section class="section-hero bg-pattern">
   <div class="container hero-content">
-    <h1 class="hero-title">{{ page.hero }}</h1>
-    <h5 class="hero-subtitle">{{ page.subtitle }}</h5>
-    <div class="hero-scroll">
-      <a href="#more"><span></span></a>
-    </div><!--/.hero-scroll-->
+    <div class="{% if page.twocol == true %}col-sm-6{% endif %} col-xs-12">
+      <h1 class="hero-title">{{ page.hero }}</h1>
+      <h5 class="hero-subtitle">{{ page.subtitle }}</h5>
+      <div class="hero-scroll">
+        <a href="#more"><span></span></a>
+      </div><!--/.hero-scroll-->
+    </div><!-- /.half.left -->
+    {% if page.twocol == true %}
+    <div class="col-sm-6 col-xs-12">
+      <div class="hero-image-container hidden-phone">
+        <img src="{{site.url}}/assets/images/home-hero-bg4.png"/>
+      </div><!-- /.hero-image-container -->
+    </div><!-- /.half.right -->
+    {% endif %}
   </div><!--/.container-->
 </section>
 

@@ -1,9 +1,9 @@
 // PAGE
 // Global page elements
 
-
 // Global page containers, wrappers
-.site-wrapper {}
+.site-wrapper {
+}
 
 .container {
   max-width: 100%;
@@ -12,31 +12,24 @@
   padding-right: 140px;
   @media (max-width: $bp-md) {
     max-width: 1000px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  &--narrow {
+    @media (min-width: $bp-md) {
+      max-width: 1180px;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }
 
 .container-fluid {
   margin-left: auto;
   margin-right: auto;
-  padding-left: 30px;
-  padding-right: 30px;
   @media (max-width: $bp-md) {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-}
-
-.wrapper {
-  max-width: 1260px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 30px;
-  padding-right: 30px;
-  overflow: hidden;
-  &--narrow {
-    max-width: 976px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
@@ -44,7 +37,7 @@
   width: 50%;
   @media (max-width: $bp-md) {
     width: 100%;
-  } 
+  }
 }
 .left {
   padding-right: 8.5%;
@@ -90,7 +83,7 @@
   &--underline {
     position: relative;
     &:after {
-      content: '';
+      content: "";
       position: absolute;
       bottom: 6px;
       left: 0;
@@ -102,24 +95,27 @@
   }
 }
 .section-hero {
-  min-height: 480px;
+  min-height: auto;
   background: $color-white;
+  @media (min-width: $bp-md) {
+    min-height: 480px;
+  }
   .hero-content {
     //visibility: hidden; //vibible added with tween
     position: relative;
     padding-top: 160px;
     padding-bottom: 110px;
-    max-width: 90%;
-    color: $color-body;
-    @media (max-width: $bp-md) {
-      max-width: 100%;
+    color: $color-white;
+    @media (min-width: $bp-md) {
+      display: flex;
     }
   }
   .hero-title {
     margin-bottom: 20px;
     text-transform: none;
   }
-  .hero-subtitle {}
+  .hero-subtitle {
+  }
 
   //scroll down arrow in hero
   .hero-scroll {
@@ -128,8 +124,9 @@
     //bottom: 120px;
     margin-left: 15px;
     z-index: 1;
-    a { //if text is used
-      color: $color-body;
+    a {
+      //if text is used
+      color: $color-white;
       font-size: rem(14);
       font-style: italic;
       text-decoration: none;
@@ -142,22 +139,30 @@
       width: 1em;
       height: 1em;
       margin-left: -9px;
-      border-left: 1px solid rgba($color-black, 0.8);
-      border-bottom: 1px solid rgba($color-black, 0.8);
+      border-left: 1px solid rgba($color-white, 0.8);
+      border-bottom: 1px solid rgba($color-white, 0.8);
       transform: rotate(-45deg);
       animation: scrollDown 1.5s infinite;
     }
   }
-
 }
 
+.hero-image-container {
+  position: relative;
+  img {
+    position: absolute;
+    top: -84px;
+    width: 600px;
+    z-index: 3;
+  }
+}
 
 .section-hero--has-img {
   position: relative;
   background-size: cover !important;
   background-repeat: no-repeat !important;
   &:after {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -170,11 +175,6 @@
 .interior-content--img-spacer {
   @media (min-width: $bp-md) {
     margin-top: -275px;
-  }
-}
-.page-home .section {
-  @media (min-width: $bp-md) {
-    padding-top: 375px;
   }
 }
 
@@ -201,30 +201,37 @@
     position: relative; //needed for scrollMagic pin
     background: $color-white;
   }
-  .interior-title {}
+  .interior-title {
+  }
 }
 
+.interior-content img {
+  position: relative;
+  z-index: 2;
+}
 
 // Page-home
-.page-home {
-  .section-hero {
-    min-height: 380px;
+/*.page-home {
+  > .section {
+    @media (min-width: $bp-md) {
+      padding-top: 200px;
+    }
   }
-  .hero-content {
-    padding-bottom: 0;
-  }
-}
+}*/
 
 // Page-about
-.page-about {}
+.page-about {
+}
 // About intro
-.about-intro {}
+.about-intro {
+}
 .about-wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.about-content {}
+.about-content {
+}
 .about-service-list {
   display: flex;
   flex-wrap: wrap;
@@ -362,21 +369,22 @@
     min-height: 400px;
     margin: 20px;
     padding: 50px;
-    color: $color-body;
-    background: $color-white;
+    color: $color-white;
+    background: $color-primary;
     transition: background 0.2s ease-in-out, color 0.25s ease-in-out;
     @media (max-width: $bp-md) {
       flex-basis: calc(100% - 40px);
       min-height: 200px;
     }
-    &:hover, &:focus {
-      background: $color-gray;
-      color: $color-body;
+    &:hover,
+    &:focus {
+      background: $color-primary-dark;
+      color: $color-white;
       * {
-        color: $color-body;
+        color: $color-white;
       }
       .btn.arrow {
-        color: $color-secondary;
+        color: $color-white;
         background: rgba($color-black, 1);
         &:after {
           margin-left: 14px;
@@ -384,7 +392,7 @@
       }
     }
     a {
-      color: $color-body;
+      color: $color-white;
       text-decoration: none;
     }
     .btn.arrow {
@@ -416,7 +424,6 @@
   }
 }
 
-
 // Page-Contact
 .contact-wrapper {
   display: flex;
@@ -441,10 +448,24 @@
 }
 
 .entry-content {
-  h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6 {
+  h1,
+  .h1,
+  h2,
+  .h2,
+  h3,
+  .h3,
+  h4,
+  .h4,
+  h5,
+  .h5,
+  h6,
+  .h6 {
     margin-top: 40px;
   }
-  p, ol, ul, dl {
+  p,
+  ol,
+  ul,
+  dl {
     font-size: rem(16);
   }
 }
@@ -456,13 +477,14 @@
   }
 }
 .footer-link-wrap {
-  background: $color-black;
+  background: $color-secondary;
   color: $color-white;
   display: block;
   padding: 80px 0;
   transition: background 0.25s ease-in-out;
-  &:hover, &:focus {
-    background: $color-secondary;
+  &:hover,
+  &:focus {
+    background: $color-secondary-dark;
     color: $color-white;
   }
 }
@@ -476,14 +498,14 @@
 
 .pre-loader {
   position: absolute;
-  top: 50px;
+  top: 49px;
   left: 0;
   width: 0;
-  height: 5px;
+  height: 3px;
   overflow: hidden;
   z-index: 1;
   background: transparent;
- &.is-loading {
+  &.is-loading {
     position: absolute;
     overflow: hidden;
     background: $color-secondary;

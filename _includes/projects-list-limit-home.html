@@ -1,6 +1,4 @@
-<section class="section-wrap section-work bg-white" id="more">
-    <div class="container">
-        <h5 class="section-title">Recent Work</h5>
+<div id="more">
         {% assign project_items = site.projects | where: "featured-home", "true" | sort: 'date' %}
         {% for project in project_items limit:2 %}
   
@@ -22,5 +20,4 @@
           <a class="btn arrow right" href="{{ project.url }}/work">View More Projects</a>
         </div><!--<!--/.project-more-wrapper-->
         
-    </div><!--/.container-->
-  </section>
+      </div>

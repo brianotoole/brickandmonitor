@@ -1,16 +1,18 @@
 // VARIABLES
 
 // Colors: branding
-$color-primary: #30402E; //dark blue
-$color-secondary: #30402E; //red/pink
+$color-primary: #36b16c; //green
+$color-secondary: #193441; //navy
 $color-tertiary: #888686; //gray
 $color-code: #1bff00;
 
 // Colors: others
-$color-body: #111; 
-$color-white: #ffffff; 
+$color-body: #111;
+$color-white: #ffffff;
 $color-gray: #f2f6f9;
 $color-black: #000;
+$color-primary-dark: darken($color-primary, 5%);
+$color-secondary-dark: darken($color-secondary, 5%);
 $color-alt1: darken($color-primary, 1%);
 $color-alt2: darken($color-primary, 2%);
 $color-alt3: darken($color-primary, 3%);
@@ -19,7 +21,7 @@ $color-alt4: darken($color-primary, 4%);
 // Colors: components
 $color-link: $color-tertiary;
 $color-link-hover: darken($color-tertiary, 15%);
-$color-border: #D1D3D4;
+$color-border: #d1d3d4;
 $color-border-base: rgba($color-body, 0.2);
 $color-border-light: rgba($color-white, 0.1);
 

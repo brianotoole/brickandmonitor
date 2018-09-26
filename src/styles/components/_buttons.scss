@@ -39,6 +39,11 @@
     border: 1px solid $color-black;
     color: $color-black;
   }
+  &.transparent-white {
+    @include button-bg(transparent);
+    border: 1px solid $color-white;
+    color: $color-white;
+  }
   &.rounded {
     border-radius: 100px;
   }
