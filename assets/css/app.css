@@ -2745,7 +2745,7 @@ svg:not(:root) {
   color: #ebebeb;
   font-size: 2rem;
   font-weight: 700;
-  left: 0;
+  left: 36px;
   top: 36px;
   letter-spacing: 1px; }
   @media (max-width: 50rem) {
