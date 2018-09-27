@@ -1542,7 +1542,7 @@ code {
   z-index: 300; }
   .header-main-layout:before {
     content: "";
-    background-color: #151515;
+    background-color: #222;
     left: 0;
     position: fixed;
     top: 0;
@@ -1554,7 +1554,7 @@ code {
   @media (max-width: 50rem) {
     .header-main-layout {
       width: 93%;
-      background-color: #c58c64; } }
+      background-color: #222; } }
 
 .logo-container {
   position: fixed;

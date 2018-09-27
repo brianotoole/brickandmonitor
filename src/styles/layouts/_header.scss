@@ -18,7 +18,7 @@
   z-index: 300;
   &:before {
     content: "";
-    background-color: $color-tertiary-dark;
+    background-color: $color-tertiary;
     left: 0;
     position: fixed;
     top: 0;
@@ -30,7 +30,7 @@
   }
   @media (max-width: $bp-md) {
     width: 93%;
-    background-color: $color-secondary-dark;
+    background-color: $color-tertiary;
   }
 }
 // Logo
