@@ -1592,36 +1592,36 @@ code {
         order: 1; } }
 
 .header {
-  min-height: 50px;
-  overflow: hidden;
-  position: relative;
-  background-image: url("/assets/images/home-bg-dust.png"); }
+  position: relative; }
 
-.header-main-layout {
+.header-side-layout {
   position: fixed;
   top: 0;
-  left: auto;
-  width: 366px;
-  height: 100px;
+  left: 0;
+  width: 100px;
+  height: 100vh;
   margin: 0;
-  padding: 38px 35px 38px 0;
+  padding: 0;
   background-color: #fff;
+  border-right: 1px solid #ebebeb;
+  box-shadow: -1px 0 0 0 rgba(235, 235, 235, 0.1);
+  pointer-events: all;
   z-index: 300; }
-  .header-main-layout:before {
-    content: "";
-    background-color: #fff;
-    left: 0;
-    position: fixed;
-    top: 0;
-    width: 410px;
-    height: 100px; }
-    @media (max-width: 50rem) {
-      .header-main-layout:before {
-        width: 100%; } }
-  @media (max-width: 50rem) {
-    .header-main-layout {
-      width: 93%;
-      background-color: #fff; } }
+
+.header-button-wrapper {
+  cursor: pointer;
+  height: 85px;
+  width: 100%;
+  position: relative;
+  display: block;
+  padding: 30px 0;
+  background-color: #fff;
+  border-bottom: 1px solid #ebebeb;
+  z-index: 300; }
+  .nav-open .header-button-wrapper {
+    background-color: #b80c15; }
+    .nav-open .header-button-wrapper .nav-toggle .line {
+      background: #fff; }
 
 .logo-container {
   position: fixed;
@@ -1730,24 +1730,23 @@ code {
 .nav-mobile {
   visibility: hidden;
   position: fixed;
-  background-image: url("/assets/images/home-bg-dust.png");
+  background: #fff;
   height: 100vh;
-  width: 100%;
+  width: 25vw;
   top: 0;
   left: 0;
   margin: 0;
-  padding: 0;
-  padding-top: 100px;
-  font-size: 1.125rem;
+  padding: 0.9375rem;
   text-transform: uppercase;
   overflow: hidden;
-  transform: translateY(-100%) translateZ(0);
-  transition: transform 0.5s cubic-bezier(0.75, 0, 0.25, 1), visibility 0s 0.1s; }
+  z-index: 2;
+  transform: translateX(-100%) translateZ(0);
+  transition: transform 0.5s cubic-bezier(0.75, 0, 0.25, 1), visibility 2s 0.1s; }
   .nav-mobile.nav-open {
     visibility: visible;
+    box-shadow: -1px 0 0 0 rgba(235, 235, 235, 0.1);
     transition-delay: 0s, 0s;
-    transform: translateY(0) translateZ(0);
-    z-index: 200; }
+    transform: translateX(100px) translateZ(0); }
 
 body.nav-open {
   position: fixed;
@@ -1810,8 +1809,8 @@ body.nav-open {
     font-family: "Martel", sans-serif;
     color: #111;
     font-size: 1.75rem;
-    font-weight: 700;
-    text-align: center;
+    font-weight: 900;
+    text-align: left;
     text-decoration: none;
     transition: color 0.2s ease-in-out; }
     .nav-mobile-wrap a:hover, .nav-mobile-wrap a:focus {
@@ -1850,26 +1849,27 @@ body.nav-open {
 .container {
   max-width: 100%;
   margin: 0;
-  padding-left: 140px;
-  padding-right: 140px; }
+  padding-left: 8.75rem;
+  padding-right: 2.8125rem; }
   @media (max-width: 50rem) {
     .container {
       max-width: 1000px;
-      padding-left: 30px;
-      padding-right: 30px; } }
+      padding-left: 1.875rem;
+      padding-right: 1.875rem; } }
   @media (min-width: 50rem) {
     .container--narrow {
       max-width: 1180px;
       margin-left: auto;
       margin-right: auto; } }
 
-.container-fluid {
-  margin-left: auto;
-  margin-right: auto; }
-  @media (max-width: 50rem) {
-    .container-fluid {
-      padding-left: 30px;
-      padding-right: 30px; } }
+.container-full {
+  max-width: 100%;
+  margin-left: 100px;
+  margin-right: 0; }
+
+.container-full--padded > * {
+  padding-left: 2.8125rem;
+  padding-right: 2.8125rem; }
 
 .half {
   width: 50%; }
@@ -1929,7 +1929,7 @@ body.nav-open {
   background-color: #293a42; }
   @media (min-width: 50rem) {
     .section-hero {
-      min-height: 480px; } }
+      min-height: 500px; } }
   .section-hero .hero-content {
     position: relative;
     padding-top: 160px;
@@ -2148,8 +2148,6 @@ body.nav-open {
 .posts-wrapper {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   overflow: hidden;
@@ -2158,8 +2156,9 @@ body.nav-open {
   padding: 0; }
   .posts-wrapper .post-item {
     position: relative;
-    -ms-flex: 1 0 calc(33.333% - 40px);
-        flex: 1 0 calc(33.333% - 40px);
+    -ms-flex: 0 0 calc(33.333333% - 40px);
+        flex: 0 0 calc(33.333333% - 40px);
+    max-width: calc(33.333333% - 40px);
     min-height: 400px;
     margin: 20px;
     padding: 50px;
@@ -2273,7 +2272,7 @@ body.nav-open {
 
 .pre-loader {
   position: absolute;
-  top: 49px;
+  top: 0;
   left: 0;
   width: 0;
   height: 3px;

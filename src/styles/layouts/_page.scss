@@ -8,12 +8,12 @@
 .container {
   max-width: 100%;
   margin: 0;
-  padding-left: 140px;
-  padding-right: 140px;
+  padding-left: rem(140);
+  padding-right: rem(45);
   @media (max-width: $bp-md) {
     max-width: 1000px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: rem(30);
+    padding-right: rem(30);
   }
   &--narrow {
     @media (min-width: $bp-md) {
@@ -24,12 +24,16 @@
   }
 }
 
-.container-fluid {
-  margin-left: auto;
-  margin-right: auto;
-  @media (max-width: $bp-md) {
-    padding-left: 30px;
-    padding-right: 30px;
+.container-full {
+  max-width: 100%;
+  margin-left: 100px;
+  margin-right: 0;
+}
+
+.container-full--padded {
+  > * {
+    padding-left: rem(45);
+    padding-right: rem(45);
   }
 }
 
@@ -101,7 +105,7 @@
   //background-image: url(https://sqy7rm.media.zestyio.com/branches.svg),
   //linear-gradient(65deg, $color-primary, $color-primary-dark);
   @media (min-width: $bp-md) {
-    min-height: 480px;
+    min-height: 500px;
   }
   .hero-content {
     //visibility: hidden; //vibible added with tween
@@ -370,7 +374,6 @@
 // posts list
 .posts-wrapper {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   overflow: hidden;
   margin-left: -20px;
@@ -378,7 +381,8 @@
   padding: 0;
   .post-item {
     position: relative;
-    flex: 1 0 calc(33.333% - 40px);
+    flex: 0 0 calc(33.333333% - 40px);
+    max-width: calc(33.333333% - 40px);
     min-height: 400px;
     margin: 20px;
     padding: 50px;
@@ -511,7 +515,7 @@
 
 .pre-loader {
   position: absolute;
-  top: 49px;
+  top: 0;
   left: 0;
   width: 0;
   height: 3px;

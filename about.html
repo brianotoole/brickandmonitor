@@ -8,7 +8,7 @@ bodyclass: page-about
 ---
 
 <section class="about-intro section-wrap bg-white group">
-  <div class="container">
+  <div class="container-full container-full--padded">
     <div class="about-wrapper">
       <div class="half left">
         <h4 class="section-title section-title--underline">Background</h4>
@@ -34,8 +34,10 @@ bodyclass: page-about
   </div><!--/.container-->
 </section>
 
-<section class="section bg-pattern-grey">
-    {% include svgs-about.html %}
+<section class="section bg-white">
+  <div class="container-full">
+    {% include services.html %}
+  </div>
 </section>
 
 <section class="work-process section-wrap bg-white group">

@@ -8,7 +8,7 @@ subtitle:
 ---
 
 <section class="news-layout section-wrap bg-white">
-  <div class="container">
+  <div class="container-full container-full--padded">
     <h4 class="section-title section-title--underline">Recent Work</h4>
     {% assign project_items = site.projects | sort: 'date' | reverse %} 
     {% for project in project_items %}
