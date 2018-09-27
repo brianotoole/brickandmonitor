@@ -1969,7 +1969,10 @@ body.nav-open {
   min-height: auto;
   color: #fff;
   background-color: #293a42;
-  min-height: 500px; }
+  min-height: 100vh; }
+  @media (min-width: 50rem) {
+    .section-hero {
+      min-height: 500px; } }
   .section-hero .hero-content {
     color: #fff; }
     @media (min-width: 50rem) {
@@ -2747,12 +2750,14 @@ svg:not(:root) {
   letter-spacing: 1px; }
   @media (max-width: 50rem) {
     .service__number {
-      text-align: center;
-      left: 36px; } }
+      display: none; } }
 
 .service__content {
-  padding: 7.5rem 5% 3.75rem;
-  text-align: center; }
+  padding: 1.875rem 0; }
+  @media (min-width: 50rem) {
+    .service__content {
+      padding: 7.5rem 5% 3.75rem;
+      text-align: center; } }
 
 .service__title {
   margin-top: 0;

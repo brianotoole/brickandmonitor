@@ -113,7 +113,10 @@
   min-height: auto;
   color: $color-white;
   background-color: $color-primary;
-  min-height: 500px;
+  min-height: 100vh;
+  @media (min-width: $bp-md) {
+    min-height: 500px;
+  }
   .hero-content {
     color: $color-white;
     @media (min-width: $bp-md) {

@@ -37,14 +37,16 @@
   top: 36px;
   letter-spacing: 1px;
   @media (max-width: $bp-md) {
-    text-align: center;
-    left: 36px;
+    display: none;
   }
 }
 
 .service__content {
-  padding: rem(120) 5% rem(60);
-  text-align: center;
+  padding: rem(30) 0;
+  @media (min-width: $bp-md) {
+    padding: rem(120) 5% rem(60);
+    text-align: center;
+  }
 }
 
 .service__title {
