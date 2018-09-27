@@ -97,8 +97,9 @@
 .section-hero {
   min-height: auto;
   color: $color-white;
-  background-image: url(https://sqy7rm.media.zestyio.com/branches.svg),
-    linear-gradient(65deg, $color-primary, $color-primary-dark);
+  background-color: $color-primary;
+  //background-image: url(https://sqy7rm.media.zestyio.com/branches.svg),
+  //linear-gradient(65deg, $color-primary, $color-primary-dark);
   @media (min-width: $bp-md) {
     min-height: 480px;
   }
@@ -170,6 +171,17 @@
     width: 100%;
     height: 100%;
     background: rgba($color-primary, 0.05);
+  }
+}
+
+.card {
+  padding: 15px 30px;
+  border-right: 1px solid $color-border;
+  &:last-of-type {
+    border: none;
+  }
+  @media (min-width: $bp-md) {
+    padding: 60px 30px;
   }
 }
 
