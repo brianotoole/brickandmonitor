@@ -2208,7 +2208,8 @@ body.nav-open {
       .posts-wrapper .post-item {
         -ms-flex-preferred-size: calc(100% - 40px);
             flex-basis: calc(100% - 40px);
-        min-height: 200px; } }
+        max-width: calc(100% - 40px);
+        min-height: 300px; } }
     .posts-wrapper .post-item:hover, .posts-wrapper .post-item:focus {
       background: #1f2c32;
       color: #fff; }

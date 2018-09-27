@@ -397,7 +397,8 @@
     transition: background 0.2s ease-in-out, color 0.25s ease-in-out;
     @media (max-width: $bp-md) {
       flex-basis: calc(100% - 40px);
-      min-height: 200px;
+      max-width: calc(100% - 40px);
+      min-height: 300px;
     }
     &:hover,
     &:focus {
