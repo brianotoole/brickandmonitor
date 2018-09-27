@@ -55,12 +55,9 @@
   font-size: rem(40);
   top: -52px;
   left: 0;
-  color: rgba($color-primary, 0.25);
+  color: rgba($color-secondary, 0.25);
   @media (min-width: $bp-md) {
     font-size: rem(120);
-  }
-  &--secondary {
-    color: rgba($color-secondary, 0.25);
   }
 }
 .call-out__title {
