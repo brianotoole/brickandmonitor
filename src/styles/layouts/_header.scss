@@ -7,19 +7,21 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100px;
-  height: 100vh;
+  width: 100%;
+  height: auto;
   margin: 0;
   padding: 0;
-  background-color: transparent;
+  background-color: $color-white;
   border-right: none;
   box-shadow: none;
   pointer-events: all;
+  box-shadow: -1px 0 0 0 rgba($color-border, 0.1);
   z-index: 300;
   @media (min-width: $bp-md) {
+    width: 100px;
+    height: 100vh;
     background-color: $color-white;
     border-right: 1px solid $color-border;
-    box-shadow: -1px 0 0 0 rgba($color-border, 0.1);
   }
 }
 
@@ -31,34 +33,50 @@
   display: block;
   padding: 30px 0;
   background-color: $color-white;
-  border-bottom: 1px solid $color-border;
   z-index: 300;
+  @media (min-width: $bp-md) {
+    border-bottom: 1px solid $color-border;
+  }
   .nav-open & {
     background-color: $color-secondary;
+    transition: all 0.3s linear;
     .nav-toggle .line {
       background: $color-white;
     }
   }
 }
-// Logo
-.logo-container {
+
+.header-label {
   position: fixed;
-  left: 30px;
-  span {
-    display: block;
-    margin-top: -7px;
-    color: $color-body;
-    font-family: $font-body;
-    font-weight: bold;
-    font-size: rem(27);
+  top: 45%;
+  left: -35px;
+  line-height: 1;
+  transform: rotate(-90deg);
+  color: #c5c5c5;
+  letter-spacing: 3px;
+}
+
+.header-logo {
+  position: absolute;
+  top: 0;
+  bottom: auto;
+  text-align: center;
+  z-index: 400;
+  @media (min-width: $bp-md) {
+    bottom: 0;
+    top: auto;
+    border-top: 1px solid $color-border;
   }
   img {
-    margin: 0;
-    margin-top: -1px;
-    width: 200px;
-    //max-width: 140px;
+    padding: 0;
+    width: 85px;
+    @media (min-width: $bp-md) {
+      padding: rem(15);
+      width: 100%;
+    }
   }
 }
+
 .header-contact-btn {
   position: fixed;
   right: 30px;
@@ -149,7 +167,7 @@
   padding: rem(15);
   text-transform: uppercase;
   overflow: hidden;
-  z-index: 2;
+  z-index: 3;
   transform: translateX(-100%) translateZ(0);
   transition: transform 0.5s cubic-bezier(0.75, 0, 0.25, 1), visibility 2s 0.1s;
   @media (min-width: $bp-md) {

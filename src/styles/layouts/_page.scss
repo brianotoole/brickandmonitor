@@ -108,22 +108,16 @@
   }
 }
 .section-hero {
+  display: flex;
+  align-items: center;
   min-height: auto;
   color: $color-white;
   background-color: $color-primary;
-  //background-image: url(https://sqy7rm.media.zestyio.com/branches.svg),
-  //linear-gradient(65deg, $color-primary, $color-primary-dark);
-  @media (min-width: $bp-md) {
-    min-height: 500px;
-  }
+  min-height: 500px;
   .hero-content {
-    //visibility: hidden; //vibible added with tween
-    position: relative;
-    padding-top: 160px;
-    padding-bottom: 110px;
     color: $color-white;
     @media (min-width: $bp-md) {
-      display: flex;
+      max-width: 72%;
     }
   }
   .hero-title {
@@ -503,14 +497,14 @@
   }
 }
 .footer-link-wrap {
-  background: $color-tertiary;
+  background: $color-primary;
   color: $color-white;
   display: block;
   padding: 80px 0;
   transition: background 0.25s ease-in-out;
   &:hover,
   &:focus {
-    background: $color-tertiary-dark;
+    background: $color-primary-dark;
     color: $color-white;
   }
 }
