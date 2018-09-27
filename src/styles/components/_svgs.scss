@@ -12,7 +12,7 @@ svg:not(:root) {
   margin: 0 auto 15px;
   fill: currentColor;
   color: transparent;
-  stroke: $color-secondary;
+  stroke: $color-border;
   stroke-width: 4px;
   stroke-dasharray: 2000;
   @media (min-width: $bp-md) {
@@ -27,9 +27,9 @@ svg:not(:root) {
 .svg-wrap {
   width: 1em;
   height: 1em;
-  font-size: 6em;
+  font-size: 3em;
   @media (min-width: $bp-md) {
-    font-size: 8em;
+    font-size: 4em;
   }
 }
 
@@ -55,10 +55,13 @@ svg:not(:root) {
 .svg-web {
   stroke-dasharray: 2000;
 
-  .svg-web-top {
+  .svg-web-browser {
+    color: $color-border;
   }
-  .svg-web-gear {
+
+  .svg-web-gear-mid {
     //50% 50% not working
+    color: $color-border-dark;
     transform-origin: 182px 155px;
     animation: spin 5s infinite linear;
   }
@@ -86,20 +89,20 @@ svg:not(:root) {
 }
 
 .terminal {
-  color: $color-primary;
+  color: $color-border;
 }
 
 .slash {
-  color: $color-primary;
+  color: $color-border;
   animation: pulseOpacity 0.7s infinite linear;
 }
 
 .lock {
-  color: $color-primary;
+  color: $color-border;
 }
 
 .gear {
-  color: $color-primary;
+  color: $color-border;
   transform-origin: 50% 50%;
   -webkit-transform-origin: 182px 155px;
   animation: spin 5s infinite linear;
@@ -107,7 +110,7 @@ svg:not(:root) {
 
 .line-lg,
 .line-sm {
-  color: $color-primary;
+  color: $color-border;
   stroke-linejoin: round;
   stroke-linecap: round;
   stroke-miterlimit: 10;

@@ -158,7 +158,7 @@ table {
 caption {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-  color: #ff7365;
+  color: #b80c15;
   text-align: left;
   caption-side: bottom; }
 
@@ -1648,14 +1648,14 @@ code {
       left: 50%;
       right: 50%;
       bottom: 0;
-      background: #ff7365;
+      background: #b80c15;
       height: 2px;
       transition-property: left, right;
       transition-duration: 0.3s;
       transition-timing-function: ease-out; }
     .nav-primary a:hover {
       text-decoration: none;
-      color: #ff7365; }
+      color: #b80c15; }
     .nav-primary a:hover:before {
       left: 0;
       right: 0; }
@@ -1748,7 +1748,7 @@ body.nav-open {
     text-decoration: none;
     transition: color 0.2s ease-in-out; }
     .nav-mobile-wrap a:hover, .nav-mobile-wrap a:focus {
-      color: #ff7365; }
+      color: #b80c15; }
 
 .nav-toggle {
   width: 35px;
@@ -1998,7 +1998,7 @@ body.nav-open {
     padding-left: 60px;
     position: relative; }
     .work-process-wrapper .work-process-content:before {
-      color: #ff7365;
+      color: #b80c15;
       content: attr(data-title);
       font-size: 0.875rem;
       left: 0;
@@ -2222,7 +2222,7 @@ body.nav-open {
   .pre-loader.is-loading {
     position: absolute;
     overflow: hidden;
-    background: #ff7365;
+    background: #b80c15;
     z-index: 1; }
 
 .btn {
@@ -2248,11 +2248,11 @@ body.nav-open {
       color: #ffffff;
       background-color: #0c1113; }
   .btn.secondary {
-    background-color: #ff7365;
+    background-color: #b80c15;
     transition: all 0.2s linear; }
     .btn.secondary:hover {
       color: #ffffff;
-      background-color: #ff2d19; }
+      background-color: #70070d; }
   .btn.white {
     background-color: #ffffff;
     transition: all 0.2s linear;
@@ -2294,7 +2294,7 @@ body.nav-open {
       margin-left: 10px;
       transition: margin-left 0.2s ease-in-out; }
     .btn.arrow:hover {
-      color: #ff7365; }
+      color: #b80c15; }
       .btn.arrow:hover:after {
         margin-left: 14px; }
 
@@ -2323,7 +2323,7 @@ select {
   textarea:focus,
   select:active,
   select:focus {
-    border-color: #ff7365; }
+    border-color: #b80c15; }
 
 @media (min-width: 50rem) {
   textarea {
@@ -2364,7 +2364,7 @@ svg:not(:root) {
   margin: 0 auto 15px;
   fill: currentColor;
   color: transparent;
-  stroke: #ff7365;
+  stroke: #d1d3d4;
   stroke-width: 4px;
   stroke-dasharray: 2000; }
   @media (min-width: 50rem) {
@@ -2377,10 +2377,10 @@ svg:not(:root) {
 .svg-wrap {
   width: 1em;
   height: 1em;
-  font-size: 6em; }
+  font-size: 3em; }
   @media (min-width: 50rem) {
     .svg-wrap {
-      font-size: 8em; } }
+      font-size: 4em; } }
 
 .svg-lines {
   position: absolute;
@@ -2400,7 +2400,10 @@ svg:not(:root) {
 
 .svg-web {
   stroke-dasharray: 2000; }
-  .svg-web .svg-web-gear {
+  .svg-web .svg-web-browser {
+    color: #d1d3d4; }
+  .svg-web .svg-web-gear-mid {
+    color: #c4c6c8;
     transform-origin: 182px 155px;
     animation: spin 5s infinite linear; }
 
@@ -2419,24 +2422,24 @@ svg:not(:root) {
     animation: drawLine 2s 1s infinite linear forwards, fadeIn 2s 1s infinite linear reverse; }
 
 .terminal {
-  color: #293a42; }
+  color: #d1d3d4; }
 
 .slash {
-  color: #293a42;
+  color: #d1d3d4;
   animation: pulseOpacity 0.7s infinite linear; }
 
 .lock {
-  color: #293a42; }
+  color: #d1d3d4; }
 
 .gear {
-  color: #293a42;
+  color: #d1d3d4;
   transform-origin: 50% 50%;
   -webkit-transform-origin: 182px 155px;
   animation: spin 5s infinite linear; }
 
 .line-lg,
 .line-sm {
-  color: #293a42;
+  color: #d1d3d4;
   stroke-linejoin: round;
   stroke-linecap: round;
   stroke-miterlimit: 10;
@@ -2502,7 +2505,7 @@ svg:not(:root) {
     transition: background 0.3s ease-out;
     cursor: pointer; }
     .call-out--is-link:hover {
-      background-color: #ff7365; }
+      background-color: #b80c15; }
   .call-out--has-border {
     border-top: 1px solid #dee0e0; }
 
@@ -2545,7 +2548,7 @@ svg:not(:root) {
   font-size: 2.5rem;
   top: -52px;
   left: 0;
-  color: rgba(255, 115, 101, 0.25); }
+  color: rgba(184, 12, 21, 0.25); }
   @media (min-width: 50rem) {
     .call-out__number {
       font-size: 7.5rem; } }
@@ -2603,11 +2606,61 @@ svg:not(:root) {
     .pricing-table .plan h5.order .btn {
       display: block;
       position: relative;
-      background: #ff7365;
+      background: #b80c15;
       color: #ffffff; }
       .pricing-table .plan h5.order .btn:hover {
         color: #ffffff;
-        background: #ff5c4c; }
+        background: #a00a12; }
+
+.services {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  margin-top: 0.625rem;
+  margin-bottom: 0;
+  border-top: 1px solid #d1d3d4;
+  border-bottom: 1px solid #d1d3d4; }
+
+.service {
+  position: relative;
+  -ms-flex: 0 0 33.333333%;
+      flex: 0 0 33.333333%;
+  max-width: 33.33333%;
+  padding-left: 0.3125rem;
+  padding-right: 0.3125rem;
+  border-right: 1px solid #d1d3d4; }
+  .service:last-child {
+    border-right: none; }
+
+.service__number {
+  color: #d1d3d4;
+  font-size: 2rem;
+  font-weight: 700;
+  left: 36px;
+  position: absolute;
+  top: 36px;
+  letter-spacing: 1px; }
+
+.service__content {
+  padding: 7.5rem 5% 3.75rem;
+  text-align: center; }
+
+.service__title {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+  color: #b80c15; }
+
+.service__title--service {
+  color: #222;
+  font-weight: 900;
+  letter-spacing: 3px;
+  font-size: 1rem; }
+
+.service__icon {
+  display: block;
+  margin-top: 3.75rem; }
 
 .text-white {
   color: #ffffff; }
@@ -2616,7 +2669,7 @@ svg:not(:root) {
   color: #293a42; }
 
 .text-secondary {
-  color: #ff7365; }
+  color: #b80c15; }
 
 .text-body {
   color: #111; }
@@ -2630,7 +2683,7 @@ svg:not(:root) {
   color: #ffffff; }
 
 .bg-secondary {
-  background: #ff7365;
+  background: #b80c15;
   color: #111; }
 
 .bg-black {
@@ -2778,7 +2831,7 @@ svg:not(:root) {
   left: 0;
   right: 100%;
   top: 0;
-  background: #ff7365;
+  background: #b80c15;
   height: 2px;
   transition-property: right;
   transition-duration: 0.3s;
