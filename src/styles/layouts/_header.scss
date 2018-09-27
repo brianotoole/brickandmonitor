@@ -11,11 +11,16 @@
   height: 100vh;
   margin: 0;
   padding: 0;
-  background-color: $color-white;
-  border-right: 1px solid $color-border;
-  box-shadow: -1px 0 0 0 rgba($color-border, 0.1);
+  background-color: transparent;
+  border-right: none;
+  box-shadow: none;
   pointer-events: all;
   z-index: 300;
+  @media (min-width: $bp-md) {
+    background-color: $color-white;
+    border-right: 1px solid $color-border;
+    box-shadow: -1px 0 0 0 rgba($color-border, 0.1);
+  }
 }
 
 .header-button-wrapper {
@@ -137,7 +142,7 @@
   background: $color-white;
   //background-image: url("/assets/images/home-bg-dust.png");
   height: 100vh;
-  width: 25vw;
+  width: 100%;
   top: 0;
   left: 0;
   margin: 0;
@@ -147,11 +152,17 @@
   z-index: 2;
   transform: translateX(-100%) translateZ(0);
   transition: transform 0.5s cubic-bezier(0.75, 0, 0.25, 1), visibility 2s 0.1s;
+  @media (min-width: $bp-md) {
+    width: 25vw;
+  }
   &.nav-open {
     visibility: visible;
     box-shadow: -1px 0 0 0 rgba($color-border, 0.1);
     transition-delay: 0s, 0s;
-    transform: translateX(100px) translateZ(0);
+    transform: translateX(0) translateZ(0);
+    @media (min-width: $bp-md) {
+      transform: translateX(100px) translateZ(0);
+    }
   }
 }
 body.nav-open {

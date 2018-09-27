@@ -1602,11 +1602,16 @@ code {
   height: 100vh;
   margin: 0;
   padding: 0;
-  background-color: #fff;
-  border-right: 1px solid #ebebeb;
-  box-shadow: -1px 0 0 0 rgba(235, 235, 235, 0.1);
+  background-color: transparent;
+  border-right: none;
+  box-shadow: none;
   pointer-events: all;
   z-index: 300; }
+  @media (min-width: 50rem) {
+    .header-side-layout {
+      background-color: #fff;
+      border-right: 1px solid #ebebeb;
+      box-shadow: -1px 0 0 0 rgba(235, 235, 235, 0.1); } }
 
 .header-button-wrapper {
   cursor: pointer;
@@ -1732,7 +1737,7 @@ code {
   position: fixed;
   background: #fff;
   height: 100vh;
-  width: 25vw;
+  width: 100%;
   top: 0;
   left: 0;
   margin: 0;
@@ -1742,11 +1747,17 @@ code {
   z-index: 2;
   transform: translateX(-100%) translateZ(0);
   transition: transform 0.5s cubic-bezier(0.75, 0, 0.25, 1), visibility 2s 0.1s; }
+  @media (min-width: 50rem) {
+    .nav-mobile {
+      width: 25vw; } }
   .nav-mobile.nav-open {
     visibility: visible;
     box-shadow: -1px 0 0 0 rgba(235, 235, 235, 0.1);
     transition-delay: 0s, 0s;
-    transform: translateX(100px) translateZ(0); }
+    transform: translateX(0) translateZ(0); }
+    @media (min-width: 50rem) {
+      .nav-mobile.nav-open {
+        transform: translateX(100px) translateZ(0); } }
 
 body.nav-open {
   position: fixed;
@@ -1864,12 +1875,21 @@ body.nav-open {
 
 .container-full {
   max-width: 100%;
-  margin-left: 100px;
-  margin-right: 0; }
+  margin-left: 1.875rem;
+  margin-right: 1.875rem; }
+  @media (min-width: 50rem) {
+    .container-full {
+      max-width: 100%;
+      margin-left: 100px;
+      margin-right: 0; } }
 
 .container-full--padded > * {
-  padding-left: 2.8125rem;
-  padding-right: 2.8125rem; }
+  padding-left: 0;
+  padding-right: 0; }
+  @media (min-width: 50rem) {
+    .container-full--padded > * {
+      padding-left: 2.8125rem;
+      padding-right: 2.8125rem; } }
 
 .half {
   width: 50%; }

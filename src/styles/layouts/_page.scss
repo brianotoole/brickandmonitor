@@ -26,14 +26,23 @@
 
 .container-full {
   max-width: 100%;
-  margin-left: 100px;
-  margin-right: 0;
+  margin-left: rem(30);
+  margin-right: rem(30);
+  @media (min-width: $bp-md) {
+    max-width: 100%;
+    margin-left: 100px;
+    margin-right: 0;
+  }
 }
 
 .container-full--padded {
   > * {
-    padding-left: rem(45);
-    padding-right: rem(45);
+    padding-left: 0;
+    padding-right: 0;
+    @media (min-width: $bp-md) {
+      padding-left: rem(45);
+      padding-right: rem(45);
+    }
   }
 }
 
