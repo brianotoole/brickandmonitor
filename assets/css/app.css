@@ -1534,7 +1534,7 @@ code {
   position: fixed;
   top: 0;
   left: auto;
-  width: 375px;
+  width: 366px;
   height: 100px;
   margin: 0;
   padding: 38px 35px 38px 0;
@@ -1773,21 +1773,6 @@ body.nav-open {
       top: 50%; }
     .nav-toggle .line.line-3 {
       top: 100%; }
-  .nav-toggle:hover .line-1,
-  .nav-toggle:hover .line-2,
-  .nav-toggle:hover .line-3, .nav-toggle:focus .line-1,
-  .nav-toggle:focus .line-2,
-  .nav-toggle:focus .line-3 {
-    background: #ffffff;
-    transition: 0.2s all ease-in-out; }
-  .nav-toggle:hover .line-1, .nav-toggle:focus .line-1 {
-    transform: translateY(-1.5px);
-    transition-delay: 0ms; }
-  .nav-toggle:hover .line-2, .nav-toggle:focus .line-2 {
-    transition-delay: 50ms; }
-  .nav-toggle:hover .line-3, .nav-toggle:focus .line-3 {
-    transform: translateY(1.5px);
-    transition-delay: 100ms; }
   .nav-toggle.active .line-1,
   .nav-toggle.active .line-2,
   .nav-toggle.active .line-3, .nav-toggle:focus .line-1,
