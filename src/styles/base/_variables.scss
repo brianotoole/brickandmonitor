@@ -8,9 +8,9 @@ $color-code: #1bff00;
 
 // Colors: others
 $color-body: #111;
-$color-white: #ffffff;
+$color-black: #111;
+$color-white: #fff;
 $color-gray: #f2f6f9;
-$color-black: #000;
 $color-primary-dark: darken($color-primary, 5%);
 $color-secondary-dark: darken($color-secondary, 5%);
 $color-tertiary-dark: darken($color-tertiary, 5%);
@@ -22,7 +22,7 @@ $color-alt4: darken($color-primary, 4%);
 // Colors: components
 $color-link: $color-tertiary;
 $color-link-hover: darken($color-tertiary, 15%);
-$color-border: #d1d3d4;
+$color-border: #ebebeb;
 $color-border-dark: darken($color-border, 5%);
 $color-border-light: lighten($color-border, 5%);
 $color-border-base: rgba($color-body, 0.2);

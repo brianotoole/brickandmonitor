@@ -14,11 +14,11 @@
   height: 100px;
   margin: 0;
   padding: 38px 35px 38px 0;
-  background-color: $color-tertiary;
+  background-color: $color-white;
   z-index: 300;
   &:before {
     content: "";
-    background-color: $color-tertiary;
+    background-color: $color-white;
     left: 0;
     position: fixed;
     top: 0;
@@ -30,7 +30,7 @@
   }
   @media (max-width: $bp-md) {
     width: 93%;
-    background-color: $color-tertiary;
+    background-color: $color-white;
   }
 }
 // Logo
@@ -40,7 +40,7 @@
   span {
     display: block;
     margin-top: -7px;
-    color: $color-white;
+    color: $color-body;
     font-family: $font-body;
     font-weight: bold;
     font-size: rem(27);
@@ -223,7 +223,7 @@ $translateX: 0;
     display: block;
     position: absolute;
     right: 0;
-    background: $color-white;
+    background: $color-body;
     width: $width-line;
     height: $height-line;
     transition: all $transition-time;
@@ -240,11 +240,6 @@ $translateX: 0;
   }
   &.active,
   &:focus {
-    .line-1,
-    .line-2,
-    .line-3 {
-      background: $color-white;
-    }
     .line-1 {
       transform: translateY($translateY) translateX($translateX)
         rotate($rotation);
