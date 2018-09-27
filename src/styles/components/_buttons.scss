@@ -47,6 +47,16 @@
   &.rounded {
     border-radius: 100px;
   }
+  &.block {
+    display: block;
+    width: 100%;
+  }
+  &.block-mobile {
+    @media (max-width: $bp-md) {
+      display: block;
+      width: 100%;
+    }
+  }
   &.arrow {
     padding-left: 0;
     border: none;

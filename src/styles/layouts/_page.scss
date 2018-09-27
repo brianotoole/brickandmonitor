@@ -208,7 +208,8 @@
   }
   &--underline {
     border-bottom: 1px solid $color-border;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
+    padding-top: 20px;
     padding-bottom: 20px;
   }
 }
@@ -346,6 +347,8 @@
   img {
     position: relative;
     margin-bottom: 0;
+    background: $color-border;
+    padding-right: rem(20);
   }
 }
 
