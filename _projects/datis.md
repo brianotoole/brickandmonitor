@@ -12,13 +12,12 @@ subtitle: We worked with Datis HR Cloud to build a mobile-first approach for the
 description: We worked with Datis HR Cloud to build a mobile-first approach for the software company's new website.
 ---
 
-We worked with Datis HR Cloud to build a mobile-first approach for the company's new website.
+We worked with Datis HR Cloud to build a mobile-first approach for the software company's new website.
 
 #### Objectives
 
-- Fully customizable CMS-solution for many types of content... some of which needs to be gated
-- Mobile-first design and deveopment approach
-
-#### Work Involved
+- Fully customizable CMS-solution for many types of content
+- Ability to filter resources by many types and allow for some to be gated (sign-up to view)
+- Mobile-first design and develpment approach
 
 ![datis resources](/assets/images/project-datis-resources.png)
