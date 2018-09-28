@@ -36,8 +36,13 @@
   }
   &.transparent {
     @include button-bg(transparent);
-    border: 1px solid $color-black;
-    color: $color-black;
+    border: 1px solid $color-primary;
+    color: $color-primary;
+    &:hover {
+      background: $color-primary;
+      border-color: $color-primary-dark;
+      color: $color-white;
+    }
   }
   &.transparent-white {
     @include button-bg(transparent);
@@ -50,11 +55,13 @@
   &.block {
     display: block;
     width: 100%;
+    margin: 0 auto;
   }
   &.block-mobile {
     @media (max-width: $bp-md) {
       display: block;
       width: 100%;
+      margin: 0 auto;
     }
   }
   &.arrow {

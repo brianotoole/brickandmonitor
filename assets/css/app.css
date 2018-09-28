@@ -2368,11 +2368,15 @@ body.nav-open {
   .btn.transparent {
     background-color: transparent;
     transition: all 0.2s linear;
-    border: 1px solid #111;
-    color: #111; }
+    border: 1px solid #293a42;
+    color: #293a42; }
     .btn.transparent:hover {
       color: #fff;
       background-color: rgba(0, 0, 0, 0); }
+    .btn.transparent:hover {
+      background: #293a42;
+      border-color: #1f2c32;
+      color: #fff; }
   .btn.transparent-white {
     background-color: transparent;
     transition: all 0.2s linear;
@@ -2385,11 +2389,13 @@ body.nav-open {
     border-radius: 100px; }
   .btn.block {
     display: block;
-    width: 100%; }
+    width: 100%;
+    margin: 0 auto; }
   @media (max-width: 50rem) {
     .btn.block-mobile {
       display: block;
-      width: 100%; } }
+      width: 100%;
+      margin: 0 auto; } }
   .btn.arrow {
     padding-left: 0;
     border: none;
