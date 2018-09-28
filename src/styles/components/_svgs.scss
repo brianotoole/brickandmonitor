@@ -56,12 +56,12 @@ svg:not(:root) {
   stroke-dasharray: 2000;
 
   .svg-web-browser {
-    color: $color-border;
+    fill: $color-border;
   }
 
   .svg-web-gear-mid {
     //50% 50% not working
-    color: $color-border-dark;
+    fill: $color-border-dark;
     transform-origin: 182px 155px;
     animation: spin 5s infinite linear;
   }

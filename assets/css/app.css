@@ -2513,9 +2513,9 @@ svg:not(:root) {
 .svg-web {
   stroke-dasharray: 2000; }
   .svg-web .svg-web-browser {
-    color: #ebebeb; }
+    fill: #ebebeb; }
   .svg-web .svg-web-gear-mid {
-    color: #dedede;
+    fill: #dedede;
     transform-origin: 182px 155px;
     animation: spin 5s infinite linear; }
 
