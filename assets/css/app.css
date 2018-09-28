@@ -2476,7 +2476,7 @@ svg:not(:root) {
   margin: 0 auto 15px;
   fill: currentColor;
   color: transparent;
-  stroke: #ebebeb;
+  stroke: #293a42;
   stroke-width: 4px;
   stroke-dasharray: 2000; }
   @media (min-width: 50rem) {
@@ -2505,7 +2505,7 @@ svg:not(:root) {
 .path-lines {
   fill: currentColor;
   color: transparent;
-  stroke: rgba(255, 255, 255, 0.05);
+  stroke: rgba(41, 58, 66, 0.05);
   stroke-width: 1px;
   stroke-dasharray: 1689;
   animation: fillSvg 12s reverse linear; }
@@ -2513,9 +2513,9 @@ svg:not(:root) {
 .svg-web {
   stroke-dasharray: 2000; }
   .svg-web .svg-web-browser {
-    fill: #ebebeb; }
+    fill: #293a42; }
   .svg-web .svg-web-gear-mid {
-    fill: #dedede;
+    fill: #1f2c32;
     transform-origin: 182px 155px;
     animation: spin 5s infinite linear; }
 
@@ -2534,24 +2534,24 @@ svg:not(:root) {
     animation: drawLine 2s 1s infinite linear forwards, fadeIn 2s 1s infinite linear reverse; }
 
 .terminal {
-  color: #ebebeb; }
+  color: #293a42; }
 
 .slash {
-  color: #ebebeb;
+  color: #293a42;
   animation: pulseOpacity 0.7s infinite linear; }
 
 .lock {
-  color: #ebebeb; }
+  color: #293a42; }
 
 .gear {
-  color: #ebebeb;
+  color: #293a42;
   transform-origin: 50% 50%;
   -webkit-transform-origin: 182px 155px;
   animation: spin 5s infinite linear; }
 
 .line-lg,
 .line-sm {
-  color: #ebebeb;
+  color: #293a42;
   stroke-linejoin: round;
   stroke-linecap: round;
   stroke-miterlimit: 10;
