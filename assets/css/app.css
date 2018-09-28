@@ -1880,18 +1880,12 @@ body.nav-open {
 .container {
   max-width: 100%;
   margin: 0;
-  padding-left: 8.75rem;
-  padding-right: 2.8125rem; }
-  @media (max-width: 50rem) {
-    .container {
-      max-width: 1000px;
-      padding-left: 1.875rem;
-      padding-right: 1.875rem; } }
+  padding-left: 1.875rem;
+  padding-right: 1.875rem; }
   @media (min-width: 50rem) {
-    .container--narrow {
-      max-width: 1180px;
-      margin-left: auto;
-      margin-right: auto; } }
+    .container {
+      padding-left: 8.75rem;
+      padding-right: 2.8125rem; } }
 
 .container-full {
   max-width: 100%;
@@ -1900,7 +1894,7 @@ body.nav-open {
   @media (min-width: 50rem) {
     .container-full {
       max-width: 100%;
-      margin-left: 100px;
+      margin-left: 6.25rem;
       margin-right: 0; } }
 
 .container-full--padded > * {

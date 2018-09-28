@@ -8,19 +8,11 @@
 .container {
   max-width: 100%;
   margin: 0;
-  padding-left: rem(140);
-  padding-right: rem(45);
-  @media (max-width: $bp-md) {
-    max-width: 1000px;
-    padding-left: rem(30);
-    padding-right: rem(30);
-  }
-  &--narrow {
-    @media (min-width: $bp-md) {
-      max-width: 1180px;
-      margin-left: auto;
-      margin-right: auto;
-    }
+  padding-left: rem(30);
+  padding-right: rem(30);
+  @media (min-width: $bp-md) {
+    padding-left: rem(140);
+    padding-right: rem(45);
   }
 }
 
@@ -30,7 +22,7 @@
   margin-right: rem(30);
   @media (min-width: $bp-md) {
     max-width: 100%;
-    margin-left: 100px;
+    margin-left: rem(100);
     margin-right: 0;
   }
 }
