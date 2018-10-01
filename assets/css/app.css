@@ -2497,15 +2497,18 @@ svg:not(:root) {
 .svg-lines {
   position: absolute;
   width: 100%;
+  height: 100%;
   top: 0;
   margin: 0 auto;
-  height: auto;
   font-size: 20em; }
+  @media (min-width: 50rem) {
+    .svg-lines {
+      height: auto; } }
 
 .path-lines {
   fill: currentColor;
   color: transparent;
-  stroke: rgba(41, 58, 66, 0.05);
+  stroke: rgba(255, 255, 255, 0.05);
   stroke-width: 1px;
   stroke-dasharray: 1689;
   animation: fillSvg 12s reverse linear; }
