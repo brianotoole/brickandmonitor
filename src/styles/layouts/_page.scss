@@ -489,6 +489,17 @@
   }
 }
 
+// TEAM
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.team > div {
+  padding-bottom: rem(30);
+}
+
 // Footer
 .footer {
   a {
