@@ -1,37 +1,34 @@
 # jekyll webpack
 
-Webpack, Jekyll, Browser Sync Boiler
+Webpack, Jekyll, Browser Sync for Brick &amp; Monitor by [Brian O'Toole](https://brianzotoole.com)
 
 ## Dependencies
 
-In order to work with this setup, you will need to following tools:
-- [*Ruby*](https://www.ruby-lang.org/en/).
-- [*Node*](https://nodejs.org/)
+Need the following installed globally on your machine:
 
-## Instructions:
+- [_Ruby_](https://www.ruby-lang.org/en/).
+- [_Node_](https://nodejs.org/)
 
-* With this done, you have to install the following Gem:
+## Install:
+
+- Install project's Ruby Gems:
 
       $ gem install bundler
-      $ cd jekyll && bundler install 
-        
-* Then install node dependencies
+      $ cd jekyll && bundler install
 
-      $ npm install 
 
-...that's all folks.
-    
-### How to run it
+- Then install project's npm dependencies:
 
-To see your project running please run:
+      $ npm install
 
-    $ npm run jekyll
+### Spin up Local Server
+
+    $ bundle exec jekyll serve
 
 and in another terminal
 
     $ npm start
 
-
 ### Prod build
-    
+
     $ npm run prod
