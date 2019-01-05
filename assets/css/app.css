@@ -1011,16 +1011,6 @@ p {
   .pre-loader-logo-wrap.active {
     display: block; }
 
-@keyframes bg_change {
-  0% {
-    background-color: #a6a6a6; }
-  25% {
-    background-color: #bfbfbf; }
-  50% {
-    background-color: #d9d9d9; }
-  100% {
-    background-color: #f2f2f2; } }
-
 .pre-loader-logo {
   position: absolute;
   width: 150px;
@@ -1031,21 +1021,22 @@ p {
   margin: 0 auto;
   z-index: 3; }
   .pre-loader-logo .svg {
+    display: none;
     fill: currentColor;
-    color: black;
-    animation: fadeIn 0.6s forwards linear; }
+    color: transparent; }
+    .pre-loader-logo .svg .svg-inner {
+      stroke: transparent; }
+    .pre-loader-logo .svg.active {
+      display: block;
+      animation: draw 0.6s reverse linear;
+      visibility: visible; }
 
-/*@keyframes draw {
-    from {
-      color: black;
-      stroke-dashoffset: 0;
-    }
-    to {
-      color: black;
-      stroke-dashoffset: 9000;
-    }
-  }
-*/
+@keyframes draw {
+  from {
+    color: transparent; }
+  to {
+    color: black; } }
+
 .site-wrapper {
   overflow: hidden; }
 
