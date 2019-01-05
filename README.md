@@ -1,6 +1,6 @@
-# jekyll webpack
-
-Webpack, Jekyll, Browser Sync for Brick &amp; Monitor by [Brian O'Toole](https://brianzotoole.com)
+# Brick & Monitor v3.0.0
+- Brick &amp; Monitor, by: [Brian O'Toole](https://brianzotoole.com)
+- Uses Webpack, Jekyll, Browser Sync
 
 ## Dependencies
 
