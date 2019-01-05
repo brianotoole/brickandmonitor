@@ -1,53 +1,40 @@
-// VARIABLES
+/*********************************************************
+    Variables
+*********************************************************/
 
-// Colors: branding
-$color-primary: #293a42;
-$color-secondary: #b80c15;
-$color-tertiary: #222;
-$color-code: #1bff00;
+/*********************************************************
+    Colors
+*********************************************************/
 
-// Colors: others
-$color-body: #111;
-$color-black: #111;
-$color-white: #fff;
-$color-grey: #fafafa;
-$color-primary-dark: darken($color-primary, 5%);
-$color-secondary-dark: darken($color-secondary, 5%);
-$color-tertiary-dark: darken($color-tertiary, 5%);
-$color-alt1: darken($color-primary, 1%);
-$color-alt2: darken($color-primary, 2%);
-$color-alt3: darken($color-primary, 3%);
-$color-alt4: darken($color-primary, 4%);
-
-// Colors: components
-$color-link: $color-tertiary;
-$color-link-hover: darken($color-tertiary, 15%);
-$color-border: #ebebeb;
-$color-border-dark: darken($color-border, 5%);
-$color-border-light: lighten($color-border, 5%);
+$color-primary: #FFDD00;
+$color-secondary: #F6F6F6;
+$color-white: #ffffff;
+$color-body: #303030;
+$color-black: #303030;
+$color-grey: #f5f5f5;
+$color-primary-dark: darken($color-primary, 15%);
+$color-secondary-dark: darken($color-secondary, 15%);
+$color-white-dark: darken($color-white, 15%);
 $color-border-base: rgba($color-body, 0.2);
+$color-success: green;
+$color-error: red;
 
-// Font Stacks
-$font-heading: "Martel", sans-serif;
-$font-body: "Martel", sans-serif;
-$font-monospace: Menlo, Monaco, monospace;
+/*********************************************************
+    Typography
+*********************************************************/
 
-// Breakpoints, using rems
-// #size % 16(default body font-size) == xrem (or, 320%16 ==20)
-$bp-xs: 20rem; //320
-$bp-sm: 30rem; //480
-$bp-md: 50rem; //800
-$bp-lg: 62.4375em; //999
-$bp-xl: 80rem; //1280
+$font-base-font-size: 1rem;
+$font-ratio: 1.2;
+$font-base-line-height: 1.5;
+$font-heading: zenon,
+sans-serif;
+$font-body: aktiv-grotesk,
+sans-serif;
 
-// Sizings
-$font-size-body: rem(16);
-// Relative sizings if needed to resize body
-$font-size-xl: 120%;
-$font-size-lg: 110%;
-$font-size-sm: 90%;
-$font-size-xs: 80%;
+/*********************************************************
+    Responsive Breakpoints
+*********************************************************/
 
-// Margins & Pads
-$margin-bottom-headings: 0.5rem;
-$margin-bottom-paragraphs: 1rem;
+$bp_sm: 530px;
+$bp_md: 800px;
+$bp_lg: 999px;

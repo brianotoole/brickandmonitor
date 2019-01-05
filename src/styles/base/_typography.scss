@@ -1,101 +1,89 @@
-// TYPOGRAPY
-body {
-  font-family: $font-body;
-  line-height: 1.45;
-  font-weight: 300;
-  font-smoothing: antialiased;
-  -webkit-font-smoothing: antialiased;
-}
-h1,
-.h1,
-h2,
-.h2,
-h3,
-.h3,
-h4,
-.h4,
-h5,
-.h5,
-h6,
-.h6 {
-  font-family: $font-heading;
-  font-weight: 400;
-  line-height: 1.4;
-  word-wrap: break-word;
-  letter-spacing: 0.25px;
-}
+/*********************************************************
+    Typography
+*********************************************************/
 
 h1,
-.h1,
 h2,
-.h2 {
-  font-weight: 900;
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-heading;
+    font-weight: 300;
+    line-height: 1.2;
 }
 
 h1,
 .h1 {
-  font-size: rem(52);
-  letter-spacing: 0.5px;
-  @media (max-width: $bp-md) {
-    font-size: rem(32);
-  }
+    font-size: font-scale(3);
+    @include bp_md {
+        font-size: font-scale(6);
+    }
 }
 
 h2,
 .h2 {
-  font-size: rem(42);
-  @media (max-width: $bp-md) {
-    font-size: rem(28);
-  }
+    font-size: font-scale(2.5);
+    @include bp_md {
+        font-size: font-scale(5);
+    }
 }
 
 h3,
 .h3 {
-  font-size: rem(36);
-  @media (max-width: $bp-md) {
-    font-size: rem(24);
-  }
+    font-size: font-scale(2);
+    @include bp_md {
+        font-size: font-scale(4);
+    }
 }
 
 h4,
 .h4 {
-  font-size: rem(28);
-  @media (max-width: $bp-md) {
-    font-size: rem(20);
-  }
+    font-size: font-scale(1.5);
+    @include bp_md {
+        font-size: font-scale(3);
+    }
 }
 
 h5,
 .h5 {
-  font-size: rem(22);
-  @media (max-width: $bp-md) {
-    font-size: rem(18);
-  }
+    font-size: font-scale(1);
+    @include bp_md {
+        font-size: font-scale(2);
+    }
 }
 
 h6,
 .h6 {
-  font-size: rem(18);
-  @media (max-width: $bp-md) {
-    font-size: rem(16);
-  }
+    font-size: font-scale(0);
 }
 
 p {
-  font-size: rem(16);
+    font-size: font-scale(0);
+    @include bp_md {
+        font-size: font-scale(1);
+    }
+    margin: 0 0 rem(30) 0;
 }
-ul,
-ol,
-dl {
-  font-size: rem(16);
+
+.heading {
+    @extend h6;
+    font-family: $font-body;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-bottom: rem(40);
+    &--m-bottom {
+        padding-bottom: rem(60);
+    }
 }
-pre {
-  padding: 20px;
-  background: $color-body;
-}
-code {
-  background: $color-body;
-  color: $color-code;
-  font-size: rem(14);
-  padding: 2px;
+
+.heading-underline {
+    @extend h5;
+    font-weight: 700;
+    margin-bottom: rem(20);
+    padding-bottom: rem(20);
+    border-bottom: 2px solid $color-grey;
+    @include bp_md {
+        margin-bottom: rem(40);
+    }
 }

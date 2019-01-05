@@ -1,0 +1,27 @@
+/*********************************************************
+    Hero
+*********************************************************/
+
+.hero {
+  position: relative;
+}
+
+.hero__logo {
+  width: 90px;
+  margin: auto;
+  padding-top: rem(15);
+  padding-bottom: rem(60);
+  @include bp_md {
+      padding-bottom: rem(100);
+  }
+}
+
+.hero__title {
+  padding-bottom: rem(30);
+  font-weight: 700;
+}
+
+.hero__subtitle {
+  @extend .h4;
+  font-style: italic;
+}
