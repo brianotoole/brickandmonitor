@@ -4,10 +4,17 @@
 
 .hero {
   position: relative;
+  &--full-height {
+    height: 100vh;
+  }
+}
+
+.hero__content {
+  padding-top: rem(60);
 }
 
 .hero__logo {
-  width: 90px;
+  width: 150px;
   margin: auto;
   padding-top: rem(15);
   padding-bottom: rem(60);

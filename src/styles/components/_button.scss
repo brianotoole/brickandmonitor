@@ -11,10 +11,9 @@
   font-size: font-scale(0);
   font-weight: 700;
   text-transform: uppercase;
-  color: $color-body;
+  color: $color-white;
   background-color: $color-primary;
   border-radius: rem(50);
-  border: 1px solid $color-primary;
   text-decoration: none;
   text-align: center;
   white-space: nowrap;
@@ -27,8 +26,7 @@
   &:focus {
       text-decoration: none;
       color: $color-white;
-      background-color: $color-body;
-      border-color: $color-white;
+      background-color: $color-primary-dark;
   }
   &--secondary {
       background-color: $color-secondary;
