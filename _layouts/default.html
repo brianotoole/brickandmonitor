@@ -1,18 +1,35 @@
+
 <!DOCTYPE html>
 <html>
 {% include head.html %}
-<body class="{% if page.bodyclass %}{{ page.bodyclass }}{% else %}{{ layout.bodyclass }}{% endif %}">
-  <div class="pre-loader"></div>
-<header class="header">
-{% include header.html %}
-</header>
-<div class="site-wrapper">
-  {{ content }}
-</div><!--/.site-wrapper-->
-{% include footer.html %}
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<body class="{% if page.bodyclass %}{{ page.bodyclass }}{% else %}{{ layout.bodyclass }}{% endif %}">
+    <div class="site-wrapper">
+        <div class="pre-loader"></div>
+        <div class="pre-loader-logo-wrap">
+            <div class="pre-loader-logo">
+                <svg class="svg" viewBox="0 0 403 403" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="logo" fill="currentColor">
+                            <path d="M207,196 L207,0 L196,0 L196,98.22 L98.22,196 L0,196 L0,207 L196,207 L196,403 L207,403 L207,207 L403,207 L403,196 L207,196 Z M113.78,196 L196,113.78 L196,196 L113.78,196 Z" id="Shape" fill-rule="nonzero"></path>
+                            <polygon id="Path" points="298.16 144.45 310.12 144.45 310.12 69.06 339.03 69.06 339.03 57.96 269.25 57.96 269.25 69.06 298.16 69.06"></polygon>
+                            <polygon id="Path" points="74.01 345.45 85.96 345.45 85.96 309.1 122.81 309.1 122.81 297.87 85.96 297.87 85.96 270.06 126.59 270.06 126.59 258.96 74.01 258.96"></polygon>
+                            <path d="M304.48,258.96 L273.01,258.96 L273.01,345.45 L284.97,345.45 L284.97,310.07 L304.49,310.07 C320.47,310.07 331.21,299.21 331.21,284.57 C331.2,270.06 320.47,258.96 304.48,258.96 Z M302.29,299.34 L284.97,299.34 L284.97,269.7 L302.29,269.7 C312.66,269.7 319,275.56 319,284.7 C319,293.6 312.66,299.34 302.29,299.34 Z" id="Shape" fill-rule="nonzero"></path>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+        </div>
+        <!--<header class="header">
+            {% include header.html %}
+        </header>-->
+
+        {{ content }} {% include footer.html %}
+    </div>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 <script src="{{site.baseurl}}/assets/app.js"></script>
+
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-45683618-3"></script>
 <script>
   window.dataLayer = window.dataLayer || [];

@@ -1,8 +1,11 @@
 // Styles
-import 'styles/app.scss'; 
+import 'styles/app.scss';
 
 // Scripts
 import './nav.js';
-import './rotating-words.js';
 import './form.js';
 import './tweens.js';
+
+// Components
+import Modal from './Modal';
+var modal = new Modal();

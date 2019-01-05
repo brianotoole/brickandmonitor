@@ -1,28 +1,65 @@
 ---
-layout: page
+layout: default
 title: Brick & Monitor - A Creative Design &amp; Development Agency
 description: Brick & Monitor is a creative design &amp; development agency located in in Tampa, Florida. We help businesses create a faster, more stable, and reliable website. And we help brands tell their story using modern technology and progressive design. Our specialty is website development & management support plans.
-bodyclass: page-home
-bgcolorclass: bg-white
-twocol: false
-fullheight: true
-hero: Engineering. Branding. Growth.
-subtitle: Brick &amp; Monitor is a forward-thinking design &amp; development team helping brands adapt to what's next online.
+bodyclass: home
+hero-title: Engineering. Branding. Growth.
+hero-subtitle: Brick &amp; Monitor is a forward-thinking design &amp; development team helping brands adapt to what's next online.
 ---
 
-<div class="page-home">
-
-<section class="section section-wrap bg-grey" id="capabilities">
-  <div class="container-full">
-    {% include services.html %}
+<section class="section section-hero {{ page.bgcolorclass }}">
+  <div class="wrapper">
+    <div class="row-flex">
+      <div class="hero row-flex__col-md-12 u-text-center">
+        <div class="hero__logo">
+          <a href="{{site.baseurl}}/">
+            <img src="{{site.baseurl}}/assets/images/logo.svg" rel="logo" title="The Four Pack" alt="The Four Pack - Tampa, FL"/>
+          </a>
+        </div>
+        <h1 class="hero__title">Four Disciplines.<br/>One Nimble Agency.</h1>
+        <h2 class="hero__subtitle">{{ page.hero-subtitle }}</h2>
+      </div>
+    </div>
   </div>
 </section>
 
-<section class="news-layout section-wrap bg-grey">
-  <div class="container-full container-full--padded">
-    <h4 class="section-title section-title--underline">Featured Projects</h4>
-    {% include projects-list-limit-home.html %}
-  </div>
+<section class="section section-intro section--underline section--pad-xl">
+  <div class="wrapper">
+    <div class="row-flex">
+      <div class="row-flex__md-12 u-text-center">
+        <h2 class="heading">Who We Are</h2>
+        <p>The Four Pack is a collective of creatives and strategists who want to create impact in the world with every project. That's why we've built a premium boutique agency without the agency price -- because the clients who need help the most should be able to have access to world-class creative services.</p>
+        <p>At our core, we believe that high-quality storytelling, transparency, teamwork and agility develops the best partnerships. We've worked with clients big and small to create groundbreaking work that helps brands be on the cutting-edge, stand out and drive emotional connections among audiences.</p>
+      </div>
+    </div>
+  </div><!--/.wrapper-->
 </section>
 
-</div><!--/.page-home-->
+<section class="section section-services section--pad-xl">
+  <div class="wrapper">
+    <div class="row-flex row-flex--space-between service">
+      <div class="row-flex__md-12">
+        <h2 class="heading heading--m-bottom u-text-center">What We Do Best</h2>
+      </div>
+      <div class="row-flex__md-5 service__item">
+      <div id="trigger-services"></div>
+        <h2 class="heading-underline">Web</h2>
+        <p>No one wants to pay for a website that has an expiration date. Our web projects don't follow the trends, we set them.</p>
+      </div>
+      <div class="row-flex__md-5 service__item">
+        <h2 class="heading-underline">Photography</h2>
+        <p>Stock photography is expensive and widespread. We believe our clients should have a unique photographic look and feel that's above the rest.</p>
+      </div>
+    </div>
+    <div class="row-flex row-flex--space-between">
+      <div class="row-flex__md-5 service__item">
+        <h2 class="heading-underline">Content</h2>
+        <p>Your brand has a unique voice. A one-size-fits-all approach to content and storytelling doesn't make an impact, instead we take time to understand your business so we can better communicate it to your audience.</p>
+      </div>
+      <div class="row-flex__md-5 service__item">
+        <h2 class="heading-underline">Design</h2>
+        <p>Great design should feel timeless and natural. From traditional advertising to your website design, we make imagery that's unforgettable.</p>
+      </div>
+    </div>
+  </div><!--/.wrapper-->
+</section>
