@@ -8,8 +8,6 @@ import Headroom from 'headroom.js/dist/headroom.js';
 window.Headroom = Headroom;
 import 'headroom.js/dist/jQuery.headroom.js';
 
-(function($) {
-  'use strict';
 
   var header_height = $('.header').outerHeight();
   var logo_height = $('.hero__logo').outerHeight();
@@ -30,6 +28,3 @@ import 'headroom.js/dist/jQuery.headroom.js';
     }
   });
   header.init();
-
-
-})(jQuery);
