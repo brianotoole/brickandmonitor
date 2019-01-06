@@ -5,22 +5,22 @@
 .btn {
   display: inline-block;
   padding: 0 rem(30);
-  height: rem(58);
-  line-height: rem(58);
+  height: rem(45);
+  line-height: rem(45);
   font-family: $font-body;
   font-size: font-scale(0);
   font-weight: 700;
   text-transform: uppercase;
   color: $color-white;
   background-color: $color-primary;
-  border-radius: rem(50);
+  border-radius: 32px;
   text-decoration: none;
   text-align: center;
   white-space: nowrap;
   cursor: pointer;
   transition: all 0.2s linear;
   @include bp_md() {
-      padding: 0 rem(60);
+      padding: 0 rem(30);
   }
   &:hover,
   &:focus {

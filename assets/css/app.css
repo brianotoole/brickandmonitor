@@ -628,6 +628,33 @@ p {
   .hero--full-height {
     height: 100vh; }
 
+.hero__bg {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-image: url(https://limitlessbuilding.com.au/wp-content/uploads/2018/05/TheAsh-52_LR.jpg); }
+  .hero__bg:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: #ffffff;
+    opacity: 0.95;
+    z-index: 1; }
+
+.hero__content {
+  position: relative;
+  z-index: 99; }
+
 .hero__logo {
   width: 100px;
   padding-bottom: 1.875rem; }
@@ -645,17 +672,14 @@ p {
 .header {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  -ms-flex-align: center;
-      align-items: center;
+  height: 50px;
   top: 0;
   left: 0;
-  width: 100%;
   margin: 0;
-  padding: 0 0.9375rem;
-  background-color: #b80c15;
-  z-index: 3; }
+  padding: 0;
+  z-index: 3;
+  background: #b80c15;
+  transition: all 0.3s ease-in-out; }
 
 .header--fixed {
   position: fixed;
@@ -676,6 +700,12 @@ p {
 .header--fixed.slideUp.top {
   transform: translateY(-100%); }
 
+.header--shrink-width {
+  width: 50px !important;
+  transition: width 0.3s ease-in-out; }
+  .header--shrink-width li {
+    display: none; }
+
 .headroom {
   will-change: transform;
   transition: transform 0.3s linear; }
@@ -689,29 +719,83 @@ p {
 .header__logo {
   display: -ms-flexbox;
   display: flex;
-  width: 55px; }
+  -ms-flex-pack: center;
+      justify-content: center;
+  top: 0;
+  z-index: 2;
+  width: 60px;
+  height: 100%;
+  overflow: hidden; }
 
-.header ul {
-  width: 100%;
+.header__nav {
+  width: 500px;
+  padding-right: 0.9375rem;
   list-style: none;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-align: center;
+      align-items: center;
   -ms-flex-pack: end;
-      justify-content: flex-end; }
+      justify-content: flex-end;
+  transition: width 0.25s linear; }
 
-.header li a {
+.header__nav li a {
   color: #ffffff;
-  padding: 0 0.9375rem; }
+  padding: 0 0.78125rem; }
 
-.header .header__button {
+.header__nav .header__button {
+  display: inline-block;
   padding-top: 0.15625rem;
   padding-bottom: 0.15625rem;
   border: 1px solid white;
   margin-left: 0.9375rem;
   border-radius: 32px; }
-  .header .header__button:hover, .header .header__button:focus {
+  .header__nav .header__button:hover, .header__nav .header__button:focus {
     background-color: #70070d;
     transition: background 0.2s linear; }
+
+.hamburger {
+  display: none;
+  right: 0;
+  top: 0;
+  position: absolute;
+  z-index: 2;
+  padding: 25px;
+  border: 0;
+  background-color: #b80c15;
+  border-left: 1px solid #ffffff;
+  transition: opacity 0.5s cubic-bezier(0.215, 0.61, 0.355, 1); }
+  .header--is-small .hamburger {
+    display: block; }
+
+.hamburger .lines {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+  width: 20px;
+  height: 18px;
+  margin-top: -9px;
+  margin-left: -10px;
+  display: block;
+  transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1); }
+  .hamburger .lines .line {
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    display: block;
+    transition: opacity 0.5s cubic-bezier(0.215, 0.61, 0.355, 1), transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1); }
+  .hamburger .lines .line--top {
+    top: 0;
+    left: 0; }
+  .hamburger .lines .line--middle {
+    top: 45%;
+    left: 0; }
+  .hamburger .lines .line--bottom {
+    bottom: 0;
+    left: 0; }
 
 /*********************************************************
     Footer
@@ -989,15 +1073,15 @@ html.fp-enabled,
 .btn {
   display: inline-block;
   padding: 0 1.875rem;
-  height: 3.625rem;
-  line-height: 3.625rem;
+  height: 2.8125rem;
+  line-height: 2.8125rem;
   font-family: aktiv-grotesk, sans-serif;
   font-size: 1rem;
   font-weight: 700;
   text-transform: uppercase;
   color: #ffffff;
   background-color: #b80c15;
-  border-radius: 3.125rem;
+  border-radius: 32px;
   text-decoration: none;
   text-align: center;
   white-space: nowrap;
@@ -1005,7 +1089,7 @@ html.fp-enabled,
   transition: all 0.2s linear; }
   @media (min-width: 800px) {
     .btn {
-      padding: 0 3.75rem; } }
+      padding: 0 1.875rem; } }
   .btn:hover, .btn:focus {
     text-decoration: none;
     color: #ffffff;

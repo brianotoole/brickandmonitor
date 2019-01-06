@@ -28,17 +28,19 @@ $(function() {
   tl.add(
     TweenMax.from($(".hero > *, .section-intro > *"), 0.25, {
       autoAlpha: 0,
-      y: 5,
+      y: 20,
       ease: Power0.easeOut
     })
   );
+
   tl.add(
     TweenMax.from($(".header"), 0.25, {
       //autoAlpha: 0,
-      y: -100,
+      x: -1000,
       ease: Power0.easeOut
     })
   );
+  
 });
 
 function slideInHeroItems() {

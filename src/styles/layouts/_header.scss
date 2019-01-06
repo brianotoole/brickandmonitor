@@ -4,15 +4,16 @@
 
 .header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  height: 50px;
+  //justify-content: space-between;
+  //align-items: center;
   top: 0;
   left: 0;
-  width: 100%;
   margin: 0;
-  padding: 0 rem(15);
-  background-color: $color-primary;
+  padding: 0;
   z-index: 3;
+  background: $color-primary;
+  transition: all 0.3s ease-in-out;
 }
 
 .header--fixed {
@@ -45,6 +46,16 @@
   transform: translateY(-100%); 
 }
 
+
+.header--shrink-width {
+ width: 50px!important;
+ transition: width 0.3s ease-in-out;
+ li {
+   display: none;
+ }
+}
+
+
 // Headroom.js classes
 .headroom {
   will-change: transform;
@@ -60,22 +71,31 @@
 // Header nav
 .header__logo {
   display: flex;
-  width: 55px;
-
+  justify-content: center;
+  top: 0;
+  z-index: 2;
+  width: 60px;
+  height: 100%;
+  overflow: hidden;
 }
-.header ul {
-  width: 100%;
+
+.header__nav {
+  width: 500px;
+  padding-right: rem(15);
   list-style: none;
   display: flex;
+  align-items: center;
   justify-content: flex-end;
+  transition: width 0.25s linear;
 }
 
-.header li a {
+.header__nav li a {
   color: $color-white;
-  padding: 0 rem(15);
+  padding: 0 rem(12.5);
 }
 
-.header .header__button {
+.header__nav .header__button {
+  display: inline-block;
   padding-top: rem(2.5);
   padding-bottom: rem(2.5);
   border: 1px solid white;
@@ -84,5 +104,55 @@
   &:hover, &:focus {
     background-color: $color-primary-dark;
     transition: background 0.2s linear;
+  }
+}
+
+.hamburger {
+  display: none;
+  right: 0;
+  top: 0;
+  position: absolute;
+  z-index: 2;
+  padding: 25px;
+  border: 0;
+  background-color: $color-primary;
+  border-left: 1px solid $color-white;
+  transition: opacity .5s cubic-bezier(.215,.61,.355,1);
+  .header--is-small & {
+    display: block;
+  }
+}
+
+.hamburger .lines {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+  width: 20px;
+  height: 18px;
+  margin-top: -9px;
+  margin-left: -10px;
+  display: block;
+  transition: transform .5s cubic-bezier(.215,.61,.355,1),-webkit-transform .5s cubic-bezier(.215,.61,.355,1);
+  .line {
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    border-radius: 4px;
+    background-color: $color-white;
+    display: block;
+    transition: opacity .5s cubic-bezier(.215,.61,.355,1),transform .5s cubic-bezier(.215,.61,.355,1),-webkit-transform .5s cubic-bezier(.215,.61,.355,1);
+  }
+  .line--top {
+    top: 0;
+    left: 0;
+  }
+  .line--middle {
+    top: 45%;
+    left: 0;
+  }
+  .line--bottom {
+    bottom: 0;
+    left: 0;
   }
 }

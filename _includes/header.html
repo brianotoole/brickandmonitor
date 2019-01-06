@@ -1,13 +1,18 @@
 <header id="header" class="header" role="banner">
-  <div class="header__logo">
-    <a href="{{site.baseurl}}/">
-      <img src="{{site.baseurl}}/assets/images/logo-brick-square.svg" rel="logo" title="Brick & Monitor" alt=""/>
-    </a>
-  </div><!--/.hero_logo-->
-  <ul>
+  <a href="{{site.baseurl}}/" class="header__logo">
+    <img src="{{site.baseurl}}/assets/images/logo-brick-square.svg" rel="logo" title="Brick & Monitor" alt=""/>
+  </a><!--/.hero_logo-->
+  <nav class="header__nav">
     <li><a href="#">Link</a></li>
     <li><a href="#">Link</a></li>
     <li><a href="#">Link</a></li>
     <li><a href="#" class="header__button hidden-phone js-modal-trigger">Contact Us</a></li>
-  </ul>
+  </nav><!--/.header__nav-->
+  <button class="hamburger js-hamburger">
+    <span class="lines">
+      <span class="line line--top"></span>
+      <span class="line line--middle"></span>
+      <span class="line line--bottom"></span>
+    </span>
+  </button>
 </header>
