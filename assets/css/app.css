@@ -647,12 +647,12 @@ p {
     width: 100%;
     height: 100%;
     display: block;
-    background-color: #ffffff;
-    opacity: 0.95;
+    background-color: rgba(0, 0, 0, 0.7);
     z-index: 1; }
 
 .hero__content {
   position: relative;
+  color: #ffffff;
   z-index: 99; }
 
 .hero__logo {
@@ -672,7 +672,7 @@ p {
 .header {
   display: -ms-flexbox;
   display: flex;
-  height: 60px;
+  height: 80px;
   top: 0;
   left: 0;
   margin: 0;
@@ -722,13 +722,15 @@ p {
       justify-content: center;
   top: 0;
   z-index: 2;
-  width: 55px;
+  width: 75px;
   height: 100%;
   background: #b80c15;
   overflow: hidden; }
+  .header__logo img {
+    margin-left: -2px; }
 
 .header__nav {
-  width: 700px;
+  width: calc(100vw - 162px);
   padding-right: 0.9375rem;
   list-style: none;
   display: -ms-flexbox;
@@ -737,8 +739,8 @@ p {
       align-items: center;
   -ms-flex-pack: end;
       justify-content: flex-end;
-  background: #303030;
-  transition: width 0.25s linear; }
+  background: rgba(0, 0, 0, 0.95);
+  transition: width 0.25s ease-out; }
 
 .header__nav li a {
   color: #ffffff;
@@ -752,8 +754,8 @@ p {
   margin-left: 0.9375rem;
   border-radius: 32px; }
   .header__nav .header__button:hover, .header__nav .header__button:focus {
-    background-color: #70070d;
-    transition: background 0.2s linear; }
+    background-color: #b80c15;
+    transition: background 0.2s ease-out; }
 
 .hamburger {
   display: none;
@@ -768,7 +770,7 @@ p {
   height: 100%;
   padding: 0;
   border: 0;
-  background-color: #303030;
+  background: rgba(0, 0, 0, 0.95);
   z-index: 2;
   cursor: pointer;
   outline: none;
@@ -1086,6 +1088,20 @@ html.fp-enabled,
   visibility: visible;
   opacity: 1;
   z-index: 1; }
+
+#fp-nav {
+  margin: 0 !important;
+  padding: 32px !important;
+  top: 0 !important;
+  right: 0 !important;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  height: 100%;
+  background: white; }
 
 /*********************************************************
     Buttons

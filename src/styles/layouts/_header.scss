@@ -4,9 +4,7 @@
 
 .header {
   display: flex;
-  height: 60px;
-  //justify-content: space-between;
-  //align-items: center;
+  height: 80px;
   top: 0;
   left: 0;
   margin: 0;
@@ -73,21 +71,24 @@
   justify-content: center;
   top: 0;
   z-index: 2;
-  width: 55px;
+  width: 75px;
   height: 100%;
   background: $color-primary;
   overflow: hidden;
+  img {
+    margin-left: -2px;
+  }
 }
 
 .header__nav {
-  width: 700px;
+  width: calc(100vw - 162px);
   padding-right: rem(15);
   list-style: none;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  background: $color-body;
-  transition: width 0.25s linear;
+  background: rgba(black, 0.95);
+  transition: width 0.25s ease-out;
 }
 
 .header__nav li a {
@@ -103,8 +104,8 @@
   margin-left: rem(15);
   border-radius: 32px;
   &:hover, &:focus {
-    background-color: $color-primary-dark;
-    transition: background 0.2s linear;
+    background-color: $color-primary;
+    transition: background 0.2s ease-out;
   }
 }
 
@@ -119,7 +120,7 @@
   height: 100%;
   padding: 0;
   border: 0;
-  background-color: $color-body;
+  background: rgba(black, 0.95);
   z-index: 2;
   cursor: pointer;
   outline: none;
@@ -163,9 +164,6 @@
 }
 
 // animated - on click of hamburger
-.hamburger.animate .lines {
-  
-}
 .hamburger.animate .line--top {
   transform: translateY(10px) translateX(0) rotate(45deg) scaleX(1.15);
   transform-origin: 50% center;
