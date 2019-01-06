@@ -28,3 +28,11 @@ import 'headroom.js/dist/jQuery.headroom.js';
     }
   });
   header.init();
+
+
+// Mobile nav
+var trigger = $('.js-hamburger');
+trigger.on('click', function() {
+  $('body').toggleClass('hamburger-menu-open');
+	$(this).toggleClass('animate');
+});

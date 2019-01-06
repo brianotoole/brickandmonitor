@@ -4,7 +4,7 @@
 
 .header {
   display: flex;
-  height: 50px;
+  height: 60px;
   //justify-content: space-between;
   //align-items: center;
   top: 0;
@@ -12,7 +12,6 @@
   margin: 0;
   padding: 0;
   z-index: 3;
-  background: $color-primary;
   transition: all 0.3s ease-in-out;
 }
 
@@ -74,18 +73,20 @@
   justify-content: center;
   top: 0;
   z-index: 2;
-  width: 60px;
+  width: 55px;
   height: 100%;
+  background: $color-primary;
   overflow: hidden;
 }
 
 .header__nav {
-  width: 500px;
+  width: 700px;
   padding-right: rem(15);
   list-style: none;
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  background: $color-body;
   transition: width 0.25s linear;
 }
 
@@ -112,12 +113,15 @@
   right: 0;
   top: 0;
   position: absolute;
-  z-index: 2;
-  padding: 25px;
+  width: 50%;
+  height: 100%;
+  padding: 0;
   border: 0;
-  background-color: $color-primary;
-  border-left: 1px solid $color-white;
-  transition: opacity .5s cubic-bezier(.215,.61,.355,1);
+  background-color: $color-body;
+  z-index: 2;
+  cursor: pointer;
+  outline: none;
+  transition: opacity 0.5s cubic-bezier(.215,.61,.355,1);
   .header--is-small & {
     display: block;
   }
@@ -130,29 +134,45 @@
   z-index: 2;
   width: 20px;
   height: 18px;
-  margin-top: -9px;
-  margin-left: -10px;
+  margin-top: rem(-8);
+  margin-left: rem(-10);
   display: block;
-  transition: transform .5s cubic-bezier(.215,.61,.355,1),-webkit-transform .5s cubic-bezier(.215,.61,.355,1);
-  .line {
-    position: absolute;
-    width: 20px;
-    height: 2px;
-    border-radius: 4px;
-    background-color: $color-white;
-    display: block;
-    transition: opacity .5s cubic-bezier(.215,.61,.355,1),transform .5s cubic-bezier(.215,.61,.355,1),-webkit-transform .5s cubic-bezier(.215,.61,.355,1);
-  }
-  .line--top {
-    top: 0;
-    left: 0;
-  }
-  .line--middle {
-    top: 45%;
-    left: 0;
-  }
-  .line--bottom {
-    bottom: 0;
-    left: 0;
-  }
+}
+
+.hamburger .line {
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  border-radius: 4px;
+  background-color: $color-white;
+  display: block;
+  transition: opacity 0.25s cubic-bezier(.215,.61,.355,1),transform 0.25s cubic-bezier(.215,.61,.355,1);
+}
+
+.hamburger .line--top {
+  top: 0;
+  left: 0;
+}
+
+.hamburger .line--middle {
+  top: 45%;
+  left: 0;
+}
+
+.hamburger .line--bottom {
+  bottom: 0;
+  left: 0;
+}
+
+// animated
+.hamburger.animate .line--top {
+  transform: translateY(10px) translateX(0) rotate(45deg);
+  transform-origin: 72% 0;
+}
+.hamburger.animate .line--middle {
+  opacity: 0;
+  background-color: rgba(255, 255, 255, 0);
+}
+.hamburger.animate .line--bottom {
+  transform: translateY(-10px) translateX(0) rotate(-45deg);
 }

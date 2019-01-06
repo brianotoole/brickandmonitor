@@ -1,10 +1,3 @@
-// Mobile nav
-var trigger = $('#js-nav-toggle');
-trigger.on('click', function() {
-  $('#js-nav-mobile').toggleClass('nav-open');
-  $('body').toggleClass('nav-open');
-	$('#js-nav-toggle').toggleClass('active');
-});
 
 // scroll on click of anchor link (a href="#")
 $(function() {
