@@ -629,8 +629,7 @@ p {
     height: 100vh; }
 
 .hero__logo {
-  width: 150px;
-  margin: auto;
+  width: 100px;
   padding-bottom: 1.875rem; }
 
 .hero__title {
@@ -703,6 +702,16 @@ p {
 .header li a {
   color: #ffffff;
   padding: 0 0.9375rem; }
+
+.header .header__button {
+  padding-top: 0.15625rem;
+  padding-bottom: 0.15625rem;
+  border: 1px solid white;
+  margin-left: 0.9375rem;
+  border-radius: 32px; }
+  .header .header__button:hover, .header .header__button:focus {
+    background-color: #70070d;
+    transition: background 0.2s linear; }
 
 /*********************************************************
     Footer

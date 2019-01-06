@@ -74,3 +74,15 @@
   color: $color-white;
   padding: 0 rem(15);
 }
+
+.header .header__button {
+  padding-top: rem(2.5);
+  padding-bottom: rem(2.5);
+  border: 1px solid white;
+  margin-left: rem(15);
+  border-radius: 32px;
+  &:hover, &:focus {
+    background-color: $color-primary-dark;
+    transition: background 0.2s linear;
+  }
+}
