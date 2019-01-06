@@ -237,10 +237,14 @@
 
 
 // full page customizations
-/*
-.fullpage-wrapper {
+
+.fullpage-wrapper,
+.fullpage {
     width: 100%!important;
     transform: none!important;
+    transition: transform 0.5s cubic-bezier(0.16, 0.68, 0.43, 0.99),
+    opacity 0.5s ease-in-out!important;
+    position: relative;
   }
   .fp-section {
     width: 100%!important;
@@ -250,7 +254,7 @@
     visibility: hidden;
     opacity: 0;
     z-index: 0;
-    transition: all 0.5s ease-in-out;
+    transition: none!important;
   }
   .fp-section.active {
     position: absolute!important;
@@ -277,7 +281,6 @@
     opacity: 1;
     z-index: 1;
   }
-*/
   #fp-nav {
     margin: 0!important;
     padding: 32px!important;

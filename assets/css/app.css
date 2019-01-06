@@ -580,6 +580,9 @@ p {
   overflow: hidden; }
   .wrapper--narrow {
     max-width: 976px; }
+  @media (min-width: 800px) {
+    .wrapper--home {
+      padding-right: 6.25rem; } }
 
 .section {
   position: relative; }
@@ -621,16 +624,14 @@ p {
 
 .section .hero__bg {
   transform: scale(1.2);
-  opacity: 0;
-  transition: transform 0.5s cubic-bezier(0.16, 0.68, 0.43, 0.99), opacity 0.5s ease-in-out; }
+  transition: transform 0.5s cubic-bezier(0.16, 0.68, 0.43, 0.99); }
 
 .section.active .wrapper {
   transform: translateY(0);
   opacity: 1; }
 
 .section.active .hero__bg {
-  transform: scale(1);
-  opacity: 1; }
+  transform: scale(1); }
 
 /*********************************************************
     Hero
@@ -650,13 +651,13 @@ p {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  background-image: url(https://limitlessbuilding.com.au/wp-content/uploads/2018/05/TheAsh-52_LR.jpg); }
+  background-image: url(https://images.unsplash.com/photo-1527368746281-798b65e1ac6e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1868&q=80); }
   .hero__bg--2 {
-    background-image: url(https://images.unsplash.com/photo-1543363127-e668c16b7b91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1525&q=80); }
+    background-image: url(https://images.unsplash.com/photo-1463936575829-25148e1db1b8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1990&q=80); }
   .hero__bg--3 {
-    background-image: url(https://images.unsplash.com/photo-1543363127-e668c16b7b91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1525&q=80); }
+    background-image: url(https://images.unsplash.com/photo-1509395062183-67c5ad6faff9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80); }
   .hero__bg--4 {
-    background-image: url(https://images.unsplash.com/photo-1543363127-e668c16b7b91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1525&q=80); }
+    background-image: url(https://images.unsplash.com/photo-1506645292803-579c17d4ba6a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80); }
   .hero__bg:before {
     content: '';
     position: absolute;
@@ -1068,47 +1069,48 @@ html.fp-enabled,
   white-space: nowrap;
   border: 0; }
 
-/*
-.fullpage-wrapper {
-    width: 100%!important;
-    transform: none!important;
-  }
-  .fp-section {
-    width: 100%!important;
-    position: relative;
-    left: 0;
-    top: 0;
-    visibility: hidden;
-    opacity: 0;
-    z-index: 0;
-    transition: all 0.5s ease-in-out;
-  }
-  .fp-section.active {
-    position: absolute!important;
-    visibility: visible;
-    opacity: 1;
-    z-index: 1;
-  }
-  .fp-slidesContainer {
-    width: 100%!important;
-    transform: none!important;
-  }
-  .fp-slide {
-    width: 100%!important;
-    position: absolute;
-    left: 0;
-    top: 0;
-    visibility: hidden;
-    opacity: 0;
-    z-index: 0;
-    transition: all 0.5s ease-in-out;
-  }
-  .fp-slide.active {
-    visibility: visible;
-    opacity: 1;
-    z-index: 1;
-  }
-*/
+.fullpage-wrapper,
+.fullpage {
+  width: 100% !important;
+  transform: none !important;
+  transition: transform 0.5s cubic-bezier(0.16, 0.68, 0.43, 0.99), opacity 0.5s ease-in-out !important;
+  position: relative; }
+
+.fp-section {
+  width: 100% !important;
+  position: relative;
+  left: 0;
+  top: 0;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 0;
+  transition: none !important; }
+
+.fp-section.active {
+  position: absolute !important;
+  visibility: visible;
+  opacity: 1;
+  z-index: 1; }
+
+.fp-slidesContainer {
+  width: 100% !important;
+  transform: none !important; }
+
+.fp-slide {
+  width: 100% !important;
+  position: absolute;
+  left: 0;
+  top: 0;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 0;
+  transition: all 0.5s ease-in-out; }
+
+.fp-slide.active {
+  visibility: visible;
+  opacity: 1;
+  z-index: 1; }
+
 #fp-nav {
   margin: 0 !important;
   padding: 32px !important;
