@@ -110,6 +110,8 @@
 
 .hamburger {
   display: none;
+  justify-content: center;
+  align-items: center;
   right: 0;
   top: 0;
   position: absolute;
@@ -123,20 +125,16 @@
   outline: none;
   transition: opacity 0.5s cubic-bezier(.215,.61,.355,1);
   .header--is-small & {
-    display: block;
+    display: flex;
   }
 }
 
 .hamburger .lines {
+  display: block;
   position: absolute;
-  left: 50%;
-  top: 50%;
   z-index: 2;
   width: 20px;
   height: 18px;
-  margin-top: rem(-8);
-  margin-left: rem(-10);
-  display: block;
 }
 
 .hamburger .line {
@@ -164,15 +162,19 @@
   left: 0;
 }
 
-// animated
+// animated - on click of hamburger
+.hamburger.animate .lines {
+  
+}
 .hamburger.animate .line--top {
-  transform: translateY(10px) translateX(0) rotate(45deg);
-  transform-origin: 72% 0;
+  transform: translateY(10px) translateX(0) rotate(45deg) scaleX(1.15);
+  transform-origin: 50% center;
 }
 .hamburger.animate .line--middle {
   opacity: 0;
-  background-color: rgba(255, 255, 255, 0);
+  transform: scaleX(0);
 }
 .hamburger.animate .line--bottom {
-  transform: translateY(-10px) translateX(0) rotate(-45deg);
+  transform: translateY(-10px) translateX(0) rotate(-45deg) scaleX(1.15);
+  transform-origin: 70% center;
 }
