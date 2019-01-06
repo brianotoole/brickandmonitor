@@ -92,6 +92,11 @@ body.loading {
   &--narrow {
     max-width: 976px;
   }
+  &--home {
+    @include bp_md {
+      padding-right: rem(100);
+    }
+  }
 }
 
 // Generic section
@@ -147,9 +152,7 @@ body.loading {
 }
 .section .hero__bg {
   transform: scale(1.2);
-  opacity: 0;
-  transition: transform 0.5s cubic-bezier(0.16, 0.68, 0.43, 0.99),
-				opacity 0.5s ease-in-out;
+  transition: transform 0.5s cubic-bezier(0.16, 0.68, 0.43, 0.99)
 }
 
 
@@ -159,5 +162,4 @@ body.loading {
 }
 .section.active .hero__bg {
   transform: scale(1);
-  opacity: 1;
 }
