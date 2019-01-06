@@ -696,7 +696,7 @@ p {
   left: 0;
   margin: 0;
   padding: 0;
-  z-index: 3;
+  z-index: 9999;
   transition: all 0.3s ease-in-out; }
 
 .header--fixed {
@@ -1284,7 +1284,7 @@ textarea {
 *********************************************************/
 .modal {
   position: fixed;
-  z-index: 50;
+  z-index: 999;
   background-color: rgba(245, 245, 245, 0.99);
   top: 0;
   bottom: 0;
