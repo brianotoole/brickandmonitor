@@ -80,6 +80,9 @@ body.loading {
 
 // Generic content wrapper
 .wrapper {
+  position: relative;
+  color: $color-white;
+  z-index: 1;
   max-width: 1230px;
   margin-left: auto;
   margin-right: auto;
@@ -136,14 +139,25 @@ body.loading {
 }
 
 
-.section > .fp-tableCell {
+.section > .fp-tableCell .wrapper {
 	transform: translateY(100px);
 	opacity: 0;
-	transition: transform 0.5s cubic-bezier(0.16, 0.68, 0.43, 0.99),
+	transition: transform 0.5s 0.5s cubic-bezier(0.16, 0.68, 0.43, 0.99),
+				opacity 0.5s 0.5s ease-in-out;
+}
+.section > .fp-tableCell .hero__bg {
+  transform: scale(1.2);
+  opacity: 0;
+  transition: transform 0.5s cubic-bezier(0.16, 0.68, 0.43, 0.99),
 				opacity 0.5s ease-in-out;
 }
 
-.section.active > .fp-tableCell {
+
+.section.active > .fp-tableCell .wrapper {
 	transform: translateY(0);
 	opacity: 1;
+}
+.section.active > .fp-tableCell .hero__bg {
+  transform: scale(1);
+  opacity: 1;
 }

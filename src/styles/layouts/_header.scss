@@ -45,8 +45,8 @@
 
 
 .header--shrink-width {
- width: 50px!important;
- transition: width 0.3s ease-in-out;
+ width: 62px!important;
+ transition: width 0.3s ease-out;
  li {
    display: none;
  }
@@ -81,14 +81,14 @@
 }
 
 .header__nav {
-  width: calc(100vw - 162px);
+  width: 700px;
   padding-right: rem(15);
   list-style: none;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   background: rgba(black, 0.95);
-  transition: width 0.25s ease-out;
+  transition: width 0.25s linear;
 }
 
 .header__nav li a {
@@ -174,5 +174,5 @@
 }
 .hamburger.animate .line--bottom {
   transform: translateY(-10px) translateX(0) rotate(-45deg) scaleX(1.15);
-  transform-origin: 70% center;
+  transform-origin: 72% center;
 }

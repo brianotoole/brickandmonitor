@@ -569,6 +569,9 @@ p {
   overflow: hidden; }
 
 .wrapper {
+  position: relative;
+  color: #ffffff;
+  z-index: 1;
   max-width: 1230px;
   margin-left: auto;
   margin-right: auto;
@@ -611,13 +614,22 @@ p {
       padding-top: 7.5rem;
       padding-bottom: 7.5rem; } }
 
-.section > .fp-tableCell {
+.section > .fp-tableCell .wrapper {
   transform: translateY(100px);
+  opacity: 0;
+  transition: transform 0.5s 0.5s cubic-bezier(0.16, 0.68, 0.43, 0.99), opacity 0.5s 0.5s ease-in-out; }
+
+.section > .fp-tableCell .hero__bg {
+  transform: scale(1.2);
   opacity: 0;
   transition: transform 0.5s cubic-bezier(0.16, 0.68, 0.43, 0.99), opacity 0.5s ease-in-out; }
 
-.section.active > .fp-tableCell {
+.section.active > .fp-tableCell .wrapper {
   transform: translateY(0);
+  opacity: 1; }
+
+.section.active > .fp-tableCell .hero__bg {
+  transform: scale(1);
   opacity: 1; }
 
 /*********************************************************
@@ -639,6 +651,8 @@ p {
   background-position: center center;
   background-size: cover;
   background-image: url(https://limitlessbuilding.com.au/wp-content/uploads/2018/05/TheAsh-52_LR.jpg); }
+  .hero__bg--green {
+    background-image: url(https://images.unsplash.com/photo-1543363127-e668c16b7b91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1525&q=80); }
   .hero__bg:before {
     content: '';
     position: absolute;
@@ -700,8 +714,8 @@ p {
   transform: translateY(-100%); }
 
 .header--shrink-width {
-  width: 50px !important;
-  transition: width 0.3s ease-in-out; }
+  width: 62px !important;
+  transition: width 0.3s ease-out; }
   .header--shrink-width li {
     display: none; }
 
@@ -730,7 +744,7 @@ p {
     margin-left: -2px; }
 
 .header__nav {
-  width: calc(100vw - 162px);
+  width: 700px;
   padding-right: 0.9375rem;
   list-style: none;
   display: -ms-flexbox;
@@ -740,7 +754,7 @@ p {
   -ms-flex-pack: end;
       justify-content: flex-end;
   background: rgba(0, 0, 0, 0.95);
-  transition: width 0.25s ease-out; }
+  transition: width 0.25s linear; }
 
 .header__nav li a {
   color: #ffffff;
@@ -817,7 +831,7 @@ p {
 
 .hamburger.animate .line--bottom {
   transform: translateY(-10px) translateX(0) rotate(-45deg) scaleX(1.15);
-  transform-origin: 70% center; }
+  transform-origin: 72% center; }
 
 /*********************************************************
     Footer
