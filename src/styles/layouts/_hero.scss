@@ -20,7 +20,13 @@
   background-position: center center;
   background-size: cover;
   background-image: url(https://limitlessbuilding.com.au/wp-content/uploads/2018/05/TheAsh-52_LR.jpg);
-  &--green {
+  &--2 {
+    background-image: url(https://images.unsplash.com/photo-1543363127-e668c16b7b91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1525&q=80);
+  }
+  &--3 {
+    background-image: url(https://images.unsplash.com/photo-1543363127-e668c16b7b91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1525&q=80);
+  }
+  &--4 {
     background-image: url(https://images.unsplash.com/photo-1543363127-e668c16b7b91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1525&q=80);
   }
   &:before {
