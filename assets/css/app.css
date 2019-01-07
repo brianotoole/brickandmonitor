@@ -512,6 +512,9 @@ p {
 /*********************************************************
     Page - global page elements
 *********************************************************/
+body.loading {
+  background: #ffffff; }
+
 .pre-loader {
   display: none;
   position: absolute;
@@ -620,11 +623,15 @@ p {
 .section .wrapper {
   transform: translateY(100px);
   opacity: 0;
-  transition: transform 0.5s 0.5s cubic-bezier(0.16, 0.68, 0.43, 0.99), opacity 0.5s 0.5s ease-in-out; }
+  transition: transform 0.5s 0.5s cubic-bezier(0.16, 0.68, 0.43, 0.99), opacity 0.5s 0.5s ease-in-out;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden; }
 
 .section .hero__bg {
   transform: scale(1.2);
-  transition: transform 0.9s cubic-bezier(0.16, 0.68, 0.43, 0.99); }
+  transition: transform 0.9s cubic-bezier(0.16, 0.68, 0.43, 0.99);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden; }
 
 .section.active .wrapper {
   transform: translateY(0);
@@ -689,6 +696,7 @@ p {
     Header
 *********************************************************/
 .header {
+  position: fixed;
   display: -ms-flexbox;
   display: flex;
   height: 80px;
@@ -699,25 +707,37 @@ p {
   z-index: 9999;
   transition: all 0.3s ease-in-out; }
 
+/*
 .header--fixed {
   position: fixed;
-  transition: transform 0.3s ease-in-out; }
+  //transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.header--fixed.top {
+  //transform: translateY(-100%); 
+}
 
 .header--fixed.not-top {
-  transform: translateY(0%); }
+  transform: translateY(0%); 
+}
 
 .header--fixed.slideDown.not-top {
-  transform: translateY(0); }
+  transform: translateY(0); 
+}
 
 .header--fixed.slideDown.top {
-  transform: translateY(-100%); }
+  transform: translateX(-100%); 
+}
 
 .header--fixed.slideUp.not-top {
-  transform: translateY(0); }
+  transform: translateX(0); 
+}
 
 .header--fixed.slideUp.top {
-  transform: translateY(-100%); }
-
+  transform: translateX(-100%); 
+}
+*/
 .header--shrink-width {
   width: 62px !important;
   transition: width 0.3s ease-out; }

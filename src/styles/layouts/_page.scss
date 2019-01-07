@@ -3,7 +3,7 @@
 *********************************************************/
 
 body.loading {
-
+  background: $color-white;
 }
 
 .pre-loader {
@@ -19,7 +19,7 @@ body.loading {
   &.is-loading {
     display: none;
     overflow: hidden;
-    background: $color_white;
+    background: $color-white;
     z-index: 9999;
   }
 }
@@ -148,11 +148,13 @@ body.loading {
 	transform: translateY(100px);
 	opacity: 0;
 	transition: transform 0.5s 0.5s cubic-bezier(0.16, 0.68, 0.43, 0.99),
-				opacity 0.5s 0.5s ease-in-out;
+        opacity 0.5s 0.5s ease-in-out;
+  backface-visibility: hidden;
 }
 .section .hero__bg {
   transform: scale(1.2);
-  transition: transform 0.9s cubic-bezier(0.16, 0.68, 0.43, 0.99)
+  transition: transform 0.9s cubic-bezier(0.16, 0.68, 0.43, 0.99);
+  backface-visibility: hidden;
 }
 
 

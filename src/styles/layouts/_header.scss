@@ -3,6 +3,7 @@
 *********************************************************/
 
 .header {
+  position: fixed;
   display: flex;
   height: 80px;
   top: 0;
@@ -13,6 +14,7 @@
   transition: all 0.3s ease-in-out;
 }
 
+/*
 .header--fixed {
   position: fixed;
   //transform: translateY(-100%);
@@ -32,17 +34,17 @@
 }
 
 .header--fixed.slideDown.top {
-  transform: translateY(-100%); 
+  transform: translateX(-100%); 
 }
 
 .header--fixed.slideUp.not-top {
-  transform: translateY(0); 
+  transform: translateX(0); 
 }
 
 .header--fixed.slideUp.top {
-  transform: translateY(-100%); 
+  transform: translateX(-100%); 
 }
-
+*/
 
 .header--shrink-width {
  width: 62px!important;
