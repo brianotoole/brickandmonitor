@@ -6,12 +6,15 @@
   position: relative;
   display: flex;
   align-items: center;
-  min-height: 550px;
+  height: 100vh;
+  @include bp_md {
+    height: 500px;
+  }
   &--full-height {
     height: 100vh;
   }
   &--page-interior {
-    background: $color-black;
+    background-color: rgba(black, 0.7);
     color: $color-white;
   }
 }

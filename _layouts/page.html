@@ -6,11 +6,13 @@ bodyclass: page-interior
 <section class="section hero hero--page-interior">
   <div class="wrapper">
     <div class="row-flex">
-      <div class="row-flex__md-12">
-        <h1 class="hero__title">{{ page.hero-title }}</h1>
-        <h2 class="hero__subtitle">{{ page.hero-subtitle}}</h2>
-      </div>
-    </div>
+      <div class="row-flex__col-md-12">
+        <div class="hero__content">
+          <h1 class="hero__title">{{ page.hero-title }}</h1>
+          <h2 class="hero__subtitle">{{ page.hero-subtitle }}</h2>
+        </div><!-- /.hero-content -->
+      </div><!-- /.col -->
+    </div><!-- .row-flex -->
   </div><!-- /.wrapper -->
 </section>
 

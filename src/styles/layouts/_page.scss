@@ -86,13 +86,13 @@ body.loading {
 // Generic content wrapper
 .wrapper {
   position: relative;
-  color: $color-white;
-  z-index: 1;
   max-width: 1230px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  z-index: 1;
   overflow: hidden;
   &--narrow {
     max-width: 976px;
@@ -102,9 +102,12 @@ body.loading {
       padding-right: rem(100);
     }
   }
+  .home & {
+    color: $color-white;
+  }
 }
 
-// Generic section
+// Sections
 .section {
   position: relative;
   &--full-height {
@@ -113,33 +116,18 @@ body.loading {
   &--underline {
     border-bottom: 2px solid $color-grey;
   }
-  &--primary {
-    color: white;
-    background-color: $color-primary;
-  }
-  &--secondary {
-    color: white;
-    background-color: $color-secondary;
-  }
-  &--white {
-    color: black;
-    background-color: $color-white;
-  }
-  &--black {
-    color: white;
-    background-color: black;
-  }
-  &--grey {
-    background-color: $color-grey;
+}
+
+.section--pad {
+  padding-top: rem(60);
+  padding-bottom: rem(60);
+  @include bp_md {
+    padding-top: rem(90);
+    padding-bottom: rem(90);
   }
 }
 
 .section--pad-lg {
-  padding-top: rem(60);
-  padding-bottom: rem(60);
-}
-
-.section--pad-xl {
   padding-top: rem(60);
   padding-bottom: rem(60);
   @include bp_md {
@@ -148,7 +136,9 @@ body.loading {
   }
 }
 
+// Fullpage.js sections
 
+// Non active
 .fullpage .section .wrapper {
 	transform: translateY(100px);
 	opacity: 0;
@@ -162,11 +152,17 @@ body.loading {
   backface-visibility: hidden;
 }
 
-
+// Actives
 .fullpage .section.active .wrapper {
 	transform: translateY(0);
 	opacity: 1;
 }
 .fullpage .section.active .hero__bg {
   transform: scale(1);
+}
+
+
+// Page content
+.page-content {
+  color: $color-body;
 }
