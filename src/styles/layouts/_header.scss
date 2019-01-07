@@ -153,3 +153,67 @@
   transform: translateY(-10px) translateX(0) rotate(-45deg) scaleX(1.15);
   transform-origin: 72% center;
 }
+
+
+// Mobile Nav
+body.nav-open {
+  //position: fixed;
+  //overflow-y: hidden;
+  //width: 100%;
+}
+.hide {
+  display: none!important;
+}
+
+// toggle it
+.nav-mobile {
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: transform 0.3s, ease-out 0.3s;
+  will-change: transform;
+  .nav-open & {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    $faster: 15ms;
+    li {
+      opacity: 0;
+    }
+    @for $index from 1 through 8 {
+      li:nth-child(#{$index}) {
+        animation: fadeIn 250ms ease-out;
+        animation-delay: (250ms - ($faster * $index)) * $index;
+        animation-duration: 200ms;
+        animation-fill-mode: forwards;
+      }
+    }
+  }
+}
+
+.nav-mobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: $color-black;
+  z-index: 9;
+ .nav-open & {
+  $faster: 15ms;
+  li {
+    opacity: 0;
+  }
+  @for $index from 1 through 8 {
+    li:nth-child(#{$index}) {
+      animation: fadeIn 250ms ease-out;
+      animation-delay: (250ms - ($faster * $index)) * $index;
+      animation-duration: 200ms;
+      animation-fill-mode: forwards;
+      opacity: 1;
+    }
+  }
+  a {
+    color: $color-white;
+  }
+ }
+}
