@@ -26,7 +26,7 @@ $(function() {
     .set(".pre-loader-logo .svg", { className: "-=active" });
 
   tl.add(
-    TweenMax.from($(".hero > *, .section-intro > *"), 0.25, {
+    TweenMax.from($(".hero .hero__content, .section-intro > *"), 0.25, {
       autoAlpha: 0,
       y: 20,
       ease: Power0.easeOut
