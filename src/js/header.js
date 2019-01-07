@@ -5,7 +5,7 @@
 // Mobile nav
 var trigger = $('.js-hamburger');
 trigger.on('click', function() {
-  $('body').toggleClass('hamburger-menu-open');
+  $('body').toggleClass('hamburger-menu-open, nav-open');
 	$(this).toggleClass('animate');
 });
 

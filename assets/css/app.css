@@ -758,6 +758,60 @@ body .hero--page-interior .hero__bg {
   background: rgba(0, 0, 0, 0.95);
   transition: width 0.25s linear; }
 
+.header__nav li {
+  opacity: 0; }
+
+.header__nav li:nth-child(1) {
+  animation: fadeIn 200ms ease-out;
+  animation-delay: 185ms;
+  animation-duration: 100ms;
+  animation-fill-mode: forwards; }
+
+.header__nav li:nth-child(2) {
+  animation: fadeIn 200ms ease-out;
+  animation-delay: 340ms;
+  animation-duration: 100ms;
+  animation-fill-mode: forwards; }
+
+.header__nav li:nth-child(3) {
+  animation: fadeIn 200ms ease-out;
+  animation-delay: 465ms;
+  animation-duration: 100ms;
+  animation-fill-mode: forwards; }
+
+.header__nav li:nth-child(4) {
+  animation: fadeIn 200ms ease-out;
+  animation-delay: 560ms;
+  animation-duration: 100ms;
+  animation-fill-mode: forwards; }
+
+.header__nav li:nth-child(5) {
+  animation: fadeIn 200ms ease-out;
+  animation-delay: 625ms;
+  animation-duration: 100ms;
+  animation-fill-mode: forwards; }
+
+.header__nav li:nth-child(6) {
+  animation: fadeIn 200ms ease-out;
+  animation-delay: 660ms;
+  animation-duration: 100ms;
+  animation-fill-mode: forwards; }
+
+.header__nav li:nth-child(7) {
+  animation: fadeIn 200ms ease-out;
+  animation-delay: 665ms;
+  animation-duration: 100ms;
+  animation-fill-mode: forwards; }
+
+.header__nav li:nth-child(8) {
+  animation: fadeIn 200ms ease-out;
+  animation-delay: 640ms;
+  animation-duration: 100ms;
+  animation-fill-mode: forwards; }
+
+.header__nav .nav-mobile-wrap {
+  opacity: 1; }
+
 .header__nav li a {
   color: #ffffff;
   padding: 0 0.78125rem;
