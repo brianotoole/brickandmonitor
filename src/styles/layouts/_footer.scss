@@ -1,3 +1,29 @@
 /*********************************************************
     Footer
 *********************************************************/
+
+.footer {
+  border-top: 1px solid $color-white;
+  a {
+    text-decoration: none;
+  }
+}
+.footer-link__wrap {
+  background: $color-primary;
+  color: $color-white;
+  display: block;
+  padding: 80px 0;
+  transition: background 0.25s ease-in-out;
+  &:hover,
+  &:focus {
+    background: $color-primary-dark;
+    color: $color-white;
+  }
+}
+.footer__copy {
+  padding-top: 40px;
+  text-transform: uppercase;
+  color: rgba($color-white, 0.5);
+  font-size: rem(12);
+  letter-spacing: 5px;
+}
