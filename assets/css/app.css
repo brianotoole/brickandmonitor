@@ -710,7 +710,7 @@ body.loading {
   position: fixed;
   display: -ms-flexbox;
   display: flex;
-  height: 80px;
+  height: 100px;
   top: 0;
   left: 0;
   margin: 0;
@@ -753,7 +753,8 @@ body.loading {
 
 .header__nav li a {
   color: #ffffff;
-  padding: 0 0.78125rem; }
+  padding: 0 0.78125rem;
+  font-size: 1.2rem; }
 
 .header__nav .header__button {
   display: inline-block;
