@@ -6,6 +6,14 @@
   animation: fadeIn 1s ease-out;
 }
 
+@keyframes fadeInX {
+  from { opacity: 0; transform: translateX(-2px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+.fadeInX {
+  animation: fadeInX 1s ease-out;
+}
+
 @keyframes slideInRight {
   from { transform: translateX(-100%); }
   to { transform: translateX(0);}

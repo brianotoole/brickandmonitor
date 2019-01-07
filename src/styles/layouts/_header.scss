@@ -5,13 +5,16 @@
 .header {
   position: fixed;
   display: flex;
-  height: 100px;
+  height: 75px;
   top: 0;
   left: 0;
   margin: 0;
   padding: 0;
   z-index: 9999;
   transition: all 0.3s ease-in-out;
+  @include bp_md {
+    height: 100px;
+  }
 }
 
 .header--shrink-width {
@@ -21,7 +24,6 @@
    display: none;
  }
 }
-
 
 // Header nav
 .header__logo {
@@ -57,11 +59,10 @@
   li {
     opacity: 0;
   }
-  @for $index from 1 through 8 {
+  @for $index from 1 through 4 {
     li:nth-child(#{$index}) {
-      animation: fadeIn 200ms ease-out;
-      animation-delay: (200ms - ($faster * $index)) * $index;
-      animation-duration: 100ms;
+      animation: fadeInX 200ms ease-out;
+      animation-delay: (175ms - ($faster * $index)) * $index;
       animation-fill-mode: forwards;
     }
   } 
