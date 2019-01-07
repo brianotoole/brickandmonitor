@@ -116,6 +116,10 @@ body.loading {
   &--underline {
     border-bottom: 2px solid $color-grey;
   }
+  &--dark {
+    background-color: $color-black;
+    color: $color-white;
+  }
 }
 
 .section--pad {

@@ -5,8 +5,6 @@
   flex-wrap: wrap;
   width: 100%;
   margin: 0;
-  border-top: 1px solid $color-border;
-  border-bottom: 1px solid $color-border;
 }
 
 .service {
@@ -20,7 +18,7 @@
     max-width: 33.33333%;
     padding-left: rem(5);
     padding-right: rem(5);
-    border-right: 1px solid $color-border;
+    border-right: 1px solid $color-white;
   }
   &:last-child {
     border: none;
@@ -29,7 +27,7 @@
 
 .service__number {
   position: absolute;
-  color: $color-border;
+  color: $color-white;
   font-size: 2rem;
   font-weight: 700;
   left: 36px;
@@ -42,6 +40,7 @@
 
 .service__content {
   padding: rem(30) 0;
+  color: $color-white;
   @media (min-width: $bp-md) {
     padding: rem(120) 5% rem(60);
     text-align: center;
@@ -51,7 +50,7 @@
 .service__title {
   margin-top: 0;
   margin-bottom: rem(30);
-  color: $color-secondary;
+  color: $color-white;
 }
 
 .service__title--service {
