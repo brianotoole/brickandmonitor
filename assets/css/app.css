@@ -310,8 +310,8 @@ html {
   -webkit-font-smoothing: antialiased; }
 
 body {
-  background: #000;
-  color: #ffffff;
+  background: #ffffff;
+  color: #303030;
   font-family: zenon, sans-serif;
   font-size: 1rem;
   font-weight: 300;
@@ -512,8 +512,13 @@ p {
 /*********************************************************
     Page - global page elements
 *********************************************************/
+body {
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1; }
+
 body.loading {
-  background: #ffffff; }
+  background: #ffffff;
+  opacity: 0; }
 
 .pre-loader {
   display: none;
@@ -526,7 +531,7 @@ body.loading {
   z-index: 99999;
   background: transparent; }
   .pre-loader.is-loading {
-    display: none;
+    display: block;
     overflow: hidden;
     background: #ffffff;
     z-index: 9999; }
@@ -620,33 +625,41 @@ body.loading {
       padding-top: 7.5rem;
       padding-bottom: 7.5rem; } }
 
-.section .wrapper {
+.fullpage .section .wrapper {
   transform: translateY(100px);
   opacity: 0;
   transition: transform 0.5s 0.5s cubic-bezier(0.16, 0.68, 0.43, 0.99), opacity 0.5s 0.5s ease-in-out;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden; }
 
-.section .hero__bg {
+.fullpage .section .hero__bg {
   transform: scale(1.2);
   transition: transform 0.9s cubic-bezier(0.16, 0.68, 0.43, 0.99);
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden; }
 
-.section.active .wrapper {
+.fullpage .section.active .wrapper {
   transform: translateY(0);
   opacity: 1; }
 
-.section.active .hero__bg {
+.fullpage .section.active .hero__bg {
   transform: scale(1); }
 
 /*********************************************************
     Hero
 *********************************************************/
 .hero {
-  position: relative; }
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  min-height: 550px; }
   .hero--full-height {
     height: 100vh; }
+  .hero--page-interior {
+    background: #303030;
+    color: #ffffff; }
 
 .hero__bg {
   display: block;

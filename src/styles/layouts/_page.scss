@@ -2,8 +2,13 @@
     Page - global page elements
 *********************************************************/
 
+body {
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1;
+}
 body.loading {
   background: $color-white;
+  opacity: 0;
 }
 
 .pre-loader {
@@ -17,7 +22,7 @@ body.loading {
   z-index: 99999;
   background: transparent;
   &.is-loading {
-    display: none;
+    display: block;
     overflow: hidden;
     background: $color-white;
     z-index: 9999;
@@ -144,24 +149,24 @@ body.loading {
 }
 
 
-.section .wrapper {
+.fullpage .section .wrapper {
 	transform: translateY(100px);
 	opacity: 0;
 	transition: transform 0.5s 0.5s cubic-bezier(0.16, 0.68, 0.43, 0.99),
         opacity 0.5s 0.5s ease-in-out;
   backface-visibility: hidden;
 }
-.section .hero__bg {
+.fullpage .section .hero__bg {
   transform: scale(1.2);
   transition: transform 0.9s cubic-bezier(0.16, 0.68, 0.43, 0.99);
   backface-visibility: hidden;
 }
 
 
-.section.active .wrapper {
+.fullpage .section.active .wrapper {
 	transform: translateY(0);
 	opacity: 1;
 }
-.section.active .hero__bg {
+.fullpage .section.active .hero__bg {
   transform: scale(1);
 }

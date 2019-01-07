@@ -4,8 +4,15 @@
 
 .hero {
   position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 550px;
   &--full-height {
     height: 100vh;
+  }
+  &--page-interior {
+    background: $color-black;
+    color: $color-white;
   }
 }
 
