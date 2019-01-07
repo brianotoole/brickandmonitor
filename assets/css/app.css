@@ -746,7 +746,7 @@ body .hero--page-interior .hero__bg {
     margin-left: -2px; }
 
 .header__nav {
-  width: 700px;
+  width: calc(100vw - 75px);
   padding-right: 0.9375rem;
   list-style: none;
   display: -ms-flexbox;
@@ -757,6 +757,9 @@ body .hero--page-interior .hero__bg {
       justify-content: flex-end;
   background: rgba(0, 0, 0, 0.95);
   transition: width 0.25s linear; }
+  @media (min-width: 800px) {
+    .header__nav {
+      width: 675px; } }
 
 .header__nav li {
   opacity: 0; }

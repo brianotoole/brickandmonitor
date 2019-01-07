@@ -39,7 +39,7 @@
 }
 
 .header__nav {
-  width: 700px;
+  width: calc(100vw - 75px);
   padding-right: rem(15);
   list-style: none;
   display: flex;
@@ -47,6 +47,9 @@
   justify-content: flex-end;
   background: rgba(black, 0.95);
   transition: width 0.25s linear;
+  @include bp_md {
+    width: 675px;
+  }
 }
 
 .header__nav {
@@ -161,6 +164,7 @@ body.nav-open {
   //overflow-y: hidden;
   //width: 100%;
 }
+
 .hide {
   display: none!important;
 }
