@@ -14,38 +14,6 @@
   transition: all 0.3s ease-in-out;
 }
 
-/*
-.header--fixed {
-  position: fixed;
-  //transform: translateY(-100%);
-  transition: transform 0.3s ease-in-out;
-}
-
-.header--fixed.top {
-  //transform: translateY(-100%); 
-}
-
-.header--fixed.not-top {
-  transform: translateY(0%); 
-}
-
-.header--fixed.slideDown.not-top {
-  transform: translateY(0); 
-}
-
-.header--fixed.slideDown.top {
-  transform: translateX(-100%); 
-}
-
-.header--fixed.slideUp.not-top {
-  transform: translateX(0); 
-}
-
-.header--fixed.slideUp.top {
-  transform: translateX(-100%); 
-}
-*/
-
 .header--shrink-width {
  width: 62px!important;
  transition: width 0.3s ease-out;
@@ -54,18 +22,6 @@
  }
 }
 
-
-// Headroom.js classes
-.headroom {
-  will-change: transform;
-  transition: transform 0.3s linear;
-}
-.headroom--pinned {
-  transform: translateY(0%);
-}
-.headroom--unpinned {
-  transform: translateY(-100%);
-}
 
 // Header nav
 .header__logo {
