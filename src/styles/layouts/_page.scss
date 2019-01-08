@@ -125,6 +125,10 @@ body {
     border-bottom: 2px solid $color-grey;
   }
   &--dark {
+    background-color: $color-grey;
+    color: $color-white;
+  }
+  &--black {
     background-color: $color-black;
     color: $color-white;
   }

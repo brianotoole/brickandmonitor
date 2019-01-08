@@ -54,8 +54,13 @@
 
 .hero__content {
   position: relative;
+  max-width: 100%;
   color: $color-white;
+  padding-top: rem(60);
   z-index: 99;
+  @include bp_md {
+    max-width: 75%;
+  }
 }
 
 .hero__logo {

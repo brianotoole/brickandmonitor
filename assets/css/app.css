@@ -341,7 +341,8 @@ h6,
 .heading {
   font-family: zenon, sans-serif;
   font-weight: 300;
-  line-height: 1.2; }
+  line-height: 1.2;
+  margin-top: 3.75rem; }
 
 h1,
 .h1 {
@@ -395,11 +396,13 @@ h6,
 .h6 {
   font-size: 1rem; }
 
-p {
+p,
+ul {
   font-size: 1rem;
   margin: 0 0 1.875rem 0; }
   @media (min-width: 800px) {
-    p {
+    p,
+    ul {
       font-size: 1.2rem; } }
 
 .heading {
@@ -414,7 +417,7 @@ p {
   font-weight: 700;
   margin-bottom: 1.25rem;
   padding-bottom: 1.25rem;
-  border-bottom: 2px solid #f5f5f5; }
+  border-bottom: 2px solid #2b2a2b; }
   @media (min-width: 800px) {
     .heading-underline {
       margin-bottom: 2.5rem; } }
@@ -603,8 +606,11 @@ body .hero--page-interior .hero__bg {
   .section--full-height {
     height: 100vh; }
   .section--underline {
-    border-bottom: 2px solid #f5f5f5; }
+    border-bottom: 2px solid #2b2a2b; }
   .section--dark {
+    background-color: #2b2a2b;
+    color: #ffffff; }
+  .section--black {
     background-color: #000;
     color: #ffffff; }
 
@@ -696,8 +702,13 @@ body .hero--page-interior .hero__bg {
 
 .hero__content {
   position: relative;
+  max-width: 100%;
   color: #ffffff;
+  padding-top: 3.75rem;
   z-index: 99; }
+  @media (min-width: 800px) {
+    .hero__content {
+      max-width: 75%; } }
 
 .hero__logo {
   width: 100px;
@@ -1340,7 +1351,7 @@ textarea {
 .modal {
   position: fixed;
   z-index: 999;
-  background-color: rgba(245, 245, 245, 0.99);
+  background-color: rgba(43, 42, 43, 0.99);
   top: 0;
   bottom: 0;
   left: 0;
@@ -1383,25 +1394,19 @@ textarea {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%;
-  margin: 0; }
+  margin: -0.9375rem; }
 
 .service {
   position: relative;
-  -ms-flex: 0 0 100%;
-      flex: 0 0 100%;
-  max-width: 100%;
-  padding-left: 0.3125rem;
-  padding-right: 0.3125rem; }
+  -ms-flex: 1 0 100%;
+      flex: 1 0 100%;
+  margin: 0.9375rem;
+  text-align: center; }
   @media (min-width: 800px) {
     .service {
-      -ms-flex: 0 0 33.333333%;
-          flex: 0 0 33.333333%;
-      max-width: 33.33333%;
-      padding-left: 0.3125rem;
-      padding-right: 0.3125rem;
-      border-right: 1px solid #ffffff; } }
-  .service:last-child {
-    border: none; }
+      -ms-flex: 1;
+          flex: 1;
+      text-align: left; } }
 
 .service__number {
   position: absolute;
@@ -1416,12 +1421,13 @@ textarea {
       display: none; } }
 
 .service__content {
-  padding: 1.875rem 0;
+  padding: 1.875rem;
+  background: #383738;
   color: #ffffff; }
   @media (min-width: 800px) {
     .service__content {
-      padding: 7.5rem 5% 3.75rem;
-      text-align: center; } }
+      padding: 7.5rem 10% 3.75rem;
+      height: 750px; } }
 
 .service__title {
   margin-top: 0;
@@ -1429,15 +1435,16 @@ textarea {
   color: #ffffff; }
 
 .service__title--service {
-  padding: 0.3125rem 0;
-  font-weight: 900;
-  letter-spacing: 3px;
+  margin: 0;
+  padding: 0.9375rem 0;
+  letter-spacing: 1px;
   font-size: 0.875rem;
   text-transform: uppercase; }
 
 .service__icon {
   display: block;
-  margin-top: 3.75rem; }
+  margin-top: 3.75rem;
+  text-align: center; }
 
 svg:not(:root) {
   overflow: visible; }
@@ -1451,7 +1458,7 @@ svg:not(:root) {
   margin: 0 auto 15px;
   fill: currentColor;
   color: transparent;
-  stroke: #b80c15;
+  stroke: #ffffff;
   stroke-width: 4px;
   stroke-dasharray: 2000; }
   @media (min-width: 800px) {
@@ -1491,9 +1498,9 @@ svg:not(:root) {
 .svg-web {
   stroke-dasharray: 2000; }
   .svg-web .svg-web-browser {
-    fill: #b80c15; }
+    fill: #ffffff; }
   .svg-web .svg-web-gear-mid {
-    fill: #70070d;
+    fill: #2b2a2b;
     transform-origin: 182px 155px;
     animation: spin 5s infinite linear; }
 
@@ -1512,24 +1519,24 @@ svg:not(:root) {
     animation: drawLine 2s 1s infinite linear forwards, fadeIn 2s 1s infinite linear reverse; }
 
 .terminal {
-  color: #b80c15; }
+  color: #ffffff; }
 
 .slash {
-  color: #b80c15;
+  color: #ffffff;
   animation: pulseOpacity 0.7s infinite linear; }
 
 .lock {
-  color: #b80c15; }
+  color: #ffffff; }
 
 .gear {
-  color: #b80c15;
+  color: #ffffff;
   transform-origin: 50% 50%;
   -webkit-transform-origin: 182px 155px;
   animation: spin 5s infinite linear; }
 
 .line-lg,
 .line-sm {
-  color: #b80c15;
+  color: #ffffff;
   stroke-linejoin: round;
   stroke-linecap: round;
   stroke-miterlimit: 10;
@@ -1648,7 +1655,7 @@ svg:not(:root) {
   color: #303030; }
 
 .bg-grey {
-  background: #f5f5f5;
+  background: #2b2a2b;
   color: #303030; }
 
 .bg-primary {
@@ -1668,7 +1675,7 @@ svg:not(:root) {
   color: #ffffff !important; }
 
 .bg-gray {
-  background: #f5f5f5;
+  background: #2b2a2b;
   color: #303030; }
 
 .bg-pattern {
@@ -1802,8 +1809,6 @@ svg:not(:root) {
 .hvr-underline-from-left:focus:before,
 .hvr-underline-from-left:active:before {
   right: 0; }
-
-/* Ripple Out */
 
 @keyframes hvr-ripple-out {
   100% {

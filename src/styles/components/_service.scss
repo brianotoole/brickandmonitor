@@ -4,24 +4,17 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  margin: 0;
+  margin: rem(-15);
 }
 
 .service {
   position: relative;
-  flex: 0 0 100%;
-  max-width: 100%;
-  padding-left: rem(5);
-  padding-right: rem(5);
+  flex: 1 0 100%;
+  margin: rem(15);
+  text-align: center;
   @media (min-width: $bp-md) {
-    flex: 0 0 33.333333%;
-    max-width: 33.33333%;
-    padding-left: rem(5);
-    padding-right: rem(5);
-    border-right: 1px solid $color-white;
-  }
-  &:last-child {
-    border: none;
+    flex: 1;
+    text-align: left;
   }
 }
 
@@ -39,11 +32,12 @@
 }
 
 .service__content {
-  padding: rem(30) 0;
+  padding: rem(30);
+  background: lighten($color-grey, 5%);
   color: $color-white;
   @media (min-width: $bp-md) {
-    padding: rem(120) 5% rem(60);
-    text-align: center;
+    padding: rem(120) 10% rem(60);
+    height: 750px;
   }
 }
 
@@ -54,9 +48,9 @@
 }
 
 .service__title--service {
-  padding: rem(5) 0;
-  font-weight: 900;
-  letter-spacing: 3px;
+  margin: 0;
+  padding: rem(15) 0;
+  letter-spacing: 1px;
   font-size: rem(14);
   text-transform: uppercase;
 }
@@ -64,4 +58,5 @@
 .service__icon {
   display: block;
   margin-top: rem(60);
+  text-align: center;
 }
