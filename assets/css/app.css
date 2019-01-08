@@ -730,7 +730,7 @@ body .hero--page-interior .hero__bg {
 
 .header--shrink-width {
   width: 62px !important;
-  transition: width 0.3s ease-out; }
+  transition: width 0.25s ease-out; }
   .header--shrink-width li {
     display: none; }
 
@@ -744,7 +744,8 @@ body .hero--page-interior .hero__bg {
   width: 75px;
   height: 100%;
   background: #b80c15;
-  overflow: hidden; }
+  overflow: hidden;
+  transition: width 0.25s ease-out; }
   .header__logo img {
     margin-left: -2px; }
 
