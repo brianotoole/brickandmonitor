@@ -19,7 +19,7 @@
 
 .header--shrink-width {
  width: 62px!important;
- transition: width 0.3s ease-out;
+ transition: width 0.25s ease-out;
  li {
    display: none;
  }
@@ -35,6 +35,7 @@
   height: 100%;
   background: $color-primary;
   overflow: hidden;
+  transition: width 0.25s ease-out;
   img {
     margin-left: -2px;
   }
