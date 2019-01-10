@@ -1352,7 +1352,7 @@ textarea {
 .modal {
   position: fixed;
   z-index: 999;
-  background-color: rgba(43, 42, 43, 0.99);
+  background-color: rgba(0, 0, 0, 0.99);
   top: 0;
   bottom: 0;
   left: 0;
@@ -1381,13 +1381,13 @@ textarea {
     right: 30px;
     font-family: aktiv-grotesk, sans-serif;
     font-size: 1.75rem;
-    color: #303030;
+    color: #ffffff;
     transform: scaleX(1.2);
     transform-origin: 100% 0;
     cursor: pointer;
     transition: all 0.3s ease-out; }
     .modal__close:hover {
-      color: #171717; }
+      color: #e6e6e6; }
 
 .services {
   display: -ms-flexbox;
@@ -1411,7 +1411,7 @@ textarea {
 
 .service__number {
   position: absolute;
-  color: #ffffff;
+  color: #000;
   font-size: 2rem;
   font-weight: 700;
   left: 36px;
@@ -1423,8 +1423,9 @@ textarea {
 
 .service__content {
   padding: 1.875rem;
-  background: #000;
-  color: #ffffff; }
+  background: #ffffff;
+  color: #000;
+  border: 2px solid rgba(48, 48, 48, 0.2); }
   @media (min-width: 800px) {
     .service__content {
       padding: 7.5rem 10% 3.75rem;
@@ -1432,8 +1433,7 @@ textarea {
 
 .service__title {
   margin-top: 0;
-  margin-bottom: 1.875rem;
-  color: #ffffff; }
+  margin-bottom: 1.875rem; }
 
 .service__title--service {
   margin: 0;
@@ -1459,7 +1459,7 @@ svg:not(:root) {
   margin: 0 auto 15px;
   fill: currentColor;
   color: transparent;
-  stroke: #ffffff;
+  stroke: #000;
   stroke-width: 4px;
   stroke-dasharray: 2000; }
   @media (min-width: 800px) {
@@ -1491,7 +1491,7 @@ svg:not(:root) {
 .path-lines {
   fill: currentColor;
   color: transparent;
-  stroke: rgba(255, 255, 255, 0.05);
+  stroke: rgba(0, 0, 0, 0.05);
   stroke-width: 1px;
   stroke-dasharray: 1689;
   animation: fillSvg 12s reverse linear; }
@@ -1499,7 +1499,7 @@ svg:not(:root) {
 .svg-web {
   stroke-dasharray: 2000; }
   .svg-web .svg-web-browser {
-    fill: #ffffff; }
+    fill: #000; }
   .svg-web .svg-web-gear-mid {
     fill: #2b2a2b;
     transform-origin: 182px 155px;
@@ -1520,17 +1520,17 @@ svg:not(:root) {
     animation: drawLine 2s 1s infinite linear forwards, fadeIn 2s 1s infinite linear reverse; }
 
 .terminal {
-  color: #ffffff; }
+  color: #000; }
 
 .slash {
-  color: #ffffff;
+  color: #000;
   animation: pulseOpacity 0.7s infinite linear; }
 
 .lock {
-  color: #ffffff; }
+  color: #000; }
 
 .gear {
-  color: #ffffff;
+  color: #000;
   transform-origin: 50% 50%;
   -webkit-transform-origin: 182px 155px;
   animation: spin 5s infinite linear; }
