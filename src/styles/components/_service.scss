@@ -33,7 +33,7 @@
 
 .service__content {
   padding: rem(30);
-  background: lighten($color-grey, 5%);
+  background: $color-black;
   color: $color-white;
   @media (min-width: $bp-md) {
     padding: rem(120) 10% rem(60);

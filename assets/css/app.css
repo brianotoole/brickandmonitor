@@ -1423,7 +1423,7 @@ textarea {
 
 .service__content {
   padding: 1.875rem;
-  background: #383738;
+  background: #000;
   color: #ffffff; }
   @media (min-width: 800px) {
     .service__content {
