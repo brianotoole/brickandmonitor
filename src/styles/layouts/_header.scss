@@ -11,10 +11,7 @@
   margin: 0;
   padding: 0;
   z-index: 9999;
-  transition: all 0.3s ease-in-out;
-  @include bp_md {
-    height: 100px;
-  }
+  transition: all 0.25s ease-out;
 }
 
 .header--shrink-width {
@@ -31,7 +28,7 @@
   justify-content: center;
   top: 0;
   z-index: 2;
-  width: 95px;
+  width: 75px;
   height: 100%;
   background: $color-primary;
   overflow: hidden;
@@ -42,7 +39,7 @@
 }
 
 .header__nav {
-  width: calc(100vw - 75px);
+  width: calc(100vw - 75px); //minus height of header__logo
   padding-right: rem(15);
   list-style: none;
   display: flex;

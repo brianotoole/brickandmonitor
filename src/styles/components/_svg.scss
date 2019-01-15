@@ -59,12 +59,12 @@ svg:not(:root) {
   stroke-dasharray: 2000;
 
   .svg-web-browser {
-    fill: $color-white;
+    fill: $color-black;
   }
 
   .svg-web-gear-mid {
     //50% 50% not working
-    fill: $color-grey;
+    fill: $color-black;
     transform-origin: 182px 155px;
     animation: spin 5s infinite linear;
   }
@@ -92,20 +92,20 @@ svg:not(:root) {
 }
 
 .terminal {
-  color: $color-white;
+  color: $color-black;
 }
 
 .slash {
-  color: $color-white;
+  color: $color-black;
   animation: pulseOpacity 0.7s infinite linear;
 }
 
 .lock {
-  color: $color-white;
+  color: $color-black;
 }
 
 .gear {
-  color: $color-white;
+  color: $color-black;
   transform-origin: 50% 50%;
   -webkit-transform-origin: 182px 155px;
   animation: spin 5s infinite linear;
@@ -113,7 +113,7 @@ svg:not(:root) {
 
 .line-lg,
 .line-sm {
-  color: $color-white;
+  color: $color-black;
   stroke-linejoin: round;
   stroke-linecap: round;
   stroke-miterlimit: 10;

@@ -615,6 +615,9 @@ body .hero--page-interior .hero__bg {
   .section--black {
     background-color: #000;
     color: #ffffff; }
+  .section--light {
+    background-color: #f5f5f5;
+    color: #000; }
 
 .section--pad {
   padding-top: 3.75rem;
@@ -752,10 +755,7 @@ body .hero--page-interior .hero__bg {
   margin: 0;
   padding: 0;
   z-index: 9999;
-  transition: all 0.3s ease-in-out; }
-  @media (min-width: 800px) {
-    .header {
-      height: 100px; } }
+  transition: all 0.25s ease-out; }
 
 .header--shrink-width {
   width: 62px !important;
@@ -770,7 +770,7 @@ body .hero--page-interior .hero__bg {
       justify-content: center;
   top: 0;
   z-index: 2;
-  width: 95px;
+  width: 75px;
   height: 100%;
   background: #b80c15;
   overflow: hidden;
@@ -1429,7 +1429,7 @@ textarea {
 
 .service__number {
   position: absolute;
-  color: #ffffff;
+  color: #000;
   font-size: 2rem;
   font-weight: 700;
   left: 36px;
@@ -1441,8 +1441,8 @@ textarea {
 
 .service__content {
   padding: 1.875rem;
-  background: #383738;
-  color: #ffffff; }
+  background: #ffffff;
+  color: #000; }
   @media (min-width: 800px) {
     .service__content {
       padding: 7.5rem 10% 3.75rem;
@@ -1451,7 +1451,7 @@ textarea {
 .service__title {
   margin-top: 0;
   margin-bottom: 1.875rem;
-  color: #ffffff; }
+  color: #000; }
 
 .service__title--service {
   margin: 0;
@@ -1517,9 +1517,9 @@ svg:not(:root) {
 .svg-web {
   stroke-dasharray: 2000; }
   .svg-web .svg-web-browser {
-    fill: #ffffff; }
+    fill: #000; }
   .svg-web .svg-web-gear-mid {
-    fill: #2b2a2b;
+    fill: #000;
     transform-origin: 182px 155px;
     animation: spin 5s infinite linear; }
 
@@ -1538,24 +1538,24 @@ svg:not(:root) {
     animation: drawLine 2s 1s infinite linear forwards, fadeIn 2s 1s infinite linear reverse; }
 
 .terminal {
-  color: #ffffff; }
+  color: #000; }
 
 .slash {
-  color: #ffffff;
+  color: #000;
   animation: pulseOpacity 0.7s infinite linear; }
 
 .lock {
-  color: #ffffff; }
+  color: #000; }
 
 .gear {
-  color: #ffffff;
+  color: #000;
   transform-origin: 50% 50%;
   -webkit-transform-origin: 182px 155px;
   animation: spin 5s infinite linear; }
 
 .line-lg,
 .line-sm {
-  color: #ffffff;
+  color: #000;
   stroke-linejoin: round;
   stroke-linecap: round;
   stroke-miterlimit: 10;
