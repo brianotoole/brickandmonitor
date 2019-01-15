@@ -185,9 +185,14 @@ body {
 
 
 // Work
-.project {
+.project-block {
   img {
     background-color: #f5f5f5;
     padding: rem(15);
   }
+}
+
+.project-block + .project-block {
+  border-top: 1px solid #f5f5f5;
+  padding-top: rem(40);
 }

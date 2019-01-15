@@ -1,42 +1,30 @@
---- 
-layout: default 
-bodyclass: project
+---
+layout: page
+bodyclass: work
 ---
 
-<div class="page-interior">
+<section class="section section--services">
+  <div class="wrapper">
+    <div class="row-flex">
+      <div class="row-flex__md-12">
+        <h2 class="heading-underline">
+          <a href="{{ page.link }}" class="h6 text-no-underline"
+          style="color:#{{ page.bgcolor }};" target="_blank">View website</a>
+        </h2>
+      </div><!-- /.col -->
+    </div><!-- /.row-flex -->
+  </div><!-- /.wrapper -->
+</section>
 
-  <section class="section-hero">
-    <div class="container">
-      <div class="row hero-content">
-        <div class="col-xs-12">
-          <h1 class="hero-title" style="color:#{{ page.textcolor }}!important;">{{ page.title }}</h1>
-          <h5 class="hero-subtitle" style="color:#{{ page.textcolor }}!important;">{{ page.subtitle }}</h5>
-          <div class="hero-scroll">
-            <a href="#more"><span></span></a>
-          </div><!--/.hero-scroll-->
-        </div><!--/.col-->
-      </div><!--<!--/.row-->
-    </div><!--/.container-->
-  </section>
 
-  <section class="interior-content project-details section-wrap group" id="more">
-    <div class="container entry-content">
-        <div class="row">
-          <div class="col-xs-12">
-            <div class="project-meta">
-              <div class="project-url">
-                <blockquote style="border-color:#{{ page.bgcolor }};">
-                  <span class="lnr lnr-exit-up"></span>
-                  <a href="{{ page.link }}" class="h6 text-no-underline" style="color:#{{ page.bgcolor }};" target="_blank">View website</a>
-                </blockquote>
-              </div><!--/.project-url-->
-            </div><!--/.project-meta-->
-            <div class="entry-content">
-              {{ content }}
-            </div><!--/.entry-content-->
-          </div><!--/.col-->
-        </div><!--/.row-->
-    </div><!--/.container-->
-  </section>
-
-</div><!--.page-interior-->
+<section class="section section--pad section--content" id="more">
+  <div class="wrapper">
+    <div class="row-flex">
+      <div class="row-flex__md-12">
+        <div class="entry-content">
+          {{ content }}
+        </div><!--/.entry-content-->
+      </div><!--/.col-->
+    </div><!--/.row-->
+  </div><!--/.container-->
+</section>

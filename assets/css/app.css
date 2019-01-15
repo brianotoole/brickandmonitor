@@ -653,9 +653,13 @@ body .hero--page-interior .hero__bg {
 .page-content {
   color: #303030; }
 
-.project img {
+.project-block img {
   background-color: #f5f5f5;
   padding: 0.9375rem; }
+
+.project-block + .project-block {
+  border-top: 1px solid #f5f5f5;
+  padding-top: 2.5rem; }
 
 /*********************************************************
     Hero
