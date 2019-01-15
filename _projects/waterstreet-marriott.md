@@ -1,15 +1,15 @@
 ---
 layout: project
 featured-home: true
-bodyclass: project
+bodyclass: wst-marriott
 date: 2018-04-02
 order: 2
 img: project-marriott-thumb.png
 link: https://jwmarriott.waterstreettampa.com
 bgcolor: 111111
 textcolor: ffffff
-title: The JW Marriott Tampa
-subtitle: Providing enriching experiences and innovative spaces in a world-class waterfront neighborhood.
+hero-title: The JW Marriott Tampa
+hero-subtitle: Providing enriching experiences and innovative spaces in a world-class waterfront neighborhood.
 description: JW Marriott Tampa is a testament to the vision of Water Street Tampa — a thoughtfully curated, beautiful gathering place.
 ---
 

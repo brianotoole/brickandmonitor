@@ -342,7 +342,9 @@ h6,
   font-family: zenon, sans-serif;
   font-weight: 300;
   line-height: 1.2;
-  margin-top: 3.75rem; }
+  letter-spacing: 0.25px;
+  margin-top: 0.3125rem;
+  margin-bottom: 0.625rem; }
 
 h1,
 .h1 {
@@ -659,7 +661,11 @@ body .hero--page-interior .hero__bg {
 
 .project-block + .project-block {
   border-top: 1px solid #f5f5f5;
-  padding-top: 2.5rem; }
+  padding-top: 3.125rem; }
+
+.team-block + .team-block {
+  border-top: 1px solid #f5f5f5;
+  padding-top: 3.125rem; }
 
 /*********************************************************
     Hero
@@ -721,6 +727,10 @@ body .hero--page-interior .hero__bg {
 .hero__logo {
   width: 100px;
   padding-bottom: 1.875rem; }
+
+.hero__title,
+.hero__subtitle {
+  margin: 0; }
 
 .hero__title {
   padding-bottom: 0.9375rem;
@@ -1389,13 +1399,13 @@ textarea {
     right: 30px;
     font-family: aktiv-grotesk, sans-serif;
     font-size: 1.75rem;
-    color: #303030;
+    color: #ffffff;
     transform: scaleX(1.2);
     transform-origin: 100% 0;
     cursor: pointer;
     transition: all 0.3s ease-out; }
     .modal__close:hover {
-      color: #171717; }
+      color: #e6e6e6; }
 
 .services {
   display: -ms-flexbox;

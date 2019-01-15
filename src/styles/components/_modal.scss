@@ -38,13 +38,13 @@
       right: 30px;
       font-family: $font-body;
       font-size: rem(28);
-      color: $color-body;
+      color: $color-white;
       transform: scaleX(1.2);
       transform-origin: 100% 0;
       cursor: pointer;
       transition: all 0.3s ease-out;
       &:hover {
-          color: darken($color-body, 10%);
+          color: darken($color-white, 10%);
       }
   }
 }

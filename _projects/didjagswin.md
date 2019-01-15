@@ -1,15 +1,15 @@
 ---
 layout: project
 featured-home: false
-bodyclass: project
+bodyclass: jags
 date: 2016-11-01
 img: project-jags-thumb.png
 link: http://didjagswin.com
 bgcolor: 111111
 textcolor: ffffff
-title: Did the Jags Win?
-? subtitle
-description: I'm a huge Jacksonville Jaguars fan and it's a tough life for us fans. It's been 8 years since the Jags have had a winning record. Since we never win, I thought it would be funny to spin up one of those joke websites, "Did Your Team Win?
+hero-title: Did the Jags Win?
+hero-subtitle: We're huge Jacksonville Jaguars fans and it's a tough life for us fans. It's been 8 years since the Jags have had a winning record. Since the Jags never win, we thought it would be fun/funny to spin up one of those joke websites, "Did Your Team Win?  
+description: We're huge Jacksonville Jaguars fans and it's a tough life for us fans. It's been 8 years since the Jags have had a winning record. Since the Jags never win, we thought it would be fun/funny to spin up one of those joke websites, "Did Your Team Win?
 ---
 
 Our founder, Brian, is a huge Jacksonville Jaguars fan and up until recently... it was a tough life for the fans. It's been 8 years since the Jags have had a winning record (until 2018). Anwyays, since we never win, Brian thought it would be funny to spin up one of those "Did Your Team Win?" websites, like [DidDukeWin](https://www.diddukewin.com/){:target="\_blank"}. However, instead of needing to update it after each game, he wanted to find an API that tracks NFL scores in real-time, so team scores are automatically updated, without me needing to edit anything.

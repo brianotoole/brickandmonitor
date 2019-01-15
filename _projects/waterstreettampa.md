@@ -1,15 +1,15 @@
 ---
 layout: project
 featured-home: true
-bodyclass: project
+bodyclass: wst
 date: 2017-12-01
 order: 1
 img: project-wst-thumb.png
 link: http://waterstreettampa.com
 bgcolor: 111111
 textcolor: ffffff
-title: Water Street Tampa
-subtitle: Tampa's $3 Billion Waterfront Plan Aims to Reshape Downtown
+hero-title: Water Street Tampa
+hero-subtitle: Tampa's $3 Billion Waterfront Plan Aims to Reshape Downtown
 description: Water Street Tampa will add 1 million square feet of new retail, cultural, educational, and entertainment space at the street-level. I helped plant the digital foundation for a new brand with global impact.
 ---
 
