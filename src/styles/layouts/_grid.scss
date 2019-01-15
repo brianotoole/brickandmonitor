@@ -41,6 +41,9 @@ $wrapper-padding: rem(10);
     justify-content: center;
     text-align: center;
   }
+  &--v-center {
+    align-items: center;
+  }
   &--space-between {
     justify-content: space-between;
   }

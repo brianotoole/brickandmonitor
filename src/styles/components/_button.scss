@@ -9,7 +9,7 @@
   line-height: rem(42);
   font-family: $font-body;
   font-size: font-scale(0);
-  font-weight: 700;
+  font-weight: normal;
   color: $color-white;
   background-color: $color-primary;
   border-radius: 32px;
@@ -47,6 +47,9 @@
   }
   &--arrow {
       transition: color 0.2s ease-in-out;
+      border: 1px solid $color-black;
+      background: transparent;
+      color: $color-black;
       &:after {
         content: "\E87A";
         font-family: Linearicons-Free;
@@ -55,7 +58,14 @@
         font-size: 1rem;
         margin-top: -2px;
         margin-left: 10px;
-        transition: margin-left 0.2s ease-in-out;
+        transition: background 0.2s ease-out, margin-left 0.2s ease-in-out;
+      }
+      &:hover {
+          background: $color-black;
+          color: $color-white;
+          &:after {
+              margin-left: 14px;
+          }
       }
   }
   &--small {

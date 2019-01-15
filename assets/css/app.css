@@ -937,6 +937,9 @@ ul {
     -ms-flex-pack: center;
         justify-content: center;
     text-align: center; }
+  .row-flex--v-center {
+    -ms-flex-align: center;
+        align-items: center; }
   .row-flex--space-between {
     -ms-flex-pack: justify;
         justify-content: space-between; }
@@ -1696,7 +1699,7 @@ html.fp-enabled,
   line-height: 2.625rem;
   font-family: "Martel", sans-serif;
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: normal;
   color: #ffffff;
   background-color: #b80c15;
   border-radius: 32px;
@@ -1725,7 +1728,10 @@ html.fp-enabled,
       background-color: #b80c15;
       border-color: #70070d; }
   .btn--arrow {
-    transition: color 0.2s ease-in-out; }
+    transition: color 0.2s ease-in-out;
+    border: 1px solid #000;
+    background: transparent;
+    color: #000; }
     .btn--arrow:after {
       content: "\E87A";
       font-family: Linearicons-Free;
@@ -1734,7 +1740,12 @@ html.fp-enabled,
       font-size: 1rem;
       margin-top: -2px;
       margin-left: 10px;
-      transition: margin-left 0.2s ease-in-out; }
+      transition: background 0.2s ease-out, margin-left 0.2s ease-in-out; }
+    .btn--arrow:hover {
+      background: #000;
+      color: #ffffff; }
+      .btn--arrow:hover:after {
+        margin-left: 14px; }
   .btn--small {
     height: 3.25rem;
     line-height: 3.25rem; }
