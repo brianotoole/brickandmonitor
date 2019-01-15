@@ -45,6 +45,19 @@
           border-color: $color-primary-dark;
       }
   }
+  &--arrow {
+      transition: color 0.2s ease-in-out;
+      &:after {
+        content: "\E87A";
+        font-family: Linearicons-Free;
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 1rem;
+        margin-top: -2px;
+        margin-left: 10px;
+        transition: margin-left 0.2s ease-in-out;
+      }
+  }
   &--small {
       height: rem(52);
       line-height: rem(52);
