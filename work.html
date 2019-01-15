@@ -1,33 +1,19 @@
 ---
 layout: page
-title: Work
-bgcolorclass: bg-white
-bodyclass: page-work
-hero: Designers, builders, &amp; growers of digital products
-subtitle:
+title: About
+bodyclass: page-about
+hero-title: Designers, builders, growers of future-proof brands
+hero-subtitle: 
+hero-bg: 2
 ---
 
-<section class="news-layout section-wrap bg-grey">
-  <div class="container-full container-full--padded">
-    <h4 class="section-title section-title--underline">Recent Work</h4>
-    {% assign project_items = site.projects | sort: 'date' | reverse %} 
-    {% for project in project_items %}
-
-    <div class="project-block">
-      <div class="half left">
-        <h4 class="">{{ project.title }}</h4>
-        <p>{{ project.description }}</p>
-        <a class="btn arrow" href="{{ project.url }}">Explore Project</a>
-      </div>
-      <!--/.left-->
-      <div class="half right">
-        <img src="{{site.baseurl}}/assets/images/{{project.img}}" alt="{{ project.title }}">
-      </div>
-      <!--/.right-->
-    </div>
-    <!--<!--/.project-block-->
-
-    {% endfor %}
-  </div>
-  <!--/.container-->
+<section class="section section--pad section--work">
+  <div class="wrapper">
+    <div class="row-flex">
+      <div class="row-flex__md-12">
+        <h2 class="heading-underline">Recent Projects</h2>
+        {% include projects-list-all.html %}
+      </h2><!-- /.col -->
+    </div><!-- /.row-flex -->
+  </div><!-- /.wrapper -->
 </section>

@@ -653,6 +653,10 @@ body .hero--page-interior .hero__bg {
 .page-content {
   color: #303030; }
 
+.project img {
+  background-color: #f5f5f5;
+  padding: 0.9375rem; }
+
 /*********************************************************
     Hero
 *********************************************************/
@@ -752,7 +756,7 @@ body .hero--page-interior .hero__bg {
       justify-content: center;
   top: 0;
   z-index: 2;
-  width: 75px;
+  width: 95px;
   height: 100%;
   background: #b80c15;
   overflow: hidden;
