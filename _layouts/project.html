@@ -8,8 +8,11 @@ bodyclass: work
     <div class="row-flex">
       <div class="row-flex__md-12">
         <div class="entry-content">
-            <a href="{{ page.link }}" class="h6 text-no-underline"
-            style="color:#{{ page.bgcolor }};" target="_blank">View website</a>
+          <blockquote style="border-color:#{{ page.bgcolor }};">
+            <span class="lnr lnr-exit-up"></span>
+            <a href="{{ page.link }}" class="project-url"
+              style="color:#{{ page.bgcolor }};" target="_blank">View website</a>
+          </blockquote>
           {{ content }}
         </div><!--/.entry-content-->
       </div><!--/.col-->

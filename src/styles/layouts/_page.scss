@@ -201,6 +201,13 @@ body {
   padding-top: rem(50);
 }
 
+.project-url {
+  display: inline-block;
+  padding-bottom: rem(30);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 // Team
 .team-block + .team-block {
   border-top: 1px solid #f5f5f5;
