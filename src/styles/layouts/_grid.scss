@@ -19,7 +19,7 @@ $wrapper-padding: rem(10);
     //default grid has padding applied
     position: relative;
     padding: 0 $wrapper-padding;
-    width: 100%;
+    //width: 100%;
   }
   &--no-gutters {
     margin: 0;

@@ -51,7 +51,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  background: rgba(black, 0.95);
+  background: rgba($color-secondary, 0.99);
   transition: width 0.25s linear;
   @include bp_md {
     width: 675px;
@@ -105,7 +105,7 @@
   height: 100%;
   padding: 0;
   border: 0;
-  background: rgba(black, 0.95);
+  background: rgba($color-secondary, 0.99);
   z-index: 2;
   cursor: pointer;
   outline: none;
