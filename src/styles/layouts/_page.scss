@@ -187,6 +187,28 @@ body {
   color: $color-body;
 }
 
+// Home
+.list-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  li {
+    margin: 0;
+    display: block;
+    width: 100%;
+    @include bp_md {
+      margin: rem(15);
+      width: auto;
+    }
+  }
+  a {
+    width: 100%;
+    @include bp_md {
+      width: auto;
+    }
+  }
+}
+
 
 // Work
 .project-block {
