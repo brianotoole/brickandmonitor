@@ -68,6 +68,21 @@
           }
       }
   }
+  &--card {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    border: 0;
+    background: transparent;
+    border-top: 1px solid #bfbfbf;
+    border-radius: 0;
+    color: $color-black;
+    &:hover, &:focus {
+        color: $color-black;
+        background: transparent;
+    }
+  }
   &--small {
       height: rem(52);
       line-height: rem(52);
