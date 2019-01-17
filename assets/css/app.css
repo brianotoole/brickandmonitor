@@ -1194,7 +1194,7 @@ body .hero--page-interior .hero__bg {
   .hero__bg--4 {
     background-image: url(https://images.unsplash.com/photo-1506645292803-579c17d4ba6a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80); }
   .hero__bg:before {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     top: 0;
@@ -1227,6 +1227,32 @@ body .hero--page-interior .hero__bg {
 
 .hero__subtitle {
   font-style: italic; }
+
+.hero__scroll {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: 0.9375rem;
+  z-index: 2; }
+  .hero__scroll a {
+    position: relative;
+    color: #ffffff;
+    font-size: 0.875rem;
+    font-style: italic;
+    text-decoration: none;
+    transition: color 0.3s ease-out; }
+  .hero__scroll span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 1rem;
+    height: 1rem;
+    margin-left: -9px;
+    border-left: 1px solid rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+    transform: rotate(-45deg);
+    animation: scrollDown 1.5s infinite; }
 
 /*********************************************************
     Header

@@ -14,6 +14,9 @@ bodyclass: page-interior
           <div class="hero__content">
             <h1 class="hero__title">{{ page.hero-title }}</h1>
             <h2 class="hero__subtitle">{{ page.hero-subtitle }}</h2>
+            <div class="hero__scroll">
+              <a href="#more"><span></span></a>
+            </div><!--/.hero-scroll-->
           </div><!-- /.hero-content -->
         </div><!-- /.col -->
       </div><!-- .row-flex -->
@@ -21,6 +24,6 @@ bodyclass: page-interior
     <div class="hero__bg hero__bg--{{page.hero-bg}}"></div>
   </section>
 
-  <div class="page-content">
+  <div class="page-content" id="more">
     {{content}}
   </div><!-- /.page-content -->

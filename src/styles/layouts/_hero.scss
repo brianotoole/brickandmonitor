@@ -40,7 +40,7 @@
     background-image: url(https://images.unsplash.com/photo-1506645292803-579c17d4ba6a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
   }
   &:before {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     top: 0;
@@ -79,4 +79,33 @@
 .hero__subtitle {
   @extend .h4;
   font-style: italic;
+}
+
+.hero__scroll {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: rem(15);
+  z-index: 2;
+  a {
+    position: relative;
+    color: $color-white;
+    font-size: rem(14);
+    font-style: italic;
+    text-decoration: none;
+    transition: color 0.3s ease-out;
+  }
+  span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 1rem;
+    height: 1rem;
+    margin-left: -9px;
+    border-left: 1px solid rgba($color-white, 0.8);
+    border-bottom: 1px solid rgba($color-white, 0.8);
+    transform: rotate(-45deg);
+    animation: scrollDown 1.5s infinite;
+  }
 }
