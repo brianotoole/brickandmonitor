@@ -62,7 +62,8 @@ h6,
 }
 
 p,
-ul {
+ul,
+ol {
     font-size: font-scale(0);
     @include bp_md {
         font-size: font-scale(1);

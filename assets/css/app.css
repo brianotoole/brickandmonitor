@@ -875,12 +875,14 @@ h6,
   font-size: 1rem; }
 
 p,
-ul {
+ul,
+ol {
   font-size: 1rem;
   margin: 0 0 1.875rem 0; }
   @media (min-width: 800px) {
     p,
-    ul {
+    ul,
+    ol {
       font-size: 1.2rem; } }
 
 .heading {
