@@ -3,7 +3,11 @@ layout: default
 bodyclass: page-interior
 ---
 
+{% if page.bodyclass == "page-home" %}
+<section class="section section--full-height hero hero--page-home">
+{% else %}
 <section class="section hero hero--page-interior">
+{% endif %}
   <div class="wrapper">
     <div class="row-flex">
       <div class="row-flex__col-md-12">
