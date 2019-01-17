@@ -203,6 +203,7 @@ body {
   }
   a {
     width: 100%;
+    transition: all 0.2s linear;
     @include bp_md {
       width: auto;
     }
@@ -214,18 +215,19 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: rem(120);
+  margin-top: rem(100);
   padding: rem(60);
   padding-right: rem(30);
   border-radius: 5px;
-  background: #2db1ce;
+  background: $color-black;
   color: $color-white;
-  &--2 {
-    background: #31c7aa;
+  transition: all 0.2s linear;
+  &:hover, &:focus {
+    box-shadow: 0 20px 40px 0 rgba(0,0,0,.2);
+    transform: translateY(-10px);
   }
-  &--3 {
-    background: #2d2a32;
-  }
+  &--2 {}
+  &--3 {}
 }
 
 .link-card__content {
