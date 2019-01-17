@@ -1,5 +1,6 @@
 ---
 layout: post
+title: Lessons on Going Viral
 hero-title: Lessons on Going Viral
 hero-subtitle: 
 hero-bg:

@@ -1,5 +1,6 @@
 ---
 layout: post
+title: Element Queries in Sass
 hero-title: Element Queries in Sass
 hero-subtitle:
 hero-bg: 1
