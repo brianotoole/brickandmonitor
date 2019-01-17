@@ -5,22 +5,22 @@ bodyclass: page-interior
 
 {% if page.bodyclass == "page-home" %}
 <section class="section section--full-height hero hero--page-home">
-{% else %}
-<section class="section hero hero--page-interior">
-{% endif %}
-  <div class="wrapper">
-    <div class="row-flex">
-      <div class="row-flex__col-md-12">
-        <div class="hero__content">
-          <h1 class="hero__title">{{ page.hero-title }}</h1>
-          <h2 class="hero__subtitle">{{ page.hero-subtitle }}</h2>
-        </div><!-- /.hero-content -->
-      </div><!-- /.col -->
-    </div><!-- .row-flex -->
-  </div><!-- /.wrapper -->
-  <div class="hero__bg hero__bg--{{page.hero-bg}}"></div>
-</section>
+  {% else %}
+  <section class="section hero hero--page-interior">
+    {% endif %}
+    <div class="wrapper">
+      <div class="row-flex">
+        <div class="row-flex__md-12">
+          <div class="hero__content">
+            <h1 class="hero__title">{{ page.hero-title }}</h1>
+            <h2 class="hero__subtitle">{{ page.hero-subtitle }}</h2>
+          </div><!-- /.hero-content -->
+        </div><!-- /.col -->
+      </div><!-- .row-flex -->
+    </div><!-- /.wrapper -->
+    <div class="hero__bg hero__bg--{{page.hero-bg}}"></div>
+  </section>
 
-<div class="page-content">
-  {{content}}
-</div><!-- /.page-content -->
+  <div class="page-content">
+    {{content}}
+  </div><!-- /.page-content -->

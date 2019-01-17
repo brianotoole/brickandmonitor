@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Lessons on Going Viral
-category: development
+hero-title: Lessons on Going Viral
+hero-subtitle: 
+hero-bg:
 description: 
-bgcolorclass: bg-body
-textcolor: ffffff
+category: development
 ---
 
 As Fall approaches and cooler weather drifts in, we bring to an end what may have been the chilliest summer of all time. Well, at least online. Whether or not you had the opportunity to participate directly, it is no doubt the #ALSicebucketchallenge made it’s way to your screen. The viral phenomenon that poured out all over social media gained enormous traction, resulting in over 180 million search results on Google, more than 2 million YouTube videos, and engaged over 30 million people on Facebook. Overall, the ALS Foundation claimed to raise 35 times more than they did the previous year. With the end goal being donations, it's simple to say the campaign was a huge success. But how did the campaign obtain that much reach? How does something become THAT viral? Here’s my observations...
