@@ -1174,19 +1174,21 @@ body .hero--page-interior .hero__bg {
       flex-wrap: wrap;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  margin-top: 3.75rem;
+  margin-top: 1.875rem;
   padding: 0;
   border: 1px solid #e5e5e5;
   border-radius: 6px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   color: #303030;
   transition: all 0.2s linear; }
-  .link-card:hover img, .link-card:focus img {
-    filter: grayscale(0); }
+  .link-card:hover, .link-card :focus {
+    transform: translateY(-5px);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15); }
+    .link-card:hover img, .link-card :focus img {
+      filter: grayscale(0); }
 
 .link-card__content {
-  max-width: 65%;
-  padding: 3.75rem; }
+  padding: 1.875rem; }
   .link-card__content .btn {
     margin-top: 0.9375rem; }
 
@@ -1198,10 +1200,13 @@ body .hero--page-interior .hero__bg {
   height: 100%; }
   .link-card__image img {
     width: auto;
-    max-width: 300px;
+    max-width: 250px;
     position: relative;
     z-index: 2;
     filter: grayscale(50%); }
+    @media (max-width: 800px) {
+      .link-card__image img {
+        display: none; } }
   .link-card__image img + img {
     z-index: 1;
     margin-top: -100px;
@@ -1223,7 +1228,7 @@ body .hero--page-interior .hero__bg {
       justify-content: space-between;
   width: calc(12/12 * 100%);
   margin: 0.9375rem;
-  padding: 3.75rem;
+  padding: 3.75rem 1.875rem;
   background: #ffffff;
   border: 1px solid #e5e5e5;
   border-radius: 6px;
@@ -1232,10 +1237,11 @@ body .hero--page-interior .hero__bg {
   transition: all 0.2s linear; }
   @media (min-width: 800px) {
     .icon-card {
-      width: calc(4/12 * 100% - 30px); } }
+      width: calc(4/12 * 100% - 30px);
+      padding: 3.75rem; } }
   .icon-card:hover, .icon-card :focus {
     transform: translateY(-5px);
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.25); }
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15); }
   .icon-card li {
     display: -ms-flexbox;
     display: flex;
@@ -1546,10 +1552,8 @@ body .hero--page-interior .hero__bg {
     Footer
 *********************************************************/
 .footer {
-  border-top: 1px solid #ffffff; }
-  @media (min-width: 800px) {
-    .footer {
-      padding-top: 5.625rem; } }
+  border-top: 1px solid #ffffff;
+  padding-top: 5.625rem; }
   .footer a {
     text-decoration: none; }
 
