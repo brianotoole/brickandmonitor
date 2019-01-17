@@ -9,8 +9,13 @@
   margin: 0 auto;
 }
 
+// Borders
+.u-border-white {
+  border-color: $color-white;
+}
+
 // Colors: text
-.text-white {
+.u-text-white {
   color: $color-white;
 }
 

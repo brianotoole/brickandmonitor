@@ -209,6 +209,47 @@ body {
   }
 }
 
+.link-card {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: rem(120);
+  padding: rem(60);
+  padding-right: rem(30);
+  border-radius: 5px;
+  background: #2db1ce;
+  color: $color-white;
+  &--2 {
+    background: #31c7aa;
+  }
+  &--3 {
+    background: #2d2a32;
+  }
+}
+
+.link-card__content {
+  max-width: 50%;
+}
+
+.link-card__image{
+  display: flex;
+  img {
+    width: auto;
+    max-width: 400px;
+    position: relative;
+  }
+  img {
+    z-index: 2;
+  }
+  img + img {
+    z-index: 1;
+    margin-top: -100px;
+    position: absolute;
+    margin-left: -14%;
+  }
+}
+
 
 // Work
 .project-block {
