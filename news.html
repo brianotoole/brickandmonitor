@@ -11,8 +11,8 @@ hero-bg: 2
   <div class="wrapper">
     <div class="row-flex">
       <div class="row-flex__col-md-12">
-        <h2 class="heading-underline">Recent News</h2>
-        <div class="post" id="js-trigger-posts">
+        <h2 class="heading-underline" id="js-trigger-posts">Recent News</h2>
+        <div class="post">
           {% for post in site.posts %}
           <a href="{{ post.url }}" class="post__item hvr-underline-from-left">
             <h4>{{ post.title }}</h4>

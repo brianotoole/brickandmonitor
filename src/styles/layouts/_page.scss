@@ -196,9 +196,24 @@ body {
   }
 }
 
-.project-block + .project-block {
-  border-top: 1px solid #f5f5f5;
-  padding-top: rem(50);
+.project-block {
+  border-bottom: 1px solid #f5f5f5;
+  padding-bottom: rem(50);
+  margin-bottom: rem(50);
+  @include bp_md {
+    margin-bottom: 0;
+  }
+  &:last-of-type {
+    border-bottom: none;
+  }
+  div + div {
+    order: -1;
+    padding-bottom: rem(30);
+    @include bp_md {
+      order: 1;
+      padding: 0;
+    }
+  }
 }
 
 .project-url {

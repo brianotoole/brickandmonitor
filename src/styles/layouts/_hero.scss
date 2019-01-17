@@ -6,9 +6,11 @@
   position: relative;
   display: flex;
   align-items: center;
-  height: 100vh;
+  height: auto;
+  padding: rem(120) 0 rem(60);
   @include bp_md {
     height: 550px;
+    padding: 0;
   }
   &--full-height {
     height: 100vh;
