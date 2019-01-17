@@ -37,10 +37,10 @@
       top: 30px;
       right: 30px;
       font-family: $font-body;
-      font-size: rem(28);
+      font-size: rem(40);
       color: $color-white;
-      transform: scaleX(1.2);
-      transform-origin: 100% 0;
+      //transform: scaleX(1.2);
+      //transform-origin: 100% 0;
       cursor: pointer;
       transition: all 0.3s ease-out;
       &:hover {

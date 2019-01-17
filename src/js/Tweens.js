@@ -67,10 +67,10 @@ function slideUpIntroItems() {
   });
 }
 
-function staggerInServices() {
+function staggerInPosts() {
   var newsScene = new ScrollMagic.Scene({
     //scene options
-    triggerElement: "#js-trigger-services",
+    triggerElement: "#js-trigger-posts",
     triggerHook: 0.8,
     reverse: false
   })
@@ -78,10 +78,10 @@ function staggerInServices() {
     //.addIndicators() //debug only
     .addTo(controller);
   return tl1.staggerFrom(
-    ".service__item",
-    0.4,
-    { y: -5, autoAlpha: 0, ease: Power1.easeOut },
-    0.25
+    ".post__item",
+    0.5,
+    { y: 5, autoAlpha: 0, ease: Power1.easeOut },
+    0.15
   );
 }
 
@@ -103,13 +103,9 @@ function slideUpFooter() {
   );
 }
 
-// On ready
 $(function() {
-  // If home page
-  if ($(".home").length > 0) {
-    //slideInHeroItems();
-    //slideUpIntroItems();
-    staggerInServices();
-    slideUpFooter();
+  // If news page
+  if ($(".page-news").length > 0) {
+    staggerInPosts();
   }
 });
