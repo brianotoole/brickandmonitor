@@ -2085,7 +2085,9 @@ textarea {
   margin: 0 auto;
   text-align: center;
   opacity: 0;
-  background-image: url("/assets/images/bg-lightbulbs.jpg");
+  background-image: url("/assets/images/bg-palms.jpg");
+  background-size: cover;
+  background-position: bottom center;
   visibility: hidden;
   transform: scale(1.2);
   transition: all 0.3s ease-out; }
@@ -2096,7 +2098,7 @@ textarea {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.9); }
+    background: rgba(0, 0, 0, 0.9); }
   .modal--is-open {
     opacity: 1;
     visibility: visible;
@@ -2106,7 +2108,7 @@ textarea {
     width: 100%;
     top: 50%;
     transform: translateY(-50%);
-    color: #000; }
+    color: #ffffff; }
   .modal__description {
     padding-top: 0.9375rem; }
   .modal__close {
@@ -2115,11 +2117,11 @@ textarea {
     right: 30px;
     font-family: "Martel", sans-serif;
     font-size: 2.5rem;
-    color: #000;
+    color: #ffffff;
     cursor: pointer;
     transition: all 0.3s ease-out; }
     .modal__close:hover {
-      color: black; }
+      color: #e6e6e6; }
 
 .services {
   display: -ms-flexbox;
