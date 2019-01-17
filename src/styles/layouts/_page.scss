@@ -268,6 +268,37 @@ body {
   }
 }
 
+.icon-card-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+.icon-card {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: calc(12/12 * 100%);
+  margin: rem(15);
+  padding: rem(60);
+  background: $color-white;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  color: $color-body;
+  transition: all 0.2s linear;
+  @include bp_md {
+    width: calc(4/12 * 100% - 30px);
+  }
+  li {
+    display: flex;
+    align-items: center;
+  }
+  span {
+    padding-right: rem(20);
+    font-size: rem(50);
+  }
+}
+
 
 // Work
 .project-block {

@@ -1209,6 +1209,40 @@ body .hero--page-interior .hero__bg {
     position: absolute;
     margin-left: -14%; }
 
+.icon-card-wrap {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: -15px; }
+
+.icon-card {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  width: calc(12/12 * 100%);
+  margin: 0.9375rem;
+  padding: 3.75rem;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  color: #303030;
+  transition: all 0.2s linear; }
+  @media (min-width: 800px) {
+    .icon-card {
+      width: calc(4/12 * 100% - 30px); } }
+  .icon-card li {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center; }
+  .icon-card span {
+    padding-right: 1.25rem;
+    font-size: 3.125rem; }
+
 .project-block img {
   background-color: #f5f5f5;
   padding: 0.9375rem; }
