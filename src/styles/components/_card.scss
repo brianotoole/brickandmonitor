@@ -1,0 +1,72 @@
+/*********************************************************
+    Card
+*********************************************************/
+
+.card-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin: rem(-15);
+  padding: 0;
+  padding-bottom: rem(5);
+}
+
+.card {
+  position: relative;
+  flex-basis: 100%;
+  padding: rem(60);
+  margin: rem(15);
+  padding: 0;
+  background: $color-white;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  color: $color-body;
+  transition: all 0.2s linear;
+  @include bp_md {
+    flex: 1 calc(4 / 12 * 100% - 30px);
+  }
+  &:hover,
+  &:focus {
+    transform: translateY(-5px);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.card__header {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  background: url("https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80")
+    center center no-repeat;
+  background-size: cover;
+  &:hover,
+  &:focus {
+    background-color: rgba(white, 0);
+  }
+  &--2 {
+    background: url("https://images.unsplash.com/photo-1496144300411-8dd31ce145ba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2144&q=80")
+  }
+  &--3 {
+    background: url("https://images.unsplash.com/photo-1519222970733-f546218fa6d7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80")
+  }
+}
+
+.card__title {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  bottom: rem(-10);
+  padding: rem(15);
+  width: 100%;
+  height: 100%;
+  color: $color-white;
+  background: rgba($color-secondary, 0.7%);
+}
+
+.card__description {
+  color: $color-black;
+  padding: rem(30);
+  padding-bottom: rem(60);
+}

@@ -1247,71 +1247,6 @@ body {
     padding-right: 1.25rem;
     font-size: 3.125rem; }
 
-.card-wrap {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: start;
-      align-items: flex-start;
-  margin: -0.9375rem;
-  padding: 0;
-  padding-bottom: 0.3125rem; }
-
-.card {
-  position: relative;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-  padding: 3.75rem;
-  margin: 0.9375rem;
-  padding: 0;
-  background: #ffffff;
-  border: 1px solid #e5e5e5;
-  border-radius: 6px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-  color: #303030;
-  transition: all 0.2s linear; }
-  @media (min-width: 800px) {
-    .card {
-      -ms-flex: 1 calc(4 / 12 * 100% - 30px);
-          flex: 1 calc(4 / 12 * 100% - 30px); } }
-  .card:hover, .card:focus {
-    transform: translateY(-5px);
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15); }
-
-.card__header {
-  position: relative;
-  width: 100%;
-  height: 250px;
-  background: url("https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80") center center no-repeat;
-  background-size: cover; }
-  .card__header:hover, .card__header:focus {
-    background-color: rgba(255, 255, 255, 0); }
-  .card__header--2 {
-    background: url("https://images.unsplash.com/photo-1496144300411-8dd31ce145ba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2144&q=80"); }
-  .card__header--3 {
-    background: url("https://images.unsplash.com/photo-1519222970733-f546218fa6d7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80"); }
-
-.card__title {
-  position: absolute;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  bottom: -0.625rem;
-  padding: 0.9375rem;
-  width: 100%;
-  height: 100%;
-  color: #ffffff;
-  background: rgba(46, 48, 49, 0.7); }
-
-.card__description {
-  color: #000;
-  padding: 1.875rem;
-  padding-bottom: 3.75rem; }
-
 .project-block img {
   background-color: #f5f5f5;
   padding: 0.9375rem; }
@@ -2191,6 +2126,74 @@ textarea {
     transition: all 0.3s ease-out; }
     .modal__close:hover {
       color: #e6e6e6; }
+
+/*********************************************************
+    Card
+*********************************************************/
+.card-wrap {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  margin: -0.9375rem;
+  padding: 0;
+  padding-bottom: 0.3125rem; }
+
+.card {
+  position: relative;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  padding: 3.75rem;
+  margin: 0.9375rem;
+  padding: 0;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  color: #303030;
+  transition: all 0.2s linear; }
+  @media (min-width: 800px) {
+    .card {
+      -ms-flex: 1 calc(4 / 12 * 100% - 30px);
+          flex: 1 calc(4 / 12 * 100% - 30px); } }
+  .card:hover, .card:focus {
+    transform: translateY(-5px);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15); }
+
+.card__header {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  background: url("https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80") center center no-repeat;
+  background-size: cover; }
+  .card__header:hover, .card__header:focus {
+    background-color: rgba(255, 255, 255, 0); }
+  .card__header--2 {
+    background: url("https://images.unsplash.com/photo-1496144300411-8dd31ce145ba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2144&q=80"); }
+  .card__header--3 {
+    background: url("https://images.unsplash.com/photo-1519222970733-f546218fa6d7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80"); }
+
+.card__title {
+  position: absolute;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  bottom: -0.625rem;
+  padding: 0.9375rem;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  background: rgba(46, 48, 49, 0.7); }
+
+.card__description {
+  color: #000;
+  padding: 1.875rem;
+  padding-bottom: 3.75rem; }
 
 .services {
   display: -ms-flexbox;
