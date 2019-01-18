@@ -22,6 +22,7 @@
 }
 
 .hero__bg {
+  visibility: hidden; // added for tween
   display: block;
   position: absolute;
   top: 0;
@@ -32,6 +33,7 @@
   background-position: bottom center;
   background-size: cover;
   background-image: url(https://images.unsplash.com/photo-1527368746281-798b65e1ac6e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1868&q=80);
+  transform-origin: 0 100%;
   &--2 {
     background-image: url('/assets/images/bg-palms.jpg');
   }
@@ -59,6 +61,7 @@
   color: $color-white;
   padding-top: rem(60);
   z-index: 99;
+  visibility: hidden; //added for tween
   @include bp_md {
     max-width: 75%;
   }

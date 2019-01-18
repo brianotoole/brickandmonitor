@@ -997,18 +997,24 @@ ol {
 /*********************************************************
     Page - global page elements
 *********************************************************/
+/*
 body.loading {
-  background: #ffffff; }
-  body.loading .hero--page-interior .hero__bg {
+  background: $color-white;
+  .hero__bg {
     opacity: 0;
-    transform: scale(1.2); }
+    transform: scale(1.2);
+  }
+}
 
-body .hero--page-interior .hero__bg {
-  opacity: 1;
-  transform: scale(1);
-  transform-origin: 0 100%;
-  transition: transform 0.9s cubic-bezier(0.16, 0.68, 0.43, 0.99); }
-
+body {
+  .hero__bg {
+    opacity: 1;
+    transform: scale(1);
+    transform-origin: 0 100%;
+    transition: transform 0.9s cubic-bezier(0.16, 0.68, 0.43, 0.99);
+  }
+}
+/*
 .pre-loader {
   display: none;
   position: absolute;
@@ -1018,12 +1024,14 @@ body .hero--page-interior .hero__bg {
   height: 100%;
   overflow: hidden;
   z-index: 99999;
-  background: transparent; }
-  .pre-loader.is-loading {
+  background: transparent;
+  &.is-loading {
     display: block;
     overflow: hidden;
-    background: #ffffff;
-    z-index: 9999; }
+    background: $color-white;
+    z-index: 9999;
+  }
+}
 
 .pre-loader-logo-wrap {
   display: none;
@@ -1032,9 +1040,11 @@ body .hero--page-interior .hero__bg {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 99999; }
-  .pre-loader-logo-wrap.active {
-    display: block; }
+  z-index: 99999;
+  &.active {
+    display: block;
+  }
+}
 
 .pre-loader-logo {
   position: absolute;
@@ -1044,24 +1054,34 @@ body .hero--page-interior .hero__bg {
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 0 auto;
-  z-index: 99; }
-  .pre-loader-logo .svg {
+  z-index: 99;
+  .svg {
     display: none;
     fill: currentColor;
-    color: transparent; }
-    .pre-loader-logo .svg .svg-inner {
-      stroke: transparent; }
-    .pre-loader-logo .svg.active {
+    color: transparent;
+    // outer = circle border
+    .svg-outer {}
+    // inner = ampersand
+    .svg-inner {
+      stroke: transparent;
+    }
+    &.active {
       display: block;
       animation: draw 0.6s reverse linear;
-      visibility: visible; }
+      visibility: visible;
+    }
+  }
+}
 
 @keyframes draw {
   from {
-    color: transparent; }
+    color: transparent;
+  }
   to {
-    color: black; } }
-
+    color: black;
+  }
+}
+*/
 .site-wrapper {
   overflow: hidden; }
 
@@ -1306,6 +1326,7 @@ body .hero--page-interior .hero__bg {
     color: #ffffff; }
 
 .hero__bg {
+  visibility: hidden;
   display: block;
   position: absolute;
   top: 0;
@@ -1315,7 +1336,8 @@ body .hero--page-interior .hero__bg {
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: cover;
-  background-image: url(https://images.unsplash.com/photo-1527368746281-798b65e1ac6e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1868&q=80); }
+  background-image: url(https://images.unsplash.com/photo-1527368746281-798b65e1ac6e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1868&q=80);
+  transform-origin: 0 100%; }
   .hero__bg--2 {
     background-image: url("/assets/images/bg-palms.jpg"); }
   .hero__bg--3 {
@@ -1337,7 +1359,8 @@ body .hero--page-interior .hero__bg {
   max-width: 100%;
   color: #ffffff;
   padding-top: 3.75rem;
-  z-index: 99; }
+  z-index: 99;
+  visibility: hidden; }
   @media (min-width: 800px) {
     .hero__content {
       max-width: 75%; } }
@@ -2573,6 +2596,9 @@ svg:not(:root) {
   @media (max-width: 800px) {
     .visible-phone {
       display: block !important; } }
+
+.u-v-hidden {
+  visibility: hidden; }
 
 .bg-img-cover {
   position: relative;

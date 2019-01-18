@@ -15,32 +15,29 @@ var introItems = $(".section-intro > *");
 
 $(function() {
   tl.set("body", { className: "+=loading" });
-  tl.set(".pre-loader-logo-wrap", { className: "+=active" });
-  tl.set(".pre-loader", { className: "+=is-loading" });
-  tl.set(".pre-loader-logo .svg", { className: "+=active" })
-    .to(".is-loading", 0.8, { ease: Power0.easeNone })
+  //tl.set(".pre-loader-logo-wrap", { className: "+=active" });
+  //tl.set(".pre-loader", { className: "+=is-loading" });
+  //tl.set(".pre-loader-logo .svg", { className: "+=active" })
+    //tl.to(".is-loading", 0.8, { ease: Power0.easeNone })
     //.fromTo('.is-loading', 0.25, {width: "100%"}, {backgroundColor: "white",width: "0%", ease: Power0.easeNone})
-    .set("body", { className: "-=loading" })
-    .set(".pre-loader-logo-wrap", { className: "-=active" })
-    .set(".pre-loader", { className: "-=is-loading" })
-    .set(".pre-loader-logo .svg", { className: "-=active" });
+    tl.set("body", { className: "-=loading" })
+    //.set(".pre-loader-logo-wrap", { className: "-=active" })
+    //.set(".pre-loader", { className: "-=is-loading" })
+   //.set(".pre-loader-logo .svg", { className: "-=active" });
 
+  TweenMax.from($(".hero__bg"), 0.5, {
+    autoAlpha: 0,
+    scale: 1.1,
+    ease: Power0.easeOut
+  }),
   tl.add(
-    TweenMax.from($(".hero .hero__content, .section-intro > *"), 0.25, {
+    TweenMax.from($(".hero .hero__content"), 0.5, {
       autoAlpha: 0,
       y: 20,
       ease: Power0.easeOut
     })
   );
 
-  tl.add(
-    TweenMax.from($(".header"), 0.25, {
-      //autoAlpha: 0,
-      x: -1000,
-      ease: Power0.easeOut
-    })
-  );
-  
 });
 
 function slideInHeroItems() {
