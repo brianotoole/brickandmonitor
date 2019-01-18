@@ -120,7 +120,7 @@ body {
 .section {
   position: relative;
   &--full-height {
-    height: 100vh!important;
+    height: 100vh !important;
   }
   &--underline {
     border-bottom: 2px solid $color-grey;
@@ -232,59 +232,32 @@ body {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   color: $color-body;
   transition: all 0.2s linear;
-  &:hover, :focus {
+  &:hover,
+  :focus {
     transform: translateY(-5px);
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
     img {
       filter: grayscale(0);
     }
   }
-  &--2 {}
-  &--3 {}
-}
-
-.link-card__content {
-  padding: rem(30);
-  max-width: 50%;
-  .btn {
-    margin-top: rem(15);
+  &--2 {
+  }
+  &--3 {
   }
 }
 
-.link-card__image {
-  display: flex;
-  position: absolute;
-  right: 0;
-  height: 100%;
-  img {
-    width: auto;
-    max-width: 450px;
-    position: relative;
-    z-index: 2;
-    filter: grayscale(50%);
-    @media (max-width: $bp_md) {
-      display: none;
-    }
-  }
-  img + img {
-    z-index: 1;
-    margin-top: -100px;
-    position: absolute;
-    margin-left: -14%;
-  }
-}
 
 .icon-card-wrap {
   display: flex;
   flex-wrap: wrap;
   margin: rem(-15);
-  padding-bottom: rem(5)
+  padding-bottom: rem(5);
 }
 .icon-card {
   position: relative;
   display: flex;
   justify-content: space-between;
-  width: calc(12/12 * 100%);
+  width: calc(12 / 12 * 100%);
   margin: rem(15);
   padding: rem(60) rem(30);
   background: $color-white;
@@ -294,10 +267,11 @@ body {
   color: $color-body;
   transition: all 0.2s linear;
   @include bp_md {
-    width: calc(4/12 * 100% - 30px);
+    width: calc(4 / 12 * 100% - 30px);
     padding: rem(60);
   }
-  &:hover, :focus {
+  &:hover,
+  :focus {
     transform: translateY(-5px);
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
   }
@@ -311,6 +285,75 @@ body {
   }
 }
 
+// Card
+.card-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin: rem(-15);
+  padding: 0;
+  padding-bottom: rem(5);
+}
+
+.card {
+  position: relative;
+  flex-basis: 100%;
+  padding: rem(60);
+  margin: rem(15);
+  padding: 0;
+  background: $color-white;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  color: $color-body;
+  transition: all 0.2s linear;
+  @include bp_md {
+    flex: 1 calc(4 / 12 * 100% - 30px);
+  }
+  &:hover,
+  &:focus {
+    transform: translateY(-5px);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.card__header {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  background: url("https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80")
+    center center no-repeat;
+  background-size: cover;
+  &:hover,
+  &:focus {
+    background-color: rgba(white, 0);
+  }
+  &--2 {
+    background: url("https://images.unsplash.com/photo-1496144300411-8dd31ce145ba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2144&q=80")
+  }
+  &--3 {
+    background: url("https://images.unsplash.com/photo-1519222970733-f546218fa6d7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80")
+  }
+}
+
+.card__title {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  bottom: rem(-10);
+  padding: rem(15);
+  width: 100%;
+  height: 100%;
+  color: $color-white;
+  background: rgba($color-secondary, 0.7%);
+}
+
+.card__description {
+  color: $color-black;
+  padding: rem(30);
+  padding-bottom: rem(60);
+}
 
 // Work
 .project-block {

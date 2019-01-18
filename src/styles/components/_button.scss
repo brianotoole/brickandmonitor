@@ -105,4 +105,10 @@
       margin-right: auto;
       max-width: 100%;
   }
+  &--right {
+      float: right;
+      @media (max-width: $bp_md) {
+          float: none;
+      }
+  }
 }
