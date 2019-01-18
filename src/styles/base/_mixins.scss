@@ -100,3 +100,21 @@ Usage: @include clearFix()
       *zoom: 1;
   }
 }
+
+
+/*********************************************************
+Card Hover
+Usage: @include cardHover()
+*********************************************************/
+
+@mixin cardHover() {
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  color: $color-body;
+  &:hover,
+  &:focus {
+    transform: translateY(-5px);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
+  }
+}

@@ -197,6 +197,10 @@ Clearfix
 Usage: @include clearFix()
 *********************************************************/
 /*********************************************************
+Card Hover
+Usage: @include cardHover()
+*********************************************************/
+/*********************************************************
     Fonts
 *********************************************************/
 /* devanagari */
@@ -2151,18 +2155,18 @@ textarea {
   margin: 0.9375rem;
   padding: 0;
   background: #ffffff;
+  transition: all 0.2s linear;
   border: 1px solid #e5e5e5;
   border-radius: 6px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-  color: #303030;
-  transition: all 0.2s linear; }
+  color: #303030; }
+  .card:hover, .card:focus {
+    transform: translateY(-5px);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15); }
   @media (min-width: 800px) {
     .card {
       -ms-flex: 1 calc(4 / 12 * 100% - 30px);
           flex: 1 calc(4 / 12 * 100% - 30px); } }
-  .card:hover, .card:focus {
-    transform: translateY(-5px);
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15); }
 
 .card__header {
   position: relative;
