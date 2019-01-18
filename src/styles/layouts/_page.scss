@@ -198,55 +198,6 @@ body {
 }
 
 // Home
-.list-flex {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  li {
-    margin: 0;
-    display: block;
-    width: 100%;
-    @include bp_md {
-      margin: rem(15);
-      width: auto;
-    }
-  }
-  a {
-    width: 100%;
-    transition: all 0.2s linear;
-    @include bp_md {
-      width: auto;
-    }
-  }
-}
-
-.link-card {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: rem(30);
-  padding: 0;
-  border: 1px solid #e5e5e5;
-  border-radius: 6px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-  color: $color-body;
-  transition: all 0.2s linear;
-  &:hover,
-  :focus {
-    transform: translateY(-5px);
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
-    img {
-      filter: grayscale(0);
-    }
-  }
-  &--2 {
-  }
-  &--3 {
-  }
-}
-
-
 .icon-card-wrap {
   display: flex;
   flex-wrap: wrap;
@@ -261,20 +212,12 @@ body {
   margin: rem(15);
   padding: rem(60) rem(30);
   background: $color-white;
-  border: 1px solid #e5e5e5;
-  border-radius: 6px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-  color: $color-body;
   transition: all 0.2s linear;
   @include bp_md {
     width: calc(4 / 12 * 100% - 30px);
     padding: rem(60);
   }
-  &:hover,
-  :focus {
-    transform: translateY(-5px);
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
-  }
+  @include cardHover();
   li {
     display: flex;
     align-items: center;

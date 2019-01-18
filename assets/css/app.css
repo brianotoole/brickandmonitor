@@ -1109,7 +1109,7 @@ body {
   .section--underline {
     border-bottom: 2px solid #2b2a2b; }
   .section--secondary {
-    background-color: #2e3031;
+    background-color: #030e1b;
     color: #ffffff; }
   .section--dark {
     background-color: #2b2a2b;
@@ -1166,51 +1166,6 @@ body {
 .page-content {
   color: #303030; }
 
-.list-flex {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: center;
-      justify-content: center; }
-  .list-flex li {
-    margin: 0;
-    display: block;
-    width: 100%; }
-    @media (min-width: 800px) {
-      .list-flex li {
-        margin: 0.9375rem;
-        width: auto; } }
-  .list-flex a {
-    width: 100%;
-    transition: all 0.2s linear; }
-    @media (min-width: 800px) {
-      .list-flex a {
-        width: auto; } }
-
-.link-card {
-  position: relative;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  margin-top: 1.875rem;
-  padding: 0;
-  border: 1px solid #e5e5e5;
-  border-radius: 6px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-  color: #303030;
-  transition: all 0.2s linear; }
-  .link-card:hover,
-  .link-card :focus {
-    transform: translateY(-5px);
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15); }
-    .link-card:hover img,
-    .link-card :focus img {
-      filter: grayscale(0); }
-
 .icon-card-wrap {
   display: -ms-flexbox;
   display: flex;
@@ -1229,19 +1184,18 @@ body {
   margin: 0.9375rem;
   padding: 3.75rem 1.875rem;
   background: #ffffff;
+  transition: all 0.2s linear;
   border: 1px solid #e5e5e5;
   border-radius: 6px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-  color: #303030;
-  transition: all 0.2s linear; }
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  color: #303030; }
   @media (min-width: 800px) {
     .icon-card {
       width: calc(4 / 12 * 100% - 30px);
       padding: 3.75rem; } }
-  .icon-card:hover,
-  .icon-card :focus {
+  .icon-card:hover, .icon-card:focus {
     transform: translateY(-5px);
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15); }
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15); }
   .icon-card li {
     display: -ms-flexbox;
     display: flex;
@@ -1297,12 +1251,12 @@ body {
   padding: 7.5rem 0 3.75rem; }
   @media (min-width: 800px) {
     .hero {
-      height: 550px;
+      height: 600px;
       padding: 0; } }
   .hero--full-height {
     height: 100vh; }
   .hero--page-interior {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(3, 14, 27, 0.8);
     color: #ffffff; }
 
 .hero__bg {
@@ -1332,7 +1286,7 @@ body {
     width: 100%;
     height: 100%;
     display: block;
-    background-color: rgba(0, 0, 0, 0.7); }
+    background-color: rgba(3, 14, 27, 0.8); }
 
 .hero__content {
   position: relative;
@@ -1434,7 +1388,7 @@ body {
       align-items: center;
   -ms-flex-pack: end;
       justify-content: flex-end;
-  background: rgba(46, 48, 49, 0.99);
+  background: rgba(3, 14, 27, 0.99);
   transition: width 0.25s linear; }
   @media (min-width: 800px) {
     .header__nav {
@@ -1495,7 +1449,7 @@ body {
   height: 100%;
   padding: 0;
   border: 0;
-  background: rgba(46, 48, 49, 0.99);
+  background: rgba(3, 14, 27, 0.99);
   z-index: 2;
   cursor: pointer;
   outline: none;
@@ -1911,10 +1865,10 @@ html.fp-enabled,
     box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.2);
     transform: translateY(-1px); }
   .btn--secondary {
-    background-color: #2e3031;
-    border-color: #2e3031; }
+    background-color: #030e1b;
+    border-color: #030e1b; }
     .btn--secondary:hover, .btn--secondary:focus {
-      background-color: #09090a; }
+      background-color: black; }
   .btn--muted {
     color: #b80c15;
     background-color: transparent;
@@ -2161,7 +2115,7 @@ textarea {
   transition: all 0.2s linear;
   border: 1px solid #e5e5e5;
   border-radius: 6px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
   color: #303030; }
   .card:hover .btn {
     background-color: #ffffff;
@@ -2170,7 +2124,7 @@ textarea {
     background: rgba(0, 0, 0, 0.1); }
   .card:hover, .card:focus {
     transform: translateY(-5px);
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15); }
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15); }
   @media (min-width: 800px) {
     .card {
       -ms-flex: 1 calc(4 / 12 * 100% - 30px);
@@ -2200,7 +2154,7 @@ textarea {
   width: 100%;
   height: 100%;
   color: #ffffff;
-  background: rgba(46, 48, 49, 0.7);
+  background: rgba(3, 14, 27, 0.7);
   transition: background 0.2s ease-out; }
 
 .card__description {
@@ -2535,7 +2489,7 @@ svg:not(:root) {
   color: #b80c15; }
 
 .text-secondary {
-  color: #2e3031; }
+  color: #030e1b; }
 
 .text-body {
   color: #303030; }
@@ -2553,7 +2507,7 @@ svg:not(:root) {
   color: #ffffff; }
 
 .bg-secondary {
-  background: #2e3031;
+  background: #030e1b;
   color: #303030; }
 
 .bg-black {
