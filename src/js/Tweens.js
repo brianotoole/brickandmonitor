@@ -28,7 +28,7 @@ $(function() {
   TweenMax.from($(".hero__bg"), 0.5, {
     autoAlpha: 0,
     scale: 1.1,
-    ease: Power0.easeOut
+    ease: Sine.easeOut
   }),
   tl.add(
     TweenMax.from($(".hero .hero__content"), 0.5, {
