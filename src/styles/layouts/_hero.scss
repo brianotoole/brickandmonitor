@@ -82,16 +82,14 @@
 }
 
 .hero__subtitle {
-  @extend .h4;
-  font-style: italic;
+  @extend .h5;
 }
 
 .hero__scroll {
   position: relative;
   width: 50px;
   height: 50px;
-  margin-left: auto;
-  margin-right: rem(15);
+  margin-left: rem(15);
   z-index: 2;
   a {
     position: relative;
