@@ -135,7 +135,7 @@
     background: rgba($color-primary, 0.8);
   }
   @media (min-width: $bp-md) {
-    min-height: 550px;
+    min-height: 72vh;
   }
   .hero-content {
     visibility: hidden; //added for tween

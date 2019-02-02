@@ -1991,7 +1991,7 @@ body.nav-open {
     background: rgba(17, 17, 17, 0.8); }
   @media (min-width: 50rem) {
     .section-hero {
-      min-height: 550px; } }
+      min-height: 72vh; } }
   .section-hero .hero-content {
     visibility: hidden;
     position: relative;
