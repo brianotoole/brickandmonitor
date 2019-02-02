@@ -118,6 +118,13 @@
     background-image: url('/assets/images/bg-palms.jpg');
     background-position: bottom center;
   }
+  &--bg-hype {
+    background-image: url('/assets/images/bg-hype.jpg');
+    background-position: bottom center;
+  }
+  &--bg-work {
+    background-image: url('/assets/images/bg-work.jpg')
+  }
   &:before {
     position: absolute;
     content: '';
@@ -125,10 +132,10 @@
     height: 100%;
     top: 0;
     left: 0;
-    background: rgba($color-primary, 0.9);
+    background: rgba($color-primary, 0.8);
   }
   @media (min-width: $bp-md) {
-    min-height: 500px;
+    min-height: 550px;
   }
   .hero-content {
     visibility: hidden; //added for tween

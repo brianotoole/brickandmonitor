@@ -1976,6 +1976,11 @@ body.nav-open {
   .section-hero--bg-palms {
     background-image: url("/assets/images/bg-palms.jpg");
     background-position: bottom center; }
+  .section-hero--bg-hype {
+    background-image: url("/assets/images/bg-hype.jpg");
+    background-position: bottom center; }
+  .section-hero--bg-work {
+    background-image: url("/assets/images/bg-work.jpg"); }
   .section-hero:before {
     position: absolute;
     content: '';
@@ -1983,10 +1988,10 @@ body.nav-open {
     height: 100%;
     top: 0;
     left: 0;
-    background: rgba(17, 17, 17, 0.9); }
+    background: rgba(17, 17, 17, 0.8); }
   @media (min-width: 50rem) {
     .section-hero {
-      min-height: 500px; } }
+      min-height: 550px; } }
   .section-hero .hero-content {
     visibility: hidden;
     position: relative;
