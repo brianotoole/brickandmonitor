@@ -22,6 +22,14 @@ $(document).ready(function() {
     .set(".pre-loader", { className: "-=is-loading" });
 });
 
+tl.add(
+  TweenMax.from($(".hero-content"), 0.5, {
+    autoAlpha: 0,
+    y: 20,
+    ease: Power0.easeOut
+  })
+);
+
 //Pin Intro Hero
 /*
 var pinIntroScene = new ScrollMagic.Scene({

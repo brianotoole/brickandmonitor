@@ -38,6 +38,10 @@
   }
 }
 
+.full {
+  width: 100%;
+}
+
 .half {
   width: 50%;
   @media (max-width: $bp-md) {
@@ -110,6 +114,10 @@
   background-size: cover;
   background-position: center center;
   min-height: 100vh;
+  &--bg-palms {
+    background-image: url('/assets/images/bg-palms.jpg');
+    background-position: bottom center;
+  }
   &:before {
     position: absolute;
     content: '';
@@ -123,6 +131,7 @@
     min-height: 500px;
   }
   .hero-content {
+    visibility: hidden; //added for tween
     position: relative;
     z-index: 1;
     color: $color-white;

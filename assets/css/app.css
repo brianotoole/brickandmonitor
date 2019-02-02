@@ -1722,7 +1722,7 @@ code {
   .nav-primary a {
     margin: 0;
     padding-bottom: 5px;
-    color: #37414a;
+    color: #111;
     font-size: 0.875rem;
     vertical-align: middle;
     transform: perspective(1px) translateZ(0);
@@ -1905,6 +1905,9 @@ body.nav-open {
       padding-left: 2.8125rem;
       padding-right: 2.8125rem; } }
 
+.full {
+  width: 100%; }
+
 .half {
   width: 50%; }
   @media (max-width: 50rem) {
@@ -1965,11 +1968,14 @@ body.nav-open {
       align-items: center;
   min-height: auto;
   color: #fff;
-  background-color: #37414a;
+  background-color: #111;
   background-image: url("/assets/images/bg-brick.jpg");
   background-size: cover;
   background-position: center center;
   min-height: 100vh; }
+  .section-hero--bg-palms {
+    background-image: url("/assets/images/bg-palms.jpg");
+    background-position: bottom center; }
   .section-hero:before {
     position: absolute;
     content: '';
@@ -1977,11 +1983,12 @@ body.nav-open {
     height: 100%;
     top: 0;
     left: 0;
-    background: rgba(55, 65, 74, 0.9); }
+    background: rgba(17, 17, 17, 0.9); }
   @media (min-width: 50rem) {
     .section-hero {
       min-height: 500px; } }
   .section-hero .hero-content {
+    visibility: hidden;
     position: relative;
     z-index: 1;
     color: #fff; }
@@ -2031,7 +2038,7 @@ body.nav-open {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(55, 65, 74, 0.05); }
+    background: rgba(17, 17, 17, 0.05); }
 
 .card {
   padding: 15px 30px;
@@ -2215,7 +2222,7 @@ body.nav-open {
     margin: 20px;
     padding: 50px;
     color: #fff;
-    background: #37414a;
+    background: #111;
     transition: background 0.2s ease-in-out, color 0.25s ease-in-out; }
     @media (max-width: 50rem) {
       .posts-wrapper .post-item {
@@ -2224,7 +2231,7 @@ body.nav-open {
         max-width: calc(100% - 40px);
         min-height: 300px; } }
     .posts-wrapper .post-item:hover, .posts-wrapper .post-item:focus {
-      background: #2c343b;
+      background: #040404;
       color: #fff; }
       .posts-wrapper .post-item:hover *, .posts-wrapper .post-item:focus * {
         color: #fff; }
@@ -2318,13 +2325,13 @@ body.nav-open {
   text-decoration: none; }
 
 .footer-link-wrap {
-  background: #37414a;
+  background: #111;
   color: #fff;
   display: block;
   padding: 80px 0;
   transition: background 0.25s ease-in-out; }
   .footer-link-wrap:hover, .footer-link-wrap:focus {
-    background: #2c343b;
+    background: #040404;
     color: #fff; }
 
 .footer-copy {
@@ -2361,7 +2368,7 @@ body.nav-open {
   font-family: "Martel", sans-serif;
   font-size: 0.875rem;
   color: #fff;
-  background-color: #37414a;
+  background-color: #111;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -2370,11 +2377,11 @@ body.nav-open {
   vertical-align: middle;
   white-space: nowrap; }
   .btn.primary {
-    background-color: #37414a;
+    background-color: #111;
     transition: all 0.2s linear; }
     .btn.primary:hover {
       color: #fff;
-      background-color: #161a1e; }
+      background-color: black; }
   .btn.secondary {
     background-color: #b80c15;
     transition: all 0.2s linear; }
@@ -2384,21 +2391,21 @@ body.nav-open {
   .btn.white {
     background-color: #fff;
     transition: all 0.2s linear;
-    color: #37414a; }
+    color: #111; }
     .btn.white:hover {
       color: #fff;
       background-color: #d9d9d9; }
   .btn.transparent {
     background-color: transparent;
     transition: all 0.2s linear;
-    border: 1px solid #37414a;
-    color: #37414a; }
+    border: 1px solid #111;
+    color: #111; }
     .btn.transparent:hover {
       color: #fff;
       background-color: rgba(0, 0, 0, 0); }
     .btn.transparent:hover {
-      background: #37414a;
-      border-color: #2c343b;
+      background: #111;
+      border-color: #040404;
       color: #fff; }
   .btn.transparent-white {
     background-color: transparent;
@@ -2505,7 +2512,7 @@ svg:not(:root) {
   margin: 0 auto 15px;
   fill: currentColor;
   color: transparent;
-  stroke: #37414a;
+  stroke: #111;
   stroke-width: 4px;
   stroke-dasharray: 2000; }
   @media (min-width: 50rem) {
@@ -2545,9 +2552,9 @@ svg:not(:root) {
 .svg-web {
   stroke-dasharray: 2000; }
   .svg-web .svg-web-browser {
-    fill: #37414a; }
+    fill: #111; }
   .svg-web .svg-web-gear-mid {
-    fill: #2c343b;
+    fill: #040404;
     transform-origin: 182px 155px;
     animation: spin 5s infinite linear; }
 
@@ -2566,24 +2573,24 @@ svg:not(:root) {
     animation: drawLine 2s 1s infinite linear forwards, fadeIn 2s 1s infinite linear reverse; }
 
 .terminal {
-  color: #37414a; }
+  color: #111; }
 
 .slash {
-  color: #37414a;
+  color: #111;
   animation: pulseOpacity 0.7s infinite linear; }
 
 .lock {
-  color: #37414a; }
+  color: #111; }
 
 .gear {
-  color: #37414a;
+  color: #111;
   transform-origin: 50% 50%;
   -webkit-transform-origin: 182px 155px;
   animation: spin 5s infinite linear; }
 
 .line-lg,
 .line-sm {
-  color: #37414a;
+  color: #111;
   stroke-linejoin: round;
   stroke-linecap: round;
   stroke-miterlimit: 10;
@@ -2722,11 +2729,11 @@ svg:not(:root) {
     margin: 0;
     padding: 30px 15px;
     color: #fff;
-    background-color: #37414a;
+    background-color: #111;
     border-bottom: 1px solid #ebebeb; }
   .pricing-table .plan h4.price {
     font-family: "Martel", sans-serif;
-    color: #37414a;
+    color: #111;
     margin: 0;
     padding: 15px; }
     .pricing-table .plan h4.price span {
@@ -2823,7 +2830,7 @@ svg:not(:root) {
   color: #fff; }
 
 .text-primary {
-  color: #37414a; }
+  color: #111; }
 
 .text-secondary {
   color: #b80c15; }
@@ -2840,7 +2847,7 @@ svg:not(:root) {
   color: #111; }
 
 .bg-primary {
-  background: #37414a;
+  background: #111;
   color: #fff; }
 
 .bg-secondary {
@@ -2860,21 +2867,21 @@ svg:not(:root) {
   color: #111; }
 
 .bg-alt1 {
-  background: #353e47; }
+  background: #0e0e0e; }
 
 .bg-alt2 {
-  background: #333c44; }
+  background: #0c0c0c; }
 
 .bg-alt3 {
-  background: #303941; }
+  background: #090909; }
 
 .bg-alt4 {
-  background: #2e373e; }
+  background: #070707; }
 
 .bg-pattern {
   position: relative;
   color: #fff;
-  background-image: url("https://sqy7rm.media.zestyio.com/branches.svg"), linear-gradient(65deg, #37414a, #2c343b); }
+  background-image: url("https://sqy7rm.media.zestyio.com/branches.svg"), linear-gradient(65deg, #111, #040404); }
 
 .bg-pattern-grey {
   position: relative;
