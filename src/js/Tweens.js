@@ -10,6 +10,7 @@ var tl = new TimelineMax();
 var tl1 = new TimelineMax();
 var controller = new ScrollMagic.Controller();
 
+/*
 $(document).ready(function() {
   tl.set(".pre-loader", { className: "+=is-loading" })
     .fromTo(
@@ -21,10 +22,11 @@ $(document).ready(function() {
     //.fromTo('.is-loading', 0.25, {width: "100%"}, {backgroundColor: "white",width: "0%", ease: Power0.easeNone})
     .set(".pre-loader", { className: "-=is-loading" });
 });
+*/
 
 tl.add(
   TweenMax.from($(".section-hero"), 0.25, {
-    autoAlpha: 0,
+    //autoAlpha: 0,
     scale: 1.1,
     ease: Power0.easeOut
   })

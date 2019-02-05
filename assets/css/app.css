@@ -1973,8 +1973,7 @@ body.nav-open {
   background-size: cover;
   background-position: center center;
   min-height: 100vh;
-  transform-origin: 0 100%;
-  visibility: hidden; }
+  transform-origin: 0 100%; }
   .section-hero--bg-palms {
     background-image: url("/assets/images/bg-palms.jpg");
     background-position: bottom center; }
