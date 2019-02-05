@@ -66,3 +66,36 @@
   display: block;
   margin-top: rem(60);
 }
+
+
+.icon-card-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin: rem(-15);
+  padding: 0;
+}
+.icon-card {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: calc(12 / 12 * 100%);
+  margin: rem(15);
+  padding: rem(60) rem(30);
+  background: $color-white;
+  text-decoration: none;
+  transition: all 0.2s linear;
+  @media (min-width: $bp-md) {
+    width: calc(4 / 12 * 100% - 30px);
+    //padding: rem(60);
+  }
+  @include cardHover();
+  li {
+    display: flex;
+    align-items: center;
+  }
+  span {
+    padding-right: rem(20);
+    font-size: rem(50);
+    color: $color-secondary;
+  }
+}
