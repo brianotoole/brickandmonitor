@@ -1972,8 +1972,7 @@ body.nav-open {
   background-image: url("/assets/images/bg-brick.jpg");
   background-size: cover;
   background-position: center center;
-  min-height: 100vh;
-  transform-origin: 0 100%; }
+  min-height: 100vh; }
   .section-hero--bg-palms {
     background-image: url("/assets/images/bg-palms.jpg");
     background-position: bottom center; }
