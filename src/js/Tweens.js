@@ -23,9 +23,17 @@ $(document).ready(function() {
 });
 
 tl.add(
+  TweenMax.from($(".section-hero"), 0.25, {
+    autoAlpha: 0,
+    scale: 1.1,
+    ease: Power0.easeOut
+  })
+);
+
+tl.add(
   TweenMax.from($(".hero-content"), 0.5, {
     autoAlpha: 0,
-    y: 20,
+    y: 10,
     ease: Power0.easeOut
   })
 );
