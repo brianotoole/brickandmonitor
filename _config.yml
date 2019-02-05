@@ -21,7 +21,7 @@ markdown: kramdown
 permalink: pretty
 
 # Build settings
-gems:
+plugins:
   #- octopress-minify-html
 
 minify_html: false
