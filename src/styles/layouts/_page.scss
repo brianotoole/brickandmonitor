@@ -144,6 +144,10 @@ body {
     background-color: $color-black;
     color: $color-white;
   }
+  &--dots {
+    background-image: url('/assets/images/dots.png');
+    background-size: 7px 7px;
+  }
 }
 
 .section--pad {
@@ -224,6 +228,7 @@ body {
   span {
     padding-right: rem(20);
     font-size: rem(50);
+    color: $color-tertiary;
   }
 }
 

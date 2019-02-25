@@ -1130,6 +1130,9 @@ body {
   .section--black {
     background-color: #000;
     color: #ffffff; }
+  .section--dots {
+    background-image: url("/assets/images/dots.png");
+    background-size: 7px 7px; }
 
 .section--pad {
   padding-top: 3.75rem;
@@ -1210,7 +1213,8 @@ body {
         align-items: center; }
   .icon-card span {
     padding-right: 1.25rem;
-    font-size: 3.125rem; }
+    font-size: 3.125rem;
+    color: #BB8B58; }
 
 .project-grid {
   padding: 0;
