@@ -25,9 +25,9 @@ $(document).ready(function() {
 */
 
 tl.add(
-  TweenMax.from($(".hero-content"), 0.25, {
+  TweenMax.from($(".hero-content"), 0.5, {
     autoAlpha: 0,
-    y: 20,
+    y: 5,
     ease: Power0.easeOut
   })
 );
