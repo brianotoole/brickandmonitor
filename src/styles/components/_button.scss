@@ -50,9 +50,9 @@
   }
   &--arrow {
       transition: color 0.2s ease-in-out;
-      border: 1px solid $color-border;
+      border: 1px solid $color-black;
       background: transparent;
-      color: $color-grey;
+      color: $color-black;
       &:after {
         content: "\E87A";
         font-family: Linearicons-Free;
@@ -64,7 +64,8 @@
         transition: background 0.2s ease-out, margin-left 0.2s ease-in-out;
       }
       &:hover {
-          background: $color-black;
+          background: $color-primary;
+          border-color: $color-primary-dark;
           color: $color-white;
           &:after {
               margin-left: 14px;

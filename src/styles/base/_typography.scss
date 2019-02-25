@@ -69,13 +69,15 @@ ol {
 }
 
 .heading {
-    @extend h6;
+    @extend h5;
     font-family: $font-body;
-    text-transform: uppercase;
-    font-weight: 900;
-    margin-bottom: rem(40);
+    font-weight: 700;
+    margin-bottom: rem(20);
     &--m-bottom {
         padding-bottom: rem(60);
+    }
+    &--centered {
+        text-align: center;
     }
 }
 
@@ -86,6 +88,14 @@ ol {
     padding-bottom: rem(20);
     border-bottom: 2px solid $color-grey;
     @include bp_md {
-    margin-bottom: rem(40);
+      margin-bottom: rem(40);
     }
+}
+
+.heading-seperator {
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    border-bottom-color: $color-primary;
+    width: 50px;
+    margin: 0 auto rem(60);
 }

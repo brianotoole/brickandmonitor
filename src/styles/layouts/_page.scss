@@ -139,7 +139,6 @@ body {
   }
   &--grey {
     background-color: $color-grey;
-    color: $color-white;
   }
   &--black {
     background-color: $color-black;
@@ -228,6 +227,35 @@ body {
   }
 }
 
+
+
+// Project grid
+.project-grid {
+  padding: 0;
+  color: $color-black;
+}
+
+.project-grid__item {
+  background: $color-white;
+  &:first-child() {
+    padding-bottom: 0;
+    border: none;
+  }
+  &:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  > div {
+    padding: rem(30);
+  }
+  + .project-grid__item {
+    margin-top: 0;
+    padding: 0;
+  }
+  img {
+    margin-bottom: rem(-10);
+    background: #bcbdc0;
+  }
+}
 
 // Work
 .project-block {
