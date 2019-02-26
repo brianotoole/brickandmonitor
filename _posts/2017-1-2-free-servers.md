@@ -3,7 +3,7 @@ layout: post
 title: How to Setup Free Cloud Servers
 hero-title: Free Cloud Servers
 hero-subtitle: 
-hero-bg: 
+hero-bg: dark-l
 description: 
 category: development
 ---

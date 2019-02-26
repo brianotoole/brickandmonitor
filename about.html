@@ -1,48 +1,53 @@
 ---
 layout: page
-title: About
+title: About Brick &amp; Monitor - A creative development agency in Tampa, Florida
 bodyclass: page-about
-hero-title: Helping mission-critical brands breakthrough online
-hero-subtitle:
-hero-bg: 1
+hero-title: We help brands connect with audiences through intelligent design & technology.
+hero-bg: dark-l
 ---
 
-<section class="section section--pad section--about">
+<section class="section section--pad section--dark">
   <div class="wrapper">
     <div class="row-flex">
       <div class="row-flex__md-12">
-        <h2 class="heading-underline">About</h2>
-        <p>Brick &amp; Monitor is a forward thinking creative development team helping brands adapt for what's next online. We help brands connect with audiences through intelligent design &amp; technology. We're also here for the long-term. We are passionate about crafting a custom workflow &amp; strategy that emphasizes performance &amp; maintainability.</p>
-        <p>When you work with us, you get the personal, devoted attention of an agency -- wihout the overhead.</p>
+        <h2 class="heading heading--centered">Our Services</h2>
+        <div class="heading-seperator"></div>
+        {% include services.html %}
       </div><!-- /.col -->
-    </div><!-- /.row-flex -->
-    <div class="row-flex">
-      <div class="row-flex__md-12">
-        <h2 class="heading-underline">Industries</h2>
-        <p>Our specialty is creative strategy, design &amp; development, fuled by a passion for helping those establish &amp; promote their cause. We particularly work best with mission-critical brands. These include:</p>
-        {% include who.html %}
-      </p><!-- /.col -->
     </div><!-- /.row-flex -->
   </div><!-- /.wrapper -->
 </section>
 
-<section class="section section--pad section--services section--light">
-  <div class="wrapper">
-    <div class="row-flex__col-md-12">
-      <div class="row-flex__col-md-12">
-        <h2 class="heading-underline">Services</h2>
-        {% include services.html %}
-      </h2><!-- /.col -->
-    </div><!-- /.row-flex -->
-  </div><!-- /.wrapper -->
-</section>
+<section class="section section--pad section--primary">
+    <div class="wrapper">
+      <div class="row-flex">
+        <div class="row-flex__md-12 cta cta--centered">
+          <p>When you work with us, you get the personal, devoted attention of an agency, <strong>without the overhead</strong>.</p>
+        </div><!-- /.col -->
+      </div><!-- /.row-flex -->
+    </div><!-- /.wrapper -->
+  </section>
 
 <section class="section section--pad section--services">
   <div class="wrapper">
     <div class="row-flex__md-12">
-        <h2 class="heading-underline">Team</h2>
+        <h2 class="heading heading--centered">Your Team</h2>
+        <div class="heading-seperator"></div>
         {% include team.html %}
       </p><!-- /.col -->
     </div><!-- /.row-flex -->
   </div><!-- /.wrapper -->
 </section>
+
+<section class="section section--pad section--grey section--about">
+    <div class="wrapper">
+      <div class="row-flex">
+        <div class="row-flex__md-12">
+          <h2 class="heading heading--centered">Industries</h2>
+          <div class="heading-seperator"></div>
+          <p>Our specialty is creative strategy, design &amp; development, fuled by a passion for helping those establish &amp; promote their cause. We particularly work best with mission-critical brands. These include:</p>
+          {% include who.html %}
+        </p><!-- /.col -->
+      </div><!-- /.row-flex -->
+    </div><!-- /.wrapper -->
+  </section>

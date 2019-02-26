@@ -12,10 +12,10 @@
   flex: 1 0 100%;
   margin: rem(15);
   text-align: center;
-  background: #f5f5f5;
-  border: 1px solid #e5e5e5;
-  border-radius: 6px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  border-right: 1px solid $color-grey-light;
+  &:last-child() {
+    border-right: 0;
+  }
   @media (min-width: $bp-md) {
     flex: 1;
     text-align: left;
@@ -24,7 +24,7 @@
 
 .service__number {
   position: absolute;
-  color: $color-black;
+  color: $color-white;
   font-size: 2rem;
   font-weight: 700;
   left: 36px;
@@ -37,7 +37,7 @@
 
 .service__content {
   padding: rem(30);
-  color: $color-body;
+  color: $color-white;
   @media (min-width: $bp-md) {
     padding: rem(120) 10% rem(60);
     height: 750px;
@@ -48,15 +48,16 @@
 .service__title {
   margin-top: 0;
   margin-bottom: rem(30);
-  color: $color-black;
+  color: $color-white;
 }
 
 .service__title--service {
   margin: 0;
-  padding: rem(15) 0;
+  padding: rem(5) 0;
   letter-spacing: 1px;
   font-size: rem(14);
   text-transform: uppercase;
+  color: $color-grey;
 }
 
 .service__icon {

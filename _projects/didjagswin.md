@@ -5,7 +5,7 @@ bodyclass: jags
 date: 2016-11-01
 img: project-jags-thumb.png
 link: http://didjagswin.com
-bgcolor: 111111
+hero-bg: dark
 textcolor: ffffff
 hero-title: Did the Jags Win?
 hero-subtitle: We're huge Jacksonville Jaguars fans and it's a tough life for us fans. It's been 8 years since the Jags have had a winning record. Since the Jags never win, we thought it would be fun/funny to spin up one of those joke websites, "Did Your Team Win?  

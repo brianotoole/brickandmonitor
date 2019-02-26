@@ -6,7 +6,7 @@ date: 2018-04-02
 order: 2
 img: project-marriott-thumb.png
 link: https://jwmarriott.waterstreettampa.com
-bgcolor: 111111
+hero-bg: dark-l
 textcolor: ffffff
 hero-title: The JW Marriott Tampa
 hero-subtitle: Providing enriching experiences and innovative spaces in a world-class waterfront neighborhood.

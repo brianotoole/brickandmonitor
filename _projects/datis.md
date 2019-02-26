@@ -5,7 +5,7 @@ bodyclass: datis
 date: 2018-07-01
 img: project-datis-thumb.png
 link: https://datis.com
-bgcolor: 111111
+hero-bg: dark-l
 textcolor: ffffff
 hero-title: Datis HR Cloud
 hero-subtitle: We worked with Datis HR Cloud to build a mobile-first approach for the software company's new website.

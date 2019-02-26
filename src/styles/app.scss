@@ -17,6 +17,9 @@
 @import "layouts/header";
 @import "layouts/footer";
 
+// Layouts: page specific
+@import "layouts/about";
+
 // Components
 @import "components/fullpage";
 @import "components/button";

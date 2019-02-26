@@ -2,7 +2,7 @@
 layout: post
 title: Establishing Front-end Code Guidelines
 hero-subtitle: Establishing Front-end Code Guidelines
-hero-bg: 2
+hero-bg: dark-l
 description: One of the few things in web/software that is constant, is change. Front-end developers working on large websites know the challenge of writing maintainable CSS. A maintainable codebase means that any developer with access can edit styles without worry that another element is negatively impacted by accident. 
 category: development
 ---

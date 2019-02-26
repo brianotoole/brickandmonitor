@@ -5,7 +5,7 @@ bodyclass: channelside
 date: 2017-11-01
 img: project-channelside-thumb.png
 link: http://channelside.sparxoodev.com
-bgcolor: 111111
+hero-bg: dark
 textcolor: ffffff
 hero-title: Channelside Tampa
 hero-subtitle: Provided strategy for user experience, technology selection, and web development for a comprehensive website redesign

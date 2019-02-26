@@ -3,15 +3,13 @@ layout: default
 bodyclass: page-interior
 ---
 
-  <section class="section hero hero--page-interior">
+  <section class="section section--{{ page.hero-bg }} hero hero--page-interior">
     <div class="wrapper">
       <div class="row-flex">
         <div class="row-flex__md-12">
-          <div class="hero__content">
+          <div class="hero__content hero__content--centered">
             <h1 class="hero__title h3">{{ page.hero-title }}</h1>
-            <h2 class="hero__subtitle h4">{{ page.hero-subtitle }}</h2>
-            <a href="" class="btn btn--primary">View Work</a>
-            <div class="hero__scroll">
+            <div class="hero__scroll hero__scroll--centered">
               <a href="#more"><span></span></a>
             </div><!--/.hero-scroll-->
           </div><!-- /.hero-content -->

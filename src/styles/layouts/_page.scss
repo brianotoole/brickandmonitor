@@ -125,12 +125,20 @@ body {
   &--underline {
     border-bottom: 2px solid $color-grey;
   }
+  &--primary {
+    background-color: $color-primary;
+    color: $color-white;
+  }
   &--secondary {
     background-color: $color-secondary;
     color: $color-white;
   }
   &--dark {
-    background-color: $color-grey;
+    background-color: $color-grey-dark;
+    color: $color-white;
+  }
+  &--dark-l {
+    background-color: $color-grey-light;
     color: $color-white;
   }
   &--light {
@@ -168,32 +176,6 @@ body {
   }
 }
 
-// Fullpage.js sections
-
-// Non active
-/*
-.fullpage .section .wrapper {
-	transform: translateY(100px);
-	opacity: 0;
-	transition: transform 0.5s 0.5s cubic-bezier(0.16, 0.68, 0.43, 0.99),
-        opacity 0.5s 0.5s ease-in-out;
-  backface-visibility: hidden;
-}
-.fullpage .section .hero__bg {
-  transform: scale(1.2);
-  transition: transform 0.9s cubic-bezier(0.16, 0.68, 0.43, 0.99);
-  backface-visibility: hidden;
-}
-
-// Actives
-.fullpage .section.active .wrapper {
-	transform: translateY(0);
-	opacity: 1;
-}
-.fullpage .section.active .hero__bg {
-  transform: scale(1);
-}
-*/
 
 // Page content
 .page-content {
@@ -201,6 +183,20 @@ body {
 }
 
 // Home
+.cta {
+  margin: 0 auto;
+  @include bp_md {
+    max-width: 80%;
+  }
+  * {
+    font-size: font-scale(3);
+  }
+}
+
+.cta--centered {
+  text-align: center;
+}
+
 .icon-card-wrap {
   display: flex;
   flex-wrap: wrap;
@@ -258,20 +254,20 @@ body {
   }
   img {
     margin-bottom: rem(-10);
-    background: #bcbdc0;
+    background: #f1f1f1!important;
   }
 }
 
 // Work
 .project-block {
   img {
-    background-color: #f5f5f5;
+    background-color: #505050;
     padding: rem(15);
   }
 }
 
 .project-block {
-  border-bottom: 1px solid #f5f5f5;
+  border-bottom: 1px solid #505050;
   padding-bottom: rem(50);
   margin-bottom: rem(50);
   @include bp_md {

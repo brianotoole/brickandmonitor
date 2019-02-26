@@ -7,12 +7,14 @@
 *********************************************************/
 
 $color-primary: #b80c15; //red
-$color-secondary: #030e1b;
+$color-secondary: #111;//#030e1b;
 $color-tertiary: #BB8B58;
 $color-white: #ffffff;
 $color-body: #303030;
-$color-grey: #eee;
-$color-black: #000;
+$color-grey: #e3e3e1;
+$color-grey-dark: #252525;
+$color-grey-light: #424242;
+$color-black: #111;
 $color-primary-dark: darken($color-primary, 15%);
 $color-secondary-dark: darken($color-secondary, 15%);
 $color-white-dark: darken($color-white, 15%);
@@ -26,7 +28,7 @@ $color-error: red;
 
 $font-base-font-size: 1rem;
 $font-ratio: 1.2;
-$font-base-line-height: 1.5;
+$font-base-line-height: 1.6;
 $font-heading: "Martel", sans-serif;
 $font-body: "Martel", sans-serif;
 

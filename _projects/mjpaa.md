@@ -5,7 +5,7 @@ bodyclass: mjpaa
 date: 2016-12-01
 img: project-mjpaa-thumb.png
 link: https://mjpaa.com
-bgcolor: 111111
+hero-bg: dark
 textcolor: ffffff
 hero-title: Mary Jo's Performing Arts Academy
 hero-subtitle: Strategized and built a refreshed online presence for a top Florida performing arts studio

@@ -6,8 +6,7 @@ date: 2016-12-01
 order: 3
 img: project-mac-thumb.png
 link: https://momsagainstcooties.com
-bgcolor: 111111
-textcolor: ffffff
+hero-bg: dark-l
 hero-title: Mom's Against Cooties
 hero-subtitle: Provided strategy for user experience and web development for a comprehensive website redesign
 description: Provided strategy for user experience, technology selection, and web development for a comprehensive website redesign

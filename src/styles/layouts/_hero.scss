@@ -8,16 +8,14 @@
   align-items: center;
   height: auto;
   padding: rem(120) 0 rem(60);
-  @include bp_md {
-    height: 90vh;
-    padding: 0;
-  }
   &--full-height {
     height: 100vh;
   }
   &--page-interior {
-    background-color: rgba($color-secondary, 0.8);
-    color: $color-white;
+    @include bp_md {
+      height: 65vh;
+      padding: 0;
+    }
   }
 }
 
@@ -32,13 +30,9 @@
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: cover;
-  background-color: $color-secondary;
   transform-origin: 0 100%;
   &--1 {
     background-image: url('/assets/images/bg-hero-space.jpg');
-  }
-  &--2 {
-    background-image: url('/assets/images/bg-palms.jpg');
   }
   /*&:before {
     content: "";
@@ -56,7 +50,7 @@
   position: relative;
   max-width: 100%;
   color: $color-white;
-  padding-top: rem(60);
+  padding-top: rem(150);
   z-index: 99;
   visibility: hidden; //added for tween
   @include bp_md {
@@ -64,6 +58,10 @@
   }
   * {
     margin-top: rem(15);
+  }
+  &--centered {
+    text-align: center;
+    margin: 0 auto;
   }
 }
 
@@ -91,6 +89,9 @@
   height: 75px;
   margin-left: rem(15);
   z-index: 2;
+  &--centered {
+    margin: 0 auto;
+  }
   a {
     position: relative;
     color: $color-white;

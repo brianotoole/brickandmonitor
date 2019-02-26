@@ -6,7 +6,7 @@ date: 2017-11-01
 order: 2
 img: project-merlin-thumb.png
 link: http://merlinlawgroup.com
-bgcolor: 111111
+hero-bg: dark-l
 textcolor: ffffff
 hero-title: Merlin Law Group
 hero-subtitle: Helping a nationwide insurance claim litigation law firm breakthrough the competition with a smarter online presence
