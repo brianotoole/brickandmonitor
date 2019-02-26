@@ -12,7 +12,7 @@ svg:not(:root) {
   margin: 0 auto 15px;
   fill: currentColor;
   color: transparent;
-  stroke: $color-primary;
+  stroke: $color-tertiary;
   stroke-width: 4px;
   stroke-dasharray: 2000;
   @media (min-width: $bp-md) {
@@ -48,7 +48,7 @@ svg:not(:root) {
 .path-lines {
   fill: currentColor;
   color: transparent;
-  stroke: rgba($color-white, 0.05);
+  stroke: rgba($color-tertiary, 0.05);
   stroke-width: 1px;
   stroke-dasharray: 1689;
   animation: fillSvg 12s reverse linear;
@@ -59,12 +59,12 @@ svg:not(:root) {
   stroke-dasharray: 2000;
 
   .svg-web-browser {
-    fill: $color-primary;
+    fill: $color-tertiary;
   }
 
   .svg-web-gear-mid {
     //50% 50% not working
-    fill: $color-primary-dark;
+    fill: $color-tertiary;
     transform-origin: 182px 155px;
     animation: spin 5s infinite linear;
   }
@@ -92,20 +92,20 @@ svg:not(:root) {
 }
 
 .terminal {
-  color: $color-primary;
+  color: $color-tertiary;
 }
 
 .slash {
-  color: $color-primary;
+  color: $color-tertiary;
   animation: pulseOpacity 0.7s infinite linear;
 }
 
 .lock {
-  color: $color-primary;
+  color: $color-tertiary;
 }
 
 .gear {
-  color: $color-primary;
+  color: $color-tertiary;
   transform-origin: 50% 50%;
   -webkit-transform-origin: 182px 155px;
   animation: spin 5s infinite linear;
@@ -113,7 +113,7 @@ svg:not(:root) {
 
 .line-lg,
 .line-sm {
-  color: $color-primary;
+  color: $color-tertiary;
   stroke-linejoin: round;
   stroke-linecap: round;
   stroke-miterlimit: 10;

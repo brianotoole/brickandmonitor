@@ -1,8 +1,15 @@
 // Styles
-import 'styles/app.scss'; 
+import 'styles/app.scss';
+
+// Vendors
+//import $ from 'jquery';
 
 // Scripts
-import './nav.js';
-import './rotating-words.js';
-import './form.js';
-import './tweens.js';
+//require ('./fullpage.js');
+require ('./header.js');
+require ('./form.js');
+require ('./tweens.js');
+
+// Components
+import Modal from './Modal';
+var modal = new Modal();

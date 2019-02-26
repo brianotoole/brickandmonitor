@@ -1,10 +1,11 @@
 ---
 layout: post
 title: Element Queries in Sass
-category: development
+hero-title: Element Queries in Sass
+hero-subtitle:
+hero-bg: dark-l
 description: Nesting media queries within the selector is much more easier to control for scalable css architecture.
-bgcolorclass: bg-body
-textcolor: ffffff
+category: development
 
 ---
 

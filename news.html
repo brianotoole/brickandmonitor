@@ -1,26 +1,27 @@
 ---
 layout: page
 title: News
-bgcolorclass: bg-white
-hero: Sharing what we've learned along the way
-subtitle: 
 bodyclass: page-news
+hero-title: Sharing what we've learned along the way
+hero-bg: dark-l
 ---
-<section class="news-layout section-wrap bg-grey">
-  <div class="container">
-    <h4 class="section-title section-title--underline">Recent News</h4>
-    <div class="posts-wrapper">
-      {% for post in site.posts %}
-      <a href="{{ post.url }}">
-        <article class="post-item hvr-underline-from-left">
-          <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
-          <!-- <p class="post-cat">- {{ post.category }} -</p> -->
-          <a class="btn arrow" href="{{ post.url }}">View Article</a>
-        </article>
-      </a>
-      {% endfor %}
-    </div>
-    <!--/.posts-wrapper-->
-  </div>
-  <!--/.container-->
+
+<section class="section section--pad section--dark">
+  <div class="wrapper">
+    <div class="row-flex">
+      <div class="row-flex__col-md-12">
+        <h2 class="heading heading--centered" id="js-trigger-posts">Recent News</h2>
+        <div class="heading-seperator"></div>
+        <div class="post">
+          {% for post in site.posts %}
+          <a href="{{ post.url }}" class="post__item hvr-underline-from-left">
+            <h4>{{ post.title }}</h4>
+            <!-- <p class="post-cat">- {{ post.category }} -</p> -->
+            <button class="btn btn--card" href="{{ post.url }}">View Article</button>
+          </a>
+          {% endfor %}
+        </div><!-- /.post -->
+      </div><!-- /.col -->
+    </div><!-- /.row-flex -->
+  </div><!-- /.wrapper -->
 </section>

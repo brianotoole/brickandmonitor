@@ -1,25 +1,35 @@
-// TABLE OF CONTENTS FOR SITE
+/*********************************************************
+    Main Styles Entry Point
+*********************************************************/
 
-// BASE
-@import "base/mixins";
+// Base
+@import "base/reset";
 @import "base/variables";
-@import "base/reboot";
+@import "base/mixins";
 @import "base/fonts";
+@import "base/global";
 @import "base/typography";
 
-// LAYOUT
-@import "layouts/flex-grid";
-@import "layouts/header";
+// Layouts
+@import "layouts/grid";
 @import "layouts/page";
+@import "layouts/hero";
+@import "layouts/header";
+@import "layouts/footer";
 
-// COMPONENTS
-@import "components/buttons";
-@import "components/inputs";
-@import "components/svgs";
-@import "components/callouts";
-@import "components/pricing";
-@import "components/services";
+// Layouts: page specific
+@import "layouts/about";
 
-// STATES
-@import "states/helpers";
+// Components
+@import "components/fullpage";
+@import "components/button";
+@import "components/form";
+@import "components/modal";
+@import "components/card";
+@import "components/service";
+@import "components/post";
+@import "components/svg";
+
+// States
 @import "states/animations";
+@import "states/helpers";

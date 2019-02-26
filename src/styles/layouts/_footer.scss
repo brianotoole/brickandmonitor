@@ -1,0 +1,53 @@
+/*********************************************************
+    Footer
+*********************************************************/
+
+.footer {
+  border-top: 1px solid $color-white;
+  padding-top: rem(90);
+  a {
+    text-decoration: none;
+  }
+}
+.footer-link__wrap {
+  background: $color-primary;
+  color: $color-white;
+  display: block;
+  padding: 80px 0;
+  transition: background 0.25s ease-in-out;
+  &:hover,
+  &:focus {
+    background: $color-primary;
+    color: $color-white;
+  }
+}
+.footer__tagline {
+  padding-top: rem(5);
+  text-transform: uppercase;
+  color: rgba($color-white, 0.5);
+  font-size: rem(12);
+  letter-spacing: 5px;
+}
+.footer__bottom {
+  justify-content: space-between;
+  padding-top: rem(60);
+  padding-bottom: rem(30);
+  border-top: 1px solid rgba($color-white, 0.15);
+  color: rgba($color-white, 0.5);
+  font-size: rem(14);
+}
+.footer__bottom-links,
+.footer__bottom-copy {
+  width: auto;
+  * {
+    font-size: rem(14);
+  }
+}
+.footer__bottom-links {
+  list-style: none;
+  display: flex;
+  li a {
+    margin: 0 rem(10);
+    color: white;
+  }
+}

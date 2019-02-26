@@ -1,42 +1,83 @@
 ---
-layout: page
-title: Brick & Monitor - A Creative Design &amp; Development Agency
-description: Brick & Monitor is a creative design &amp; development agency located in in Tampa, Florida. We help businesses create a faster, more stable, and reliable website. And we help brands tell their story using modern technology and progressive design. Our specialty is website development & growth for mission-critical brands.
+layout: home
+title: Brick &amp; Monitor - Helping mission-critical brands breakthrough online
 bodyclass: page-home
-bgcolorclass: bg-white
-twocol: false
-fullheight: true
-hero: Engineering. Branding. Growth.
-subtitle: Brick &amp; Monitor is a forward-thinking creative team helping non-profits adapt to what's next online.
-hero-bg: hype
+hero-title: Helping mission-critical brands breakthrough online
+hero-subtitle: Brick & Monitor is a forward thinking creative development team helping brands adapt for what's next online.
+hero-bg: 1
 ---
 
-<div class="page-home">
+<section class="section section--pad section--primary">
+    <div class="wrapper">
+      <div class="row-flex">
+        <div class="row-flex__md-12 cta cta--centered">
+          <p>We're a team of designers, developers &amp; marketers helping mission-critical organizations lay the groundwork for success online.</p>
+          <a href="" class="btn btn--secondary">Learn More</a>
+        </div><!-- /.col -->
+      </div><!-- /.row-flex -->
+    </div><!-- /.wrapper -->
+  </section>
+  
 
-<section class="news-layout section-wrap">
-  <div class="container-full container-full--padded">
-    <div class="row">
-      <div class="col half left">
-        <h5>We're a Tampa-based team of designers, developers and marketers helping mission-critical organizations lay the groundwork for success online.</h5>
-      </div>
-      <div class="col half">
-        <p>Together we craft marketing solutions and digital products that convey messages, drive results and set our partners apart. The combination of form with function, design with development and message with measurability is the foundation of our meticulously integrated agency.</p>
+<section class="section section--pad section--grey">
+    <div class="wrapper">
+      <div class="row-flex">
+        <div class="row-flex__md-12">
+          <h2 class="heading heading--centered">Featured Projects</h2>
+          <div class="heading-seperator"></div>
+            {% include projects-list-limit-home.html %}
+        </div><!-- /.col -->
+      </div><!-- /.row-flex -->
+    </div><!-- /.wrapper -->
+  </section>
+
+<!--
+<section class="section section--pad section--services">
+  <div class="wrapper">
+    <div class="row-flex">
+      <div class="row-flex__md-12">
+        <h2 class="heading-underline">What We Do</h2>
+        
       </div>
     </div>
   </div>
 </section>
+-->
 
-<section class="section section-wrap no-pad-t no-pad-b bg-grey" id="capabilities">
-  <div class="container-full">
-    {% include services.html %}
-  </div>
+<section class="section section--pad section--services section--light">
+  <div class="wrapper">
+    <div class="row-flex">
+      <div class="row-flex__md-12">
+        <h2 class="heading heading--centered">What to Expect</h2>
+        <div class="heading-seperator"></div>
+        <ul class="icon-card-wrap">
+          <a href="" class="icon-card">
+            <li><span class="lnr lnr-picture"></span>Breakthrough design</li>
+          </a>
+          <a href="" class="icon-card">
+            <li><span class="lnr lnr-laptop-phone"></span>Future-proof development</li>
+          </a>
+          <a href="" class="icon-card">
+            <li><span class="lnr lnr-spell-check"></span>Content creation</li>
+          </a>
+          <a href="" class="icon-card">
+            <li><span class="lnr lnr-magic-wand"></span>Creative strategy</li>
+          </a>
+          <a href="" class="icon-card">
+            <li><span class="lnr lnr-cog"></span>Technical strategy</li>
+          </a>
+          <a href="" class="icon-card">
+            <li><span class="lnr lnr-store"></span>E-commerce integration</li>
+          </a>
+          <!--<li><a class="btn btn--arrow">Breakthrough design</a></li>
+          <li><a class="btn btn--arrow">Future-proof development</a></li>
+          <li><a class="btn btn--arrow">Content creation</a></li>
+          <li><a class="btn btn--arrow">Creative strategy</a></li>
+          <li><a class="btn btn--arrow">Technical strategy</a></li>
+          <li><a class="btn btn--arrow">E-commerce integration</a></li>
+          <li><a class="btn btn--arrow">Ongoing support</a></li>-->
+        </ul>
+      </div><!-- /.col -->
+    </div><!-- /.row-flex -->
+  </div><!-- /.wrapper -->
 </section>
-
-<section class="news-layout section-wrap bg-white">
-  <div class="container-full container-full--padded">
-    <h4 class="section-title section-title--underline">Featured Projects</h4>
-    {% include projects-list-limit-home.html %}
-  </div>
-</section>
-
-</div><!--/.page-home-->

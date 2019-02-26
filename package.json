@@ -16,6 +16,7 @@
     "prod": "npm run webpack-prod && npm run jekyll-prod && http-server ./dist"
   },
   "dependencies": {
+    "fullpage.js": "^3.0.4",
     "gsap": "^1.20.3",
     "scrollmagic": "^2.0.5"
   },

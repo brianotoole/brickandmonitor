@@ -1,9 +1,17 @@
-@keyframes fadeIn { 
-  from { opacity: 0; transform: translateY(5px); } 
-  to { opacity: 1; transform: translateY(0); } 
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 .fadeIn {
   animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeInX {
+  from { opacity: 0; transform: translateX(-2px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+.fadeInX {
+  animation: fadeInX 1s ease-out;
 }
 
 @keyframes slideInRight {

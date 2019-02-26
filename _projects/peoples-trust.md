@@ -1,14 +1,14 @@
 ---
 layout: project
 featured-home: false
-bodyclass: project
+bodyclass: pti
 date: 2016-12-01
 img: project-pti-thumb.png
 link: https://peoplestrustinsurance.com
-bgcolor: 111111
+hero-bg: dark-l
 textcolor: ffffff
-title: People's Trust Insurance
-? subtitle
+hero-title: People's Trust Insurance
+hero-subtitle: Provided strategy for user experience, technology selection, and web development for a comprehensive website redesign
 description: Provided strategy for user experience, technology selection, and web development for a comprehensive website redesign
 ---
 

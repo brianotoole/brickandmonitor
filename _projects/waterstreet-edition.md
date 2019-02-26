@@ -1,15 +1,15 @@
 ---
 layout: project
 featured-home: true
-bodyclass: project
+bodyclass: wst-edition
 date: 2018-04-01
 order: 1
 img: project-edition-thumb.png
 link: https://edition.waterstreettampa.com
-bgcolor: 111111
+hero-bg: dark
 textcolor: ffffff
-title: The Tampa EDITION
-subtitle: Tampa's $3 Billion Waterfront Plan Aims to Reshape Downtown
+hero-title: The Tampa EDITION
+hero-subtitle: Tampa's $3 Billion Waterfront Plan Aims to Reshape Downtown
 description: As Water Street Tampa's first five-star hotel, The Tampa EDITION will be the cultural focal point of the Water Street Tampa neighborhood.
 ---
 

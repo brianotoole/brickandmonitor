@@ -4,32 +4,27 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  margin: 0;
-  border-top: 1px solid $color-border;
-  border-bottom: 1px solid $color-border;
+  margin: rem(-15);
 }
 
 .service {
   position: relative;
-  flex: 0 0 100%;
-  max-width: 100%;
-  padding-left: rem(5);
-  padding-right: rem(5);
-  @media (min-width: $bp-md) {
-    flex: 0 0 33.333333%;
-    max-width: 33.33333%;
-    padding-left: rem(5);
-    padding-right: rem(5);
-    border-right: 1px solid $color-border;
+  flex: 1 0 100%;
+  margin: rem(15);
+  text-align: center;
+  border-right: 1px solid $color-grey-light;
+  &:last-child() {
+    border-right: 0;
   }
-  &:last-child {
-    border: none;
+  @media (min-width: $bp-md) {
+    flex: 1;
+    text-align: left;
   }
 }
 
 .service__number {
   position: absolute;
-  color: $color-border;
+  color: $color-white;
   font-size: 2rem;
   font-weight: 700;
   left: 36px;
@@ -41,30 +36,34 @@
 }
 
 .service__content {
-  padding: rem(30) 0;
+  padding: rem(30);
+  color: $color-white;
   @media (min-width: $bp-md) {
-    padding: rem(120) 5% rem(60);
-    text-align: center;
+    padding: rem(120) 10% rem(60);
+    height: 750px;
   }
 }
+
 
 .service__title {
   margin-top: 0;
   margin-bottom: rem(30);
-  color: $color-secondary;
+  color: $color-white;
 }
 
 .service__title--service {
+  margin: 0;
   padding: rem(5) 0;
-  font-weight: 900;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
   font-size: rem(14);
   text-transform: uppercase;
+  color: $color-grey;
 }
 
 .service__icon {
   display: block;
   margin-top: rem(60);
+  text-align: center;
 }
 
 

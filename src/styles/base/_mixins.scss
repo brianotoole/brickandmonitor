@@ -1,37 +1,121 @@
-// MIXINS
+/*********************************************************
+    Mixins
+*********************************************************/
 
-// Convert PX to REM
-// Usage: 
-// .class {font-size: rem(20)};
-$baseFontSize : 16;
+@function power($number, $power) {
+  $exponent: 1;
+  @if $power>0 {
+      @for $i from 1 through $power {
+          $exponent: $exponent * $number;
+      }
+  }
+  @else {
+      @for $i from $power to 0 {
+          $exponent: $exponent / $number;
+      }
+  }
+  @return $exponent;
+}
+
+
+/*********************************************************
+Font Scale
+Usage: font-size: font-scale(3)
+*********************************************************/
+
+@function font-scale($x) {
+  @return power($font-ratio, $x) * $font-base-font-size;
+}
+
+;
+
+/*********************************************************
+Media Query Breakpoints
+Mobile first approach
+Default rules are set below sm-sized screens
+Usage:
+@include bp_md {
+  width: 50%;
+}
+*********************************************************/
+
+// above bp_sm
+@mixin bp_sm {
+  @media (min-width: #{$bp_sm}) {
+      @content;
+  }
+}
+
+// above bp_md
+@mixin bp_md {
+  @media (min-width: #{$bp_md}) {
+      @content;
+  }
+}
+
+// above bp_lg
+@mixin bp_lg {
+  @media (min-width: #{$bp_lg}) {
+      @content;
+  }
+}
+
+
+/*********************************************************
+Px to Rem Conversion
+Usage: .class {font-size: rem(18)}
+*********************************************************/
+
+$baseFontSize: 16;
 @function rem($pixels, $context: $baseFontSize) {
   @if (unitless($pixels)) {
-    $pixels: $pixels * 1px;
+      $pixels: $pixels * 1px;
   }
   @if (unitless($context)) {
-    $context: $context * 1px;
+      $context: $context * 1px;
   }
   @return $pixels / $context * 1rem;
 }
 
 
-// Media query breakpoints
-// Usage:  @include breakpoint(sm) { width: 100%; }
-@mixin breakpoint($point) {
-  @if $point == xl {
-    @media (min-width: calc-em(1200px)) { @content; } //"xl" = above 1200
+/*********************************************************
+Clearfix
+Usage: @include clearFix()
+*********************************************************/
+
+@mixin clearFix() {
+  &:before,
+  &:after {
+      content: " ";
+      display: table;
   }
-  @else if $point == lg {
-    @media (min-width: calc-em(992px)) { @content; } //"lg" = above 992
+  &:after {
+      display: block;
+      clear: both;
+      height: 1px;
+      margin-top: -1px;
+      visibility: hidden;
   }
-  @else if $point == md {
-    @media (min-width: calc-em(768px)) { @content; } //"md" = above 768
+  & {
+      *zoom: 1;
   }
-  @else if $point == sm {
-    @media (min-width: calc-em(576px))  { @content; } // "sm" = above 576
-  }
-  @else if $point == xs {
-    @media (max-width: calc-em(576px))  { @content; } // "xs" = below 576
+}
+
+
+/*********************************************************
+Card Hover
+Usage: @include cardHover()
+*********************************************************/
+
+@mixin cardHover() {
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  color: $color-body;
+  &:hover,
+  &:focus {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
   }
 }
 

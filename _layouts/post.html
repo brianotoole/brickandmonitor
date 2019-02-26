@@ -1,29 +1,15 @@
 ---
-layout: default
-bodyclass: post
+layout: page
+bodyclass: page-post
+hero-bg: dark-l
 ---
-<div class="page-interior">
-<div class="post">
-    
-    <section class="section-hero">
-      <div class="container hero-content">
-        <h1 class="hero-title" style="color:#{{ page.textcolor }}!important;">{{ page.title }}</h1>
-        <h5 class="hero-subtitle" style="color:#{{ page.textcolor }}!important;">{{ page.subtitle }}</h5>
-        <div class="hero-scroll">
-          <a href="#more"><span></span></a>
-        </div><!--/.hero-scroll-->
-      </div><!--/.container-->
-    </section>
-    
-    <section class="interior-content section-wrap" id="more">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 entry-content">
-            {{ content }}
-          </div>
-        </div>
-      </div>
-    </section>
-    
-</div><!--/.post-->
-</div><!--/.page-itnerior-->
+
+<section class="section section--pad section--post">
+  <div class="wrapper">
+    <div class="row-flex">
+      <div class="row-flex__md-12">
+        {{content}}
+      </div><!-- /.col -->
+    </div><!-- /.row-flex -->
+  </div><!-- /.wrapper -->
+</section>
