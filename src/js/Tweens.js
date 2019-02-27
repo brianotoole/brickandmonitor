@@ -13,6 +13,7 @@ var controller = new ScrollMagic.Controller();
 var heroItems = $(".hero > *");
 var introItems = $(".section-intro > *");
 
+tl.set(".hero .hero__bg", {visibility:"hidden"});
 $(function() {
   //tl.set("body", { className: "+=loading" });
   //tl.set(".pre-loader-logo-wrap", { className: "+=active" });
@@ -25,18 +26,16 @@ $(function() {
     //.set(".pre-loader", { className: "-=is-loading" })
    //.set(".pre-loader-logo .svg", { className: "-=active" });
 
-  TweenMax.from($(".hero .hero__bg"), 0.5, {
+  tl.from($(".hero .hero__bg"), 0.5, {
     autoAlpha: 0,
     scale: 1.1,
-    ease: Sine.easeOut
+    ease: Power1.easeOut
   }),
-  tl.add(
-    TweenMax.from($(".hero .hero__content"), 0.5, {
-      autoAlpha: 0,
-      y: 20,
-      ease: Power0.easeOut
-    })
-  );
+  TweenMax.from($(".hero .hero__content"), 0.5, {
+    autoAlpha: 0,
+    y: 20,
+    ease: Power0.easeOut
+  });
 
 });
 

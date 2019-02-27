@@ -794,8 +794,8 @@ html {
   -webkit-font-smoothing: antialiased; }
 
 body {
-  background: #ffffff;
-  color: #303030;
+  background: #111;
+  color: #ffffff;
   font-family: "Martel", sans-serif;
   font-size: 1rem;
   font-weight: 300;
@@ -1288,7 +1288,6 @@ body {
 
 .hero__bg {
   visibility: hidden;
-  display: block;
   position: absolute;
   top: 0;
   left: 0;
