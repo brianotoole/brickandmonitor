@@ -2129,7 +2129,7 @@ textarea {
 *********************************************************/
 .modal {
   position: fixed;
-  z-index: 999;
+  z-index: 99999;
   top: 0;
   bottom: 0;
   left: 0;
@@ -2143,6 +2143,9 @@ textarea {
   visibility: hidden;
   transform: scale(1.2);
   transition: all 0.3s ease-out; }
+  @media (min-width: 800px) {
+    .modal {
+      z-index: 999; } }
   .modal:before {
     content: '';
     position: absolute;
