@@ -14,18 +14,18 @@ var heroItems = $(".hero > *");
 var introItems = $(".section-intro > *");
 
 $(function() {
-  tl.set("body", { className: "+=loading" });
+  //tl.set("body", { className: "+=loading" });
   //tl.set(".pre-loader-logo-wrap", { className: "+=active" });
   //tl.set(".pre-loader", { className: "+=is-loading" });
   //tl.set(".pre-loader-logo .svg", { className: "+=active" })
     //tl.to(".is-loading", 0.8, { ease: Power0.easeNone })
     //.fromTo('.is-loading', 0.25, {width: "100%"}, {backgroundColor: "white",width: "0%", ease: Power0.easeNone})
-    tl.set("body", { className: "-=loading" })
+    //tl.set("body", { className: "-=loading" })
     //.set(".pre-loader-logo-wrap", { className: "-=active" })
     //.set(".pre-loader", { className: "-=is-loading" })
    //.set(".pre-loader-logo .svg", { className: "-=active" });
 
-  TweenMax.from($(".hero__bg"), 0.5, {
+  TweenMax.from($(".hero .hero__bg"), 0.5, {
     autoAlpha: 0,
     scale: 1.1,
     ease: Sine.easeOut
