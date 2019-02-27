@@ -794,8 +794,8 @@ html {
   -webkit-font-smoothing: antialiased; }
 
 body {
-  background: #111;
-  color: #ffffff;
+  background: #ffffff;
+  color: #303030;
   font-family: "Martel", sans-serif;
   font-size: 1rem;
   font-weight: 300;
