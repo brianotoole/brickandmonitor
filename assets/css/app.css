@@ -2232,7 +2232,8 @@ textarea {
       flex: 1 0 100%;
   margin: 0.9375rem;
   text-align: center;
-  border-bottom: 1px solid #424242; }
+  border-bottom: 1px solid #424242;
+  border-right: 0; }
   .service:last-child {
     border: 0; }
   @media (min-width: 800px) {
@@ -2240,6 +2241,7 @@ textarea {
       -ms-flex: 1;
           flex: 1;
       text-align: left;
+      border-bottom: 0;
       border-right: 1px solid #424242; } }
 
 .service__number {
