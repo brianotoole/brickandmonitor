@@ -66,4 +66,10 @@
   @include bp_md {
     min-height: 300px;
   }
+  a {
+    color: $color-black;
+  }
+  .btn {
+    color: $color-tertiary;
+  }
 }

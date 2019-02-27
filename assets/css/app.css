@@ -1212,7 +1212,7 @@ body {
   .icon-card span {
     padding-right: 1.25rem;
     font-size: 3.125rem;
-    color: #BB8B58; }
+    color: #BB8B58 !important; }
 
 .project-grid {
   padding: 0;
@@ -2252,6 +2252,10 @@ textarea {
   @media (min-width: 800px) {
     .card__description {
       min-height: 300px; } }
+  .card__description a {
+    color: #111; }
+  .card__description .btn {
+    color: #BB8B58; }
 
 .services {
   display: -ms-flexbox;
