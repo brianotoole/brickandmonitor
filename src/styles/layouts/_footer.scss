@@ -29,12 +29,15 @@
   letter-spacing: 5px;
 }
 .footer__bottom {
-  justify-content: space-between;
+  justify-content: center;
   padding-top: rem(60);
   padding-bottom: rem(30);
   border-top: 1px solid rgba($color-white, 0.15);
   color: rgba($color-white, 0.5);
   font-size: rem(14);
+  @include bp_md() {
+    justify-content: space-between;
+  }
 }
 .footer__bottom-links,
 .footer__bottom-copy {

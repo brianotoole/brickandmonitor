@@ -21,15 +21,18 @@
 
 .hero__bg {
   visibility: hidden; // added for tween
+  transform-origin: 0 100%; //added for tween
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: 88% 55px;
   background-size: cover;
-  transform-origin: 0 100%;
+  @include bp_md() {
+    background-position: center top;
+  }
   &--home {
     background-color: $color-black;
     background-image: url('/assets/images/bg-hero-space.jpg');
@@ -40,7 +43,10 @@
       height: 100%;
       top: 0;
       left: 0;
-      background: rgba($color-primary, 0.1);
+      background: rgba($color-black, 0.5);
+      @include bp_md() {
+        background: rgba($color-primary, 0.1);
+      }
     }
   }
   /*&:before {

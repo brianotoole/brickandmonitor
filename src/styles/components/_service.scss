@@ -12,13 +12,14 @@
   flex: 1 0 100%;
   margin: rem(15);
   text-align: center;
-  border-right: 1px solid $color-grey-light;
+  border-bottom: 1px solid $color-grey-light;
   &:last-child() {
-    border-right: 0;
+    border: 0;
   }
   @media (min-width: $bp-md) {
     flex: 1;
     text-align: left;
+    border-right: 1px solid $color-grey-light;
   }
 }
 
