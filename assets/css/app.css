@@ -1334,7 +1334,7 @@ body {
   visibility: hidden; }
   @media (min-width: 800px) {
     .hero__content {
-      max-width: 65%; } }
+      max-width: 50%; } }
   .hero__content * {
     margin-top: 0.9375rem; }
   .hero__content--centered {

@@ -69,7 +69,7 @@
   z-index: 99;
   visibility: hidden; //added for tween
   @include bp_md {
-    max-width: 65%;
+    max-width: 50%;
   }
   * {
     margin-top: rem(15);
