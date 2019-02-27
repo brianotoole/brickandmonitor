@@ -40,10 +40,10 @@
   background-repeat: no-repeat;
   filter: grayscale(100%);
   &--2 {
-    background-image: url("https://images.unsplash.com/photo-1496144300411-8dd31ce145ba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2144&q=80")
+    background-image: url("/assets/images/bg-pubaffairs.jpg")
   }
   &--3 {
-    background-image: url("https://images.unsplash.com/photo-1519222970733-f546218fa6d7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80")
+    background-image: url("/assets/images/bg-nonprofit.jpg")
   }
 }
 
@@ -64,7 +64,7 @@
   padding: rem(30);
   padding-bottom: rem(60);
   @include bp_md {
-    min-height: 300px;
+    min-height: 345px;
   }
   a {
     color: $color-black;

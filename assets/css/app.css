@@ -2262,9 +2262,9 @@ textarea {
   background-repeat: no-repeat;
   filter: grayscale(100%); }
   .card__header--2 {
-    background-image: url("https://images.unsplash.com/photo-1496144300411-8dd31ce145ba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2144&q=80"); }
+    background-image: url("/assets/images/bg-pubaffairs.jpg"); }
   .card__header--3 {
-    background-image: url("https://images.unsplash.com/photo-1519222970733-f546218fa6d7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80"); }
+    background-image: url("/assets/images/bg-nonprofit.jpg"); }
 
 .card__title {
   position: absolute;
@@ -2285,7 +2285,7 @@ textarea {
   padding-bottom: 3.75rem; }
   @media (min-width: 800px) {
     .card__description {
-      min-height: 300px; } }
+      min-height: 345px; } }
   .card__description a {
     color: #111; }
   .card__description .btn {
