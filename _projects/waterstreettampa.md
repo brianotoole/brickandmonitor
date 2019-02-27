@@ -9,7 +9,7 @@ link: http://waterstreettampa.com
 hero-bg: wst2
 textcolor: ffffff
 hero-title: Water Street Tampa
-hero-subtitle: Tampa's $3 Billion Waterfront Plan Aims to Reshape Downtown
+hero-subtitle: We helped plant the digital foundation for a new brand with global impact.
 description: Water Street Tampa will add 1 million square feet of new retail, cultural, educational, and entertainment space at the street-level. I helped plant the digital foundation for a new brand with global impact.
 ---
 

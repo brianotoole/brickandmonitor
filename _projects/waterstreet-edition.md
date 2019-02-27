@@ -9,7 +9,7 @@ link: https://edition.waterstreettampa.com
 hero-bg: wst
 textcolor: ffffff
 hero-title: The Tampa EDITION
-hero-subtitle: Tampa's $3 Billion Waterfront Plan Aims to Reshape Downtown
+hero-subtitle: We helped build and the launch announcement for the new Tampa hotel.
 description: As Water Street Tampa's first five-star hotel, The Tampa EDITION will be the cultural focal point of the Water Street Tampa neighborhood.
 ---
 
@@ -17,7 +17,7 @@ Water Street Tampa will create 2 million square feet of new office space, includ
 
 The Tampa EDITION will be the cultural focal point of the Water Street Tampa neighborhood.
 
-I partnered with SPP to build and the launch announcement for the Tampa EDITION hotel online.
+We partnered with SPP to build and the launch announcement for the Tampa EDITION hotel online.
 
 #### Objectives
 
