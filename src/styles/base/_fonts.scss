@@ -1,6 +1,30 @@
 /*********************************************************
     Fonts
 *********************************************************/
+/*
+ * The Typekit service used to deliver this font or fonts for use on websites
+ * is provided by Adobe and is subject to these Terms of Use
+ * http://www.adobe.com/products/eulas/tou_typekit. For font license
+ * information, see the list below.
+ *
+ * big-caslon-fb:
+ *   - http://typekit.com/eulas/00000000000000003b9ae120
+ * calluna:
+ *   - http://typekit.com/eulas/000000000000000000014868
+ * gill-sans-nova:
+ *   - http://typekit.com/eulas/00000000000000003b9b1f88
+ *
+ * © 2009-2019 Adobe Systems Incorporated. All Rights Reserved.
+ */
+/*{"last_published":"2019-02-27 18:25:13 UTC"}*/
+
+@font-face {
+font-family:"calluna";
+src:url("https://use.typekit.net/af/bccc98/000000000000000000014868/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff2"),url("https://use.typekit.net/af/bccc98/000000000000000000014868/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff"),url("https://use.typekit.net/af/bccc98/000000000000000000014868/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("opentype");
+font-style:normal;font-weight:300;
+}
+
+.tk-calluna { font-family: "calluna",serif; }
 
 // Google Font
 /* devanagari */

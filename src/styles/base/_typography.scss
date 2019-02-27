@@ -63,9 +63,17 @@ h6,
 
 p,
 ul,
-ol {
-    font-size: font-scale(0);
+ol,
+pre,
+code {
+    font-size: font-scale(1);
     margin: 0 0 rem(30) 0;
+}
+
+pre.highlight {
+    background: $color-black;
+    color: $color-white;
+    padding: rem(15);
 }
 
 .heading {

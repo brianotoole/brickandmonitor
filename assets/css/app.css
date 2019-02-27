@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*********************************************************
     Main Styles Entry Point
 *********************************************************/
@@ -207,6 +208,31 @@ Usage: @include cardHover()
 /*********************************************************
     Fonts
 *********************************************************/
+/*
+ * The Typekit service used to deliver this font or fonts for use on websites
+ * is provided by Adobe and is subject to these Terms of Use
+ * http://www.adobe.com/products/eulas/tou_typekit. For font license
+ * information, see the list below.
+ *
+ * big-caslon-fb:
+ *   - http://typekit.com/eulas/00000000000000003b9ae120
+ * calluna:
+ *   - http://typekit.com/eulas/000000000000000000014868
+ * gill-sans-nova:
+ *   - http://typekit.com/eulas/00000000000000003b9b1f88
+ *
+ * © 2009-2019 Adobe Systems Incorporated. All Rights Reserved.
+ */
+/*{"last_published":"2019-02-27 18:25:13 UTC"}*/
+@font-face {
+  font-family: "calluna";
+  src: url("https://use.typekit.net/af/bccc98/000000000000000000014868/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff2"), url("https://use.typekit.net/af/bccc98/000000000000000000014868/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff"), url("https://use.typekit.net/af/bccc98/000000000000000000014868/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("opentype");
+  font-style: normal;
+  font-weight: 300; }
+
+.tk-calluna {
+  font-family: "calluna",serif; }
+
 /* devanagari */
 @font-face {
   font-family: "Martel";
@@ -796,7 +822,7 @@ html {
 body {
   background: #ffffff;
   color: #303030;
-  font-family: "Martel", sans-serif;
+  font-family: "calluna", serif;
   font-size: 1rem;
   font-weight: 300;
   line-height: 1.6; }
@@ -884,12 +910,19 @@ h6,
 
 p,
 ul,
-ol {
-  font-size: 1rem;
+ol,
+pre,
+code {
+  font-size: 1.2rem;
   margin: 0 0 1.875rem 0; }
 
+pre.highlight {
+  background: #111;
+  color: #ffffff;
+  padding: 0.9375rem; }
+
 .heading {
-  font-family: "Martel", sans-serif;
+  font-family: "calluna", serif;
   font-weight: 700;
   margin-bottom: 1.25rem; }
   .heading--m-bottom {
@@ -1169,7 +1202,7 @@ body {
     .cta {
       max-width: 80%; } }
   .cta * {
-    font-size: 1.728rem; }
+    font-size: 2.0736rem; }
 
 .cta--centered {
   text-align: center; }
@@ -1440,7 +1473,8 @@ body {
 
 .header__nav li {
   opacity: 0;
-  padding: 0 0.78125rem; }
+  padding: 0 0.78125rem;
+  font-family: "Martel", sans-serif; }
 
 .header__nav li:nth-child(1) {
   animation: fadeInX 200ms ease-out;
@@ -1926,7 +1960,7 @@ html.fp-enabled,
   margin-bottom: 0.9375rem;
   padding: 0 0.9375rem;
   height: 2.625rem;
-  line-height: 2.625rem;
+  line-height: 2.75rem;
   font-family: "Martel", sans-serif;
   font-size: 1rem;
   font-weight: normal;
@@ -2170,7 +2204,7 @@ textarea {
     position: absolute;
     top: 30px;
     right: 30px;
-    font-family: "Martel", sans-serif;
+    font-family: "calluna", serif;
     font-size: 2.5rem;
     color: #b11921;
     cursor: pointer;
@@ -2672,7 +2706,7 @@ svg:not(:root) {
   font-family: "Martel", sans-serif; }
 
 .font-body {
-  font-family: "Martel", sans-serif; }
+  font-family: "calluna", serif; }
 
 .full-height {
   height: 100vh; }
