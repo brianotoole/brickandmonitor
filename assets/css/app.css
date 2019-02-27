@@ -2021,7 +2021,7 @@ html.fp-enabled,
       transition: background 0.2s ease-out, margin-left 0.2s ease-in-out; }
     .btn--arrow:hover {
       background: #b11921;
-      border-color: #6e1015;
+      border-color: #b11921;
       color: #ffffff; }
       .btn--arrow:hover:after {
         margin-left: 14px; }
