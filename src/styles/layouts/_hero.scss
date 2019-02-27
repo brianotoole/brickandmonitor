@@ -28,11 +28,21 @@
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
-  background-position: bottom center;
+  background-position: center top;
   background-size: cover;
   transform-origin: 0 100%;
-  &--1 {
+  &--home {
+    background-color: $color-black;
     background-image: url('/assets/images/bg-hero-space.jpg');
+    &:before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: rgba($color-primary, 0.1);
+    }
   }
   /*&:before {
     content: "";

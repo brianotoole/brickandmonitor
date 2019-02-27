@@ -1295,7 +1295,7 @@ body {
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
-  background-position: bottom center;
+  background-position: center top;
   background-size: cover;
   transform-origin: 0 100%;
   /*&:before {
@@ -1308,8 +1308,17 @@ body {
     display: block;
     background-color: rgba($color-black, 0.8);
   }*/ }
-  .hero__bg--1 {
+  .hero__bg--home {
+    background-color: #111;
     background-image: url("/assets/images/bg-hero-space.jpg"); }
+    .hero__bg--home:before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: rgba(184, 12, 21, 0.1); }
 
 .hero__content {
   position: relative;
