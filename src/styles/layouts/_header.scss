@@ -62,6 +62,7 @@
   $faster: 15ms;
   li {
     opacity: 0;
+    padding: 0 rem(12.5);
   }
   @for $index from 1 through 4 {
     li:nth-child(#{$index}) {
@@ -77,8 +78,25 @@
 
 .header__nav li a {
   color: $color-white;
-  padding: 0 rem(12.5);
   font-size: font-scale(1);
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  position: relative;
+  overflow: hidden;
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: $color-white;
+    height: 1px;
+    transition: right 0.3s ease-out;
+  }
+  &:hover:before {
+    right: 0;
+  }
 }
 
 .header__nav .header__button {
