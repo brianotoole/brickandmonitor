@@ -201,6 +201,10 @@ Card Hover
 Usage: @include cardHover()
 *********************************************************/
 /*********************************************************
+Card Hover
+Usage: @include cardHover()
+*********************************************************/
+/*********************************************************
     Fonts
 *********************************************************/
 /* devanagari */
@@ -1966,6 +1970,9 @@ html.fp-enabled,
 /*********************************************************
     Form
 *********************************************************/
+form .row-flex > div {
+  width: 100%; }
+
 fieldset {
   margin: 0;
   padding: 0;
@@ -2253,6 +2260,46 @@ textarea {
   display: block;
   margin-top: 3.75rem;
   text-align: center; }
+
+.icon-card-wrap {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: -0.9375rem;
+  padding: 0; }
+
+.icon-card {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  width: calc(12 / 12 * 100%);
+  margin: 0.9375rem;
+  padding: 3.75rem 1.875rem;
+  background: #ffffff;
+  text-decoration: none;
+  transition: all 0.2s linear;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  color: #303030; }
+  @media (min-width: 800px) {
+    .icon-card {
+      width: calc(4 / 12 * 100% - 30px); } }
+  .icon-card:hover, .icon-card:focus {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15); }
+  .icon-card li {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center; }
+  .icon-card span {
+    padding-right: 1.25rem;
+    font-size: 3.125rem;
+    color: #111; }
 
 /*********************************************************
     Post
