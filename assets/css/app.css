@@ -2172,11 +2172,11 @@ textarea {
     right: 30px;
     font-family: "Martel", sans-serif;
     font-size: 2.5rem;
-    color: #ffffff;
+    color: #b80c15;
     cursor: pointer;
     transition: all 0.3s ease-out; }
     .modal__close:hover {
-      color: #e6e6e6; }
+      color: #70070d; }
 
 /*********************************************************
     Card
