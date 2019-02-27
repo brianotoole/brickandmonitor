@@ -1355,7 +1355,7 @@ body {
   margin-left: 0.9375rem;
   z-index: 2; }
   .hero__scroll--centered {
-    margin: 0 auto; }
+    margin: 0 50%; }
   .hero__scroll a {
     position: relative;
     color: #ffffff;
