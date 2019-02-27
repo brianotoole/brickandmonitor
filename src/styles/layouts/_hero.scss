@@ -30,6 +30,15 @@
   background-repeat: no-repeat;
   background-position: 88% 55px;
   background-size: cover;
+  &:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba($color-black, 0.25);
+  }
   @include bp_md() {
     background-position: center top;
   }
@@ -49,16 +58,23 @@
       }
     }
   }
-  /*&:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    display: block;
-    background-color: rgba($color-black, 0.8);
-  }*/
+  &--wst {
+    background-image: url('/assets/images/bg-wst.jpg');
+    background-position: center center;
+  }
+  &--wst2 {
+    background-image: url('/assets/images/bg-wst2.jpg');
+    background-position: center center;
+    &:before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: rgba($color-black, 0.5);
+    }
+  }
 }
 
 .hero__content {

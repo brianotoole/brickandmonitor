@@ -6,7 +6,7 @@ date: 2017-12-01
 order: 1
 img: project-wst-thumb.png
 link: http://waterstreettampa.com
-hero-bg: dark
+hero-bg: wst2
 textcolor: ffffff
 hero-title: Water Street Tampa
 hero-subtitle: Tampa's $3 Billion Waterfront Plan Aims to Reshape Downtown
