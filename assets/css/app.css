@@ -833,10 +833,10 @@ img {
 
 a {
   text-decoration: none;
-  color: #b11921;
+  color: #b71e26;
   transition: 0.2s color ease-out; }
   a:hover {
-    color: #6e1015; }
+    color: #751318; }
 
 /*********************************************************
     Typography
@@ -939,7 +939,7 @@ pre.highlight {
 .heading-seperator {
   border-bottom-style: solid;
   border-bottom-width: 3px;
-  border-bottom-color: #b11921;
+  border-bottom-color: #b71e26;
   width: 50px;
   margin: 0 auto 3.75rem; }
 
@@ -1151,7 +1151,7 @@ body {
   .section--underline {
     border-bottom: 2px solid #e3e3e1; }
   .section--primary {
-    background-color: #b11921;
+    background-color: #b71e26;
     color: #ffffff; }
   .section--secondary {
     background-color: #111;
@@ -1351,7 +1351,7 @@ body {
       background: rgba(17, 17, 17, 0.75); }
       @media (min-width: 800px) {
         .hero__bg--home:before {
-          background: rgba(177, 25, 33, 0.1); } }
+          background: rgba(183, 30, 38, 0.1); } }
   .hero__bg--wst {
     background-image: url("/assets/images/bg-wst.jpg");
     background-position: center center; }
@@ -1455,7 +1455,7 @@ body {
   z-index: 2;
   width: 75px;
   height: 100%;
-  background: #b11921;
+  background: #b71e26;
   overflow: hidden;
   transition: width 0.25s ease-out; }
   @media (min-width: 800px) {
@@ -1536,7 +1536,7 @@ body {
   margin-left: 0.9375rem;
   border-radius: 32px; }
   .header__nav .header__button:hover, .header__nav .header__button:focus {
-    background-color: #b11921;
+    background-color: #b71e26;
     transition: background 0.2s ease-out; }
 
 .hamburger {
@@ -1630,13 +1630,13 @@ body {
       right: 0; }
 
 .footer-link__wrap {
-  background: #b11921;
+  background: #b71e26;
   color: #ffffff;
   display: block;
   padding: 80px 0;
   transition: background 0.25s ease-in-out; }
   .footer-link__wrap:hover, .footer-link__wrap:focus {
-    background: #b11921;
+    background: #b71e26;
     color: #ffffff; }
 
 .footer__tagline {
@@ -1974,7 +1974,7 @@ html.fp-enabled,
   font-size: 1rem;
   font-weight: normal;
   color: #ffffff;
-  background-color: #b11921;
+  background-color: #b71e26;
   border-radius: 32px;
   text-decoration: none;
   text-align: center;
@@ -1987,7 +1987,7 @@ html.fp-enabled,
   .btn:hover, .btn:focus {
     text-decoration: none;
     color: #ffffff;
-    background-color: #6e1015;
+    background-color: #751318;
     box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.2);
     transform: translateY(-1px); }
   .btn--secondary {
@@ -1996,12 +1996,12 @@ html.fp-enabled,
     .btn--secondary:hover, .btn--secondary:focus {
       background-color: black; }
   .btn--muted {
-    color: #b11921;
+    color: #b71e26;
     background-color: transparent;
-    border-color: #b11921; }
+    border-color: #b71e26; }
     .btn--muted:hover, .btn--muted:focus {
-      background-color: #b11921;
-      border-color: #6e1015; }
+      background-color: #b71e26;
+      border-color: #751318; }
   .btn--arrow {
     transition: color 0.2s ease-in-out;
     border: 1px solid #111;
@@ -2017,8 +2017,8 @@ html.fp-enabled,
       margin-left: 10px;
       transition: background 0.2s ease-out, margin-left 0.2s ease-in-out; }
     .btn--arrow:hover {
-      background: #b11921;
-      border-color: #b11921;
+      background: #b71e26;
+      border-color: #b71e26;
       color: #ffffff; }
       .btn--arrow:hover:after {
         margin-left: 14px; }
@@ -2113,7 +2113,7 @@ textarea {
   input[type='url']:active,
   textarea:focus,
   textarea:active {
-    border-color: #b11921; }
+    border-color: #b71e26; }
 
 textarea {
   max-width: 100%;
@@ -2215,11 +2215,11 @@ textarea {
     right: 30px;
     font-family: "calluna", serif;
     font-size: 2.5rem;
-    color: #b11921;
+    color: #b71e26;
     cursor: pointer;
     transition: all 0.3s ease-out; }
     .modal__close:hover {
-      color: #6e1015; }
+      color: #751318; }
 
 /*********************************************************
     Card
@@ -2663,7 +2663,7 @@ svg:not(:root) {
   color: #ffffff; }
 
 .text-primary {
-  color: #b11921; }
+  color: #b71e26; }
 
 .text-secondary {
   color: #111; }
@@ -2680,7 +2680,7 @@ svg:not(:root) {
   color: #303030; }
 
 .bg-primary {
-  background: #b11921;
+  background: #b71e26;
   color: #ffffff; }
 
 .bg-secondary {
@@ -2702,7 +2702,7 @@ svg:not(:root) {
 .bg-pattern {
   position: relative;
   color: #ffffff;
-  background-image: url("https://sqy7rm.media.zestyio.com/branches.svg"), linear-gradient(65deg, #b11921, #6e1015); }
+  background-image: url("https://sqy7rm.media.zestyio.com/branches.svg"), linear-gradient(65deg, #b71e26, #751318); }
 
 .bg-pattern-grey {
   position: relative;
@@ -2823,7 +2823,7 @@ svg:not(:root) {
   left: 0;
   right: 100%;
   top: 0;
-  background: #b11921;
+  background: #b71e26;
   height: 2px;
   transition-property: right;
   transition-duration: 0.3s;
