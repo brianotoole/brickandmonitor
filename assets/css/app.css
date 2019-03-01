@@ -922,8 +922,6 @@ pre.highlight {
   padding: 0.9375rem; }
 
 .heading {
-  font-family: "calluna", serif;
-  font-weight: 700;
   margin-bottom: 1.25rem; }
   .heading--m-bottom {
     padding-bottom: 3.75rem; }
@@ -931,7 +929,6 @@ pre.highlight {
     text-align: center; }
 
 .heading-underline {
-  font-weight: 700;
   margin-bottom: 1.25rem;
   padding-bottom: 1.25rem;
   border-bottom: 2px solid #e3e3e1; }

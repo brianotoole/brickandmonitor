@@ -78,8 +78,6 @@ pre.highlight {
 
 .heading {
     @extend h5;
-    font-family: $font-body;
-    font-weight: 700;
     margin-bottom: rem(20);
     &--m-bottom {
         padding-bottom: rem(60);
@@ -91,7 +89,6 @@ pre.highlight {
 
 .heading-underline {
     @extend h5;
-    font-weight: 700;
     margin-bottom: rem(20);
     padding-bottom: rem(20);
     border-bottom: 2px solid $color-grey;
