@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@import url(https://p.typekit.net/p.css?s=1&k=igd0xtg&ht=tk&f=6160.10294.10302.39347.39348.39349&a=17323924&app=typekit&e=css);@charset "UTF-8";
 /*********************************************************
     Main Styles Entry Point
 *********************************************************/
@@ -214,71 +214,182 @@ Usage: @include cardHover()
  * http://www.adobe.com/products/eulas/tou_typekit. For font license
  * information, see the list below.
  *
- * big-caslon-fb:
- *   - http://typekit.com/eulas/00000000000000003b9ae120
+ * brandon-grotesque:
+ *   - http://typekit.com/eulas/0000000000000000000132df
+ *   - http://typekit.com/eulas/0000000000000000000132e1
  * calluna:
  *   - http://typekit.com/eulas/000000000000000000014868
- * gill-sans-nova:
- *   - http://typekit.com/eulas/00000000000000003b9b1f88
+ * itc-avant-garde-gothic-pro:
+ *   - http://typekit.com/eulas/00000000000000003b9b1fb3
+ *   - http://typekit.com/eulas/00000000000000003b9b1fb4
+ *   - http://typekit.com/eulas/00000000000000003b9b1fb5
  *
  * © 2009-2019 Adobe Systems Incorporated. All Rights Reserved.
  */
-/*{"last_published":"2019-02-27 18:25:13 UTC"}*/
+/*{"last_published":"2019-04-05 13:30:38 UTC"}*/
 @font-face {
   font-family: "calluna";
   src: url("https://use.typekit.net/af/bccc98/000000000000000000014868/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff2"), url("https://use.typekit.net/af/bccc98/000000000000000000014868/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff"), url("https://use.typekit.net/af/bccc98/000000000000000000014868/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("opentype");
   font-style: normal;
   font-weight: 300; }
 
+@font-face {
+  font-family: "brandon-grotesque";
+  src: url("https://use.typekit.net/af/1da05b/0000000000000000000132df/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"), url("https://use.typekit.net/af/1da05b/0000000000000000000132df/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"), url("https://use.typekit.net/af/1da05b/0000000000000000000132df/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+  font-style: normal;
+  font-weight: 400; }
+
+@font-face {
+  font-family: "brandon-grotesque";
+  src: url("https://use.typekit.net/af/d8f71f/0000000000000000000132e1/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff2"), url("https://use.typekit.net/af/d8f71f/0000000000000000000132e1/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff"), url("https://use.typekit.net/af/d8f71f/0000000000000000000132e1/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("opentype");
+  font-style: normal;
+  font-weight: 500; }
+
+@font-face {
+  font-family: "itc-avant-garde-gothic-pro";
+  src: url("https://use.typekit.net/af/ad070d/00000000000000003b9b1fb3/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"), url("https://use.typekit.net/af/ad070d/00000000000000003b9b1fb3/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"), url("https://use.typekit.net/af/ad070d/00000000000000003b9b1fb3/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+  font-style: normal;
+  font-weight: 700; }
+
+@font-face {
+  font-family: "itc-avant-garde-gothic-pro";
+  src: url("https://use.typekit.net/af/26a6d6/00000000000000003b9b1fb4/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff2"), url("https://use.typekit.net/af/26a6d6/00000000000000003b9b1fb4/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff"), url("https://use.typekit.net/af/26a6d6/00000000000000003b9b1fb4/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("opentype");
+  font-style: normal;
+  font-weight: 300; }
+
+@font-face {
+  font-family: "itc-avant-garde-gothic-pro";
+  src: url("https://use.typekit.net/af/f1d156/00000000000000003b9b1fb5/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff2"), url("https://use.typekit.net/af/f1d156/00000000000000003b9b1fb5/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff"), url("https://use.typekit.net/af/f1d156/00000000000000003b9b1fb5/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("opentype");
+  font-style: normal;
+  font-weight: 500; }
+
 .tk-calluna {
   font-family: "calluna",serif; }
 
-/* devanagari */
+.tk-brandon-grotesque {
+  font-family: "brandon-grotesque",sans-serif; }
+
+.tk-itc-avant-garde-gothic-pro {
+  font-family: "itc-avant-garde-gothic-pro",sans-serif; }
+
+/* cyrillic */
 @font-face {
-  font-family: "Martel";
+  font-family: 'Playfair Display';
   font-style: normal;
   font-weight: 400;
-  src: local("Martel"), local("Martel-Regular"), url(https://fonts.gstatic.com/s/martel/v2/PN_xRfK9oXHga0XdZ8g_rz7b_sDa.woff2) format("woff2");
-  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB; }
+  src: local("Playfair Display Regular"), local("PlayfairDisplay-Regular"), url(https://fonts.gstatic.com/s/playfairdisplay/v14/nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgEM86xRbPQ.woff2) format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
+
+/* vietnamese */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Playfair Display Regular"), local("PlayfairDisplay-Regular"), url(https://fonts.gstatic.com/s/playfairdisplay/v14/nuFiD-vYSZviVYUb_rj3ij__anPXDTPYgEM86xRbPQ.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB; }
 
 /* latin-ext */
 @font-face {
-  font-family: "Martel";
+  font-family: 'Playfair Display';
   font-style: normal;
   font-weight: 400;
-  src: local("Martel"), local("Martel-Regular"), url(https://fonts.gstatic.com/s/martel/v2/PN_xRfK9oXHga0XdaMg_rz7b_sDa.woff2) format("woff2");
+  src: local("Playfair Display Regular"), local("PlayfairDisplay-Regular"), url(https://fonts.gstatic.com/s/playfairdisplay/v14/nuFiD-vYSZviVYUb_rj3ij__anPXDTLYgEM86xRbPQ.woff2) format("woff2");
   unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; }
 
 /* latin */
 @font-face {
-  font-family: "Martel";
+  font-family: 'Playfair Display';
   font-style: normal;
   font-weight: 400;
-  src: local("Martel"), local("Martel-Regular"), url(https://fonts.gstatic.com/s/martel/v2/PN_xRfK9oXHga0XdZsg_rz7b_g.woff2) format("woff2");
+  src: local("Playfair Display Regular"), local("PlayfairDisplay-Regular"), url(https://fonts.gstatic.com/s/playfairdisplay/v14/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgEM86xQ.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
 
-/* devanagari */
+/* cyrillic */
 @font-face {
-  font-family: "Martel";
+  font-family: 'Playfair Display';
   font-style: normal;
-  font-weight: 900;
-  src: local("Martel Heavy"), local("Martel-Heavy"), url(https://fonts.gstatic.com/s/martel/v2/PN_yRfK9oXHga0XV5e8qgxzW1PrTzkMi.woff2) format("woff2");
-  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB; }
+  font-weight: 700;
+  src: local("Playfair Display Bold"), local("PlayfairDisplay-Bold"), url(https://fonts.gstatic.com/s/playfairdisplay/v14/nuFlD-vYSZviVYUb_rj3ij__anPXBYf9lWoe5j5hNKe1_w.woff2) format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
+
+/* vietnamese */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Playfair Display Bold"), local("PlayfairDisplay-Bold"), url(https://fonts.gstatic.com/s/playfairdisplay/v14/nuFlD-vYSZviVYUb_rj3ij__anPXBYf9lWEe5j5hNKe1_w.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB; }
 
 /* latin-ext */
 @font-face {
-  font-family: "Martel";
+  font-family: 'Playfair Display';
   font-style: normal;
-  font-weight: 900;
-  src: local("Martel Heavy"), local("Martel-Heavy"), url(https://fonts.gstatic.com/s/martel/v2/PN_yRfK9oXHga0XV5e8qjBzW1PrTzkMi.woff2) format("woff2");
+  font-weight: 700;
+  src: local("Playfair Display Bold"), local("PlayfairDisplay-Bold"), url(https://fonts.gstatic.com/s/playfairdisplay/v14/nuFlD-vYSZviVYUb_rj3ij__anPXBYf9lWAe5j5hNKe1_w.woff2) format("woff2");
   unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; }
 
 /* latin */
 @font-face {
-  font-family: "Martel";
+  font-family: 'Playfair Display';
   font-style: normal;
-  font-weight: 900;
-  src: local("Martel Heavy"), local("Martel-Heavy"), url(https://fonts.gstatic.com/s/martel/v2/PN_yRfK9oXHga0XV5e8qghzW1PrTzg.woff2) format("woff2");
+  font-weight: 700;
+  src: local("Playfair Display Bold"), local("PlayfairDisplay-Bold"), url(https://fonts.gstatic.com/s/playfairdisplay/v14/nuFlD-vYSZviVYUb_rj3ij__anPXBYf9lW4e5j5hNKc.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans Regular"), local("OpenSans-Regular"), url(https://fonts.gstatic.com/s/opensans/v16/mem8YaGs126MiZpBA-UFWJ0bf8pkAp6a.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+/* cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans Regular"), local("OpenSans-Regular"), url(https://fonts.gstatic.com/s/opensans/v16/mem8YaGs126MiZpBA-UFUZ0bf8pkAp6a.woff2) format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
+
+/* greek-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans Regular"), local("OpenSans-Regular"), url(https://fonts.gstatic.com/s/opensans/v16/mem8YaGs126MiZpBA-UFWZ0bf8pkAp6a.woff2) format("woff2");
+  unicode-range: U+1F00-1FFF; }
+
+/* greek */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans Regular"), local("OpenSans-Regular"), url(https://fonts.gstatic.com/s/opensans/v16/mem8YaGs126MiZpBA-UFVp0bf8pkAp6a.woff2) format("woff2");
+  unicode-range: U+0370-03FF; }
+
+/* vietnamese */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans Regular"), local("OpenSans-Regular"), url(https://fonts.gstatic.com/s/opensans/v16/mem8YaGs126MiZpBA-UFWp0bf8pkAp6a.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB; }
+
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans Regular"), local("OpenSans-Regular"), url(https://fonts.gstatic.com/s/opensans/v16/mem8YaGs126MiZpBA-UFW50bf8pkAp6a.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans Regular"), local("OpenSans-Regular"), url(https://fonts.gstatic.com/s/opensans/v16/mem8YaGs126MiZpBA-UFVZ0bf8pkAg.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
 
 @font-face {
@@ -833,10 +944,10 @@ img {
 
 a {
   text-decoration: none;
-  color: #b71e26;
+  color: #FF3233;
   transition: 0.2s color ease-out; }
   a:hover {
-    color: #751318; }
+    color: #e50001; }
 
 /*********************************************************
     Typography
@@ -849,7 +960,7 @@ h5,
 .heading,
 .heading-underline,
 h6 {
-  font-family: "Martel", sans-serif;
+  font-family: "Playfair Display", serif;
   font-weight: 300;
   line-height: 1.4;
   letter-spacing: 0.25px;
@@ -874,7 +985,10 @@ h2,
 
 h3,
 .h3 {
-  font-size: 1.44rem; }
+  font-size: 1.44rem;
+  font-family: "brandon-grotesque", sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px; }
   @media (min-width: 800px) {
     h3,
     .h3 {
@@ -939,7 +1053,7 @@ pre.highlight {
 .heading-seperator {
   border-bottom-style: solid;
   border-bottom-width: 3px;
-  border-bottom-color: #b71e26;
+  border-bottom-color: #FF3233;
   width: 50px;
   margin: 0 auto 3.75rem; }
 
@@ -1151,7 +1265,7 @@ body {
   .section--underline {
     border-bottom: 2px solid #e3e3e1; }
   .section--primary {
-    background-color: #b71e26;
+    background-color: #FF3233;
     color: #ffffff; }
   .section--secondary {
     background-color: #111;
@@ -1242,7 +1356,7 @@ body {
   .icon-card span {
     padding-right: 1.25rem;
     font-size: 3.125rem;
-    color: #BB8B58 !important; }
+    color: #F5EFE2 !important; }
 
 .project-grid {
   padding: 0;
@@ -1339,19 +1453,7 @@ body {
     .hero__bg {
       background-position: center top; } }
   .hero__bg--home {
-    background-color: #111;
-    background-image: url("/assets/images/bg-hero-space.jpg"); }
-    .hero__bg--home:before {
-      content: '';
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      background: rgba(17, 17, 17, 0.75); }
-      @media (min-width: 800px) {
-        .hero__bg--home:before {
-          background: rgba(183, 30, 38, 0.1); } }
+    background-color: #111; }
   .hero__bg--wst {
     background-image: url("/assets/images/bg-wst.jpg");
     background-position: center center; }
@@ -1392,8 +1494,7 @@ body {
   margin: 0; }
 
 .hero__title {
-  padding-bottom: 0.9375rem;
-  font-weight: 700; }
+  padding-bottom: 0.9375rem; }
 
 .hero__scroll {
   position: relative;
@@ -1455,7 +1556,7 @@ body {
   z-index: 2;
   width: 75px;
   height: 100%;
-  background: #b71e26;
+  background: #FF3233;
   overflow: hidden;
   transition: width 0.25s ease-out; }
   @media (min-width: 800px) {
@@ -1483,7 +1584,7 @@ body {
 .header__nav li {
   opacity: 0;
   padding: 0 0.78125rem;
-  font-family: "Martel", sans-serif; }
+  font-family: "Playfair Display", serif; }
 
 .header__nav li:nth-child(1) {
   animation: fadeInX 200ms ease-out;
@@ -1536,7 +1637,7 @@ body {
   margin-left: 0.9375rem;
   border-radius: 32px; }
   .header__nav .header__button:hover, .header__nav .header__button:focus {
-    background-color: #b71e26;
+    background-color: #FF3233;
     transition: background 0.2s ease-out; }
 
 .hamburger {
@@ -1629,13 +1730,13 @@ body {
       right: 0; }
 
 .footer-link__wrap {
-  background: #b71e26;
+  background: #FF3233;
   color: #ffffff;
   display: block;
   padding: 80px 0;
   transition: background 0.25s ease-in-out; }
   .footer-link__wrap:hover, .footer-link__wrap:focus {
-    background: #b71e26;
+    background: #FF3233;
     color: #ffffff; }
 
 .footer__tagline {
@@ -1969,11 +2070,11 @@ html.fp-enabled,
   padding: 0 0.9375rem;
   height: 2.625rem;
   line-height: 2.75rem;
-  font-family: "Martel", sans-serif;
+  font-family: "Playfair Display", serif;
   font-size: 1rem;
   font-weight: normal;
   color: #ffffff;
-  background-color: #b71e26;
+  background-color: #FF3233;
   border-radius: 32px;
   text-decoration: none;
   text-align: center;
@@ -1986,7 +2087,7 @@ html.fp-enabled,
   .btn:hover, .btn:focus {
     text-decoration: none;
     color: #ffffff;
-    background-color: #751318;
+    background-color: #e50001;
     box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.2);
     transform: translateY(-1px); }
   .btn--secondary {
@@ -1995,12 +2096,12 @@ html.fp-enabled,
     .btn--secondary:hover, .btn--secondary:focus {
       background-color: black; }
   .btn--muted {
-    color: #b71e26;
+    color: #FF3233;
     background-color: transparent;
-    border-color: #b71e26; }
+    border-color: #FF3233; }
     .btn--muted:hover, .btn--muted:focus {
-      background-color: #b71e26;
-      border-color: #751318; }
+      background-color: #FF3233;
+      border-color: #e50001; }
   .btn--arrow {
     transition: color 0.2s ease-in-out;
     border: 1px solid #111;
@@ -2016,8 +2117,8 @@ html.fp-enabled,
       margin-left: 10px;
       transition: background 0.2s ease-out, margin-left 0.2s ease-in-out; }
     .btn--arrow:hover {
-      background: #b71e26;
-      border-color: #b71e26;
+      background: #FF3233;
+      border-color: #FF3233;
       color: #ffffff; }
       .btn--arrow:hover:after {
         margin-left: 14px; }
@@ -2112,7 +2213,7 @@ textarea {
   input[type='url']:active,
   textarea:focus,
   textarea:active {
-    border-color: #b71e26; }
+    border-color: #FF3233; }
 
 textarea {
   max-width: 100%;
@@ -2214,11 +2315,11 @@ textarea {
     right: 30px;
     font-family: "calluna", serif;
     font-size: 2.5rem;
-    color: #b71e26;
+    color: #FF3233;
     cursor: pointer;
     transition: all 0.3s ease-out; }
     .modal__close:hover {
-      color: #751318; }
+      color: #e50001; }
 
 /*********************************************************
     Card
@@ -2297,7 +2398,7 @@ textarea {
   .card__description a {
     color: #111; }
   .card__description .btn {
-    color: #BB8B58; }
+    color: #F5EFE2; }
 
 .services {
   display: -ms-flexbox;
@@ -2475,7 +2576,7 @@ svg:not(:root) {
   margin: 0 auto 15px;
   fill: currentColor;
   color: transparent;
-  stroke: #BB8B58;
+  stroke: #F5EFE2;
   stroke-width: 4px;
   stroke-dasharray: 2000; }
   @media (min-width: 800px) {
@@ -2507,7 +2608,7 @@ svg:not(:root) {
 .path-lines {
   fill: currentColor;
   color: transparent;
-  stroke: rgba(187, 139, 88, 0.05);
+  stroke: rgba(245, 239, 226, 0.05);
   stroke-width: 1px;
   stroke-dasharray: 1689;
   animation: fillSvg 12s reverse linear; }
@@ -2515,9 +2616,9 @@ svg:not(:root) {
 .svg-web {
   stroke-dasharray: 2000; }
   .svg-web .svg-web-browser {
-    fill: #BB8B58; }
+    fill: #F5EFE2; }
   .svg-web .svg-web-gear-mid {
-    fill: #BB8B58;
+    fill: #F5EFE2;
     transform-origin: 182px 155px;
     animation: spin 5s infinite linear; }
 
@@ -2536,24 +2637,24 @@ svg:not(:root) {
     animation: drawLine 2s 1s infinite linear forwards, fadeIn 2s 1s infinite linear reverse; }
 
 .terminal {
-  color: #BB8B58; }
+  color: #F5EFE2; }
 
 .slash {
-  color: #BB8B58;
+  color: #F5EFE2;
   animation: pulseOpacity 0.7s infinite linear; }
 
 .lock {
-  color: #BB8B58; }
+  color: #F5EFE2; }
 
 .gear {
-  color: #BB8B58;
+  color: #F5EFE2;
   transform-origin: 50% 50%;
   -webkit-transform-origin: 182px 155px;
   animation: spin 5s infinite linear; }
 
 .line-lg,
 .line-sm {
-  color: #BB8B58;
+  color: #F5EFE2;
   stroke-linejoin: round;
   stroke-linecap: round;
   stroke-miterlimit: 10;
@@ -2662,7 +2763,7 @@ svg:not(:root) {
   color: #ffffff; }
 
 .text-primary {
-  color: #b71e26; }
+  color: #FF3233; }
 
 .text-secondary {
   color: #111; }
@@ -2679,7 +2780,7 @@ svg:not(:root) {
   color: #303030; }
 
 .bg-primary {
-  background: #b71e26;
+  background: #FF3233;
   color: #ffffff; }
 
 .bg-secondary {
@@ -2701,7 +2802,7 @@ svg:not(:root) {
 .bg-pattern {
   position: relative;
   color: #ffffff;
-  background-image: url("https://sqy7rm.media.zestyio.com/branches.svg"), linear-gradient(65deg, #b71e26, #751318); }
+  background-image: url("https://sqy7rm.media.zestyio.com/branches.svg"), linear-gradient(65deg, #FF3233, #e50001); }
 
 .bg-pattern-grey {
   position: relative;
@@ -2711,7 +2812,7 @@ svg:not(:root) {
     color: #303030; }
 
 .font-heading {
-  font-family: "Martel", sans-serif; }
+  font-family: "Playfair Display", serif; }
 
 .font-body {
   font-family: "calluna", serif; }
@@ -2825,7 +2926,7 @@ svg:not(:root) {
   left: 0;
   right: 100%;
   top: 0;
-  background: #b71e26;
+  background: #FF3233;
   height: 2px;
   transition-property: right;
   transition-duration: 0.3s;

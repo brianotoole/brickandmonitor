@@ -44,19 +44,7 @@
   }
   &--home {
     background-color: $color-black;
-    background-image: url('/assets/images/bg-hero-space.jpg');
-    &:before {
-      content: '';
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      background: rgba($color-black, 0.75);
-      @include bp_md() {
-        background: rgba($color-primary, 0.1);
-      }
-    }
+    //background-image: url('/assets/images/bg-hero-space.jpg');
   }
   &--wst {
     background-image: url('/assets/images/bg-wst.jpg');
@@ -107,7 +95,6 @@
 
 .hero__title {
   padding-bottom: rem(15);
-  font-weight: 700;
 }
 
 .hero__subtitle {

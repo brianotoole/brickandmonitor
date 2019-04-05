@@ -6,9 +6,9 @@
     Colors
 *********************************************************/
 
-$color-primary: #b71e26; //red
-$color-secondary: #111;//#030e1b;
-$color-tertiary: #BB8B58;
+$color-primary: #FF3233; //red
+$color-secondary: #111;//black
+$color-tertiary: #F5EFE2;//sand
 $color-white: #ffffff;
 $color-body: #303030;
 $color-grey: #e3e3e1;
@@ -29,7 +29,8 @@ $color-error: red;
 $font-base-font-size: 1rem;
 $font-ratio: 1.2;
 $font-base-line-height: 1.6;
-$font-heading: "Martel", sans-serif;
+$font-heading: "Playfair Display", serif;
+$font-heading-accent: "brandon-grotesque", sans-serif;
 $font-body: "calluna", serif;
 
 /*********************************************************

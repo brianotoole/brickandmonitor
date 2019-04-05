@@ -35,6 +35,9 @@ h2,
 h3,
 .h3 {
     font-size: font-scale(2);
+    font-family: $font-heading-accent;
+    font-weight: 500;
+    letter-spacing: 1px;
     @include bp_md {
         font-size: font-scale(4);
     }
