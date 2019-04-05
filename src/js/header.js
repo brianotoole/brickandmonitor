@@ -9,11 +9,12 @@ trigger.on('click', function() {
   $('.header__nav, .header__logo').removeClass('header--shrink-width');
   $(this).toggleClass('animate');
   //if ($(".nav-open").length > 0) {
-  $('.hamburger').addClass('hide');
+  //$('.hamburger').addClass('hide');
   //}   
 });
 
 // Hide Header on on scroll down
+/*
 var didScroll;
 var lastScrollTop = 0;
 var delta = 5;
@@ -40,13 +41,13 @@ function hasScrolled() {
     // If they scrolled down and are past the navbar
     if (st > lastScrollTop && st > navbarHeight){
         // Scroll Down
-        $('.header__nav, .header__logo').addClass('header--shrink-width');  
+        $('.header__nav, .header__logo img').addClass('header--shrink-width');  
         $('.header').addClass('header--is-small'); 
         $('.hamburger').removeClass('hide animate');
     } else {
         // Scroll Up
         if(st + $(window).height() < $(document).height()) {
-          $('.header__nav, .header__logo').removeClass('header--shrink-width'); 
+          $('.header__nav, .header__logo img').removeClass('header--shrink-width'); 
           $('.header').removeClass('header--is-small'); 
           $('.hamburger').removeClass('hide animate');
         }
@@ -54,3 +55,4 @@ function hasScrolled() {
     
     lastScrollTop = st;
 }
+*/

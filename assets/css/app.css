@@ -1531,16 +1531,21 @@ body {
   position: fixed;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   width: 100%;
   height: auto;
   top: 0;
   left: 0;
   margin: 0;
-  padding: 1.25rem 0 0.75rem;
+  padding: 1.875rem 1.875rem 0.75rem;
+  background: #111;
   z-index: 9999;
   transition: all 0.25s ease-out; }
+  .header--is-small {
+    background: #111;
+    padding-top: 1.25rem;
+    transition: all 0.25s ease-out; }
 
 .header--shrink-width {
   width: 62px !important;
@@ -1551,29 +1556,26 @@ body {
 .header__logo {
   top: 0;
   z-index: 2;
-  width: 75px;
-  height: 100%;
-  overflow: hidden;
-  transition: width 0.25s ease-out; }
-  @media (min-width: 800px) {
-    .header__logo {
-      width: 85px; } }
+  margin-right: calc(50% - 40px); }
+  .header__logo img {
+    width: 75px;
+    transition: width 0.25s ease-out; }
+    @media (min-width: 800px) {
+      .header__logo img {
+        width: 85px; } }
 
 .header__nav {
-  width: calc(100vw - 75px);
-  padding-right: 0.9375rem;
+  display: none;
+  width: 37.5rem;
+  padding-left: 1.875rem;
   list-style: none;
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-align: center;
       align-items: center;
-  -ms-flex-pack: end;
-      justify-content: flex-end;
-  background: rgba(17, 17, 17, 0.99);
   transition: width 0.25s linear; }
-  @media (min-width: 800px) {
-    .header__nav {
-      width: 675px; } }
+
+.nav-open .header__nav {
+  display: -ms-flexbox;
+  display: flex; }
 
 .header__nav li {
   opacity: 0;
@@ -1635,16 +1637,7 @@ body {
     transition: background 0.2s ease-out; }
 
 .hamburger {
-  display: none;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
-  right: 0;
-  top: 0;
-  position: absolute;
-  width: 50%;
-  height: 100%;
+  margin-top: -10px;
   padding: 0;
   border: 0;
   background: rgba(17, 17, 17, 0.99);
@@ -1652,9 +1645,6 @@ body {
   cursor: pointer;
   outline: none;
   transition: opacity 0.5s cubic-bezier(0.215, 0.61, 0.355, 1); }
-  .header--is-small .hamburger {
-    display: -ms-flexbox;
-    display: flex; }
 
 .hamburger .lines {
   display: block;

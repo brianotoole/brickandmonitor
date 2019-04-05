@@ -5,15 +5,21 @@
 .header {
   position: fixed;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   width: 100%;
   height: auto;
   top: 0;
   left: 0;
   margin: 0;
-  padding: rem(20) 0 rem(12);
+  padding: rem(30) rem(30) rem(12);
+  background: $color-black;
   z-index: 9999;
   transition: all 0.25s ease-out;
+  &--is-small {
+    background: $color-black;
+    padding-top: rem(20);
+    transition: all 0.25s ease-out;
+  }
 }
 
 .header--shrink-width {
@@ -24,31 +30,31 @@
  }
 }
 
+
 // Header nav
 .header__logo {
   top: 0;
   z-index: 2;
-  width: 75px;
-  height: 100%;
-  overflow: hidden;
-  transition: width 0.25s ease-out;
-  @include bp_md {
-    width: 85px;
+  margin-right: calc(50% - 40px);
+  img {
+    width: 75px;
+    transition: width 0.25s ease-out;
+    @include bp_md {
+      width: 85px;
+    }
   }
 }
 
 .header__nav {
-  width: calc(100vw - 75px); //minus height of header__logo
-  padding-right: rem(15);
+  display: none;
+  width: rem(600);
+  padding-left: rem(30);
   list-style: none;
-  display: flex;
   align-items: center;
-  justify-content: flex-end;
-  background: rgba($color-secondary, 0.99);
   transition: width 0.25s linear;
-  @include bp_md {
-    width: 675px;
-  }
+}
+.nav-open .header__nav {
+  display: flex;
 }
 
 .header__nav {
@@ -107,14 +113,8 @@
 }
 
 .hamburger {
-  display: none;
-  justify-content: center;
-  align-items: center;
-  right: 0;
-  top: 0;
-  position: absolute;
-  width: 50%;
-  height: 100%;
+  //display: none;
+  margin-top: -10px;
   padding: 0;
   border: 0;
   background: rgba($color-secondary, 0.99);
@@ -123,7 +123,7 @@
   outline: none;
   transition: opacity 0.5s cubic-bezier(.215,.61,.355,1);
   .header--is-small & {
-    display: flex;
+    //display: flex;
   }
 }
 
