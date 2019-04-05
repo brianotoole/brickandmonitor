@@ -1539,7 +1539,7 @@ body {
   left: 0;
   margin: 0;
   padding: 1.875rem 1.875rem 0.75rem;
-  background: #111;
+  background: transparent;
   z-index: 9999;
   transition: all 0.25s ease-out; }
   .header--is-small {
@@ -1550,8 +1550,6 @@ body {
 .header--shrink-width {
   width: 62px !important;
   transition: width 0.25s ease-out; }
-  .header--shrink-width li {
-    display: none; }
 
 .header__logo {
   top: 0;
