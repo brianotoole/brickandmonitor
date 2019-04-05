@@ -11,19 +11,20 @@
   top: 0;
   left: 0;
   margin: 0;
-  padding: rem(30) rem(30) rem(12);
+  padding: rem(30) rem(30) rem(20);
   background: transparent;
   z-index: 9999;
   transition: all 0.25s ease-out;
   &--is-small {
     background: $color-black;
-    padding-top: rem(20);
+    padding-top: rem(10);
+    padding-bottom: rem(2);
     transition: all 0.25s ease-out;
   }
 }
 
 .header--shrink-width {
- width: 62px!important;
+ width: 75px!important;
  transition: width 0.25s ease-out;
 }
 

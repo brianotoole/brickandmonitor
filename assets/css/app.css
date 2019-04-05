@@ -1538,17 +1538,18 @@ body {
   top: 0;
   left: 0;
   margin: 0;
-  padding: 1.875rem 1.875rem 0.75rem;
+  padding: 1.875rem 1.875rem 1.25rem;
   background: transparent;
   z-index: 9999;
   transition: all 0.25s ease-out; }
   .header--is-small {
     background: #111;
-    padding-top: 1.25rem;
+    padding-top: 0.625rem;
+    padding-bottom: 0.125rem;
     transition: all 0.25s ease-out; }
 
 .header--shrink-width {
-  width: 62px !important;
+  width: 75px !important;
   transition: width 0.25s ease-out; }
 
 .header__logo {
