@@ -15,19 +15,19 @@
 }
 
 // Colors: text
+.u-text-primary {
+  color: $color-primary;
+}
+
+.u-text-secondary {
+  color: $color-secondary;
+}
+
 .u-text-white {
   color: $color-white;
 }
 
-.text-primary {
-  color: $color-primary;
-}
-
-.text-secondary {
-  color: $color-secondary;
-}
-
-.text-body {
+.u-text-body {
   color: $color-body;
 }
 

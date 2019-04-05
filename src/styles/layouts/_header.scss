@@ -5,16 +5,15 @@
 .header {
   position: fixed;
   display: flex;
-  height: 75px;
+  justify-content: center;
+  width: 100%;
+  height: auto;
   top: 0;
   left: 0;
   margin: 0;
-  padding: 0;
+  padding: rem(20) 0 rem(12);
   z-index: 9999;
   transition: all 0.25s ease-out;
-  @include bp_md {
-    height: 95px;
-  }
 }
 
 .header--shrink-width {
@@ -27,20 +26,14 @@
 
 // Header nav
 .header__logo {
-  display: flex;
-  justify-content: center;
   top: 0;
   z-index: 2;
   width: 75px;
   height: 100%;
-  background: $color-primary;
   overflow: hidden;
   transition: width 0.25s ease-out;
   @include bp_md {
-    width: 95px;
-  }
-  img {
-    margin-left: -2px;
+    width: 85px;
   }
 }
 
