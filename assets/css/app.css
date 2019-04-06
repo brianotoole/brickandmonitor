@@ -1553,7 +1553,7 @@ body {
   transition: width 0.25s ease-out; }
 
 .header__logo {
-  margin: 0 auto;
+  margin-right: calc(50% - 40px);
   z-index: 2; }
   .header__logo img {
     width: 75px;
