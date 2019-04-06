@@ -31,9 +31,8 @@
 
 // Header nav
 .header__logo {
-  top: 0;
+  margin: 0 auto;
   z-index: 2;
-  margin-right: calc(50% - 40px);
   img {
     width: 75px;
     transition: width 0.25s ease-out;

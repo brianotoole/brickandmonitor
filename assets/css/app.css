@@ -1553,9 +1553,8 @@ body {
   transition: width 0.25s ease-out; }
 
 .header__logo {
-  top: 0;
-  z-index: 2;
-  margin-right: calc(50% - 40px); }
+  margin: 0 auto;
+  z-index: 2; }
   .header__logo img {
     width: 75px;
     transition: width 0.25s ease-out; }
