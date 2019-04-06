@@ -31,8 +31,13 @@
 
 // Header nav
 .header__logo {
-  margin-right: calc(50% - 40px);
+  margin-right: 0;
   z-index: 2;
+  order: -1;
+  @include bp_md {
+    margin-right: calc(50% - 40px);
+    order: 0;
+  }
   img {
     width: 75px;
     transition: width 0.25s ease-out;
@@ -43,12 +48,16 @@
 }
 
 .header__nav {
-  display: none;
-  width: rem(600);
+  display: flex;
+  width: auto;
   padding-left: rem(30);
   list-style: none;
   align-items: center;
   transition: width 0.25s linear;
+  @include bp_md {
+    display: none;
+    width: rem(600);
+  }
 }
 .nav-open .header__nav {
   display: flex;
@@ -121,6 +130,9 @@
   transition: opacity 0.5s cubic-bezier(.215,.61,.355,1);
   .header--is-small & {
     //display: flex;
+  }
+  @media (max-width: $bp_md) {
+    display: none;
   }
 }
 
