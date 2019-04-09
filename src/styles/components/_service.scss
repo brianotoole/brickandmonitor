@@ -1,73 +1,45 @@
 // Services
-
 .services {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  width: 100%;
-  margin: rem(-15);
+  margin: rem(-15);	
 }
 
 .service {
-  position: relative;
-  flex: 1 0 100%;
+  flex: 1 0 calc(12 / 12 * 100% - 30px);
+  padding: rem(15);
   margin: rem(15);
-  text-align: center;
-  border-bottom: 1px solid $color-grey-light;
-  border-right: 0;
-  &:last-child() {
-    border: 0;
-  }
-  @media (min-width: $bp-md) {
-    flex: 1;
-    text-align: left;
-    border-bottom: 0;
-    border-right: 1px solid $color-grey-light;
+  border: 1px solid $color-black;
+  text-align: left;
+  @include bp_md {
+    flex-basis: calc(3 / 12 * 100% - 60px);
+    padding: rem(30);
+    padding-bottom: rem(100);
+    margin: rem(15);	
   }
 }
 
 .service__number {
-  position: absolute;
-  color: $color-white;
-  font-size: 2rem;
-  font-weight: 700;
-  left: 36px;
-  top: 36px;
-  letter-spacing: 1px;
-  @media (max-width: $bp-md) {
-    display: none;
-  }
+  font-family: $font-heading;
 }
 
-.service__content {
-  padding: rem(30);
-  color: $color-white;
-  @media (min-width: $bp-md) {
-    padding: rem(120) 10% rem(60);
-    height: 750px;
-  }
+.service__title {}
+
+.service__hr {
+  @extend .heading-seperator;
+  margin-left: 0;
+  margin-bottom: rem(15);
+  border-width: 1px;
+}
+
+.service__item {
+  font-size: font-scale(1);
+  list-style: none;
 }
 
 
-.service__title {
-  margin-top: 0;
-  margin-bottom: rem(30);
-  color: $color-white;
-}
 
-.service__title--service {
-  margin: 0;
-  padding: rem(5) 0;
-  letter-spacing: 1px;
-  font-size: rem(14);
-  text-transform: uppercase;
-  color: $color-grey;
-}
-
-.service__icon {
-  display: block;
-  margin-top: rem(60);
-  text-align: center;
-}
 
 
 .icon-card-wrap {

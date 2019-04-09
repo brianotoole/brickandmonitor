@@ -7,12 +7,12 @@ hero-subtitle:
 hero-bg: home
 ---
 
-<section class="section section--pad section--primary">
+<section class="section section--pad section--white">
     <div class="wrapper">
       <div class="row-flex">
-        <div class="row-flex__md-12 cta cta--centered">
-          <p>A team of designers, developers &amp; marketers connecting brands with audiences through intelligent design & technology.</p>
-          <a href="{{site.baseurl}}/about" class="btn btn--secondary">Learn More</a>
+        <div class="row-flex__md-12">
+          <h2 class="heading heading--centered">Core Services</h2>
+          {% include services.html %}
         </div><!-- /.col -->
       </div><!-- /.row-flex -->
     </div><!-- /.wrapper -->
@@ -24,7 +24,6 @@ hero-bg: home
       <div class="row-flex">
         <div class="row-flex__md-12">
           <h2 class="heading heading--centered">Featured Projects</h2>
-          <div class="heading-seperator"></div>
             {% include projects-list-limit-home.html %}
         </div><!-- /.col -->
       </div><!-- /.row-flex -->
@@ -49,7 +48,6 @@ hero-bg: home
     <div class="row-flex">
       <div class="row-flex__md-12">
         <h2 class="heading heading--centered">What to Expect</h2>
-        <div class="heading-seperator"></div>
         <ul class="icon-card-wrap">
           <a href="" class="icon-card">
             <li><span class="lnr lnr-picture"></span>Breakthrough design</li>

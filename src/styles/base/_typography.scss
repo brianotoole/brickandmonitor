@@ -27,6 +27,7 @@ h1,
 h2,
 .h2 {
     font-size: font-scale(2.5);
+    font-weight: 500;
     @include bp_md {
         font-size: font-scale(5);
     }
@@ -37,17 +38,21 @@ h3,
     font-size: font-scale(2);
     font-family: $font-heading-accent;
     font-weight: 500;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     @include bp_md {
-        font-size: font-scale(4);
+        font-size: font-scale(4.5);
     }
 }
 
 h4,
 .h4 {
-    font-size: font-scale(1.5);
+    font-size: font-scale(2);
+    font-family: $font-heading-accent;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     @include bp_md {
-        font-size: font-scale(3);
+        font-size: font-scale(1);
     }
 }
 
@@ -80,11 +85,8 @@ pre.highlight {
 }
 
 .heading {
-    @extend h5;
-    margin-bottom: rem(20);
-    &--m-bottom {
-        padding-bottom: rem(60);
-    }
+    @extend h2;
+    margin-bottom: rem(60);
     &--centered {
         text-align: center;
     }
@@ -104,6 +106,6 @@ pre.highlight {
     border-bottom-style: solid;
     border-bottom-width: 3px;
     border-bottom-color: $color-primary;
-    width: 50px;
+    width: 45px;
     margin: 0 auto rem(60);
 }
