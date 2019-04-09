@@ -3,7 +3,7 @@
 *********************************************************/
 
 // Mobile nav
-var trigger = $('.js-hamburger, .modal__close');
+var trigger = $('.js-hamburger');
 trigger.on('click', function() {
   $('body').toggleClass('hamburger-menu-open nav-open');
   $('.header__nav, .header__logo').removeClass('header--shrink-width');
