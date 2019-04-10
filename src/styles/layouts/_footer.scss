@@ -42,7 +42,7 @@
   padding-top: rem(5);
   text-transform: uppercase;
   color: rgba($color-white, 0.5);
-  font-size: rem(12);
+  font-size: rem(13);
   letter-spacing: 5px;
 }
 .footer__bottom {
@@ -51,7 +51,7 @@
   padding-bottom: rem(30);
   border-top: 1px solid rgba($color-white, 0.15);
   color: rgba($color-white, 0.5);
-  font-size: rem(14);
+  font-size: rem(13);
   @include bp_md() {
     justify-content: space-between;
   }
@@ -60,7 +60,7 @@
 .footer__bottom-copy {
   width: auto;
   * {
-    font-size: rem(14);
+    font-size: rem(16);
   }
 }
 .footer__bottom-links {

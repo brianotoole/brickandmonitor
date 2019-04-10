@@ -5,22 +5,24 @@
 .btn {
   display: inline-block;
   margin-bottom: rem(15);
-  padding: 0 rem(20);
+  padding: 0 rem(15);
   height: rem(42);
   line-height: rem(42);
-  font-family: $font-body;
+  font-family: $font-heading-accent;
   font-size: font-scale(0);
   font-weight: normal;
   color: $color-white;
   background-color: $color-primary;
   border-radius: 0;
+  text-transform: uppercase;
   text-decoration: none;
   text-align: center;
+  letter-spacing: 1px;
   white-space: nowrap;
   cursor: pointer;
   transition: all 0.25s linear;
   @include bp_md() {
-      padding: 0 rem(20);
+      padding: 0 rem(30);
   }
   &:hover,
   &:focus {
@@ -41,12 +43,23 @@
   &--muted {
       color: $color-primary;
       background-color: transparent;
+      border-width: 0;
       border-color: $color-primary;
       &:hover,
       &:focus {
           background-color: $color-primary;
           border-color: $color-primary-dark;
       }
+  }
+  &--border {
+    color: $color-black;
+    background-color: transparent;
+    border: 1px solid $color-black;
+    &:hover,
+    &:focus {
+        background-color: $color-primary;
+        border-color: $color-primary-dark;
+    }
   }
   &--arrow {
       transition: color 0.2s ease-in-out;

@@ -1705,7 +1705,7 @@ body {
   padding-top: 0.3125rem;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.5);
-  font-size: 0.75rem;
+  font-size: 0.8125rem;
   letter-spacing: 5px; }
 
 .footer__bottom {
@@ -1715,7 +1715,7 @@ body {
   padding-bottom: 1.875rem;
   border-top: 1px solid rgba(255, 255, 255, 0.15);
   color: rgba(255, 255, 255, 0.5);
-  font-size: 0.875rem; }
+  font-size: 0.8125rem; }
   @media (min-width: 800px) {
     .footer__bottom {
       -ms-flex-pack: justify;
@@ -1726,7 +1726,7 @@ body {
   width: auto; }
   .footer__bottom-links *,
   .footer__bottom-copy * {
-    font-size: 0.875rem; }
+    font-size: 1rem; }
 
 .footer__bottom-links {
   list-style: none;
@@ -2029,23 +2029,25 @@ html.fp-enabled,
 .btn {
   display: inline-block;
   margin-bottom: 0.9375rem;
-  padding: 0 1.25rem;
+  padding: 0 0.9375rem;
   height: 2.625rem;
   line-height: 2.625rem;
-  font-family: "calluna", serif;
+  font-family: "brandon-grotesque", sans-serif;
   font-size: 1rem;
   font-weight: normal;
   color: #ffffff;
   background-color: #FF3233;
   border-radius: 0;
+  text-transform: uppercase;
   text-decoration: none;
   text-align: center;
+  letter-spacing: 1px;
   white-space: nowrap;
   cursor: pointer;
   transition: all 0.25s linear; }
   @media (min-width: 800px) {
     .btn {
-      padding: 0 1.25rem; } }
+      padding: 0 1.875rem; } }
   .btn:hover, .btn:focus {
     text-decoration: none;
     color: #ffffff;
@@ -2060,8 +2062,16 @@ html.fp-enabled,
   .btn--muted {
     color: #FF3233;
     background-color: transparent;
+    border-width: 0;
     border-color: #FF3233; }
     .btn--muted:hover, .btn--muted:focus {
+      background-color: #FF3233;
+      border-color: #e50001; }
+  .btn--border {
+    color: #111;
+    background-color: transparent;
+    border: 1px solid #111; }
+    .btn--border:hover, .btn--border:focus {
       background-color: #FF3233;
       border-color: #e50001; }
   .btn--arrow {
