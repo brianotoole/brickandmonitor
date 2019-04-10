@@ -5,20 +5,20 @@
 .btn {
   display: inline-block;
   margin-bottom: rem(15);
-  padding: 0 rem(15);
+  padding: 0 rem(20);
   height: rem(42);
-  line-height: rem(44);
-  font-family: $font-heading;
+  line-height: rem(42);
+  font-family: $font-body;
   font-size: font-scale(0);
   font-weight: normal;
   color: $color-white;
   background-color: $color-primary;
-  border-radius: 32px;
+  border-radius: 0;
   text-decoration: none;
   text-align: center;
   white-space: nowrap;
   cursor: pointer;
-  transition: all 0.3s linear;
+  transition: all 0.25s linear;
   @include bp_md() {
       padding: 0 rem(20);
   }

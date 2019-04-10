@@ -6,9 +6,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  height: auto;
-  min-height: rem(650);
-  padding: rem(120) 0 rem(60);
+  height: rem(650);
   &--full-height {
     height: 100vh;
   }
@@ -21,15 +19,15 @@
 }
 
 .hero__bg {
-  visibility: hidden; // added for tween
-  transform-origin: 0 100%; //added for tween
+  //visibility: hidden; // added for tween
+  //transform-origin: 0 100%; //added for tween
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
-  background-position: 88% 55px;
+  //background-position: 88% 55px;
   background-size: cover;
   &:before {
     content: '';

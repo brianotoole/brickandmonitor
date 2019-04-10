@@ -133,6 +133,10 @@ body {
     background-color: $color-secondary;
     color: $color-white;
   }
+  &--tertiary {
+    background-color: $color-tertiary;
+    color: $color-black;
+  }
   &--dark {
     background-color: $color-grey-dark;
     color: $color-white;
@@ -195,37 +199,6 @@ body {
 
 .cta--centered {
   text-align: center;
-}
-
-.icon-card-wrap {
-  display: flex;
-  flex-wrap: wrap;
-  margin: rem(-15);
-  padding-bottom: rem(5);
-}
-.icon-card {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  width: calc(12 / 12 * 100%);
-  margin: rem(15);
-  padding: rem(60) rem(30);
-  background: $color-white;
-  transition: all 0.2s linear;
-  @include bp_md {
-    width: calc(4 / 12 * 100% - 30px);
-    padding: rem(60);
-  }
-  @include cardHover();
-  li {
-    display: flex;
-    align-items: center;
-  }
-  span {
-    padding-right: rem(20);
-    font-size: rem(50);
-    color: $color-tertiary!important;
-  }
 }
 
 
