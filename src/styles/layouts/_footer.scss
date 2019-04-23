@@ -26,6 +26,14 @@
     }
   }
 }
+
+.footer__top {
+  > div {
+    @media (max-width: $bp_md) {
+      margin: 0 auto rem(60);
+    }
+  }
+}
 .footer-link__wrap {
   background: $color-primary;
   color: $color-white;

@@ -141,5 +141,8 @@
   li {
     list-style: none;
     @extend .h4;
+    @media (max-width: $bp_md) {
+      font-size: font-scale(0);
+    }
   }
 }

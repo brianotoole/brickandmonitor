@@ -47,7 +47,10 @@ textarea {
 
 textarea {
   max-width: 100%;
-  height: 125px;
+  height: 80px;
+  @include bp_md {
+    height: 125px;
+  }
 }
 
 .contact-input {

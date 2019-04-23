@@ -20,7 +20,7 @@
   padding: 50px;
   color: $color-black;
   background: $color-white;
-  border: 1px solid $color-black;
+  border: 1px solid $color-border;
   transition: background 0.2s ease-in-out, color 0.25s ease-in-out;
   @media (max-width: $bp-md) {
     flex-basis: calc(100% - 40px);

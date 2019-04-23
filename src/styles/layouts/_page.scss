@@ -188,9 +188,9 @@ body {
   margin: 0 auto;
   @include bp_md {
     max-width: 80%;
-  }
-  * {
-    font-size: font-scale(4);
+    * {
+      font-size: font-scale(4);
+    }
   }
 }
 
@@ -265,9 +265,13 @@ body {
 
 // Team
 .team-block {
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
   @include bp_md {
     max-width: 80%;
-    margin: 0 auto;
+    justify-content: space-between;
+    text-align: left;
   }
 }
 .contact-content {
