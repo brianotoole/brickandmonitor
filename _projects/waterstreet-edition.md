@@ -11,31 +11,27 @@ textcolor: ffffff
 hero-title: The Tampa EDITION
 hero-subtitle: We helped build and the launch announcement for the new Tampa hotel.
 description: As Water Street Tampa's first five-star hotel, The Tampa EDITION will be the cultural focal point of the Water Street Tampa neighborhood.
+slider-img-1: project-edition-home-m.jpg
+slider-img-2: project-edition-home-m2.jpg
+takeaways: Water Street Tampa will create 2 million square feet of new office space, including downtown Tampa's first new office towers in nearly 25 years. The project, led by Strategic Property Partners, will provide a vibrant vision for the future of Tampa and for the 23,000+ people who live, work, study, and visit each day.
 ---
 
-Water Street Tampa will create 2 million square feet of new office space, including downtown Tampa's first new office towers in nearly 25 years. The project, led by Strategic Property Partners, will provide a vibrant vision for the future of Tampa and for the 23,000+ people who live, work, study, and visit each day.
+<div class="row-flex__md-6">
+<h4 class="">Objectives</h4>
+<ul>
+<li>- Create excitement for the hotel</li>
+<li>- Generate an increase in traffic and awareness for the project</li>
+</ul>
+</div>
 
-The Tampa EDITION will be the cultural focal point of the Water Street Tampa neighborhood.
-
-We partnered with SPP to build and the launch announcement for the Tampa EDITION hotel online.
-
-#### Objectives
-
-- Create excitement for the hotel
-- Generate an increase in traffic and awareness for the project
-
-#### Work Involved
-
-I helped with strategy for user experience, technology selection, and web development for. The site was built mobile-first and Jekyll with Webpack with Webpack for an optimal development workflow.
-
-#### Takeaway
-
-The site received hundreds of views per day (most visits on mobile) and is showcased prominently throughout downtown Tampa.
-
-![waterstreet edition 1](/assets/images/project-edition1.png)
-
-![waterstreet edition 2](/assets/images/project-edition2.png)
-
-![waterstreet edition 3](/assets/images/project-edition3.png)
-
-![waterstreet edition 4](/assets/images/project-edition4.png)
+<div class="row-flex__md-6">
+<h4 class="">Work Involved</h4>
+<ul>
+<li>- UX Design</li>
+<li>- Web design</li>
+<li>- Web development</li>
+<li>- Technology selection </li>
+<li>- Email marketing</li>
+<li>- Growth management</li>
+</ul>
+</div>

@@ -119,6 +119,12 @@ body {
 // Sections
 .section {
   position: relative;
+  padding-top: rem(60);
+  padding-bottom: rem(60);
+  @include bp_md {
+    padding-top: rem(120);
+    padding-bottom: rem(120);
+  }
   &--full-height {
     height: 100vh !important;
   }
@@ -160,23 +166,14 @@ body {
     background-image: url('/assets/images/dots.png');
     background-size: 7px 7px;
   }
-}
-
-.section--pad {
-  padding-top: rem(60);
-  padding-bottom: rem(60);
-  @include bp_md {
-    padding-top: rem(90);
-    padding-bottom: rem(90);
+  &--pad-0 {
+    padding: 0
   }
-}
-
-.section--pad-lg {
-  padding-top: rem(60);
-  padding-bottom: rem(60);
-  @include bp_md {
-    padding-top: rem(120);
-    padding-bottom: rem(120);
+  &--pad-top-0 {
+    padding-top: 0
+  }
+  &--pad-btm-0 {
+    padding-bottom: 0
   }
 }
 
@@ -267,7 +264,16 @@ body {
 }
 
 // Team
-.team-block + .team-block {
-  border-top: 1px solid #f5f5f5;
-  padding-top: rem(50);
+.team-block {
+  @include bp_md {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+.contact-content {
+  img {
+    width: 175px;
+    height: auto;
+    border-radius: 100%;
+  }
 }

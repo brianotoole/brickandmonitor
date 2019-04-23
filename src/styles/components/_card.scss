@@ -23,6 +23,7 @@
   padding: 0;
   background: $color-white;
   border-radius: 0!important;
+  border: 1px solid $color-border;
   transition: all 0.2s linear;
   @include cardHover();
   @include bp_md {
@@ -33,7 +34,7 @@
 .card__header {
   position: relative;
   width: 100%;
-  height: 250px;
+  height: 200px;
   background-image: url('/assets/images/bg-nonprofit.jpg');
   background-position: center center;
   background-size: cover;
@@ -43,7 +44,7 @@
     background-image: url("/assets/images/bg-pubaffairs.jpg")
   }
   &--3 {
-    background-image: url("/assets/images/bg-nonprofit.jpg")
+    background-image: url("/assets/images/bg-realestate.jpg")
   }
 }
 

@@ -9,7 +9,9 @@ import 'styles/app.scss';
 require ('./header.js');
 require ('./form.js');
 require ('./tweens.js');
+require ('./slick-slider.js');
 
 // Components
 import Modal from './Modal';
 var modal = new Modal();
+

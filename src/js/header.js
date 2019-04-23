@@ -54,3 +54,12 @@ function hasScrolled() {
     
     lastScrollTop = st;
 }
+
+
+// Accordion click
+$(function() {
+  $('.accordion__toggle').click(function() {
+    $(this).toggleClass('open');
+    $(this).closest('.accordion').find('.accordion__inner').slideToggle();
+  });
+});

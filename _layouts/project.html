@@ -1,22 +1,71 @@
 ---
-layout: page
+layout: default
 bodyclass: page-project
 hero-bg: dark-l
 ---
 
-<section class="section section--pad section--content" id="more">
-  <div class="wrapper">
-    <div class="row-flex">
-      <div class="row-flex__md-12">
-        <div class="entry-content">
-          <blockquote style="border-color:#{{ page.bgcolor }};">
-            <span class="lnr lnr-exit-up"></span>
-            <a href="{{ page.link }}" class="project-url"
-              style="color:#{{ page.bgcolor }};" target="_blank">View website</a>
-          </blockquote>
+<section class="section section--{{ page.hero-bg }} hero hero--page-interior">
+    <div class="wrapper">
+      <div class="row-flex">
+        <div class="row-flex__md-12">
+          <div class="hero__content hero__content--centered">
+            <h1 class="hero__title h3">{{ page.hero-title }}</h1>
+            <div class="hero__scroll hero__scroll--centered">
+              <a href="#more"><span></span></a>
+            </div><!--/.hero-scroll-->
+          </div><!-- /.hero-content -->
+        </div><!-- /.col -->
+      </div><!-- .row-flex -->
+    </div><!-- /.wrapper -->
+  </section>
+
+  <section class="section section--pad section--primary">
+    <div class="wrapper">
+      <div class="row-flex">
+        <div class="row-flex__md-12 cta cta--centered">
+          <h2 class="heading--centered">Project Intro</h2>
+          <p>{{ page.hero-subtitle }}</p>
+        </div><!-- /.col -->
+      </div><!-- /.row-flex -->
+    </div><!-- /.wrapper -->
+  </section>
+
+  <section class="section section--pad section--white">
+      <div class="wrapper">
+        <div class="row-flex">
           {{ content }}
-        </div><!--/.entry-content-->
-      </div><!--/.col-->
-    </div><!--/.row-->
-  </div><!--/.container-->
-</section>
+        </div><!-- /.row-flex -->
+      </div><!-- /.wrapper -->
+    </section>
+
+
+  <div class="projects-slider">
+      <!-- Item -->
+      <div class="item">
+        <div class="img-fill">
+          <img src="{{site.baseurl}}/assets/images/{{page.slider-img-1}}">
+        </div>
+      </div>
+      <!-- // Item -->
+      <!-- Item -->
+      <div class="item">
+        <div class="img-fill">
+            <img src="{{site.baseurl}}/assets/images/{{page.slider-img-2}}">
+        </div>
+      </div>
+      <!-- // Item -->
+    </div>
+
+    <section class="section section--pad section--white">
+        <div class="wrapper">
+          <div class="row-flex">
+            <div class="row-flex__md-12 u-text-center">
+              <h2 class="heading--centered">Takeaways</h2>
+              <p>{{ page.takeaways }}</p>
+              <a href="{{ page.link }}" class="btn btn--secondary" target="_blank">See Project Online</a>
+            </div><!-- /.col -->
+          </div><!-- /.row-flex -->
+        </div><!-- /.wrapper -->
+      </section>
+
+

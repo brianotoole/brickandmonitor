@@ -24,17 +24,17 @@
 }
 
 .header--shrink-width {
- width: 75px!important;
+ width: 65px!important;
  transition: width 0.25s ease-out;
 }
 
 
 // Header nav
 .header__logo {
-  margin-right: calc(50% - 40px);
+  margin: 0 auto;
   z-index: 2; 
   img {
-    width: 75px;
+    width: 70px;
     transition: width 0.25s ease-out;
     @include bp_md {
       width: 85px;
@@ -47,7 +47,6 @@
   padding-left: rem(30);
   list-style: none;
   align-items: center;
-  transition: width 0.25s linear;
   width: 100%;
   height: 100vh;
   background: $color-primary;
@@ -55,15 +54,17 @@
   left: 0;
   top: 0;
   padding-top: rem(115);
-  transform: translateX(-100%);
-  transition: transform 0.25s ease-out;
+  z-index: 99;
+  transform: translateY(-100%);
+  visibility: hidden;
+  transition: all 0.25s ease-out;
   @include bp_md {
-    width: 25%;
     padding-top: rem(160);
   }
 }
 .nav-open .header__nav {
   transform: translateX(0);
+  visibility: visible;
 }
 
 .nav-open .header__nav {
@@ -71,7 +72,6 @@
   li {
     opacity: 0;
     padding: 0 rem(12.5);
-    font-family: $font-heading;
   }
   @for $index from 1 through 4 {
     li:nth-child(#{$index}) {
@@ -88,6 +88,8 @@
 .header__nav li a {
   color: $color-white;
   font-size: font-scale(4);
+  font-family: $font-heading-accent;
+  text-transform: uppercase;
   vertical-align: middle;
   transform: perspective(1px) translateZ(0);
   position: relative;
@@ -127,7 +129,7 @@
   padding: 0;
   border: 0;
   background: rgba($color-secondary, 0.99);
-  z-index: 2;
+  z-index: 999;
   cursor: pointer;
   outline: none;
   transition: opacity 0.5s cubic-bezier(.215,.61,.355,1);

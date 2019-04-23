@@ -18,10 +18,9 @@
   min-height: 400px;
   margin: 20px;
   padding: 50px;
-  color: $color-white;
-  background: $color-grey-light;
-  border: 1px solid $color-grey-light;
-  border-radius: 6px;
+  color: $color-black;
+  background: $color-white;
+  border: 1px solid $color-black;
   transition: background 0.2s ease-in-out, color 0.25s ease-in-out;
   @media (max-width: $bp-md) {
     flex-basis: calc(100% - 40px);

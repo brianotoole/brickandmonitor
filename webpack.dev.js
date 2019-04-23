@@ -6,6 +6,7 @@
 //   * if you are not using lando just update the [proxy] to match your server
 
 const path = require('path');
+const webpack = require("webpack");
 const merge = require('webpack-merge');
 const common = require('./webpack.common.js');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
@@ -58,6 +59,10 @@ module.exports = merge(common, {
         return getPath('css/app.css').replace('css/js', 'css');
       },
     }),
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery"
+  })
   ],
   resolve: {
     alias: {

@@ -2,12 +2,12 @@
 layout: home
 title: Brick & Monitor - Helping mission-critical brands breakthrough online, located in Tampa, Florida.
 bodyclass: page-home
-hero-title: We are a digital experience design agency with a relentless focus on the customer.
+hero-title: 
 hero-subtitle:
 hero-bg: home
 ---
 
-<section class="section section--pad section--white">
+<section class="section section--white">
     <div class="wrapper">
       <div class="row-flex">
         <div class="row-flex__md-12">
@@ -24,63 +24,47 @@ hero-bg: home
   </section>
   
 
-<section class="section section--pad section--grey">
-    <div class="wrapper">
-      <div class="row-flex">
-        <div class="row-flex__md-12">
-          <h2 class="heading heading--centered">Featured Projects</h2>
-            {% include projects-list-limit-home.html %}
-        </div><!-- /.col -->
-      </div><!-- /.row-flex -->
-    </div><!-- /.wrapper -->
-  </section>
-
-<!--
-<section class="section section--pad section--services">
-  <div class="wrapper">
-    <div class="row-flex">
-      <div class="row-flex__md-12">
-        <h2 class="heading-underline">What We Do</h2>
-        
+<section class="section section--white section--how section--pad-0">
+  <div class="slider">
+    <div class="slider__left">
+      <div class="slider__image slider__image--one"></div>
+    </div>
+    <div class="slider__right">
+      <div class="slider__content">
+        <h2 class="slider__heading">Helping brands adapt.</h2>
+        <div class="service__hr"></div>
+        <p class="slider__text">Marketing and technology changes by the minute. We help your brand stay afloat amidst the evolution and approach design decisions with the future in mind.</p>
       </div>
     </div>
   </div>
 </section>
--->
 
-<section class="section section--pad section--services section--light">
+<section class="section section--white section--how section--pad-0">
+    <div class="slider">
+      <div class="slider__left reverse">
+        <div class="slider__image slider__image--two"></div>
+      </div>
+      <div class="slider__right">
+        <div class="slider__content">
+          <h2 class="slider__heading">Agency reach. Without the overhead.</h2>
+          <div class="service__hr"></div>
+          <p class="slider__text">When you work with us you inherit the personal, devoted attention of a full-service agency… without the pricetag.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="section section--white">
   <div class="wrapper">
     <div class="row-flex">
-      <div class="row-flex__md-12">
-        <h2 class="heading heading--centered">What to Expect</h2>
-        <ul class="icon-card-wrap">
-          <a href="" class="icon-card">
-            <li><span class="lnr lnr-picture"></span>Breakthrough design</li>
-          </a>
-          <a href="" class="icon-card">
-            <li><span class="lnr lnr-laptop-phone"></span>Future-proof development</li>
-          </a>
-          <a href="" class="icon-card">
-            <li><span class="lnr lnr-spell-check"></span>Content creation</li>
-          </a>
-          <a href="" class="icon-card">
-            <li><span class="lnr lnr-magic-wand"></span>Creative strategy</li>
-          </a>
-          <a href="" class="icon-card">
-            <li><span class="lnr lnr-cog"></span>Technical strategy</li>
-          </a>
-          <a href="" class="icon-card">
-            <li><span class="lnr lnr-store"></span>E-commerce integration</li>
-          </a>
-          <!--<li><a class="btn btn--arrow">Breakthrough design</a></li>
-          <li><a class="btn btn--arrow">Future-proof development</a></li>
-          <li><a class="btn btn--arrow">Content creation</a></li>
-          <li><a class="btn btn--arrow">Creative strategy</a></li>
-          <li><a class="btn btn--arrow">Technical strategy</a></li>
-          <li><a class="btn btn--arrow">E-commerce integration</a></li>
-          <li><a class="btn btn--arrow">Ongoing support</a></li>-->
-        </ul>
-      </div><!-- /.col -->
-    </div><!-- /.row-flex -->
-  </div><!-- /.wrapper -->
+      <div class="row-flex__md-12 cta">
+        <h2 class="heading heading--centered">Complex Problems. Solved with Design.</h2>
+        <p class="u-text-center">We focus on process, product, people. We’ll work with you to create the right process that works for our teams and craft a product that solves a problem for your audience. </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--black section--pad-0">
+  {% include accordion-services.html %}
 </section>

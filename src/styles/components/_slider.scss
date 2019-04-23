@@ -1,0 +1,204 @@
+// Slider
+
+.slider {
+  display: flex;
+  width: 100%;
+  height: 600px;
+}
+
+.slider__left,
+.slider__right {
+  display: flex;
+  align-items: center;
+  flex: 1 0 100%;
+  @include bp_md {
+    flex: 1 0 50%;
+  }
+}
+
+.slider__left {
+  background-color: $color-black;
+  &.reverse {
+    order: 2;
+  }
+}
+
+.slider__image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% center;
+  z-index: 1;
+  &--one {
+    background-image: url('//images.unsplash.com/photo-1490013616775-3ca8865fb129?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80');
+  }
+  &--two {
+    background-image: url('//images.unsplash.com/photo-1535598745644-bc7913bb1a2a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2255&q=80');
+  }
+  &--lk {
+    background-image: url('/assets/images/bg-lk.jpg');
+  }
+  &--tt {
+    background-image: url('/assets/images/bg-tt.jpg');
+  }
+}
+
+.slider__right {
+  background: $color-black;
+  padding: rem(15);
+  @include bp_md {
+    padding: rem(90);
+  }
+}
+
+.slider__content {
+    color: $color-white;
+}
+
+.slider__text {
+  color: $color-grey-light;
+}
+
+
+
+
+
+
+// slick slider
+/* ==== Main CSS === */
+.img-fill{
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  text-align: center
+}
+
+.img-fill img {
+  min-height: 100%;
+  min-width: 100%;
+  position: relative;
+  display: inline-block;
+  max-width: none;
+}
+
+.blocks-box,
+.slick-slider {
+  margin: 0;
+  padding: 0!important;
+}
+
+.slick-slide {
+  float: left /* If RTL Make This Right */ ;
+  padding: 0;
+}
+
+/* ==== Slider Style === */
+.projects-slider .item .img-fill{
+  background:#000;
+  margin-bottom: -15px;
+}
+
+.projects-slider .item .img-fill .info{
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0px;
+  left:0px;
+  background:rgba(0,0,0,.50);
+  line-height:100vh;
+  text-align:center;
+}
+
+.projects-slider .item .info > div{
+  display:inline-block!important;
+  vertical-align:middle;
+}
+
+.projects-slider .next-arrow{
+  position:absolute;
+  top:50%;
+  right:0;
+  width:55px;
+  height:55px;
+  background: $color-primary;
+  border:0 none;
+  margin-top:-22.5px;
+  text-align:center;
+  font:35px FontAwesome;
+  color:#FFF;
+  z-index:5;
+  @include bp_md {
+    right: 90px;
+  }
+}
+
+.projects-slider .next-arrow:before{content:'\f105';}
+
+.projects-slider .prev-arrow{
+  position:absolute;
+  top:50%;
+  left:0;
+  width:55px;
+  height:55px;
+  background: $color-primary;
+  border:0 none;
+  margin-top:-22.5px;
+  text-align:center;
+  font:35px FontAwesome;
+  color:#FFF;
+  z-index:5;
+  @include bp_md {
+    right: 90px;
+  }
+}
+
+.projects-slider .prev-arrow:before{content:'\f104';}
+
+.projects-slider .slick-dots{
+  display: none;
+}
+.projects-slider .slick-dots li button{display:none;}
+.projects-slider .slick-dots li{
+  float:left;
+  width:0px;
+  height:5px;
+  background:#d62828;
+  position:absolute;
+  left:0px;
+  bottom:0px;
+}
+
+
+.projects-slider .item h3{
+  text-transform:uppercase;
+  color:#FFF;
+  margin:0;
+  padding:0;
+}
+
+.projects-slider .item h5{
+  margin:0;
+  padding:0;
+  color:#FFF;
+  max-width:600px;
+  overflow:hidden;
+  height:60px;
+}
+
+
+/* ==== Slick Slider Css Ruls === */
+.slick-slider{position:relative;display:block;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-touch-callout:none;-khtml-user-select:none;-ms-touch-action:pan-y;touch-action:pan-y;-webkit-tap-highlight-color:transparent}
+.slick-list{position:relative;display:block;overflow:hidden;margin:0;padding:0}
+.slick-list:focus{outline:none}.slick-list.dragging{cursor:hand}
+.slick-slider .slick-track,.slick-slider .slick-list{-webkit-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}
+.slick-track{position:relative;top:0;left:0;display:block}
+.slick-track:before,.slick-track:after{display:table;content:''}.slick-track:after{clear:both}
+.slick-loading .slick-track{visibility:hidden}
+.slick-slide{display:none;float:left /* If RTL Make This Right */ ;height:100%;min-height:1px}
+.slick-slide.dragging img{pointer-events:none}
+.slick-initialized .slick-slide{display:block}
+.slick-loading .slick-slide{visibility:hidden}
+.slick-vertical .slick-slide{display:block;height:auto;border:1px solid transparent}
