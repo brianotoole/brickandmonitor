@@ -2432,7 +2432,7 @@ textarea {
   z-index: 5; }
   @media (min-width: 800px) {
     .projects-slider .prev-arrow {
-      right: 90px; } }
+      left: 90px; } }
 
 .projects-slider .prev-arrow:before {
   content: '\F104'; }

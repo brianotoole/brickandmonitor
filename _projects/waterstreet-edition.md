@@ -9,7 +9,7 @@ link: https://edition.waterstreettampa.com
 hero-bg: wst
 textcolor: ffffff
 hero-title: The Tampa EDITION
-hero-subtitle: We helped build and the launch announcement for the new Tampa hotel.
+hero-subtitle: We helped generate awareness for the 5-star hotel's launch
 description: As Water Street Tampa's first five-star hotel, The Tampa EDITION will be the cultural focal point of the Water Street Tampa neighborhood.
 slider-img-1: project-edition-home-m.jpg
 slider-img-2: project-edition-home-m2.jpg
