@@ -5,7 +5,7 @@ bodyclass: tt
 date: 2017-12-01
 order: 5
 img: project-wst-thumb.png
-link: http://tampatheatre.org
+link: http://tampatheatre.org/about/
 hero-bg: tt
 textcolor: ffffff
 hero-title: Tampa Theatre
