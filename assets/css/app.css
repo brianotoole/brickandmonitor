@@ -1558,22 +1558,27 @@ body {
 
 .nav-open .header__nav li:nth-child(1) {
   animation: fadeInX 200ms ease-out;
-  animation-delay: 160ms;
+  animation-delay: 185ms;
   animation-fill-mode: forwards; }
 
 .nav-open .header__nav li:nth-child(2) {
   animation: fadeInX 200ms ease-out;
-  animation-delay: 290ms;
+  animation-delay: 340ms;
   animation-fill-mode: forwards; }
 
 .nav-open .header__nav li:nth-child(3) {
   animation: fadeInX 200ms ease-out;
-  animation-delay: 390ms;
+  animation-delay: 465ms;
   animation-fill-mode: forwards; }
 
 .nav-open .header__nav li:nth-child(4) {
   animation: fadeInX 200ms ease-out;
-  animation-delay: 460ms;
+  animation-delay: 560ms;
+  animation-fill-mode: forwards; }
+
+.nav-open .header__nav li:nth-child(5) {
+  animation: fadeInX 200ms ease-out;
+  animation-delay: 625ms;
   animation-fill-mode: forwards; }
 
 .nav-open .header__nav .nav-mobile-wrap {

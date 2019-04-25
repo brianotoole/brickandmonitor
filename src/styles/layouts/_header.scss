@@ -73,10 +73,10 @@
     opacity: 0;
     padding: 0 rem(12.5);
   }
-  @for $index from 1 through 4 {
+  @for $index from 1 through 5 {
     li:nth-child(#{$index}) {
       animation: fadeInX 200ms ease-out;
-      animation-delay: (175ms - ($faster * $index)) * $index;
+      animation-delay: (200ms - ($faster * $index)) * $index;
       animation-fill-mode: forwards;
     }
   } 
