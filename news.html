@@ -1,26 +1,24 @@
----
-layout: page
-title: Recent News - Brick & Monitor
-bodyclass: page-news
-hero-title: Sharing what we've learned along the way
-hero-bg: dark-l
----
+--- layout: page title: Recent News - Brick & Monitor bodyclass: page-news hero-title: Sharing what we've learned along the way hero-bg: dark-l ---
 
 <section class="section section--pad section--white">
-  <div class="wrapper">
-    <div class="row-flex">
-      <div class="row-flex__col-md-12">
-        <h2 class="heading heading--centered" id="js-trigger-posts">Recent News</h2>
-        <div class="post">
-          {% for post in site.posts %}
-          <a href="{{ post.url }}" class="post__item hvr-underline-from-left">
-            <h4>{{ post.title }}</h4>
-            <!-- <p class="post-cat">- {{ post.category }} -</p> -->
-            <button class="btn btn--card" href="{{ post.url }}">View Article</button>
-          </a>
-          {% endfor %}
-        </div><!-- /.post -->
-      </div><!-- /.col -->
-    </div><!-- /.row-flex -->
-  </div><!-- /.wrapper -->
+    <div class="wrapper">
+        <div class="row-flex">
+            <div class="row-flex__col-md-12">
+                <h2 class="heading heading--centered" id="js-trigger-posts">Recent News</h2>
+                <div class="post">
+                    {% for post in site.posts %}
+                    <a href="{{ post.url }}" class="post__item hvr-underline-from-left">
+                        <h4>{{ post.title }}</h4>
+                        <!-- <p class="post-cat">- {{ post.category }} -</p> -->
+                        <button class="btn btn--card" href="{{ post.url }}">View Article</button>
+                    </a>
+                    {% endfor %}
+                </div>
+                <!-- /.post -->
+            </div>
+            <!-- /.col -->
+        </div>
+        <!-- /.row-flex -->
+    </div>
+    <!-- /.wrapper -->
 </section>

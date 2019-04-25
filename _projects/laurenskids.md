@@ -1,7 +1,7 @@
 ---
 layout: project
 featured-home: true
-bodyclass: wst
+bodyclass: lk
 date: 2017-12-01
 order: 5
 img: project-wst-thumb.png
