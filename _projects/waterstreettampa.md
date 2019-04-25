@@ -12,7 +12,7 @@ hero-title: Water Street Tampa
 hero-subtitle: We helped plant the digital foundation for a new brand with global impact.
 description: Water Street Tampa will add 1 million square feet of new retail, cultural, educational, and entertainment space at the street-level. We helped plant the digital foundation for a new brand with global impact.
 slider-img-1: project-wst-home-m.jpg
-slider-img-2: project-wst-m2.jpg
+slider-img-2: project-wst-home-m2.jpg
 takeaways: Water Street Tampa will create 2 million square feet of new office space, including downtown Tampa's first new office towers in nearly 25 years. The project, led by Strategic Property Partners, will provide a vibrant vision for the future of Tampa and for the 23,000+ people who live, work, study, and visit each day. We helped plant the digital foundation for a new brand with global impact.
 ---
 
