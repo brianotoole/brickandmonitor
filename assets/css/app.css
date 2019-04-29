@@ -962,7 +962,7 @@ h4,
 h5,
 .heading-underline,
 h6 {
-  font-family: "Playfair Display Bold", serif;
+  font-family: "Playfair Display", serif;
   font-weight: 300;
   line-height: 1.4;
   letter-spacing: 0.25px;
@@ -2257,7 +2257,7 @@ textarea {
     border: 0; }
 
 .service__number {
-  font-family: "Playfair Display Bold", serif; }
+  font-family: "Playfair Display", serif; }
 
 .service__hr {
   margin-left: 0;
@@ -2850,7 +2850,7 @@ svg:not(:root) {
     color: #111; }
 
 .font-heading {
-  font-family: "Playfair Display Bold", serif; }
+  font-family: "Playfair Display", serif; }
 
 .font-body {
   font-family: "calluna", serif; }
