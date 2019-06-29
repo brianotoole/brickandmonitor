@@ -151,7 +151,8 @@
   border:0 none;
   margin-top:-22.5px;
   text-align:center;
-  font:35px FontAwesome;
+  font-family: Linearicons-Free;
+  font-size: rem(22);
   color:#FFF;
   z-index:5;
   @include bp_md {
@@ -159,7 +160,7 @@
   }
 }
 
-.projects-slider .next-arrow:before{content:'\f105';}
+.projects-slider .next-arrow:before{content: "\E87A";}
 
 .projects-slider .prev-arrow{
   position:absolute;
@@ -171,7 +172,8 @@
   border:0 none;
   margin-top:-22.5px;
   text-align:center;
-  font:35px FontAwesome;
+  font-family: Linearicons-Free;
+  font-size: rem(22);
   color:#FFF;
   z-index:5;
   @include bp_md {
@@ -179,7 +181,7 @@
   }
 }
 
-.projects-slider .prev-arrow:before{content:'\f104';}
+.projects-slider .prev-arrow:before{content: "\E879";}
 
 .projects-slider .slick-dots{
   display: none;

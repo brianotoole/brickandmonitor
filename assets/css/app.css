@@ -2454,7 +2454,8 @@ textarea {
   border: 0 none;
   margin-top: -22.5px;
   text-align: center;
-  font: 35px FontAwesome;
+  font-family: Linearicons-Free;
+  font-size: 1.375rem;
   color: #FFF;
   z-index: 5; }
   @media (min-width: 800px) {
@@ -2462,7 +2463,7 @@ textarea {
       right: 90px; } }
 
 .projects-slider .next-arrow:before {
-  content: '\F105'; }
+  content: "\E87A"; }
 
 .projects-slider .prev-arrow {
   position: absolute;
@@ -2474,7 +2475,8 @@ textarea {
   border: 0 none;
   margin-top: -22.5px;
   text-align: center;
-  font: 35px FontAwesome;
+  font-family: Linearicons-Free;
+  font-size: 1.375rem;
   color: #FFF;
   z-index: 5; }
   @media (min-width: 800px) {
@@ -2482,7 +2484,7 @@ textarea {
       left: 90px; } }
 
 .projects-slider .prev-arrow:before {
-  content: '\F104'; }
+  content: "\E879"; }
 
 .projects-slider .slick-dots {
   display: none; }
