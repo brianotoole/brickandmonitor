@@ -83,7 +83,7 @@
     height: 3px;
     width: calc(100% - 15px);
     margin: 0 7.5px;
-    transition: all 0.3s linear;
+    transition: all 0.25s ease-out;
     @include bp_md {
       top: 50%;
       width: calc(100% - 30px);
@@ -99,7 +99,7 @@
       background: transparent;
     }
     &:after {
-      transform: rotate(360deg);
+      transform: rotate(180deg);
     }
   }
 }
@@ -119,9 +119,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: rem(30) rem(15);
+  padding: rem(30);
+  text-align: center;
   @include bp_md {
     padding: rem(90);
+    text-align: inherit;
   }
 }
 
@@ -129,19 +131,27 @@
   flex: 1 0 100%;
   @include bp_md {
     flex-basis: 66.666%;
+    padding-right: rem(90);
   }
 }
 
 .accordion__inner-services {
   flex: 1 0 100%;
+  order: -1;
+  padding-top: rem(10);
+  margin-bottom: rem(30);
   @include bp_md {
-    padding-left: rem(90);
+    order: 0;
     flex-basis: 33.333%;
+    padding-top: 0;
+    margin-bottom: 0;
   }
   li {
     list-style: none;
     @extend .h4;
     @media (max-width: $bp_md) {
+      display: inline;
+      padding-right: rem(30);
       font-size: font-scale(0);
     }
   }
