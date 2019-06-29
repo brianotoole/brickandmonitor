@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin: rem(-15);	
+  margin: rem(-15);
 }
 
 .service {
@@ -11,12 +11,13 @@
   padding: rem(15);
   margin: rem(15);
   border-right: 0;
-  text-align: left;
+  text-align: center;
   @include bp_md {
     flex-basis: calc(3 / 12 * 100% - 60px);
     padding: rem(30);
-    margin: rem(15);	
+    margin: rem(15);
     border-right: 1px solid rgba($color-grey, 0.25);
+    text-align: inherit;
   }
   &:last-child {
     border: 0;
@@ -42,6 +43,13 @@
 .service__item {
   font-size: font-scale(1);
   list-style: none;
+}
+
+.service__btn {
+  margin-top: rem(30);
+  @include bp_md() {
+    margin: inherit;
+  }
 }
 
 

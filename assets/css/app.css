@@ -2257,14 +2257,15 @@ textarea {
   padding: 0.9375rem;
   margin: 0.9375rem;
   border-right: 0;
-  text-align: left; }
+  text-align: center; }
   @media (min-width: 800px) {
     .service {
       -ms-flex-preferred-size: calc(3 / 12 * 100% - 60px);
           flex-basis: calc(3 / 12 * 100% - 60px);
       padding: 1.875rem;
       margin: 0.9375rem;
-      border-right: 1px solid rgba(130, 126, 126, 0.25); } }
+      border-right: 1px solid rgba(130, 126, 126, 0.25);
+      text-align: inherit; } }
   .service:last-child {
     border: 0; }
 
@@ -2282,6 +2283,12 @@ textarea {
 .service__item {
   font-size: 1.2rem;
   list-style: none; }
+
+.service__btn {
+  margin-top: 1.875rem; }
+  @media (min-width: 800px) {
+    .service__btn {
+      margin: inherit; } }
 
 .icon-card-wrap {
   display: -ms-flexbox;
