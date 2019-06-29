@@ -2394,7 +2394,7 @@ textarea {
   @media (min-width: 800px) {
     .slider__content {
       text-align: inherit;
-      padding: inherit; } }
+      padding: 0; } }
 
 .slider__heading {
   color: #ffffff; }

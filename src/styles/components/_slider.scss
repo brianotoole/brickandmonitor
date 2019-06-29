@@ -74,7 +74,7 @@
   padding: rem(30);
   @include bp_md {
     text-align: inherit;
-    padding: inherit;
+    padding: 0;
   }
 }
 
