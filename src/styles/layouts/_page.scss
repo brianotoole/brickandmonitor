@@ -95,12 +95,12 @@ body {
 // Generic content wrapper
 .wrapper {
   position: relative;
-  max-width: 1230px;
+  max-width: rem(1230);
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: rem(30);
+  padding-right: rem(30);
   z-index: 1;
   overflow: hidden;
   &--narrow {

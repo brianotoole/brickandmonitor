@@ -1251,12 +1251,12 @@ body {
 
 .wrapper {
   position: relative;
-  max-width: 1230px;
+  max-width: 76.875rem;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 1.875rem;
+  padding-right: 1.875rem;
   z-index: 1;
   overflow: hidden; }
   .wrapper--narrow {
