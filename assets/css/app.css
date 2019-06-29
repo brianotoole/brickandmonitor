@@ -2260,9 +2260,12 @@ textarea {
   font-family: "Playfair Display", serif; }
 
 .service__hr {
-  margin-left: 0;
+  margin-left: auto;
   margin-bottom: 0.9375rem;
   border-width: 2px; }
+  @media (min-width: 800px) {
+    .service__hr {
+      margin-left: 0; } }
 
 .service__item {
   font-size: 1.2rem;
@@ -2304,10 +2307,14 @@ textarea {
     color: #111; }
 
 .slider {
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   width: 100%;
-  height: 600px; }
+  height: auto; }
+  @media (min-width: 800px) {
+    .slider {
+      display: -ms-flexbox;
+      display: flex;
+      height: 37.5rem; } }
 
 .slider__left,
 .slider__right {
@@ -2315,8 +2322,8 @@ textarea {
   display: flex;
   -ms-flex-align: center;
       align-items: center;
-  -ms-flex: 1 0 100%;
-      flex: 1 0 100%; }
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%; }
   @media (min-width: 800px) {
     .slider__left,
     .slider__right {
@@ -2332,11 +2339,14 @@ textarea {
 .slider__image {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 300px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% center;
   z-index: 1; }
+  @media (min-width: 800px) {
+    .slider__image {
+      height: 100%; } }
   .slider__image--one {
     background-image: url("//images.unsplash.com/photo-1490013616775-3ca8865fb129?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80"); }
   .slider__image--two {
@@ -2360,12 +2370,19 @@ textarea {
       padding: 5.625rem; } }
 
 .slider__content {
+  text-align: center;
+  padding: 1.875rem; }
+  @media (min-width: 800px) {
+    .slider__content {
+      text-align: inherit;
+      padding: inherit; } }
+
+.slider__heading {
   color: #ffffff; }
 
 .slider__text {
   color: #d1cbcb; }
 
-/* ==== Main CSS === */
 .img-fill {
   width: 100%;
   display: block;

@@ -31,9 +31,12 @@
 
 .service__hr {
   @extend .heading-seperator;
-  margin-left: 0;
+  margin-left: auto;
   margin-bottom: rem(15);
   border-width: 2px;
+  @include bp_md() {
+    margin-left: 0;
+  }
 }
 
 .service__item {
