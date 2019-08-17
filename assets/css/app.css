@@ -1618,7 +1618,7 @@ body {
     transition: background 0.2s ease-out; }
 
 .hamburger {
-  margin-top: -10px;
+  margin-top: -1.25rem;
   padding: 0;
   border: 0;
   background: rgba(17, 17, 17, 0.99);
