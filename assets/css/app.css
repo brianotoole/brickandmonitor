@@ -2219,7 +2219,7 @@ textarea {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  filter: grayscale(100%); }
+  filter: grayscale(20%); }
   .card__header--2 {
     background-image: url("/assets/images/bg-pubaffairs.jpg"); }
   .card__header--3 {
