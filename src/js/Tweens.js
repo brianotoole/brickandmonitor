@@ -34,6 +34,7 @@ $(function() {
 
 });
 
+
 function slideInHeroItems() {
   heroItems.each(function() {
     tl.add(
@@ -56,6 +57,28 @@ function slideUpIntroItems() {
       })
     );
   });
+}
+
+function drawBox() {
+  var newsScene = new ScrollMagic.Scene({
+    //scene options
+    triggerElement: "#js-box1",
+    triggerHook: 0.75,
+    reverse: true
+  })
+  .setClassToggle("#js-box-el1", "active") // add class toggle
+  .addTo(controller);
+}
+
+function drawBox2() {
+  var newsScene = new ScrollMagic.Scene({
+    //scene options
+    triggerElement: "#js-box2",
+    triggerHook: 0.75,
+    reverse: true
+  })
+  .setClassToggle("#js-box-el2", "active") // add class toggle
+  .addTo(controller);
 }
 
 function staggerInPosts() {
@@ -95,8 +118,18 @@ function slideUpFooter() {
 }
 
 $(function() {
+  drawBox();
+  drawBox2();
   // If news page
   if ($(".page-news").length > 0) {
     staggerInPosts();
   }
 });
+
+
+/* Find Lenth of SVG path */
+/*
+var path = document.querySelector('.slider__image-box path');
+var length = path.getTotalLength();
+console.log(length);
+*/
