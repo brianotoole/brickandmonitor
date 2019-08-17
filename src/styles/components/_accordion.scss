@@ -4,7 +4,7 @@
   position: relative;
   width: 100%;
   height: auto;
-  background: $color-primary;
+  background: $color-tertiary;
 }
 
 .accordion__outer {
@@ -58,7 +58,7 @@
   width: 35px;
   height: 35px;
   background: transparent;
-  border: 3px solid $color-white;
+  border: 2px solid $color-white;
   border-radius: 50%;
   transition: background 0.3s linear;
   @include bp_md {
@@ -80,10 +80,10 @@
     position: absolute;
     top: 48%;
     left: 0;
-    height: 3px;
+    height: 2px;
     width: calc(100% - 15px);
     margin: 0 7.5px;
-    transition: all 0.25s ease-out;
+    transition: all 0.25s linear;
     @include bp_md {
       top: 50%;
       width: calc(100% - 30px);
@@ -121,9 +121,17 @@
   justify-content: space-between;
   padding: rem(30);
   text-align: center;
+  color: $color-black;
   @include bp_md {
     padding: rem(90);
     text-align: inherit;
+  }
+}
+
+.accordion__inner-content .btn {
+  color: $color-black;
+  &:hover {
+    color: $color-primary;
   }
 }
 
