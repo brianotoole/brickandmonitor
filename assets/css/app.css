@@ -1747,7 +1747,7 @@ body {
   position: relative;
   width: 100%;
   height: auto;
-  background: #fffdf5; }
+  background: #f5f5f5; }
 
 .accordion__outer {
   position: relative;
@@ -2128,7 +2128,7 @@ textarea {
 *********************************************************/
 .modal {
   position: fixed;
-  z-index: 99999;
+  z-index: 9;
   top: 0;
   bottom: 0;
   left: 0;
