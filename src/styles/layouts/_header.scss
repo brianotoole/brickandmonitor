@@ -13,7 +13,7 @@
   margin: 0;
   padding: rem(30) rem(30) rem(20);
   background: transparent;
-  z-index: 9999;
+  z-index: 9;
   transition: all 0.25s ease-out;
   &--is-small {
     background: $color-black;
