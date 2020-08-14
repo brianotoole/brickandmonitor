@@ -4,7 +4,7 @@
   position: relative;
   width: 100%;
   height: auto;
-  background: $color-tertiary;
+  background: $color-white;
 }
 
 .accordion__outer {
@@ -32,10 +32,19 @@
     background-image: url('/assets/images/accordion-tampa2.jpg');
   }
   &--tampa {
-    background-image: url('/assets/images/accordion-wst.jpg');
+    background-image: url('/assets/images/accordion-bdg.jpg');
+  }
+  &--flp {
+    background-image: url('/assets/images/accordion-flpoly.jpg');
   }
   &--lk {
     background-image: url('/assets/images/accordion-lk2.jpg');
+  }
+  &--mu {
+    background-image: url('/assets/images/accordion-mu.jpg');
+  }
+  &--jwpf {
+    background-image: url('/assets/images/accordion-jwpf.jpg');
   }
 }
 

@@ -39,7 +39,7 @@ function validateForm() {
 	    data: datastring,
 	    dataType: "json"
 	  });
-	  $('#js-form-message').addClass('text-success text-large').text('Thanks for your interest! Your message has been sent successfully. We\'ll be in touch as soon as possible.');
+	  $('#js-form-message').addClass('text-success text-large').text('Thanks for reaching out. Your message has been sent successfully. I\'ll be in touch as soon as possible.');
 	  return false;
 	}
 }

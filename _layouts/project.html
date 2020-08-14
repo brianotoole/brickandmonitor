@@ -4,67 +4,28 @@ bodyclass: page-project
 hero-bg: dark-l
 ---
 
-<section class="section section--{{ page.hero-bg }} hero hero--page-interior">
-    <div class="wrapper">
-      <div class="row-flex row-flex--center">
-        <div class="row-flex__md-12">
-          <div class="hero__content hero__content--centered">
-            <h1 class="hero__title h3">{{ page.hero-title }}</h1>
-            <div class="hero__scroll hero__scroll--centered">
-              <a href="#more"><span></span></a>
-            </div><!--/.hero-scroll-->
-          </div><!-- /.hero-content -->
-        </div><!-- /.col -->
-      </div><!-- .row-flex -->
-    </div><!-- /.wrapper -->
+<section class="section section--{{ page.hero-bg }} hero hero--bg hero--page-interior" style="background-image:url({{site.baseurl}}/assets/images/{{page.hero-img}});">
+  <div class="wrapper">
+    <div class="row-flex">
+      <div class="row-flex__md-12">
+        <div class="hero__content hero__content--centered">
+          <h1 class="hero__title h3">{{ page.hero-title }}</h1>
+          <div class="hero__scroll hero__scroll--centered">
+            <a href="#more"><span></span></a>
+          </div><!--/.hero-scroll-->
+        </div><!-- /.hero-content -->
+      </div><!-- /.col -->
+    </div><!-- .row-flex -->
+  </div><!-- /.wrapper -->
   </section>
 
-  <section class="section section--pad section--white">
-    <div class="wrapper">
-      <div class="row-flex">
-        <div class="row-flex__md-12 cta cta--centered">
-          <p>{{ page.hero-subtitle }}</p>
-        </div><!-- /.col -->
-      </div><!-- /.row-flex -->
-    </div><!-- /.wrapper -->
-  </section>
-
-  <section class="section section--pad section--tertiary">
+    <section class="section section--pad section--white">
       <div class="wrapper">
         <div class="row-flex">
           {{ content }}
         </div><!-- /.row-flex -->
+        <div class="row-flex__md-12 u-text-center">
+          <img src="{{site.baseurl}}/assets/images/{{page.work-img}}">
+        </div><!-- /.col -->
       </div><!-- /.wrapper -->
     </section>
-
-
-  <div class="projects-slider">
-      <!-- Item -->
-      <div class="item">
-        <div class="img-fill">
-          <img src="{{site.baseurl}}/assets/images/{{page.slider-img-1}}">
-        </div>
-      </div>
-      <!-- // Item -->
-      <!-- Item -->
-      <div class="item">
-        <div class="img-fill">
-            <img src="{{site.baseurl}}/assets/images/{{page.slider-img-2}}">
-        </div>
-      </div>
-      <!-- // Item -->
-    </div>
-
-    <section class="section section--pad section--white">
-        <div class="wrapper">
-          <div class="row-flex">
-            <div class="row-flex__md-12 u-text-center">
-              <h2 class="heading--centered">Takeaways</h2>
-              <p>{{ page.takeaways }}</p>
-              <a href="{{ page.link }}" class="btn btn--border" target="_blank">Visit Website</a>
-            </div><!-- /.col -->
-          </div><!-- /.row-flex -->
-        </div><!-- /.wrapper -->
-      </section>
-
-
