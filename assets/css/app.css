@@ -946,10 +946,10 @@ img {
 
 a {
   text-decoration: none;
-  color: #FF3233;
+  color: #FF5758;
   transition: 0.2s color ease-out; }
   a:hover {
-    color: #e50001; }
+    color: #ff3e3f; }
 
 /*********************************************************
     Typography
@@ -1061,7 +1061,7 @@ pre.highlight {
 .heading-seperator, .service__hr {
   border-bottom-style: solid;
   border-bottom-width: 3px;
-  border-bottom-color: #FF3233;
+  border-bottom-color: #FF5758;
   width: 45px;
   margin: 0 auto 3.75rem; }
 
@@ -1279,7 +1279,7 @@ body {
   .section--underline {
     border-bottom: 2px solid #827e7e; }
   .section--primary {
-    background-color: #FF3233;
+    background-color: #FF5758;
     color: #ffffff; }
   .section--secondary {
     background-color: #111;
@@ -1491,7 +1491,7 @@ body {
   margin: 0;
   padding: 1.875rem 1.875rem 1.25rem;
   background: transparent;
-  z-index: 9999;
+  z-index: 9;
   transition: all 0.25s ease-out; }
   .header--is-small {
     background: #111;
@@ -1521,7 +1521,7 @@ body {
       align-items: center;
   width: 100%;
   height: 100vh;
-  background: #FF3233;
+  background: #FF5758;
   position: absolute;
   left: 0;
   top: 0;
@@ -1600,7 +1600,7 @@ body {
   margin-left: 0.9375rem;
   border-radius: 32px; }
   .header__nav .header__button:hover, .header__nav .header__button:focus {
-    background-color: #FF3233;
+    background-color: #FF5758;
     transition: background 0.2s ease-out; }
 
 .hamburger {
@@ -1685,13 +1685,13 @@ body {
     margin: 0 auto 3.75rem; } }
 
 .footer-link__wrap {
-  background: #FF3233;
+  background: #FF5758;
   color: #ffffff;
   display: block;
   padding: 80px 0;
   transition: background 0.25s ease-in-out; }
   .footer-link__wrap:hover, .footer-link__wrap:focus {
-    background: #FF3233;
+    background: #FF5758;
     color: #ffffff; }
 
 .footer__tagline {
@@ -1851,7 +1851,7 @@ body {
 .accordion__inner-content .btn {
   color: #111; }
   .accordion__inner-content .btn:hover {
-    color: #FF3233; }
+    color: #FF5758; }
 
 .accordion__inner-description {
   -ms-flex: 1 0 100%;
@@ -1898,7 +1898,7 @@ body {
   font-size: 1rem;
   font-weight: normal;
   color: #ffffff;
-  background-color: #FF3233;
+  background-color: #FF5758;
   border-radius: 0;
   text-transform: uppercase;
   text-decoration: none;
@@ -1913,29 +1913,29 @@ body {
   .btn:hover, .btn:focus {
     text-decoration: none;
     color: #ffffff;
-    background-color: #e50001;
+    background-color: #ff3e3f;
     box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.2);
     transform: translateY(-1px); }
   .btn--secondary {
     background-color: #111;
     border-color: #111; }
     .btn--secondary:hover, .btn--secondary:focus {
-      background-color: black; }
+      background-color: #040404; }
   .btn--muted {
-    color: #FF3233;
+    color: #FF5758;
     background-color: transparent;
     border-width: 0;
-    border-color: #FF3233; }
+    border-color: #FF5758; }
     .btn--muted:hover, .btn--muted:focus {
-      background-color: #FF3233;
-      border-color: #e50001; }
+      background-color: #FF5758;
+      border-color: #ff3e3f; }
   .btn--border {
     color: #111;
     background-color: transparent;
     border: 1px solid #111; }
     .btn--border:hover, .btn--border:focus {
-      background-color: #FF3233;
-      border-color: #e50001; }
+      background-color: #FF5758;
+      border-color: #ff3e3f; }
   .btn--arrow, .btn--arrow-light {
     transition: color 0.2s ease-in-out;
     border: 1px solid #111;
@@ -1951,8 +1951,8 @@ body {
       margin-left: 10px;
       transition: background 0.2s ease-out, margin-left 0.2s ease-in-out; }
     .btn--arrow:hover, .btn--arrow-light:hover {
-      background: #FF3233;
-      border-color: #FF3233;
+      background: #FF5758;
+      border-color: #FF5758;
       color: #ffffff; }
       .btn--arrow:hover:after, .btn--arrow-light:hover:after {
         margin-left: 14px; }
@@ -2058,7 +2058,7 @@ textarea {
   input[type='url']:active,
   textarea:focus,
   textarea:active {
-    border-color: #FF3233; }
+    border-color: #FF5758; }
 
 textarea {
   max-width: 100%;
@@ -2120,7 +2120,7 @@ textarea {
 *********************************************************/
 .modal {
   position: fixed;
-  z-index: 99999;
+  z-index: 9;
   top: 0;
   bottom: 0;
   left: 0;
@@ -2163,7 +2163,7 @@ textarea {
     cursor: pointer;
     transition: all 0.3s ease-out; }
     .modal__close:hover {
-      color: #e50001; }
+      color: #ff3e3f; }
 
 /*********************************************************
     Card
@@ -2865,7 +2865,7 @@ svg:not(:root) {
   border-color: #ffffff; }
 
 .u-text-primary {
-  color: #FF3233; }
+  color: #FF5758; }
 
 .u-text-secondary {
   color: #111; }
@@ -2885,7 +2885,7 @@ svg:not(:root) {
   color: #111; }
 
 .bg-primary {
-  background: #FF3233;
+  background: #FF5758;
   color: #ffffff; }
 
 .bg-secondary {
@@ -2907,7 +2907,7 @@ svg:not(:root) {
 .bg-pattern {
   position: relative;
   color: #ffffff;
-  background-image: url("https://sqy7rm.media.zestyio.com/branches.svg"), linear-gradient(65deg, #FF3233, #e50001); }
+  background-image: url("https://sqy7rm.media.zestyio.com/branches.svg"), linear-gradient(65deg, #FF5758, #ff3e3f); }
 
 .bg-pattern-grey {
   position: relative;
@@ -3031,7 +3031,7 @@ svg:not(:root) {
   left: 0;
   right: 100%;
   top: 0;
-  background: #FF3233;
+  background: #FF5758;
   height: 2px;
   transition-property: right;
   transition-duration: 0.3s;
