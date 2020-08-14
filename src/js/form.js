@@ -34,7 +34,7 @@ function validateForm() {
 	  var datastring = $("#js-form").serialize() + '&Plan=' + plan;
 	  $.ajax({
 	    //send the form using formspree
-	    url: "https://formcarry.com/s/gR62L1N7cgF", 
+	    url: "https://formcarry.com/s/w44YVsNhVAb9", 
 	    method: "POST",
 	    data: datastring,
 	    dataType: "json"
