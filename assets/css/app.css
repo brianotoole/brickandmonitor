@@ -2876,6 +2876,9 @@ svg:not(:root) {
 .u-text-body {
   color: #111; }
 
+.u-w-100 {
+  width: 100%; }
+
 .bg-white {
   background: #ffffff;
   color: #111; }
