@@ -11,7 +11,7 @@ textcolor: ffffff
 hero-title: Water Street Tampa
 hero-subtitle: We helped plant the digital foundation for a new brand with global impact.
 description: Water Street Tampa will add 1 million square feet of new retail, cultural, educational, and entertainment space at the street-level. We helped plant the digital foundation for a new brand with global impact.
-hero-img: hero-wst.gif
+hero-img: hero-wst.jpg
 work-img: work-wst.jpg
 work-img2: work-wst2.jpg
 ---
