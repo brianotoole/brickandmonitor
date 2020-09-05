@@ -46,7 +46,7 @@
     "url-loader": "^0.6.2",
     "webpack": "^3.10.0",
     "webpack-dashboard": "^1.0.0",
-    "webpack-dev-server": "^2.11.5",
+    "webpack-dev-server": "^3.1.11",
     "webpack-merge": "^4.2.1",
     "webpack-notifier": "^1.8.0"
   },
